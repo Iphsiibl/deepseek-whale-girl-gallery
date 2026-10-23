@@ -9,6 +9,9 @@
 
 由 GitHub Pages 发布（分支 `main` → 目录 `/docs`）。
 
+📖 **本案例的完整发布教程**：[`TUTORIAL.md`](TUTORIAL.md) —— 含 GitHub Pages 发布流程、
+图片性能优化（20.6 MB → 3.4 MB）、CC BY-NC-SA 署名规范，以及 8 个真实踩坑的排查过程。
+
 本地直接双击 `docs/index.html` 即可离线浏览，无需服务器、无外部请求、无跟踪脚本。
 
 ## 目录结构
@@ -16,6 +19,7 @@
 ```
 .
 ├── README.md           # 本文件
+├── TUTORIAL.md         # 案例教程：静态画廊发布到 GitHub Pages 全流程
 ├── LICENSE             # CC BY-NC-SA 4.0 全文（适用于本仓库的整理与页面代码）
 ├── ATTRIBUTION.md      # 每张图片的作者与出处（CC BY 要求署名）
 ├── tools/
