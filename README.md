@@ -8,7 +8,7 @@
 
 由 GitHub Pages 发布（分支 `main` → 目录 `/docs`）。
 
-本地直接双击 `docs/index.html` 即可离线浏览，无需服务器、无外部请求、无跟踪脚本。
+本地直接双击 `docs/index.html` 即可离线浏览：无需服务器、无外部请求、无跟踪脚本，禁用 JS 也能看全部图片。
 
 ## 目录结构
 
@@ -18,12 +18,18 @@
 ├── TUTORIAL.md         # 案例教程：静态画廊发布到 GitHub Pages 全流程
 ├── LICENSE             # CC BY-NC-SA 4.0 全文（适用于本仓库的整理与页面代码）
 ├── ATTRIBUTION.md      # 每张图片的作者与出处（CC BY 要求署名）
+├── .github/workflows/  # CI：校验页面与图片一致性
 ├── tools/
-│   └── make_thumbs.py  # 生成画廊展示版 WebP（长边 1600px / 质量 80）
+│   ├── make_thumbs.py  # 生成多档展示版 WebP（480 / 960 / 1440 / 1920 宽）
+│   ├── sync_srcset.py  # 把清单里的档位同步进页面 srcset / data-full
+│   ├── check_gallery.py# 校验页面引用、缩略图清单、原图孤儿
+│   ├── check_manifest.py # 比对清单结构（不比字节，避开 libwebp 版本差异）
+│   ├── verify_browser.py # Playwright 浏览器端验证（功能 / 性能 / 布局 / 无障碍）
+│   └── requirements.txt
 └── docs/               # GitHub Pages 发布根目录
-    ├── index.html      # 画廊页面
+    ├── index.html      # 画廊页面（单文件，内联 CSS/JS）
     ├── .nojekyll       # 关闭 Jekyll 处理，图片原样发布
-    ├── thumbs/         # 展示版 WebP 缩略图（31 张，3.4 MB）
+    ├── thumbs/         # 展示版 WebP（多档，按设备像素比选档）
     ├── sheets/         # 角色设定图原图（Q 版 / 成熟比例三视图）
     ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录原图
     ├── refs/           # 换装三视图原图（7 套）
@@ -31,20 +37,73 @@
     └── wallpaper/      # 场景壁纸原图
 ```
 
-> 页面展示 `thumbs/` 下的 WebP 副本（原图 20.6 MB → 3.4 MB，压缩 6.1 倍），
-> 点击图片或「原图」链接可打开未压缩原文件。重新生成缩略图：
-> `python tools/make_thumbs.py`
-
 ## 内容一览
 
 | 分区 | 数量 | 说明 |
 | --- | --- | --- |
 | 角色设定图 | 2 | Q 版三视图、成熟比例三视图，均附完整生成 Prompt |
-| 萌娘百科收录图 | 6 | 含流传最广的「女仆鲸鱼娘」原立绘（2732×4096） |
+| 萌娘百科收录图 | 6 | 含流传最广的「女仆鲸鱼娘」原立绘（1152×2048）与条目头图（2732×4096） |
 | 换装三视图 | 7 | 黑礼服人鱼 / 简约短裙 / 长裙 / 细节洛丽塔短裙 / Q 版 / 黑绿 / 黑红 |
 | 社区二创 | 13 | Q 版设定图、素材扩展包、表情包、头像、变体 |
-| 场景壁纸 | 3 | 2560×1440 静帧 |
-| **合计** | **31** | 约 20 MB |
+| 场景壁纸 | 3 | 1008×576 静帧 |
+| **合计** | **31** | 原图 20.6 MB |
+
+## 页面性能
+
+展示版不压成单一尺寸，而是**按宽度分四档**，页面用 `srcset` + `sizes`
+让浏览器按自己的屏幕和像素比挑一档：
+
+| 档位 | 全量体积 | 典型用途 |
+| --- | --- | --- |
+| 480w | **954 KB** | 1x 屏（手机 / 桌面）首屏 |
+| 960w | 2.4 MB | 2x 屏、灯箱 |
+| 1440w | 2.0 MB | 灯箱高清（仅 11 张大图有此档） |
+| 1920w | 395 KB | 灯箱高清（仅 2 张超大图有此档） |
+
+Chromium 实测（1440×900 视口）：
+
+| 场景 | 旧版 | 新版 | 降幅 |
+| --- | --- | --- | --- |
+| 1x 首屏 | 3.3 MB / 27 张 | **859 KB** / 26 张 | −74% |
+| 1x 整页 | 3.4 MB / 31 张 | **963 KB** / 31 张 | −72% |
+| 2x 首屏 | — | 2.3 MB / 26 张 | — |
+| 手机 390×844 2x 首屏 | — | 579 KB / 5 张 | — |
+
+旧版只发一种尺寸（长边 1600px），其中 **25 张原图长边本就 ≤1600px**，
+所谓"缩略图"其实是原图重编码，一分钱没省；新版按宽度分档，
+浏览器按自己的屏幕和像素比挑一档，画质反而更锐利。
+
+> 仓库里 `docs/thumbs/` 存着**全部档位**（约 5.9 MB），访客只会下载其中一档。
+> 档位多的意义在于高像素密度屏幕和灯箱能拿到更清晰的图，代价只是仓库体积。
+
+页面本身还做了这些：
+
+- `<img>` 全部带 `width`/`height`，零布局抖动（实测 CLS 0.0006）
+- 灯箱支持键盘（`←` `→` `Esc` `Home` `End`）、触摸滑动、相邻图预加载
+- 瀑布流按图片真实宽高比排布，竖构图立绘不再被压成小方块
+- 移动端适配、`prefers-reduced-motion`、触摸设备不残留 hover 态
+- Open Graph / Twitter 卡片、`sitemap.xml`、`robots.txt`
+
+## 重新生成缩略图
+
+```bash
+pip install -r tools/requirements.txt
+
+python tools/make_thumbs.py            # 增量生成
+python tools/make_thumbs.py --clean    # 强制全量重建
+python tools/make_thumbs.py --report   # 只看体积报告
+python tools/sync_srcset.py            # 把清单里的档位同步进页面 srcset
+python tools/check_gallery.py          # 校验页面与图片一致（CI 里跑的就是它）
+python tools/check_manifest.py         # 比对清单结构与已提交版本
+python tools/verify_browser.py --no-js # 浏览器端验证（需 pip install playwright）
+```
+
+加图流程：原图放进 `docs/<分区>/` → 在 `docs/index.html` 里加一张卡片 →
+运行 `make_thumbs.py` 和 `sync_srcset.py` → 提交。
+`check_gallery.py` 会挡住"加了图忘了生成缩略图""srcset 漏了档位"
+"width/height 与原图不符""原图没进页面""缩略图生成了没人用"这五种情况。
+
+完整做法见 [TUTORIAL.md](TUTORIAL.md)。
 
 ## 角色设定备忘
 

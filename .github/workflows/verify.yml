@@ -1,0 +1,89 @@
+name: 校验画廊一致性
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装依赖
+        run: pip install -r tools/requirements.txt
+
+      - name: 校验页面与图片一致性
+        run: python tools/check_gallery.py
+
+      - name: 校验 srcset 与缩略图清单同步
+        run: python tools/sync_srcset.py --check
+
+      - name: 重新生成缩略图，比对清单结构
+        run: |
+          python tools/make_thumbs.py --clean
+          # 只比"结构"（有哪些图、每张图有哪些档位、每档多宽），
+          # 不比字节数 —— WebP 的字节输出依赖 libwebp 版本，
+          # 不同机器编出来的同一个图字节数可能差几十，比字节会误报。
+          python tools/check_manifest.py
+
+      - name: 比对缩略图文件集合
+        run: |
+          # 图片文件只比"集合"（新增/删除），不比内容。
+          changed=$(git status --porcelain --untracked-files=all -- docs/thumbs \
+                   | awk '{print $1}' | grep -E '^\?\?|^D' || true)
+          if [ -n "$changed" ]; then
+            echo "::error::重新生成后的缩略图文件集合与仓库不一致。请在本地运行 python tools/make_thumbs.py 后提交。"
+            git status --porcelain --untracked-files=all -- docs/thumbs
+            exit 1
+          fi
+          echo "缩略图文件集合一致 ✓"
+
+      - name: 检查本地链接是否失效
+        run: |
+          python - <<'PY'
+          import re, sys
+          from pathlib import Path
+
+          root = Path(".")
+          text = "\n".join(p.read_text(encoding="utf-8") for p in root.glob("*.md"))
+          broken = []
+          for target in re.findall(r"\]\((?!https?://|#|mailto:)([^)]+)\)", text):
+              target = target.split("#")[0].strip()
+              if not target:
+                  continue
+              if not (root / target).exists():
+                  broken.append(target)
+          if broken:
+              for item in broken:
+                  print(f"::error::失效的相对链接: {item}")
+              sys.exit(1)
+          print("相对链接全部有效 ✓")
+          PY
+
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 安装依赖
+        run: |
+          pip install -r tools/requirements.txt
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: 浏览器端验证（功能 / 性能 / 布局 / 无障碍）
+        run: python tools/verify_browser.py --no-js

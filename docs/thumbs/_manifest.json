@@ -1,219 +1,1003 @@
-[
- {
-  "src": "sheets/01-chibi-character-sheet.png",
-  "thumb": "thumbs/01-chibi-character-sheet.webp",
-  "before": 2123873,
-  "after": 175996,
-  "orig": "1448x1086"
- },
- {
-  "src": "sheets/02-mature-character-sheet.png",
-  "thumb": "thumbs/02-mature-character-sheet.webp",
-  "before": 2256676,
-  "after": 195302,
-  "orig": "1448x1086"
- },
- {
-  "src": "moegirl/01-16yeluomao-ds.jpg",
-  "thumb": "thumbs/01-16yeluomao-ds.webp",
-  "before": 4818445,
-  "after": 113626,
-  "orig": "2732x4096"
- },
- {
-  "src": "moegirl/02-nvpu-whale-girl.png",
-  "thumb": "thumbs/02-nvpu-whale-girl.webp",
-  "before": 3027959,
-  "after": 113880,
-  "orig": "1152x2048"
- },
- {
-  "src": "moegirl/03-harness-girl.jpg",
-  "thumb": "thumbs/03-harness-girl.webp",
-  "before": 98442,
-  "after": 59604,
-  "orig": "1200x900"
- },
- {
-  "src": "moegirl/04-deepseek4f.jpg",
-  "thumb": "thumbs/04-deepseek4f.webp",
-  "before": 884874,
-  "after": 202998,
-  "orig": "1488x2000"
- },
- {
-  "src": "moegirl/05-gpt-drew-emoji.webp",
-  "thumb": "thumbs/05-gpt-drew-emoji.webp",
-  "before": 125390,
-  "after": 97610,
-  "orig": "1254x1254"
- },
- {
-  "src": "moegirl/06-ds-and-claude.webp",
-  "thumb": "thumbs/06-ds-and-claude.webp",
-  "before": 217610,
-  "after": 180792,
-  "orig": "900x1200"
- },
- {
-  "src": "refs/01-black-gown.webp",
-  "thumb": "thumbs/01-black-gown.webp",
-  "before": 85544,
-  "after": 78804,
-  "orig": "1024x683"
- },
- {
-  "src": "refs/02-simple-short-maid.webp",
-  "thumb": "thumbs/02-simple-short-maid.webp",
-  "before": 68620,
-  "after": 64292,
-  "orig": "1024x683"
- },
- {
-  "src": "refs/03-long-skirt-maid.webp",
-  "thumb": "thumbs/03-long-skirt-maid.webp",
-  "before": 85600,
-  "after": 79880,
-  "orig": "1024x683"
- },
- {
-  "src": "refs/04-detailed-short-maid.webp",
-  "thumb": "thumbs/04-detailed-short-maid.webp",
-  "before": 80108,
-  "after": 73738,
-  "orig": "1024x683"
- },
- {
-  "src": "refs/05-chibi-blue-maid.webp",
-  "thumb": "thumbs/05-chibi-blue-maid.webp",
-  "before": 67364,
-  "after": 62598,
-  "orig": "1024x512"
- },
- {
-  "src": "refs/06-black-green-maid.webp",
-  "thumb": "thumbs/06-black-green-maid.webp",
-  "before": 74100,
-  "after": 68976,
-  "orig": "1024x683"
- },
- {
-  "src": "refs/07-black-red-maid.webp",
-  "thumb": "thumbs/07-black-red-maid.webp",
-  "before": 77250,
-  "after": 72244,
-  "orig": "1024x683"
- },
- {
-  "src": "gallery/asset-c01.webp",
-  "thumb": "thumbs/asset-c01.webp",
-  "before": 196714,
-  "after": 77742,
-  "orig": "1024x1536"
- },
- {
-  "src": "gallery/asset-c29.webp",
-  "thumb": "thumbs/asset-c29.webp",
-  "before": 237796,
-  "after": 90900,
-  "orig": "1536x1536"
- },
- {
-  "src": "gallery/asset-c77.webp",
-  "thumb": "thumbs/asset-c77.webp",
-  "before": 324054,
-  "after": 79154,
-  "orig": "2048x1152"
- },
- {
-  "src": "gallery/avatar-01.webp",
-  "thumb": "thumbs/avatar-01.webp",
-  "before": 191290,
-  "after": 87750,
-  "orig": "1024x1024"
- },
- {
-  "src": "gallery/avatar-05.webp",
-  "thumb": "thumbs/avatar-05.webp",
-  "before": 167166,
-  "after": 71900,
-  "orig": "1024x1024"
- },
- {
-  "src": "gallery/fat-fish-fight.webp",
-  "thumb": "thumbs/fat-fish-fight.webp",
-  "before": 809338,
-  "after": 208008,
-  "orig": "1536x2048"
- },
- {
-  "src": "gallery/five-whales.webp",
-  "thumb": "thumbs/five-whales.webp",
-  "before": 382316,
-  "after": 163664,
-  "orig": "1299x1211"
- },
- {
-  "src": "gallery/grokbot-avatar.webp",
-  "thumb": "thumbs/grokbot-avatar.webp",
-  "before": 96512,
-  "after": 37886,
-  "orig": "1254x1254"
- },
- {
-  "src": "gallery/jealous.webp",
-  "thumb": "thumbs/jealous.webp",
-  "before": 327264,
-  "after": 150960,
-  "orig": "1254x1254"
- },
- {
-  "src": "gallery/qban-set-01.webp",
-  "thumb": "thumbs/qban-set-01.webp",
-  "before": 382744,
-  "after": 179000,
-  "orig": "1448x1086"
- },
- {
-  "src": "gallery/qban-set-03.webp",
-  "thumb": "thumbs/qban-set-03.webp",
-  "before": 515626,
-  "after": 251820,
-  "orig": "1448x1086"
- },
- {
-  "src": "gallery/qban-set-05.webp",
-  "thumb": "thumbs/qban-set-05.webp",
-  "before": 448812,
-  "after": 214188,
-  "orig": "1448x1086"
- },
- {
-  "src": "gallery/shenshen-variant.webp",
-  "thumb": "thumbs/shenshen-variant.webp",
-  "before": 742420,
-  "after": 159674,
-  "orig": "1760x2400"
- },
- {
-  "src": "wallpaper/preview-1.png",
-  "thumb": "thumbs/preview-1.webp",
-  "before": 754335,
-  "after": 39758,
-  "orig": "1008x576"
- },
- {
-  "src": "wallpaper/preview-2.png",
-  "thumb": "thumbs/preview-2.webp",
-  "before": 949625,
-  "after": 52534,
-  "orig": "1008x576"
- },
- {
-  "src": "wallpaper/preview-3.png",
-  "thumb": "thumbs/preview-3.webp",
-  "before": 972884,
-  "after": 50978,
-  "orig": "1008x576"
- }
-]
+{
+ "sizes": [
+  480,
+  960,
+  1440,
+  1920
+ ],
+ "quality": 80,
+ "method": 6,
+ "count": 31,
+ "origBytes": 21590751,
+ "thumbBytes": 3890010,
+ "items": [
+  {
+   "group": "sheets",
+   "src": "sheets/01-chibi-character-sheet.png",
+   "origBytes": 2123873,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/01-chibi-character-sheet-480w.webp",
+     "w": 480,
+     "bytes": 40560
+    },
+    {
+     "path": "thumbs/01-chibi-character-sheet-960w.webp",
+     "w": 960,
+     "bytes": 109106
+    },
+    {
+     "path": "thumbs/01-chibi-character-sheet-1440w.webp",
+     "w": 1440,
+     "bytes": 173428
+    }
+   ],
+   "srcset": "thumbs/01-chibi-character-sheet-480w.webp 480w, thumbs/01-chibi-character-sheet-960w.webp 960w, thumbs/01-chibi-character-sheet-1440w.webp 1440w",
+   "thumb": "thumbs/01-chibi-character-sheet-1440w.webp",
+   "thumbSmall": "thumbs/01-chibi-character-sheet-480w.webp",
+   "thumbBytes": 173428
+  },
+  {
+   "group": "sheets",
+   "src": "sheets/02-mature-character-sheet.png",
+   "origBytes": 2256676,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/02-mature-character-sheet-480w.webp",
+     "w": 480,
+     "bytes": 36704
+    },
+    {
+     "path": "thumbs/02-mature-character-sheet-960w.webp",
+     "w": 960,
+     "bytes": 109474
+    },
+    {
+     "path": "thumbs/02-mature-character-sheet-1440w.webp",
+     "w": 1440,
+     "bytes": 191194
+    }
+   ],
+   "srcset": "thumbs/02-mature-character-sheet-480w.webp 480w, thumbs/02-mature-character-sheet-960w.webp 960w, thumbs/02-mature-character-sheet-1440w.webp 1440w",
+   "thumb": "thumbs/02-mature-character-sheet-1440w.webp",
+   "thumbSmall": "thumbs/02-mature-character-sheet-480w.webp",
+   "thumbBytes": 191194
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/01-16yeluomao-ds.jpg",
+   "origBytes": 4818445,
+   "origW": 2732,
+   "origH": 4096,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/01-16yeluomao-ds-480w.webp",
+     "w": 480,
+     "bytes": 35126
+    },
+    {
+     "path": "thumbs/01-16yeluomao-ds-960w.webp",
+     "w": 960,
+     "bytes": 95616
+    },
+    {
+     "path": "thumbs/01-16yeluomao-ds-1440w.webp",
+     "w": 1440,
+     "bytes": 190750
+    },
+    {
+     "path": "thumbs/01-16yeluomao-ds-1920w.webp",
+     "w": 1920,
+     "bytes": 303590
+    }
+   ],
+   "srcset": "thumbs/01-16yeluomao-ds-480w.webp 480w, thumbs/01-16yeluomao-ds-960w.webp 960w, thumbs/01-16yeluomao-ds-1440w.webp 1440w, thumbs/01-16yeluomao-ds-1920w.webp 1920w",
+   "thumb": "thumbs/01-16yeluomao-ds-1920w.webp",
+   "thumbSmall": "thumbs/01-16yeluomao-ds-480w.webp",
+   "thumbBytes": 303590
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/02-nvpu-whale-girl.png",
+   "origBytes": 3027959,
+   "origW": 1152,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1152
+   ],
+   "files": [
+    {
+     "path": "thumbs/02-nvpu-whale-girl-480w.webp",
+     "w": 480,
+     "bytes": 47792
+    },
+    {
+     "path": "thumbs/02-nvpu-whale-girl-960w.webp",
+     "w": 960,
+     "bytes": 124386
+    },
+    {
+     "path": "thumbs/02-nvpu-whale-girl-1152w.webp",
+     "w": 1152,
+     "bytes": 157648
+    }
+   ],
+   "srcset": "thumbs/02-nvpu-whale-girl-480w.webp 480w, thumbs/02-nvpu-whale-girl-960w.webp 960w, thumbs/02-nvpu-whale-girl-1152w.webp 1152w",
+   "thumb": "thumbs/02-nvpu-whale-girl-1152w.webp",
+   "thumbSmall": "thumbs/02-nvpu-whale-girl-480w.webp",
+   "thumbBytes": 157648
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/03-harness-girl.jpg",
+   "origBytes": 98442,
+   "origW": 1200,
+   "origH": 900,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1200
+   ],
+   "files": [
+    {
+     "path": "thumbs/03-harness-girl-480w.webp",
+     "w": 480,
+     "bytes": 18584
+    },
+    {
+     "path": "thumbs/03-harness-girl-960w.webp",
+     "w": 960,
+     "bytes": 42844
+    },
+    {
+     "path": "thumbs/03-harness-girl-1200w.webp",
+     "w": 1200,
+     "bytes": 59604
+    }
+   ],
+   "srcset": "thumbs/03-harness-girl-480w.webp 480w, thumbs/03-harness-girl-960w.webp 960w, thumbs/03-harness-girl-1200w.webp 1200w",
+   "thumb": "thumbs/03-harness-girl-1200w.webp",
+   "thumbSmall": "thumbs/03-harness-girl-480w.webp",
+   "thumbBytes": 59604
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/04-deepseek4f.jpg",
+   "origBytes": 884874,
+   "origW": 1488,
+   "origH": 2000,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/04-deepseek4f-480w.webp",
+     "w": 480,
+     "bytes": 56940
+    },
+    {
+     "path": "thumbs/04-deepseek4f-960w.webp",
+     "w": 960,
+     "bytes": 152378
+    },
+    {
+     "path": "thumbs/04-deepseek4f-1440w.webp",
+     "w": 1440,
+     "bytes": 258162
+    }
+   ],
+   "srcset": "thumbs/04-deepseek4f-480w.webp 480w, thumbs/04-deepseek4f-960w.webp 960w, thumbs/04-deepseek4f-1440w.webp 1440w",
+   "thumb": "thumbs/04-deepseek4f-1440w.webp",
+   "thumbSmall": "thumbs/04-deepseek4f-480w.webp",
+   "thumbBytes": 258162
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/05-gpt-drew-emoji.webp",
+   "origBytes": 125390,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/05-gpt-drew-emoji-480w.webp",
+     "w": 480,
+     "bytes": 27722
+    },
+    {
+     "path": "thumbs/05-gpt-drew-emoji-960w.webp",
+     "w": 960,
+     "bytes": 68948
+    },
+    {
+     "path": "thumbs/05-gpt-drew-emoji-1254w.webp",
+     "w": 1254,
+     "bytes": 97610
+    }
+   ],
+   "srcset": "thumbs/05-gpt-drew-emoji-480w.webp 480w, thumbs/05-gpt-drew-emoji-960w.webp 960w, thumbs/05-gpt-drew-emoji-1254w.webp 1254w",
+   "thumb": "thumbs/05-gpt-drew-emoji-1254w.webp",
+   "thumbSmall": "thumbs/05-gpt-drew-emoji-480w.webp",
+   "thumbBytes": 97610
+  },
+  {
+   "group": "moegirl",
+   "src": "moegirl/06-ds-and-claude.webp",
+   "origBytes": 217610,
+   "origW": 900,
+   "origH": 1200,
+   "alpha": false,
+   "sizes": [
+    480,
+    900
+   ],
+   "files": [
+    {
+     "path": "thumbs/06-ds-and-claude-480w.webp",
+     "w": 480,
+     "bytes": 67652
+    },
+    {
+     "path": "thumbs/06-ds-and-claude-900w.webp",
+     "w": 900,
+     "bytes": 180792
+    }
+   ],
+   "srcset": "thumbs/06-ds-and-claude-480w.webp 480w, thumbs/06-ds-and-claude-900w.webp 900w",
+   "thumb": "thumbs/06-ds-and-claude-900w.webp",
+   "thumbSmall": "thumbs/06-ds-and-claude-480w.webp",
+   "thumbBytes": 180792
+  },
+  {
+   "group": "refs",
+   "src": "refs/01-black-gown.webp",
+   "origBytes": 85544,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/01-black-gown-480w.webp",
+     "w": 480,
+     "bytes": 22430
+    },
+    {
+     "path": "thumbs/01-black-gown-960w.webp",
+     "w": 960,
+     "bytes": 65112
+    }
+   ],
+   "srcset": "thumbs/01-black-gown-480w.webp 480w, thumbs/01-black-gown-960w.webp 960w",
+   "thumb": "thumbs/01-black-gown-960w.webp",
+   "thumbSmall": "thumbs/01-black-gown-480w.webp",
+   "thumbBytes": 65112
+  },
+  {
+   "group": "refs",
+   "src": "refs/02-simple-short-maid.webp",
+   "origBytes": 68620,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/02-simple-short-maid-480w.webp",
+     "w": 480,
+     "bytes": 20076
+    },
+    {
+     "path": "thumbs/02-simple-short-maid-960w.webp",
+     "w": 960,
+     "bytes": 54494
+    }
+   ],
+   "srcset": "thumbs/02-simple-short-maid-480w.webp 480w, thumbs/02-simple-short-maid-960w.webp 960w",
+   "thumb": "thumbs/02-simple-short-maid-960w.webp",
+   "thumbSmall": "thumbs/02-simple-short-maid-480w.webp",
+   "thumbBytes": 54494
+  },
+  {
+   "group": "refs",
+   "src": "refs/03-long-skirt-maid.webp",
+   "origBytes": 85600,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/03-long-skirt-maid-480w.webp",
+     "w": 480,
+     "bytes": 23248
+    },
+    {
+     "path": "thumbs/03-long-skirt-maid-960w.webp",
+     "w": 960,
+     "bytes": 65778
+    }
+   ],
+   "srcset": "thumbs/03-long-skirt-maid-480w.webp 480w, thumbs/03-long-skirt-maid-960w.webp 960w",
+   "thumb": "thumbs/03-long-skirt-maid-960w.webp",
+   "thumbSmall": "thumbs/03-long-skirt-maid-480w.webp",
+   "thumbBytes": 65778
+  },
+  {
+   "group": "refs",
+   "src": "refs/04-detailed-short-maid.webp",
+   "origBytes": 80108,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/04-detailed-short-maid-480w.webp",
+     "w": 480,
+     "bytes": 22536
+    },
+    {
+     "path": "thumbs/04-detailed-short-maid-960w.webp",
+     "w": 960,
+     "bytes": 63140
+    }
+   ],
+   "srcset": "thumbs/04-detailed-short-maid-480w.webp 480w, thumbs/04-detailed-short-maid-960w.webp 960w",
+   "thumb": "thumbs/04-detailed-short-maid-960w.webp",
+   "thumbSmall": "thumbs/04-detailed-short-maid-480w.webp",
+   "thumbBytes": 63140
+  },
+  {
+   "group": "refs",
+   "src": "refs/05-chibi-blue-maid.webp",
+   "origBytes": 67364,
+   "origW": 1024,
+   "origH": 512,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/05-chibi-blue-maid-480w.webp",
+     "w": 480,
+     "bytes": 19542
+    },
+    {
+     "path": "thumbs/05-chibi-blue-maid-960w.webp",
+     "w": 960,
+     "bytes": 53126
+    }
+   ],
+   "srcset": "thumbs/05-chibi-blue-maid-480w.webp 480w, thumbs/05-chibi-blue-maid-960w.webp 960w",
+   "thumb": "thumbs/05-chibi-blue-maid-960w.webp",
+   "thumbSmall": "thumbs/05-chibi-blue-maid-480w.webp",
+   "thumbBytes": 53126
+  },
+  {
+   "group": "refs",
+   "src": "refs/06-black-green-maid.webp",
+   "origBytes": 74100,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/06-black-green-maid-480w.webp",
+     "w": 480,
+     "bytes": 21010
+    },
+    {
+     "path": "thumbs/06-black-green-maid-960w.webp",
+     "w": 960,
+     "bytes": 58962
+    }
+   ],
+   "srcset": "thumbs/06-black-green-maid-480w.webp 480w, thumbs/06-black-green-maid-960w.webp 960w",
+   "thumb": "thumbs/06-black-green-maid-960w.webp",
+   "thumbSmall": "thumbs/06-black-green-maid-480w.webp",
+   "thumbBytes": 58962
+  },
+  {
+   "group": "refs",
+   "src": "refs/07-black-red-maid.webp",
+   "origBytes": 77250,
+   "origW": 1024,
+   "origH": 683,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/07-black-red-maid-480w.webp",
+     "w": 480,
+     "bytes": 21884
+    },
+    {
+     "path": "thumbs/07-black-red-maid-960w.webp",
+     "w": 960,
+     "bytes": 60858
+    }
+   ],
+   "srcset": "thumbs/07-black-red-maid-480w.webp 480w, thumbs/07-black-red-maid-960w.webp 960w",
+   "thumb": "thumbs/07-black-red-maid-960w.webp",
+   "thumbSmall": "thumbs/07-black-red-maid-480w.webp",
+   "thumbBytes": 60858
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/asset-c01.webp",
+   "origBytes": 196714,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/asset-c01-480w.webp",
+     "w": 480,
+     "bytes": 26118
+    },
+    {
+     "path": "thumbs/asset-c01-960w.webp",
+     "w": 960,
+     "bytes": 70484
+    }
+   ],
+   "srcset": "thumbs/asset-c01-480w.webp 480w, thumbs/asset-c01-960w.webp 960w",
+   "thumb": "thumbs/asset-c01-960w.webp",
+   "thumbSmall": "thumbs/asset-c01-480w.webp",
+   "thumbBytes": 70484
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/asset-c29.webp",
+   "origBytes": 237796,
+   "origW": 1536,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/asset-c29-480w.webp",
+     "w": 480,
+     "bytes": 18196
+    },
+    {
+     "path": "thumbs/asset-c29-960w.webp",
+     "w": 960,
+     "bytes": 50464
+    },
+    {
+     "path": "thumbs/asset-c29-1440w.webp",
+     "w": 1440,
+     "bytes": 83182
+    }
+   ],
+   "srcset": "thumbs/asset-c29-480w.webp 480w, thumbs/asset-c29-960w.webp 960w, thumbs/asset-c29-1440w.webp 1440w",
+   "thumb": "thumbs/asset-c29-1440w.webp",
+   "thumbSmall": "thumbs/asset-c29-480w.webp",
+   "thumbBytes": 83182
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/asset-c77.webp",
+   "origBytes": 324054,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/asset-c77-480w.webp",
+     "w": 480,
+     "bytes": 11396
+    },
+    {
+     "path": "thumbs/asset-c77-960w.webp",
+     "w": 960,
+     "bytes": 36102
+    },
+    {
+     "path": "thumbs/asset-c77-1440w.webp",
+     "w": 1440,
+     "bytes": 68354
+    },
+    {
+     "path": "thumbs/asset-c77-1920w.webp",
+     "w": 1920,
+     "bytes": 100412
+    }
+   ],
+   "srcset": "thumbs/asset-c77-480w.webp 480w, thumbs/asset-c77-960w.webp 960w, thumbs/asset-c77-1440w.webp 1440w, thumbs/asset-c77-1920w.webp 1920w",
+   "thumb": "thumbs/asset-c77-1920w.webp",
+   "thumbSmall": "thumbs/asset-c77-480w.webp",
+   "thumbBytes": 100412
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/avatar-01.webp",
+   "origBytes": 191290,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/avatar-01-480w.webp",
+     "w": 480,
+     "bytes": 33796
+    },
+    {
+     "path": "thumbs/avatar-01-960w.webp",
+     "w": 960,
+     "bytes": 80856
+    }
+   ],
+   "srcset": "thumbs/avatar-01-480w.webp 480w, thumbs/avatar-01-960w.webp 960w",
+   "thumb": "thumbs/avatar-01-960w.webp",
+   "thumbSmall": "thumbs/avatar-01-480w.webp",
+   "thumbBytes": 80856
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/avatar-05.webp",
+   "origBytes": 167166,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/avatar-05-480w.webp",
+     "w": 480,
+     "bytes": 29826
+    },
+    {
+     "path": "thumbs/avatar-05-960w.webp",
+     "w": 960,
+     "bytes": 66816
+    }
+   ],
+   "srcset": "thumbs/avatar-05-480w.webp 480w, thumbs/avatar-05-960w.webp 960w",
+   "thumb": "thumbs/avatar-05-960w.webp",
+   "thumbSmall": "thumbs/avatar-05-480w.webp",
+   "thumbBytes": 66816
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/fat-fish-fight.webp",
+   "origBytes": 809338,
+   "origW": 1536,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/fat-fish-fight-480w.webp",
+     "w": 480,
+     "bytes": 49566
+    },
+    {
+     "path": "thumbs/fat-fish-fight-960w.webp",
+     "w": 960,
+     "bytes": 154984
+    },
+    {
+     "path": "thumbs/fat-fish-fight-1440w.webp",
+     "w": 1440,
+     "bytes": 258574
+    }
+   ],
+   "srcset": "thumbs/fat-fish-fight-480w.webp 480w, thumbs/fat-fish-fight-960w.webp 960w, thumbs/fat-fish-fight-1440w.webp 1440w",
+   "thumb": "thumbs/fat-fish-fight-1440w.webp",
+   "thumbSmall": "thumbs/fat-fish-fight-480w.webp",
+   "thumbBytes": 258574
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/five-whales.webp",
+   "origBytes": 382316,
+   "origW": 1299,
+   "origH": 1211,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1299
+   ],
+   "files": [
+    {
+     "path": "thumbs/five-whales-480w.webp",
+     "w": 480,
+     "bytes": 38874
+    },
+    {
+     "path": "thumbs/five-whales-960w.webp",
+     "w": 960,
+     "bytes": 109440
+    },
+    {
+     "path": "thumbs/five-whales-1299w.webp",
+     "w": 1299,
+     "bytes": 163664
+    }
+   ],
+   "srcset": "thumbs/five-whales-480w.webp 480w, thumbs/five-whales-960w.webp 960w, thumbs/five-whales-1299w.webp 1299w",
+   "thumb": "thumbs/five-whales-1299w.webp",
+   "thumbSmall": "thumbs/five-whales-480w.webp",
+   "thumbBytes": 163664
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/grokbot-avatar.webp",
+   "origBytes": 96512,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/grokbot-avatar-480w.webp",
+     "w": 480,
+     "bytes": 12666
+    },
+    {
+     "path": "thumbs/grokbot-avatar-960w.webp",
+     "w": 960,
+     "bytes": 26734
+    },
+    {
+     "path": "thumbs/grokbot-avatar-1254w.webp",
+     "w": 1254,
+     "bytes": 37886
+    }
+   ],
+   "srcset": "thumbs/grokbot-avatar-480w.webp 480w, thumbs/grokbot-avatar-960w.webp 960w, thumbs/grokbot-avatar-1254w.webp 1254w",
+   "thumb": "thumbs/grokbot-avatar-1254w.webp",
+   "thumbSmall": "thumbs/grokbot-avatar-480w.webp",
+   "thumbBytes": 37886
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/jealous.webp",
+   "origBytes": 327264,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/jealous-480w.webp",
+     "w": 480,
+     "bytes": 46542
+    },
+    {
+     "path": "thumbs/jealous-960w.webp",
+     "w": 960,
+     "bytes": 111066
+    },
+    {
+     "path": "thumbs/jealous-1254w.webp",
+     "w": 1254,
+     "bytes": 150960
+    }
+   ],
+   "srcset": "thumbs/jealous-480w.webp 480w, thumbs/jealous-960w.webp 960w, thumbs/jealous-1254w.webp 1254w",
+   "thumb": "thumbs/jealous-1254w.webp",
+   "thumbSmall": "thumbs/jealous-480w.webp",
+   "thumbBytes": 150960
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/qban-set-01.webp",
+   "origBytes": 382744,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/qban-set-01-480w.webp",
+     "w": 480,
+     "bytes": 42078
+    },
+    {
+     "path": "thumbs/qban-set-01-960w.webp",
+     "w": 960,
+     "bytes": 111262
+    },
+    {
+     "path": "thumbs/qban-set-01-1440w.webp",
+     "w": 1440,
+     "bytes": 175078
+    }
+   ],
+   "srcset": "thumbs/qban-set-01-480w.webp 480w, thumbs/qban-set-01-960w.webp 960w, thumbs/qban-set-01-1440w.webp 1440w",
+   "thumb": "thumbs/qban-set-01-1440w.webp",
+   "thumbSmall": "thumbs/qban-set-01-480w.webp",
+   "thumbBytes": 175078
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/qban-set-03.webp",
+   "origBytes": 515626,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/qban-set-03-480w.webp",
+     "w": 480,
+     "bytes": 48194
+    },
+    {
+     "path": "thumbs/qban-set-03-960w.webp",
+     "w": 960,
+     "bytes": 147296
+    },
+    {
+     "path": "thumbs/qban-set-03-1440w.webp",
+     "w": 1440,
+     "bytes": 247864
+    }
+   ],
+   "srcset": "thumbs/qban-set-03-480w.webp 480w, thumbs/qban-set-03-960w.webp 960w, thumbs/qban-set-03-1440w.webp 1440w",
+   "thumb": "thumbs/qban-set-03-1440w.webp",
+   "thumbSmall": "thumbs/qban-set-03-480w.webp",
+   "thumbBytes": 247864
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/qban-set-05.webp",
+   "origBytes": 448812,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/qban-set-05-480w.webp",
+     "w": 480,
+     "bytes": 45206
+    },
+    {
+     "path": "thumbs/qban-set-05-960w.webp",
+     "w": 960,
+     "bytes": 127922
+    },
+    {
+     "path": "thumbs/qban-set-05-1440w.webp",
+     "w": 1440,
+     "bytes": 207900
+    }
+   ],
+   "srcset": "thumbs/qban-set-05-480w.webp 480w, thumbs/qban-set-05-960w.webp 960w, thumbs/qban-set-05-1440w.webp 1440w",
+   "thumb": "thumbs/qban-set-05-1440w.webp",
+   "thumbSmall": "thumbs/qban-set-05-480w.webp",
+   "thumbBytes": 207900
+  },
+  {
+   "group": "gallery",
+   "src": "gallery/shenshen-variant.webp",
+   "origBytes": 742420,
+   "origW": 1760,
+   "origH": 2400,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1760
+   ],
+   "files": [
+    {
+     "path": "thumbs/shenshen-variant-480w.webp",
+     "w": 480,
+     "bytes": 44756
+    },
+    {
+     "path": "thumbs/shenshen-variant-960w.webp",
+     "w": 960,
+     "bytes": 122934
+    },
+    {
+     "path": "thumbs/shenshen-variant-1440w.webp",
+     "w": 1440,
+     "bytes": 207456
+    },
+    {
+     "path": "thumbs/shenshen-variant-1760w.webp",
+     "w": 1760,
+     "bytes": 270878
+    }
+   ],
+   "srcset": "thumbs/shenshen-variant-480w.webp 480w, thumbs/shenshen-variant-960w.webp 960w, thumbs/shenshen-variant-1440w.webp 1440w, thumbs/shenshen-variant-1760w.webp 1760w",
+   "thumb": "thumbs/shenshen-variant-1760w.webp",
+   "thumbSmall": "thumbs/shenshen-variant-480w.webp",
+   "thumbBytes": 270878
+  },
+  {
+   "group": "wallpaper",
+   "src": "wallpaper/preview-1.png",
+   "origBytes": 754335,
+   "origW": 1008,
+   "origH": 576,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/preview-1-480w.webp",
+     "w": 480,
+     "bytes": 13722
+    },
+    {
+     "path": "thumbs/preview-1-960w.webp",
+     "w": 960,
+     "bytes": 37396
+    }
+   ],
+   "srcset": "thumbs/preview-1-480w.webp 480w, thumbs/preview-1-960w.webp 960w",
+   "thumb": "thumbs/preview-1-960w.webp",
+   "thumbSmall": "thumbs/preview-1-480w.webp",
+   "thumbBytes": 37396
+  },
+  {
+   "group": "wallpaper",
+   "src": "wallpaper/preview-2.png",
+   "origBytes": 949625,
+   "origW": 1008,
+   "origH": 576,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/preview-2-480w.webp",
+     "w": 480,
+     "bytes": 17086
+    },
+    {
+     "path": "thumbs/preview-2-960w.webp",
+     "w": 960,
+     "bytes": 47748
+    }
+   ],
+   "srcset": "thumbs/preview-2-480w.webp 480w, thumbs/preview-2-960w.webp 960w",
+   "thumb": "thumbs/preview-2-960w.webp",
+   "thumbSmall": "thumbs/preview-2-480w.webp",
+   "thumbBytes": 47748
+  },
+  {
+   "group": "wallpaper",
+   "src": "wallpaper/preview-3.png",
+   "origBytes": 972884,
+   "origW": 1008,
+   "origH": 576,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/preview-3-480w.webp",
+     "w": 480,
+     "bytes": 17250
+    },
+    {
+     "path": "thumbs/preview-3-960w.webp",
+     "w": 960,
+     "bytes": 46814
+    }
+   ],
+   "srcset": "thumbs/preview-3-480w.webp 480w, thumbs/preview-3-960w.webp 960w",
+   "thumb": "thumbs/preview-3-960w.webp",
+   "thumbSmall": "thumbs/preview-3-480w.webp",
+   "thumbBytes": 46814
+  }
+ ]
+}

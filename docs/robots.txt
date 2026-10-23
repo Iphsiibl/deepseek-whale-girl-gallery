@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iphsiibl.github.io/deepseek-whale-girl-gallery/sitemap.xml

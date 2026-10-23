@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+"""生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""
+
+Pillow>=10.0

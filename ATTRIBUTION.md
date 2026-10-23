@@ -34,15 +34,18 @@
 
 来源：[AI 萌图 · 大肥鱼娘三视图设定集](https://aigengtu.com/refs?lang=zh-Hant)（整理自鲸鱼娘开源资产库）
 
-| 文件 | 设定 |
-| --- | --- |
-| `01-black-gown.webp` | 黑礼服人鱼 — 黑哥特蕾丝 + 黑花头纱，人鱼尾出镜 |
-| `02-simple-short-maid.webp` | 简约短裙女仆 — 蓝白基础款，双排扣 + 白褶围裙 |
-| `03-long-skirt-maid.webp` | 长裙女仆 — 泡泡袖 + 白褶围裙，裙襬金色星象刺繡 |
-| `04-detailed-short-maid.webp` | 细节短裙女仆 — 深藏青洛丽塔风，圆点围裙繡小鯨魚 |
-| `05-chibi-blue-maid.webp` | Q版蓝女仆 — 二头身，表情包首选 |
-| `06-black-green-maid.webp` | 黑绿女仆 — 黑髮灰尾綠瞳變體 |
-| `07-black-red-maid.webp` | 黑红女仆 — 黑髮紅瞳，配色最豔 |
+| 文件 | 设定 | 作者 / 集合来源 |
+| --- | --- | --- |
+| `01-black-gown.webp` | 黑礼服人鱼 — 黑哥特蕾丝 + 黑花头纱，人鱼尾出镜 | AI 萌图 · 大肥鱼娘三视图设定集 |
+| `02-simple-short-maid.webp` | 简约短裙女仆 — 蓝白基础款，双排扣 + 白褶围裙 | 同上 |
+| `03-long-skirt-maid.webp` | 长裙女仆 — 泡泡袖 + 白褶围裙，裙襬金色星象刺繡 | 同上 |
+| `04-detailed-short-maid.webp` | 细节短裙女仆 — 深藏青洛丽塔风，圆点围裙繡小鯨魚 | 同上 |
+| `05-chibi-blue-maid.webp` | Q版蓝女仆 — 二头身，表情包首选 | 同上 |
+| `06-black-green-maid.webp` | 黑绿女仆 — 黑髮灰尾綠瞳變體 | 同上 |
+| `07-black-red-maid.webp` | 黑红女仆 — 黑髮紅瞳，配色最豔 | 同上 |
+
+> 这 7 套换装图以**集合**形式发布，来源已列在上一行；如能定位到具体作者，
+> 请补到「作者 / 集合来源」列。
 
 ## 4. 社区二创 `docs/gallery/`
 

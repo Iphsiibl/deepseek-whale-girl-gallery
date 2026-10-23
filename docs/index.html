@@ -5,12 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>DeepSeek 鲸鱼娘 · 角色图集</title>
 <meta name="description" content="DeepSeek 鲸鱼娘（吃白饭的蓝色大肥鱼）角色图集：31 张设定图、立绘、二创与壁纸，CC BY-NC-SA 4.0。" />
+<meta name="author" content="Iphsiibl" />
+<meta name="theme-color" content="#0a1428" />
+<link rel="canonical" href="https://iphsiibl.github.io/deepseek-whale-girl-gallery/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DeepSeek 鲸鱼娘 · 角色图集" />
+<meta property="og:title" content="DeepSeek 鲸鱼娘 · 角色图集" />
+<meta property="og:description" content="「吃白饭的蓝色大肥鱼」——社区共同养出来的 AI 拟人形象。设定图、立绘、二创与壁纸的完整整理。" />
+<meta property="og:url" content="https://iphsiibl.github.io/deepseek-whale-girl-gallery/" />
+<meta property="og:image" content="https://iphsiibl.github.io/deepseek-whale-girl-gallery/thumbs/01-16yeluomao-ds-1440w.webp" />
+<meta property="og:image:width" content="1440" />
+<meta property="og:image:height" content="2159" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="DeepSeek 鲸鱼娘 · 角色图集" />
+<meta name="twitter:description" content="31 张设定图 / 立绘 / 二创 / 壁纸，CC BY-NC-SA 4.0。" />
+<meta name="twitter:image" content="https://iphsiibl.github.io/deepseek-whale-girl-gallery/thumbs/01-16yeluomao-ds-1440w.webp" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E%F0%9F%90%B3%3C/text%3E%3C/svg%3E" />
 <style>
   :root{
-    --deep:#0b1730; --deep2:#122a4f; --ink:#e8f1ff; --muted:#9fb4d4;
+    --deep:#0a1428; --deep2:#122a4f; --ink:#e8f1ff; --muted:#9fb4d4;
     --line:rgba(150,200,255,.16); --accent:#5fc8ff; --gold:#f0c987;
+    --card:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));
+    --ease:cubic-bezier(.2,.7,.3,1);
   }
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
   body{
     margin:0; background:
       radial-gradient(1200px 700px at 80% -10%, #17406f 0%, transparent 60%),
@@ -18,48 +37,146 @@
       var(--deep);
     color:var(--ink);
     font-family:"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
-    line-height:1.7;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
   }
+  img{max-width:100%}
+  a{color:var(--accent)}
   .wrap{max-width:1320px;margin:0 auto;padding:40px 24px 80px}
-  header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px}
-  h1{margin:0 0 6px;font-size:34px;letter-spacing:.5px}
-  .sub{color:var(--muted);font-size:15px;margin:0}
-  .stats{color:var(--muted);font-size:13px;margin:10px 0 0}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#04121f;
+    padding:10px 16px;border-radius:0 0 8px 0;z-index:99;font-size:14px}
+  .skip:focus{left:0}
+
+  /* ---------- 顶部 ---------- */
+  header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:22px}
+  h1{margin:0 0 6px;font-size:clamp(26px,4.4vw,36px);letter-spacing:.5px;line-height:1.25}
+  .sub{color:var(--muted);font-size:15px;margin:0;max-width:70ch}
+  .stats{color:var(--muted);font-size:13.5px;margin:12px 0 0}
   .stats b{color:var(--accent);font-weight:600}
+  .stats .live{color:var(--gold)}
   .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
   .tag{font-size:12.5px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);
        background:rgba(95,200,255,.08);color:#bfe4ff}
-  h2{font-size:20px;margin:44px 0 6px;padding-left:12px;border-left:4px solid var(--accent)}
-  .note{color:var(--muted);font-size:13.5px;margin:0 0 20px;padding-left:16px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
-  .card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
-        border:1px solid var(--line);border-radius:14px;overflow:hidden;
-        display:flex;flex-direction:column;transition:.18s}
-  .card:hover{transform:translateY(-3px);border-color:rgba(95,200,255,.45);
-             box-shadow:0 14px 34px rgba(0,0,0,.4)}
-  .shot{display:block;background:#0a1224;border-bottom:1px solid var(--line)}
-  .shot img{width:100%;display:block;aspect-ratio:1/1;object-fit:contain}
-  .shot:hover img{opacity:.86}
-  .cap{padding:10px 13px 13px;font-size:13px;flex:1}
-  .cap b{display:block;color:#eaf4ff;font-weight:600;margin-bottom:3px}
-  .cap span{color:var(--muted);font-size:12px;display:block}
-  .cap .links{margin-top:7px;display:flex;gap:12px;flex-wrap:wrap}
-  a.il{color:var(--accent);text-decoration:none;font-size:12px}
-  a.il:hover{text-decoration:underline}
-  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
-         color:var(--muted);font-size:13px}
-  footer a{color:var(--accent);text-decoration:none}
+
+  /* ---------- 许可 ---------- */
   .lic{background:rgba(240,201,135,.07);border:1px solid rgba(240,201,135,.28);
        border-radius:12px;padding:16px 18px;margin:26px 0 0;font-size:13.5px;color:#f2e2c3}
+  .lic b{color:var(--gold)}
+
+  /* ---------- 分区导航 ---------- */
+  .jump{position:sticky;top:0;z-index:20;margin:22px 0 8px;padding:10px 0;
+    background:linear-gradient(180deg,rgba(10,20,40,.96) 70%,rgba(10,20,40,0));
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    display:flex;gap:8px;flex-wrap:wrap}
+  .jump a{font-size:12.5px;text-decoration:none;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:5px 12px;
+    background:rgba(255,255,255,.03);transition:.18s var(--ease)}
+  .jump a:hover,.jump a:focus-visible{color:var(--ink);border-color:rgba(95,200,255,.5);
+    background:rgba(95,200,255,.12)}
+
+  /* ---------- 分区 ---------- */
+  section.part{margin-top:40px}
+  h2{font-size:20px;margin:0 0 6px;padding-left:12px;border-left:4px solid var(--accent)}
+  .note{color:var(--muted);font-size:13.5px;margin:0 0 20px;padding-left:16px}
+  .count{color:var(--muted);font-size:12px;font-weight:400;margin-left:8px}
+
+  /* ---------- 网格 / 卡片 ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+        gap:18px;align-items:start}
+  /* JS 启用后升级为真正的瀑布流 */
+  .grid.masonry{grid-auto-rows:1px;gap:0 18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+        display:flex;flex-direction:column;margin:0;
+        transition:transform .18s var(--ease),border-color .18s var(--ease),box-shadow .18s var(--ease)}
+  .shot{display:block;background:#0a1224;border-bottom:1px solid var(--line);line-height:0}
+  .shot img{width:100%;height:auto;display:block;transition:opacity .2s}
+  .shot:hover img{opacity:.86}
+  .cap{padding:10px 13px 13px;font-size:13px;flex:1;display:flex;flex-direction:column;gap:2px}
+  .cap b{display:block;color:#eaf4ff;font-weight:600;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cap span{color:var(--muted);font-size:12px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cap em{color:#7f9bc4;font-size:11.5px;font-style:normal}
+  .cap .links{margin-top:auto;padding-top:7px;display:flex;gap:12px;flex-wrap:wrap}
+  a.il{color:var(--accent);text-decoration:none;font-size:12px;white-space:nowrap}
+  a.il:hover{text-decoration:underline}
+
+  /* ---------- 灯箱 ---------- */
+  .lightbox{position:fixed;inset:0;z-index:50;display:none;
+    background:rgba(4,9,20,.93);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .lightbox[open],.lightbox.on{display:block}
+  .lb-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    padding:64px 76px 132px;overflow:auto}
+  .lb-img{margin:auto;flex:none;max-width:none;max-height:none;border-radius:8px;
+    box-shadow:0 20px 60px rgba(0,0,0,.6);touch-action:pan-y}
+  .lb-btn{position:absolute;background:rgba(255,255,255,.07);border:1px solid var(--line);
+    color:var(--ink);width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:20px;
+    display:flex;align-items:center;justify-content:center;transition:.18s var(--ease);
+    -webkit-tap-highlight-color:transparent}
+  .lb-btn:hover{background:rgba(95,200,255,.2);border-color:rgba(95,200,255,.5)}
+  .lb-close{top:16px;right:16px;font-size:24px}
+  .lb-prev{left:14px;top:50%;transform:translateY(-50%)}
+  .lb-next{right:14px;top:50%;transform:translateY(-50%)}
+  .lb-info{position:absolute;left:0;right:0;bottom:0;padding:16px 24px 20px;
+    background:linear-gradient(180deg,rgba(4,9,20,0),rgba(4,9,20,.96) 45%);
+    display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap}
+  .lb-text{flex:1;min-width:220px}
+  .lb-title{font-size:15px;font-weight:600;color:#eaf4ff}
+  .lb-desc{font-size:12.5px;color:var(--muted)}
+  .lb-meta{font-size:12px;color:#7f9bc4;margin-top:3px}
+  .lb-count{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .lb-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .lb-actions a{font-size:12.5px;text-decoration:none;color:var(--accent);
+    border:1px solid var(--line);border-radius:8px;padding:6px 12px;background:rgba(255,255,255,.05)}
+  .lb-actions a:hover{background:rgba(95,200,255,.15);border-color:rgba(95,200,255,.45)}
+  .lb-hint{position:absolute;top:18px;left:20px;font-size:12px;color:#7f9bc4}
+
+  /* ---------- 页脚 ---------- */
+  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);
+         color:var(--muted);font-size:13px}
+  footer p{margin:6px 0}
+  footer a{color:var(--accent);text-decoration:none}
+  footer a:hover{text-decoration:underline}
   code{background:rgba(255,255,255,.07);padding:1px 6px;border-radius:5px;font-size:12.5px}
+
+  /* ---------- 焦点样式 ---------- */
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:900px){
+    .wrap{padding:28px 18px 64px}
+    .grid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+    .grid.masonry{gap:0 14px}
+    .lb-stage{padding:56px 20px 150px}
+    .lb-prev{left:6px;width:38px;height:38px}
+    .lb-next{right:6px;width:38px;height:38px}
+    .lb-info{padding:14px 16px 18px}
+  }
+  @media (max-width:560px){
+    .grid{grid-template-columns:1fr}
+    .grid.masonry{gap:0}
+    .jump{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+    .jump::-webkit-scrollbar{display:none}
+  }
+  /* 触摸设备上不要残留 hover 态 */
+  @media (hover:none){
+    .shot:hover img{opacity:1}
+    .card:hover{transform:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition-duration:.01ms !important;animation-duration:.01ms !important}
+  }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">跳到图片内容</a>
 <div class="wrap">
   <header>
     <h1>DeepSeek 鲸鱼娘 · 角色图集</h1>
     <p class="sub">「吃白饭的蓝色大肥鱼」——社区共同养出来的 AI 拟人形象。设定图、立绘、二创与壁纸的完整整理。</p>
-    <p class="stats">共 <b>31</b> 张 · 画廊展示版（WebP）<b>3.4 MB</b> · 原图合集 <b>20.6 MB</b> · 点击任意图片可打开原图 · 许可 <b>CC BY-NC-SA 4.0</b></p>
+    <p class="stats">共 <b id="stat-count">31</b> 张 · <b id="stat-parts">5</b> 个分区 ·
+      展示版按设备像素比选档 · 点击图片可放大浏览（<kbd>←</kbd>/<kbd>→</kbd> 切换，<kbd>Esc</kbd> 关闭）·
+      许可 <b>CC BY-NC-SA 4.0</b><span class="live" id="stat-live"></span></p>
     <div class="tags">
       <span class="tag">蓝色渐变长发</span><span class="tag">呆毛</span><span class="tag">鲸鱼鳍耳</span>
       <span class="tag">深蓝女仆装</span><span class="tag">大鲸尾</span><span class="tag">蓝瞳</span>
@@ -73,141 +190,451 @@
     商用请先联系原作者。每张图片的作者与出处见仓库 <code>ATTRIBUTION.md</code>。
   </div>
 
-  <h2>一、角色设定图（三视图 · 细节拆解）</h2>
-  <p class="note">最常用于保持角色一致性的“锚点图”。两张分别对应 Q 版与成熟比例，原站同页均附完整生成 Prompt。</p>
-  <div class="grid">
-    <div class="card">
-      <a class="shot" href="sheets/01-chibi-character-sheet.png" target="_blank" rel="noreferrer"><img src="thumbs/01-chibi-character-sheet.webp" alt="Q 版大肥鱼设定图" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>Q 版大肥鱼 · 三视图</b><span>三头身 / 波浪长发 / 鲸鳍耳 / 圆尾</span>
-        <div class="links"><a class="il" href="sheets/01-chibi-character-sheet.png" target="_blank" rel="noreferrer">原图 PNG · 2.0 MB</a>
-        <a class="il" href="https://treapgogo.github.io/deepseek-whale-girl/" target="_blank" rel="noreferrer">资产库 ↗</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="sheets/02-mature-character-sheet.png" target="_blank" rel="noreferrer"><img src="thumbs/02-mature-character-sheet.webp" alt="成熟比例鲸鱼娘设定图" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>成熟比例鲸鱼娘 · 三视图</b><span>长裙女仆装 / 过膝袜 / 玛丽珍鞋</span>
-        <div class="links"><a class="il" href="sheets/02-mature-character-sheet.png" target="_blank" rel="noreferrer">原图 PNG · 2.2 MB</a>
-        <a class="il" href="https://treapgogo.github.io/deepseek-whale-girl/" target="_blank" rel="noreferrer">资产库 ↗</a></div></div>
-    </div>
-  </div>
+  <nav class="jump" aria-label="分区导航">
+    <a href="#p-sheets">角色设定图</a>
+    <a href="#p-moegirl">萌娘百科收录</a>
+    <a href="#p-refs">换装三视图</a>
+    <a href="#p-gallery">社区二创</a>
+    <a href="#p-wallpaper">壁纸</a>
+  </nav>
 
-  <h2>二、萌娘百科收录图（条目官方归档）</h2>
-  <p class="note">萌娘百科「DeepSeek娘」条目正文收录的代表性图像，含作者署名。</p>
-  <div class="grid">
-    <div class="card">
-      <a class="shot" href="moegirl/02-nvpu-whale-girl.png" target="_blank" rel="noreferrer"><img src="thumbs/02-nvpu-whale-girl.webp" alt="女仆鲸鱼娘" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>女仆鲸鱼娘</b><span>目前流传最广的原立绘（by ZipZipPipe）</span>
-        <div class="links"><a class="il" href="moegirl/02-nvpu-whale-girl.png" target="_blank" rel="noreferrer">原图 PNG · 2.9 MB</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="moegirl/01-16yeluomao-ds.jpg" target="_blank" rel="noreferrer"><img src="thumbs/01-16yeluomao-ds.webp" alt="十六夜猫咪ds" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>十六夜猫咪ds</b><span>条目 infobox 头图 · 作者：十六夜猫咪QWQ · 2732×4096</span>
-        <div class="links"><a class="il" href="moegirl/01-16yeluomao-ds.jpg" target="_blank" rel="noreferrer">原图 JPG · 4.6 MB</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="moegirl/04-deepseek4f.jpg" target="_blank" rel="noreferrer"><img src="thumbs/04-deepseek4f.webp" alt="DeepSeek娘动漫形象" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>DeepSeek娘 动漫形象</b><span>条目收录的动漫风版本</span>
-        <div class="links"><a class="il" href="moegirl/04-deepseek4f.jpg" target="_blank" rel="noreferrer">原图 JPG · 864 KB</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="moegirl/03-harness-girl.jpg" target="_blank" rel="noreferrer"><img src="thumbs/03-harness-girl.webp" alt="DeepSeek Harness 娘" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>DeepSeek Harness 娘</b><span>「一切皆插件」——对应 DSH 黑鲸标识</span>
-        <div class="links"><a class="il" href="moegirl/03-harness-girl.jpg" target="_blank" rel="noreferrer">原图 JPG · 96 KB</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="moegirl/05-gpt-drew-emoji.webp" target="_blank" rel="noreferrer"><img src="thumbs/05-gpt-drew-emoji.webp" alt="ChatGPT绘制DeepSeek娘表情包" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>表情包</b><span>「吹了半天还是要我来帮她画」</span>
-        <div class="links"><a class="il" href="moegirl/05-gpt-drew-emoji.webp" target="_blank" rel="noreferrer">原图 WEBP · 125 KB</a></div></div>
-    </div>
-    <div class="card">
-      <a class="shot" href="moegirl/06-ds-and-claude.webp" target="_blank" rel="noreferrer"><img src="thumbs/06-ds-and-claude.webp" alt="DeepSeek娘与Claude娘" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>DeepSeek娘与Claude娘</b><span>跨模型拟人化对话梗</span>
-        <div class="links"><a class="il" href="moegirl/06-ds-and-claude.webp" target="_blank" rel="noreferrer">原图 WEBP · 213 KB</a></div></div>
-    </div>
-  </div>
+  <main id="main">
 
-  <h2>三、换装三视图参考（7 套）</h2>
-  <p class="note">不同服装变体的三视图设定集，可直接用作垫图 / img2img / ControlNet Reference。</p>
-  <div class="grid">
-    <div class="card"><a class="shot" href="refs/01-black-gown.webp" target="_blank" rel="noreferrer"><img src="thumbs/01-black-gown.webp" alt="黑礼服人鱼" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>01 黑礼服人鱼</b><span>黑哥特蕾丝 + 人鱼尾出镜</span>
-        <div class="links"><a class="il" href="refs/01-black-gown.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/02-simple-short-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/02-simple-short-maid.webp" alt="简约短裙女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>02 简约短裙女仆</b><span>蓝白基础款</span>
-        <div class="links"><a class="il" href="refs/02-simple-short-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/03-long-skirt-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/03-long-skirt-maid.webp" alt="长裙女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>03 长裙女仆</b><span>裙襬金色星象刺繡</span>
-        <div class="links"><a class="il" href="refs/03-long-skirt-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/04-detailed-short-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/04-detailed-short-maid.webp" alt="细节短裙女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>04 细节短裙女仆</b><span>围裙繡小鯨魚 · 細節最多</span>
-        <div class="links"><a class="il" href="refs/04-detailed-short-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/05-chibi-blue-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/05-chibi-blue-maid.webp" alt="Q版蓝女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>05 Q版蓝女仆</b><span>二头身 · 表情包首选</span>
-        <div class="links"><a class="il" href="refs/05-chibi-blue-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/06-black-green-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/06-black-green-maid.webp" alt="黑绿女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>06 黑绿女仆</b><span>黑髮灰尾綠瞳變體</span>
-        <div class="links"><a class="il" href="refs/06-black-green-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="refs/07-black-red-maid.webp" target="_blank" rel="noreferrer"><img src="thumbs/07-black-red-maid.webp" alt="黑红女仆" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>07 黑红女仆</b><span>黑髮紅瞳 · 配色最豔</span>
-        <div class="links"><a class="il" href="refs/07-black-red-maid.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-  </div>
+  <section class="part" id="p-sheets">
+    <h2>一、角色设定图（三视图 · 细节拆解）<span class="count">2 张</span></h2>
+    <p class="note">最常用于保持角色一致性的“锚点图”。两张分别对应 Q 版与成熟比例，原站同页均附完整生成 Prompt。</p>
+    <div class="grid">
+      <figure class="card">
+        <a class="shot" href="sheets/01-chibi-character-sheet.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/01-chibi-character-sheet-1440w.webp"
+           data-orig="sheets/01-chibi-character-sheet.png"
+           data-title="Q 版大肥鱼 · 三视图"
+           data-desc="三头身 / 波浪长发 / 鲸鳍耳 / 圆尾"
+           data-author="TreapGoGo · 社区维护"
+           data-size="1448×1086">
+          <img src="thumbs/01-chibi-character-sheet-960w.webp"
+               srcset="thumbs/01-chibi-character-sheet-480w.webp 480w, thumbs/01-chibi-character-sheet-960w.webp 960w, thumbs/01-chibi-character-sheet-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1448" height="1086" alt="Q 版大肥鱼设定图" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>Q 版大肥鱼 · 三视图</b><span>三头身 / 波浪长发 / 鲸鳍耳 / 圆尾</span><em>TreapGoGo · 社区维护</em>
+          <div class="links"><a class="il" href="sheets/01-chibi-character-sheet.png" target="_blank" rel="noreferrer">原图 PNG · 2.0 MB</a>
+            <a class="il" href="https://treapgogo.github.io/deepseek-whale-girl/" target="_blank" rel="noreferrer">资产库 ↗</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="sheets/02-mature-character-sheet.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/02-mature-character-sheet-1440w.webp"
+           data-orig="sheets/02-mature-character-sheet.png"
+           data-title="成熟比例鲸鱼娘 · 三视图"
+           data-desc="长裙女仆装 / 过膝袜 / 玛丽珍鞋"
+           data-author="TreapGoGo · 社区维护"
+           data-size="1448×1086">
+          <img src="thumbs/02-mature-character-sheet-960w.webp"
+               srcset="thumbs/02-mature-character-sheet-480w.webp 480w, thumbs/02-mature-character-sheet-960w.webp 960w, thumbs/02-mature-character-sheet-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1448" height="1086" alt="成熟比例鲸鱼娘设定图" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>成熟比例鲸鱼娘 · 三视图</b><span>长裙女仆装 / 过膝袜 / 玛丽珍鞋</span><em>TreapGoGo · 社区维护</em>
+          <div class="links"><a class="il" href="sheets/02-mature-character-sheet.png" target="_blank" rel="noreferrer">原图 PNG · 2.2 MB</a>
+            <a class="il" href="https://treapgogo.github.io/deepseek-whale-girl/" target="_blank" rel="noreferrer">资产库 ↗</a></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-  <h2>四、社区二创</h2>
-  <p class="note">来自鲸鱼娘开源资产库 126 张社区画廊中的代表性投稿，作者署名见每张卡片与 <code>ATTRIBUTION.md</code>。</p>
-  <div class="grid">
-    <div class="card"><a class="shot" href="gallery/qban-set-01.webp" target="_blank" rel="noreferrer"><img src="thumbs/qban-set-01.webp" alt="Q版角色设定图" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>大肥鱼和小伙伴们 · Q版设定图</b><span>作者：JerryZRic</span>
-        <div class="links"><a class="il" href="gallery/qban-set-01.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/qban-set-03.webp" target="_blank" rel="noreferrer"><img src="thumbs/qban-set-03.webp" alt="Q版角色设定图" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>Q版设定图（另一组）</b><span>作者：JerryZRic</span>
-        <div class="links"><a class="il" href="gallery/qban-set-03.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/qban-set-05.webp" target="_blank" rel="noreferrer"><img src="thumbs/qban-set-05.webp" alt="Q版角色设定图" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>Q版设定图（再一组）</b><span>作者：JerryZRic</span>
-        <div class="links"><a class="il" href="gallery/qban-set-05.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/asset-c01.webp" target="_blank" rel="noreferrer"><img src="thumbs/asset-c01.webp" alt="二创素材扩展包 C01" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>二创素材扩展包 · C01</b><span>作者：AATINF</span>
-        <div class="links"><a class="il" href="gallery/asset-c01.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/asset-c29.webp" target="_blank" rel="noreferrer"><img src="thumbs/asset-c29.webp" alt="二创素材扩展包 C29" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>二创素材扩展包 · C29</b><span>作者：AATINF</span>
-        <div class="links"><a class="il" href="gallery/asset-c29.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/asset-c77.webp" target="_blank" rel="noreferrer"><img src="thumbs/asset-c77.webp" alt="二创素材扩展包 C77" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>二创素材扩展包 · C77</b><span>作者：AATINF · 2048×1152</span>
-        <div class="links"><a class="il" href="gallery/asset-c77.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/five-whales.webp" target="_blank" rel="noreferrer"><img src="thumbs/five-whales.webp" alt="五条鲸" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>五条鲸：你才是挑战者</b><span>作者：mikebo0623-lgtm</span>
-        <div class="links"><a class="il" href="gallery/five-whales.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/fat-fish-fight.webp" target="_blank" rel="noreferrer"><img src="thumbs/fat-fish-fight.webp" alt="蓝色大肥鱼胖揍赛博藤壶" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>蓝色大肥鱼胖揍赛博藤壶</b><span>作者：YAKUYAKX</span>
-        <div class="links"><a class="il" href="gallery/fat-fish-fight.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/avatar-01.webp" target="_blank" rel="noreferrer"><img src="thumbs/avatar-01.webp" alt="肥鱼头像" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>肥鱼头像 01</b><span>作者：夜殇35</span>
-        <div class="links"><a class="il" href="gallery/avatar-01.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/avatar-05.webp" target="_blank" rel="noreferrer"><img src="thumbs/avatar-05.webp" alt="肥鱼头像" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>肥鱼头像 05</b><span>作者：夜殇35</span>
-        <div class="links"><a class="il" href="gallery/avatar-05.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/jealous.webp" target="_blank" rel="noreferrer"><img src="thumbs/jealous.webp" alt="吃醋的鲸鱼娘" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>吃醋的鲸鱼娘</b><span>作者：幽灵_GH0ST</span>
-        <div class="links"><a class="il" href="gallery/jealous.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/shenshen-variant.webp" target="_blank" rel="noreferrer"><img src="thumbs/shenshen-variant.webp" alt="火山岛大肥鱼" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>火山岛大肥鱼（深深变体）</b><span>作者：辰楹 · 可在岩浆内游泳</span>
-        <div class="links"><a class="il" href="gallery/shenshen-variant.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="gallery/grokbot-avatar.webp" target="_blank" rel="noreferrer"><img src="thumbs/grokbot-avatar.webp" alt="Grokbot 风鲸鱼娘头像" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>Grokbot 风鲸鱼娘头像</b><span>作者：Flygeon</span>
-        <div class="links"><a class="il" href="gallery/grokbot-avatar.webp" target="_blank" rel="noreferrer">原图</a></div></div></div>
-  </div>
+  <section class="part" id="p-moegirl">
+    <h2>二、萌娘百科收录图（条目官方归档）<span class="count">6 张</span></h2>
+    <p class="note">萌娘百科「DeepSeek娘」条目正文收录的代表性图像，含作者署名。</p>
+    <div class="grid">
+      <figure class="card">
+        <a class="shot" href="moegirl/02-nvpu-whale-girl.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/02-nvpu-whale-girl-1152w.webp"
+           data-orig="moegirl/02-nvpu-whale-girl.png"
+           data-title="女仆鲸鱼娘"
+           data-desc="目前流传最广的原立绘（by ZipZipPipe）"
+           data-author="ZipZipPipe（原型：上善无形「溟月」）"
+           data-size="1152×2048">
+          <img src="thumbs/02-nvpu-whale-girl-960w.webp"
+               srcset="thumbs/02-nvpu-whale-girl-480w.webp 480w, thumbs/02-nvpu-whale-girl-960w.webp 960w, thumbs/02-nvpu-whale-girl-1152w.webp 1152w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1152" height="2048" alt="女仆鲸鱼娘" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>女仆鲸鱼娘</b><span>目前流传最广的原立绘（by ZipZipPipe）</span><em>ZipZipPipe（原型：上善无形「溟月」）</em>
+          <div class="links"><a class="il" href="moegirl/02-nvpu-whale-girl.png" target="_blank" rel="noreferrer">原图 PNG · 2.9 MB</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="moegirl/01-16yeluomao-ds.jpg" target="_blank" rel="noreferrer"
+           data-full="thumbs/01-16yeluomao-ds-1920w.webp"
+           data-orig="moegirl/01-16yeluomao-ds.jpg"
+           data-title="十六夜猫咪ds"
+           data-desc="条目 infobox 头图"
+           data-author="十六夜猫咪QWQ"
+           data-size="2732×4096">
+          <img src="thumbs/01-16yeluomao-ds-960w.webp"
+               srcset="thumbs/01-16yeluomao-ds-480w.webp 480w, thumbs/01-16yeluomao-ds-960w.webp 960w, thumbs/01-16yeluomao-ds-1440w.webp 1440w, thumbs/01-16yeluomao-ds-1920w.webp 1920w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="2732" height="4096" alt="十六夜猫咪ds" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>十六夜猫咪ds</b><span>条目 infobox 头图 · 2732×4096</span><em>十六夜猫咪QWQ</em>
+          <div class="links"><a class="il" href="moegirl/01-16yeluomao-ds.jpg" target="_blank" rel="noreferrer">原图 JPG · 4.6 MB</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="moegirl/04-deepseek4f.jpg" target="_blank" rel="noreferrer"
+           data-full="thumbs/04-deepseek4f-1440w.webp"
+           data-orig="moegirl/04-deepseek4f.jpg"
+           data-title="DeepSeek娘 动漫形象"
+           data-desc="条目收录的动漫风版本"
+           data-author="萌娘百科 Commons"
+           data-size="1488×2000">
+          <img src="thumbs/04-deepseek4f-960w.webp"
+               srcset="thumbs/04-deepseek4f-480w.webp 480w, thumbs/04-deepseek4f-960w.webp 960w, thumbs/04-deepseek4f-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1488" height="2000" alt="DeepSeek娘动漫形象" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>DeepSeek娘 动漫形象</b><span>条目收录的动漫风版本</span><em>萌娘百科 Commons</em>
+          <div class="links"><a class="il" href="moegirl/04-deepseek4f.jpg" target="_blank" rel="noreferrer">原图 JPG · 864 KB</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="moegirl/03-harness-girl.jpg" target="_blank" rel="noreferrer"
+           data-full="thumbs/03-harness-girl-1200w.webp"
+           data-orig="moegirl/03-harness-girl.jpg"
+           data-title="DeepSeek Harness 娘"
+           data-desc="「一切皆插件」——对应 DSH 黑鲸标识"
+           data-author="萌娘百科 Commons"
+           data-size="1200×900">
+          <img src="thumbs/03-harness-girl-960w.webp"
+               srcset="thumbs/03-harness-girl-480w.webp 480w, thumbs/03-harness-girl-960w.webp 960w, thumbs/03-harness-girl-1200w.webp 1200w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1200" height="900" alt="DeepSeek Harness 娘" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>DeepSeek Harness 娘</b><span>「一切皆插件」——对应 DSH 黑鲸标识</span><em>萌娘百科 Commons</em>
+          <div class="links"><a class="il" href="moegirl/03-harness-girl.jpg" target="_blank" rel="noreferrer">原图 JPG · 96 KB</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="moegirl/05-gpt-drew-emoji.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/05-gpt-drew-emoji-1254w.webp"
+           data-orig="moegirl/05-gpt-drew-emoji.webp"
+           data-title="表情包"
+           data-desc="「吹了半天还是要我来帮她画」"
+           data-author="萌娘百科 Commons"
+           data-size="1254×1254">
+          <img src="thumbs/05-gpt-drew-emoji-960w.webp"
+               srcset="thumbs/05-gpt-drew-emoji-480w.webp 480w, thumbs/05-gpt-drew-emoji-960w.webp 960w, thumbs/05-gpt-drew-emoji-1254w.webp 1254w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1254" height="1254" alt="ChatGPT绘制DeepSeek娘表情包" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>表情包</b><span>「吹了半天还是要我来帮她画」</span><em>萌娘百科 Commons</em>
+          <div class="links"><a class="il" href="moegirl/05-gpt-drew-emoji.webp" target="_blank" rel="noreferrer">原图 WEBP · 125 KB</a></div>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="moegirl/06-ds-and-claude.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/06-ds-and-claude-900w.webp"
+           data-orig="moegirl/06-ds-and-claude.webp"
+           data-title="DeepSeek娘与Claude娘"
+           data-desc="跨模型拟人化对话梗"
+           data-author="萌娘百科 Commons"
+           data-size="900×1200">
+          <img src="thumbs/06-ds-and-claude-900w.webp"
+               srcset="thumbs/06-ds-and-claude-480w.webp 480w, thumbs/06-ds-and-claude-900w.webp 900w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="900" height="1200" alt="DeepSeek娘与Claude娘" loading="lazy" decoding="async" />
+        </a>
+        <figcaption class="cap">
+          <b>DeepSeek娘与Claude娘</b><span>跨模型拟人化对话梗</span><em>萌娘百科 Commons</em>
+          <div class="links"><a class="il" href="moegirl/06-ds-and-claude.webp" target="_blank" rel="noreferrer">原图 WEBP · 213 KB</a></div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
-  <h2>五、壁纸</h2>
-  <p class="note">DeepSeek Harness 社区皮肤的动态壁纸静帧。</p>
-  <div class="grid">
-    <div class="card"><a class="shot" href="wallpaper/preview-1.png" target="_blank" rel="noreferrer"><img src="thumbs/preview-1.webp" alt="鲸鱼娘壁纸 1" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>卧室夜景</b><span>dsh-whale-girl-wallpaper</span>
-        <div class="links"><a class="il" href="wallpaper/preview-1.png" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="wallpaper/preview-2.png" target="_blank" rel="noreferrer"><img src="thumbs/preview-2.webp" alt="鲸鱼娘壁纸 2" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>书桌夜景</b><span>dsh-whale-girl-wallpaper</span>
-        <div class="links"><a class="il" href="wallpaper/preview-2.png" target="_blank" rel="noreferrer">原图</a></div></div></div>
-    <div class="card"><a class="shot" href="wallpaper/preview-3.png" target="_blank" rel="noreferrer"><img src="thumbs/preview-3.webp" alt="鲸鱼娘壁纸 3" loading="lazy" decoding="async" /></a>
-      <div class="cap"><b>书桌学习</b><span>dsh-whale-girl-wallpaper</span>
-        <div class="links"><a class="il" href="wallpaper/preview-3.png" target="_blank" rel="noreferrer">原图</a></div></div></div>
-  </div>
+  <section class="part" id="p-refs">
+    <h2>三、换装三视图参考（7 套）<span class="count">7 张</span></h2>
+    <p class="note">不同服装变体的三视图设定集，可直接用作垫图 / img2img / ControlNet Reference。</p>
+    <div class="grid">
+      <figure class="card">
+        <a class="shot" href="refs/01-black-gown.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/01-black-gown-960w.webp" data-orig="refs/01-black-gown.webp"
+           data-title="01 黑礼服人鱼" data-desc="黑哥特蕾丝 + 人鱼尾出镜" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/01-black-gown-960w.webp"
+               srcset="thumbs/01-black-gown-480w.webp 480w, thumbs/01-black-gown-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="黑礼服人鱼" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>01 黑礼服人鱼</b><span>黑哥特蕾丝 + 人鱼尾出镜</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/01-black-gown.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/02-simple-short-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/02-simple-short-maid-960w.webp" data-orig="refs/02-simple-short-maid.webp"
+           data-title="02 简约短裙女仆" data-desc="蓝白基础款" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/02-simple-short-maid-960w.webp"
+               srcset="thumbs/02-simple-short-maid-480w.webp 480w, thumbs/02-simple-short-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="简约短裙女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>02 简约短裙女仆</b><span>蓝白基础款</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/02-simple-short-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/03-long-skirt-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/03-long-skirt-maid-960w.webp" data-orig="refs/03-long-skirt-maid.webp"
+           data-title="03 长裙女仆" data-desc="裙襬金色星象刺繡" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/03-long-skirt-maid-960w.webp"
+               srcset="thumbs/03-long-skirt-maid-480w.webp 480w, thumbs/03-long-skirt-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="长裙女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>03 长裙女仆</b><span>裙襬金色星象刺繡</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/03-long-skirt-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/04-detailed-short-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/04-detailed-short-maid-960w.webp" data-orig="refs/04-detailed-short-maid.webp"
+           data-title="04 细节短裙女仆" data-desc="围裙繡小鯨魚 · 細節最多" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/04-detailed-short-maid-960w.webp"
+               srcset="thumbs/04-detailed-short-maid-480w.webp 480w, thumbs/04-detailed-short-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="细节短裙女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>04 细节短裙女仆</b><span>围裙繡小鯨魚 · 細節最多</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/04-detailed-short-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/05-chibi-blue-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/05-chibi-blue-maid-960w.webp" data-orig="refs/05-chibi-blue-maid.webp"
+           data-title="05 Q版蓝女仆" data-desc="二头身 · 表情包首选" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×512">
+          <img src="thumbs/05-chibi-blue-maid-960w.webp"
+               srcset="thumbs/05-chibi-blue-maid-480w.webp 480w, thumbs/05-chibi-blue-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="512" alt="Q版蓝女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>05 Q版蓝女仆</b><span>二头身 · 表情包首选</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/05-chibi-blue-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/06-black-green-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/06-black-green-maid-960w.webp" data-orig="refs/06-black-green-maid.webp"
+           data-title="06 黑绿女仆" data-desc="黑髮灰尾綠瞳變體" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/06-black-green-maid-960w.webp"
+               srcset="thumbs/06-black-green-maid-480w.webp 480w, thumbs/06-black-green-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="黑绿女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>06 黑绿女仆</b><span>黑髮灰尾綠瞳變體</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/06-black-green-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="refs/07-black-red-maid.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/07-black-red-maid-960w.webp" data-orig="refs/07-black-red-maid.webp"
+           data-title="07 黑红女仆" data-desc="黑髮紅瞳 · 配色最豔" data-author="AI 萌图 · 大肥鱼娘三视图设定集" data-size="1024×683">
+          <img src="thumbs/07-black-red-maid-960w.webp"
+               srcset="thumbs/07-black-red-maid-480w.webp 480w, thumbs/07-black-red-maid-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="683" alt="黑红女仆" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>07 黑红女仆</b><span>黑髮紅瞳 · 配色最豔</span><em>AI 萌图 · 三视图设定集</em>
+          <div class="links"><a class="il" href="refs/07-black-red-maid.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="part" id="p-gallery">
+    <h2>四、社区二创<span class="count">13 张</span></h2>
+    <p class="note">来自鲸鱼娘开源资产库 126 张社区画廊中的代表性投稿，作者署名见每张卡片与 <code>ATTRIBUTION.md</code>。</p>
+    <div class="grid">
+      <figure class="card">
+        <a class="shot" href="gallery/qban-set-01.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/qban-set-01-1440w.webp" data-orig="gallery/qban-set-01.webp"
+           data-title="大肥鱼和小伙伴们 · Q版设定图" data-desc="Q 版角色设定图" data-author="JerryZRic" data-size="1448×1086">
+          <img src="thumbs/qban-set-01-960w.webp"
+               srcset="thumbs/qban-set-01-480w.webp 480w, thumbs/qban-set-01-960w.webp 960w, thumbs/qban-set-01-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1448" height="1086" alt="大肥鱼和小伙伴们 · Q版设定图" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>大肥鱼和小伙伴们 · Q版设定图</b><span>Q 版角色设定图</span><em>JerryZRic</em>
+          <div class="links"><a class="il" href="gallery/qban-set-01.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/qban-set-03.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/qban-set-03-1440w.webp" data-orig="gallery/qban-set-03.webp"
+           data-title="Q版设定图（另一组）" data-desc="大肥鱼和小伙伴们" data-author="JerryZRic" data-size="1448×1086">
+          <img src="thumbs/qban-set-03-960w.webp"
+               srcset="thumbs/qban-set-03-480w.webp 480w, thumbs/qban-set-03-960w.webp 960w, thumbs/qban-set-03-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1448" height="1086" alt="大肥鱼和小伙伴们 · Q版设定图（另一组）" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>Q版设定图（另一组）</b><span>大肥鱼和小伙伴们</span><em>JerryZRic</em>
+          <div class="links"><a class="il" href="gallery/qban-set-03.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/qban-set-05.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/qban-set-05-1440w.webp" data-orig="gallery/qban-set-05.webp"
+           data-title="Q版设定图（再一组）" data-desc="大肥鱼和小伙伴们" data-author="JerryZRic" data-size="1448×1086">
+          <img src="thumbs/qban-set-05-960w.webp"
+               srcset="thumbs/qban-set-05-480w.webp 480w, thumbs/qban-set-05-960w.webp 960w, thumbs/qban-set-05-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1448" height="1086" alt="大肥鱼和小伙伴们 · Q版设定图（再一组）" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>Q版设定图（再一组）</b><span>大肥鱼和小伙伴们</span><em>JerryZRic</em>
+          <div class="links"><a class="il" href="gallery/qban-set-05.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/asset-c01.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/asset-c01-960w.webp" data-orig="gallery/asset-c01.webp"
+           data-title="二创素材扩展包 · C01" data-desc="鲸鱼娘二创素材扩展包" data-author="AATINF" data-size="1024×1536">
+          <img src="thumbs/asset-c01-960w.webp"
+               srcset="thumbs/asset-c01-480w.webp 480w, thumbs/asset-c01-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="1536" alt="二创素材扩展包 C01" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>二创素材扩展包 · C01</b><span>鲸鱼娘二创素材扩展包</span><em>AATINF</em>
+          <div class="links"><a class="il" href="gallery/asset-c01.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/asset-c29.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/asset-c29-1440w.webp" data-orig="gallery/asset-c29.webp"
+           data-title="二创素材扩展包 · C29" data-desc="鲸鱼娘二创素材扩展包" data-author="AATINF" data-size="1536×1536">
+          <img src="thumbs/asset-c29-960w.webp"
+               srcset="thumbs/asset-c29-480w.webp 480w, thumbs/asset-c29-960w.webp 960w, thumbs/asset-c29-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1536" height="1536" alt="二创素材扩展包 C29" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>二创素材扩展包 · C29</b><span>鲸鱼娘二创素材扩展包</span><em>AATINF</em>
+          <div class="links"><a class="il" href="gallery/asset-c29.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/asset-c77.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/asset-c77-1920w.webp" data-orig="gallery/asset-c77.webp"
+           data-title="二创素材扩展包 · C77" data-desc="鲸鱼娘二创素材扩展包 · 2048×1152" data-author="AATINF" data-size="2048×1152">
+          <img src="thumbs/asset-c77-960w.webp"
+               srcset="thumbs/asset-c77-480w.webp 480w, thumbs/asset-c77-960w.webp 960w, thumbs/asset-c77-1440w.webp 1440w, thumbs/asset-c77-1920w.webp 1920w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="2048" height="1152" alt="二创素材扩展包 C77" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>二创素材扩展包 · C77</b><span>2048×1152</span><em>AATINF</em>
+          <div class="links"><a class="il" href="gallery/asset-c77.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/five-whales.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/five-whales-1299w.webp" data-orig="gallery/five-whales.webp"
+           data-title="五条鲸：你才是挑战者" data-desc="ChatGPT 生成" data-author="mikebo0623-lgtm" data-size="1299×1211">
+          <img src="thumbs/five-whales-960w.webp"
+               srcset="thumbs/five-whales-480w.webp 480w, thumbs/five-whales-960w.webp 960w, thumbs/five-whales-1299w.webp 1299w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1299" height="1211" alt="五条鲸" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>五条鲸：你才是挑战者</b><span>ChatGPT 生成</span><em>mikebo0623-lgtm</em>
+          <div class="links"><a class="il" href="gallery/five-whales.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/fat-fish-fight.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/fat-fish-fight-1440w.webp" data-orig="gallery/fat-fish-fight.webp"
+           data-title="蓝色大肥鱼胖揍赛博藤壶" data-desc="社区二创" data-author="YAKUYAKX" data-size="1536×2048">
+          <img src="thumbs/fat-fish-fight-960w.webp"
+               srcset="thumbs/fat-fish-fight-480w.webp 480w, thumbs/fat-fish-fight-960w.webp 960w, thumbs/fat-fish-fight-1440w.webp 1440w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1536" height="2048" alt="蓝色大肥鱼胖揍赛博藤壶" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>蓝色大肥鱼胖揍赛博藤壶</b><span>社区二创</span><em>YAKUYAKX</em>
+          <div class="links"><a class="il" href="gallery/fat-fish-fight.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/avatar-01.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/avatar-01-960w.webp" data-orig="gallery/avatar-01.webp"
+           data-title="肥鱼头像 01" data-desc="原画来源：Fukuro袋子 / Pixiv ID 4588267" data-author="夜殇35" data-size="1024×1024">
+          <img src="thumbs/avatar-01-960w.webp"
+               srcset="thumbs/avatar-01-480w.webp 480w, thumbs/avatar-01-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="1024" alt="肥鱼头像 01" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>肥鱼头像 01</b><span>原画：Fukuro袋子 / Pixiv 4588267</span><em>夜殇35</em>
+          <div class="links"><a class="il" href="gallery/avatar-01.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/avatar-05.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/avatar-05-960w.webp" data-orig="gallery/avatar-05.webp"
+           data-title="肥鱼头像 05" data-desc="原画来源：Fukuro袋子 / Pixiv ID 4588267" data-author="夜殇35" data-size="1024×1024">
+          <img src="thumbs/avatar-05-960w.webp"
+               srcset="thumbs/avatar-05-480w.webp 480w, thumbs/avatar-05-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1024" height="1024" alt="肥鱼头像 05" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>肥鱼头像 05</b><span>原画：Fukuro袋子 / Pixiv 4588267</span><em>夜殇35</em>
+          <div class="links"><a class="il" href="gallery/avatar-05.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/jealous.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/jealous-1254w.webp" data-orig="gallery/jealous.webp"
+           data-title="吃醋的鲸鱼娘" data-desc="社区二创" data-author="幽灵_GH0ST" data-size="1254×1254">
+          <img src="thumbs/jealous-960w.webp"
+               srcset="thumbs/jealous-480w.webp 480w, thumbs/jealous-960w.webp 960w, thumbs/jealous-1254w.webp 1254w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1254" height="1254" alt="吃醋的鲸鱼娘" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>吃醋的鲸鱼娘</b><span>社区二创</span><em>幽灵_GH0ST</em>
+          <div class="links"><a class="il" href="gallery/jealous.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/shenshen-variant.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/shenshen-variant-1760w.webp" data-orig="gallery/shenshen-variant.webp"
+           data-title="火山岛大肥鱼（深深变体）" data-desc="可在岩浆内游泳" data-author="辰楹" data-size="1760×2400">
+          <img src="thumbs/shenshen-variant-960w.webp"
+               srcset="thumbs/shenshen-variant-480w.webp 480w, thumbs/shenshen-variant-960w.webp 960w, thumbs/shenshen-variant-1440w.webp 1440w, thumbs/shenshen-variant-1760w.webp 1760w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1760" height="2400" alt="火山岛大肥鱼" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>火山岛大肥鱼（深深变体）</b><span>可在岩浆内游泳</span><em>辰楹</em>
+          <div class="links"><a class="il" href="gallery/shenshen-variant.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="gallery/grokbot-avatar.webp" target="_blank" rel="noreferrer"
+           data-full="thumbs/grokbot-avatar-1254w.webp" data-orig="gallery/grokbot-avatar.webp"
+           data-title="Grokbot 风鲸鱼娘头像" data-desc="社区二创" data-author="Flygeon" data-size="1254×1254">
+          <img src="thumbs/grokbot-avatar-960w.webp"
+               srcset="thumbs/grokbot-avatar-480w.webp 480w, thumbs/grokbot-avatar-960w.webp 960w, thumbs/grokbot-avatar-1254w.webp 1254w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1254" height="1254" alt="Grokbot 风鲸鱼娘头像" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>Grokbot 风鲸鱼娘头像</b><span>社区二创</span><em>Flygeon</em>
+          <div class="links"><a class="il" href="gallery/grokbot-avatar.webp" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="part" id="p-wallpaper">
+    <h2>五、壁纸<span class="count">3 张</span></h2>
+    <p class="note">DeepSeek Harness 社区皮肤的动态壁纸静帧。</p>
+    <div class="grid">
+      <figure class="card">
+        <a class="shot" href="wallpaper/preview-1.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/preview-1-960w.webp" data-orig="wallpaper/preview-1.png"
+           data-title="卧室夜景" data-desc="dsh-whale-girl-wallpaper" data-author="dsh-whale-girl-wallpaper（MIT）" data-size="1008×576">
+          <img src="thumbs/preview-1-960w.webp"
+               srcset="thumbs/preview-1-480w.webp 480w, thumbs/preview-1-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1008" height="576" alt="鲸鱼娘壁纸 1" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>卧室夜景</b><span>dsh-whale-girl-wallpaper</span><em>dsh-whale-girl-wallpaper · MIT</em>
+          <div class="links"><a class="il" href="wallpaper/preview-1.png" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="wallpaper/preview-2.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/preview-2-960w.webp" data-orig="wallpaper/preview-2.png"
+           data-title="书桌夜景" data-desc="dsh-whale-girl-wallpaper" data-author="dsh-whale-girl-wallpaper（MIT）" data-size="1008×576">
+          <img src="thumbs/preview-2-960w.webp"
+               srcset="thumbs/preview-2-480w.webp 480w, thumbs/preview-2-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1008" height="576" alt="鲸鱼娘壁纸 2" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>书桌夜景</b><span>dsh-whale-girl-wallpaper</span><em>dsh-whale-girl-wallpaper · MIT</em>
+          <div class="links"><a class="il" href="wallpaper/preview-2.png" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+      <figure class="card">
+        <a class="shot" href="wallpaper/preview-3.png" target="_blank" rel="noreferrer"
+           data-full="thumbs/preview-3-960w.webp" data-orig="wallpaper/preview-3.png"
+           data-title="书桌学习" data-desc="dsh-whale-girl-wallpaper" data-author="dsh-whale-girl-wallpaper（MIT）" data-size="1008×576">
+          <img src="thumbs/preview-3-960w.webp"
+               srcset="thumbs/preview-3-480w.webp 480w, thumbs/preview-3-960w.webp 960w"
+               sizes="(max-width:560px) calc(100vw - 36px), (max-width:693px) calc(50vw - 25px), (max-width:1101px) calc(33.33vw - 22px), (max-width:1320px) calc(25vw - 25.5px), 305px"
+               width="1008" height="576" alt="鲸鱼娘壁纸 3" loading="lazy" decoding="async" /></a>
+        <figcaption class="cap"><b>书桌学习</b><span>dsh-whale-girl-wallpaper</span><em>dsh-whale-girl-wallpaper · MIT</em>
+          <div class="links"><a class="il" href="wallpaper/preview-3.png" target="_blank" rel="noreferrer">原图</a></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  </main>
 
   <footer>
     <p>主要来源：<a href="https://mzh.moegirl.org.cn/DeepSeek%E5%A8%98" target="_blank" rel="noreferrer">萌娘百科「DeepSeek娘」</a> ·
@@ -215,12 +642,360 @@
       <a href="https://aigengtu.com/refs?lang=zh-Hant" target="_blank" rel="noreferrer">AI 萌图 · 大肥鱼娘三视图设定集</a> ·
       <a href="https://github.com/QWEQ-CELL-DEL/dsh-whale-girl-wallpaper" target="_blank" rel="noreferrer">dsh-whale-girl-wallpaper</a> ·
       <a href="https://civitai.red/models/2697171" target="_blank" rel="noreferrer">Civitai 鲸鱼娘 LoRA</a></p>
-    <p>画廊展示版为原图的 WebP 压缩副本（长边 1600px / 质量 80，20.6 MB → 3.4 MB），与原图同为 CC BY-NC-SA 4.0；
-      点击图片或「原图」链接可查看未压缩原文件。</p>
+    <p>画廊展示版是原图的 WebP 压缩副本（480 / 960 / 1440 / 1920 四档宽度，<code>srcset</code> 按设备像素比自动选档），
+      许可与各图原图一致：<b>整体角色形象为 CC BY-NC-SA 4.0</b>（需署名、禁商用、衍生同协议开放），
+      <b>场景壁纸素材为 MIT</b>，其余各图版权归各自作者、许可以源站标注为准；
+      点击图片可放大浏览，「原图」链接查看未压缩原文件。</p>
     <p>形象为社区同人创作，与深度求索公司无隶属关系；本页所有素材版权归各自作者所有，仅供学习交流。</p>
     <p>许可：页面与整理工作适用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>（署名 / 非商业 / 相同方式共享）；
       每张图片的作者与出处见仓库 <code>ATTRIBUTION.md</code>，完整许可全文见 <code>LICENSE</code>。</p>
   </footer>
 </div>
+
+<!-- 灯箱 -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片放大浏览">
+  <div class="lb-stage" id="lb-stage">
+    <img class="lb-img" id="lb-img" alt="" />
+  </div>
+  <div class="lb-hint">← / → 切换 · Esc 关闭 · +/- 缩放</div>
+  <button class="lb-btn lb-close" id="lb-close" aria-label="关闭">×</button>
+  <button class="lb-btn lb-prev" id="lb-prev" aria-label="上一张">‹</button>
+  <button class="lb-btn lb-next" id="lb-next" aria-label="下一张">›</button>
+  <div class="lb-info">
+    <div class="lb-text">
+      <div class="lb-title" id="lb-title"></div>
+      <div class="lb-desc" id="lb-desc"></div>
+      <div class="lb-meta" id="lb-meta"></div>
+    </div>
+    <div class="lb-count" id="lb-count"></div>
+    <div class="lb-actions">
+      <a id="lb-orig" href="#" target="_blank" rel="noreferrer">原图 ↗</a>
+      <a id="lb-open" href="#" target="_blank" rel="noreferrer">高清版 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var doc = document;
+  var shots = Array.prototype.slice.call(doc.querySelectorAll(".shot"));
+  var grids = Array.prototype.slice.call(doc.querySelectorAll(".grid"));
+  var parts = Array.prototype.slice.call(doc.querySelectorAll("section.part"));
+
+  /* ---------------------------------------------------------- 统计 */
+
+  function setStat(id, value) {
+    var el = doc.getElementById(id);
+    if (el) el.textContent = String(value);
+  }
+  setStat("stat-count", shots.length);
+  setStat("stat-parts", parts.length);
+  parts.forEach(function (part) {
+    var badge = part.querySelector(".count");
+    if (badge) {
+      var n = part.querySelectorAll(".shot").length;
+      badge.textContent = n + " 张";
+    }
+  });
+
+  // 实际下载量（Resource Timing）—— 仅作展示，不影响布局
+  function updateLive() {
+    try {
+      var res = performance.getEntriesByType("resource");
+      var bytes = 0, images = 0;
+      res.forEach(function (r) {
+        if (/\.webp$/i.test(r.name)) { bytes += r.transferSize || r.encodedBodySize || 0; images++; }
+      });
+      setStat(
+        "stat-live",
+        bytes > 0 ? " · 本次已加载 " + (bytes / 1024).toFixed(0) + " KB / " + images + " 张展示图" : ""
+      );
+    } catch (e) { /* Resource Timing 不可用时静默跳过 */ }
+  }
+
+  // load 事件时懒加载的图片往往还没开始下载，Resource Timing 里一张图都没有。
+  // 用 PerformanceObserver 盯着资源完成事件，才能实时反映"已加载多少"。
+  function watchDownloads() {
+    try {
+      var po = new PerformanceObserver(function () { updateLive(); });
+      po.observe({ type: "resource", buffered: true });
+    } catch (e) { /* 浏览器不支持则退回 load 时的单次采样 */ }
+  }
+
+  /* ---------------------------------------------------------- 瀑布流布局 */
+
+  var lastWidths = [];
+  var lastCapHeights = [];
+  /* 行高 1px、row-gap 0，竖直间距靠 span 多留的行数制造 */
+  var ROW_GAP_PX = 18;
+
+  function layoutGrid(grid, index) {
+    var cards = grid.children;
+    if (!cards.length) return;
+
+    var styles = window.getComputedStyle(grid);
+    var columns = styles.gridTemplateColumns.split(" ").filter(Boolean).length || 1;
+    var gap = parseFloat(styles.columnGap) || 0;
+    var colWidth = (grid.clientWidth - gap * (columns - 1)) / columns;
+
+    for (var i = 0; i < cards.length; i++) {
+      var card = cards[i];
+      var img = card.querySelector("img");
+      var cap = card.querySelector(".cap");
+      if (!img || !cap) continue;
+
+      // 宽高比来自 width/height 属性；图片加载前就能确定盒高，布局不跳动
+      var w = parseInt(img.getAttribute("width"), 10) || 0;
+      var h = parseInt(img.getAttribute("height"), 10) || 0;
+      if (!w || !h) continue;
+      var ratio = w / h;
+      img.style.aspectRatio = w + " / " + h;
+
+      // 用卡片的**内容盒**宽度而不是列宽：卡片有 1px border，
+      // 内容实际比列宽窄 2px，用列宽算会把图片盒多算高 2px，间距就不准了。
+      var cardBox = card.getBoundingClientRect();
+      var contentW = cardBox.width - 2;
+      if (contentW <= 0) contentW = colWidth;
+      var shotH = contentW / ratio;
+      // getBoundingClientRect 保留小数，offsetHeight 是取整值，差半个像素
+      var capH = cap.getBoundingClientRect().height;
+      // +2 是卡片上下各 1px 的 border —— 卡片实际占位比内容高 2px，
+      // 不算进去的话实际间距会比设定的 ROW_GAP_PX 少 2px。
+      var total = shotH + capH + 2;
+      // 必须先算数字再拼字符串："span " + n + 1 会拼成 "span 7011"
+      var span = Math.ceil(total) + ROW_GAP_PX;
+      card.style.gridRowEnd = "span " + span;
+    }
+    lastWidths[index] = grid.clientWidth;
+  }
+
+  function layoutAll(force) {
+    grids.forEach(function (grid, index) {
+      // 说明区高度变了也要重排（字体加载完成、用户改字号都会变），
+      // 光看列宽变化会漏掉这一种。
+      var capChanged = false;
+      var cards = grid.children;
+      var heights = [];
+      for (var k = 0; k < cards.length; k++) {
+        var cap = cards[k].querySelector(".cap");
+        var h = cap ? Math.round(cap.getBoundingClientRect().height) : 0;
+        heights.push(h);
+        var prev = lastCapHeights[index];
+        if (!prev || prev[k] !== h) capChanged = true;
+      }
+      lastCapHeights[index] = heights;
+
+      if (force || lastWidths[index] !== grid.clientWidth || capChanged) {
+        grid.classList.add("masonry");
+        layoutGrid(grid, index);
+      }
+    });
+  }
+
+  function schedule() {
+    if (window.requestAnimationFrame) requestAnimationFrame(function () { layoutAll(false); });
+    else layoutAll(false);
+  }
+
+  var resizeTimer = null;
+  window.addEventListener("resize", function () {
+    if (resizeTimer) clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      layoutAll(true);
+      // 灯箱开着的话，按新视口重新适配图片尺寸
+      if (lb.classList.contains("on") && lbImg.naturalWidth) {
+        baseW = baseH = 0;
+        fitSize();
+        applyZoom();
+      }
+    }, 120);
+  });
+
+  // 字体加载完成会改变 caption 高度，需要重排
+  if (doc.fonts && doc.fonts.ready && doc.fonts.ready.then) {
+    doc.fonts.ready.then(schedule);
+  }
+  window.addEventListener("load", function () {
+    schedule();
+    updateLive();
+  });
+  watchDownloads();
+  var liveTimer = null;
+  window.addEventListener("scroll", function () {
+    if (liveTimer) clearTimeout(liveTimer);
+    liveTimer = setTimeout(updateLive, 400);
+  }, { passive: true });
+  schedule();
+
+  /* ---------------------------------------------------------- 灯箱 */
+
+  var lb = doc.getElementById("lightbox");
+  var lbImg = doc.getElementById("lb-img");
+  var lbStage = doc.getElementById("lb-stage");
+  var lbTitle = doc.getElementById("lb-title");
+  var lbDesc = doc.getElementById("lb-desc");
+  var lbMeta = doc.getElementById("lb-meta");
+  var lbCount = doc.getElementById("lb-count");
+  var lbOrig = doc.getElementById("lb-orig");
+  var lbOpen = doc.getElementById("lb-open");
+  var current = -1;
+  var zoom = 1;
+  var baseW = 0;
+  var baseH = 0;
+  var lastFocused = null;
+
+  /* 缩放用 width/height 而不是 transform：transform 只是视觉变换，
+     不会撑开布局盒，缩放后超出视口的部分就永远滚不到。 */
+  function fitSize() {
+    var nw = lbImg.naturalWidth || 1;
+    var nh = lbImg.naturalHeight || 1;
+    var maxW = Math.max(200, lbStage.clientWidth - 152);
+    var maxH = Math.max(160, lbStage.clientHeight - 196);
+    var s = Math.min(maxW / nw, maxH / nh, 1);
+    baseW = nw * s;
+    baseH = nh * s;
+  }
+
+  function applyZoom() {
+    if (!baseW) fitSize();
+    lbImg.style.width = baseW * zoom + "px";
+    lbImg.style.height = baseH * zoom + "px";
+  }
+
+  function focusables() {
+    return Array.prototype.slice.call(
+      lb.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')
+    ).filter(function (el) {
+      return el.offsetWidth > 0 || el.offsetHeight > 0 || el === document.activeElement;
+    });
+  }
+
+  function trapFocus(event) {
+    // 焦点在灯箱内循环：对话框打开时 Tab 不该跑到背后的页面去
+    if (event.key !== "Tab") return;
+    var items = focusables();
+    if (!items.length) return;
+    var first = items[0];
+    var last = items[items.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !lb.contains(document.activeElement))) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  function show(index) {
+    if (index < 0 || index >= shots.length) return;
+    current = index;
+    zoom = 1;
+    var shot = shots[index];
+    var full = shot.getAttribute("data-full") || "";
+    var title = shot.getAttribute("data-title") || "";
+    var desc = shot.getAttribute("data-desc") || "";
+    var author = shot.getAttribute("data-author") || "";
+    var size = shot.getAttribute("data-size") || "";
+    var orig = shot.getAttribute("data-orig") || "";
+
+    lbImg.setAttribute("alt", title);
+    zoom = 1;
+    baseW = baseH = 0;
+    lbImg.onload = function () { fitSize(); applyZoom(); };
+    // 预载相邻两张，切换时不闪
+    if (full) lbImg.src = full;
+    lbTitle.textContent = title;
+    lbDesc.textContent = desc;
+    lbMeta.textContent = [author, size].filter(Boolean).join(" · ");
+    lbCount.textContent = (index + 1) + " / " + shots.length;
+    lbOrig.href = orig || "#";
+    lbOpen.href = full || orig || "#";
+
+    lb.classList.add("on");
+    doc.body.style.overflow = "hidden";
+    // 焦点移进对话框，否则 Tab 会遍历整页（实测要 60+ 次才够到关闭按钮）
+    doc.getElementById("lb-close").focus();
+
+    [index - 1, index + 1].forEach(function (i) {
+      if (i < 0 || i >= shots.length) return;
+      var preload = new Image();
+      preload.src = shots[i].getAttribute("data-full") || "";
+    });
+  }
+
+  function hide() {
+    lb.classList.remove("on");
+    doc.body.style.overflow = "";
+    lbImg.removeAttribute("src");
+    lbImg.style.width = "";
+    lbImg.style.height = "";
+    current = -1;
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  function step(delta) {
+    if (current < 0) return;
+    var next = current + delta;
+    if (next < 0) next = shots.length - 1;
+    if (next >= shots.length) next = 0;
+    show(next);
+  }
+
+  shots.forEach(function (shot, index) {
+    shot.addEventListener("click", function (event) {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+      event.preventDefault();
+      lastFocused = shot;
+      show(index);
+    });
+  });
+
+  doc.getElementById("lb-close").addEventListener("click", hide);
+  doc.getElementById("lb-prev").addEventListener("click", function () { step(-1); });
+  doc.getElementById("lb-next").addEventListener("click", function () { step(1); });
+  doc.getElementById("lb-stage").addEventListener("click", function (event) {
+    if (event.target === doc.getElementById("lb-stage") || event.target === lbImg) hide();
+  });
+
+  doc.addEventListener("keydown", function (event) {
+    if (!lb.classList.contains("on")) return;
+    if (event.key === "Escape") { hide(); }
+    else if (event.key === "ArrowLeft") { step(-1); }
+    else if (event.key === "ArrowRight") { step(1); }
+    else if (event.key === "Home") { show(0); }
+    else if (event.key === "End") { show(shots.length - 1); }
+    else if (event.key === "+" || event.key === "=") {
+      zoom = Math.min(3, zoom * 1.25);
+      applyZoom();
+    } else if (event.key === "-" || event.key === "_") {
+      zoom = Math.max(1, zoom / 1.25);
+      applyZoom();
+    }
+    trapFocus(event);
+  });
+
+  // 触摸左右滑动切换
+  var touchX = null, touchY = null;
+  lb.addEventListener("touchstart", function (event) {
+    if (event.touches.length !== 1) return;
+    touchX = event.touches[0].clientX;
+    touchY = event.touches[0].clientY;
+  }, { passive: true });
+  lb.addEventListener("touchend", function (event) {
+    if (touchX === null) return;
+    var t = event.changedTouches[0];
+    var dx = t.clientX - touchX;
+    var dy = t.clientY - touchY;
+    if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) {
+      step(dx < 0 ? 1 : -1);
+    } else if (Math.abs(dy) > 90 && Math.abs(dy) > Math.abs(dx)) {
+      hide();
+    }
+    touchX = touchY = null;
+  }, { passive: true });
+})();
+</script>
 </body>
 </html>
