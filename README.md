@@ -18,15 +18,22 @@
 ├── README.md           # 本文件
 ├── LICENSE             # CC BY-NC-SA 4.0 全文（适用于本仓库的整理与页面代码）
 ├── ATTRIBUTION.md      # 每张图片的作者与出处（CC BY 要求署名）
+├── tools/
+│   └── make_thumbs.py  # 生成画廊展示版 WebP（长边 1600px / 质量 80）
 └── docs/               # GitHub Pages 发布根目录
     ├── index.html      # 画廊页面
     ├── .nojekyll       # 关闭 Jekyll 处理，图片原样发布
-    ├── sheets/         # 角色设定图（Q 版 / 成熟比例三视图）
-    ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录图
-    ├── refs/           # 换装三视图参考（7 套）
-    ├── gallery/        # 社区二创
-    └── wallpaper/      # 场景壁纸
+    ├── thumbs/         # 展示版 WebP 缩略图（31 张，3.4 MB）
+    ├── sheets/         # 角色设定图原图（Q 版 / 成熟比例三视图）
+    ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录原图
+    ├── refs/           # 换装三视图原图（7 套）
+    ├── gallery/        # 社区二创原图
+    └── wallpaper/      # 场景壁纸原图
 ```
+
+> 页面展示 `thumbs/` 下的 WebP 副本（原图 20.6 MB → 3.4 MB，压缩 6.1 倍），
+> 点击图片或「原图」链接可打开未压缩原文件。重新生成缩略图：
+> `python tools/make_thumbs.py`
 
 ## 内容一览
 

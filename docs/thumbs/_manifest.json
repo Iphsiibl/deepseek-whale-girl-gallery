@@ -1,0 +1,219 @@
+[
+ {
+  "src": "sheets/01-chibi-character-sheet.png",
+  "thumb": "thumbs/01-chibi-character-sheet.webp",
+  "before": 2123873,
+  "after": 175996,
+  "orig": "1448x1086"
+ },
+ {
+  "src": "sheets/02-mature-character-sheet.png",
+  "thumb": "thumbs/02-mature-character-sheet.webp",
+  "before": 2256676,
+  "after": 195302,
+  "orig": "1448x1086"
+ },
+ {
+  "src": "moegirl/01-16yeluomao-ds.jpg",
+  "thumb": "thumbs/01-16yeluomao-ds.webp",
+  "before": 4818445,
+  "after": 113626,
+  "orig": "2732x4096"
+ },
+ {
+  "src": "moegirl/02-nvpu-whale-girl.png",
+  "thumb": "thumbs/02-nvpu-whale-girl.webp",
+  "before": 3027959,
+  "after": 113880,
+  "orig": "1152x2048"
+ },
+ {
+  "src": "moegirl/03-harness-girl.jpg",
+  "thumb": "thumbs/03-harness-girl.webp",
+  "before": 98442,
+  "after": 59604,
+  "orig": "1200x900"
+ },
+ {
+  "src": "moegirl/04-deepseek4f.jpg",
+  "thumb": "thumbs/04-deepseek4f.webp",
+  "before": 884874,
+  "after": 202998,
+  "orig": "1488x2000"
+ },
+ {
+  "src": "moegirl/05-gpt-drew-emoji.webp",
+  "thumb": "thumbs/05-gpt-drew-emoji.webp",
+  "before": 125390,
+  "after": 97610,
+  "orig": "1254x1254"
+ },
+ {
+  "src": "moegirl/06-ds-and-claude.webp",
+  "thumb": "thumbs/06-ds-and-claude.webp",
+  "before": 217610,
+  "after": 180792,
+  "orig": "900x1200"
+ },
+ {
+  "src": "refs/01-black-gown.webp",
+  "thumb": "thumbs/01-black-gown.webp",
+  "before": 85544,
+  "after": 78804,
+  "orig": "1024x683"
+ },
+ {
+  "src": "refs/02-simple-short-maid.webp",
+  "thumb": "thumbs/02-simple-short-maid.webp",
+  "before": 68620,
+  "after": 64292,
+  "orig": "1024x683"
+ },
+ {
+  "src": "refs/03-long-skirt-maid.webp",
+  "thumb": "thumbs/03-long-skirt-maid.webp",
+  "before": 85600,
+  "after": 79880,
+  "orig": "1024x683"
+ },
+ {
+  "src": "refs/04-detailed-short-maid.webp",
+  "thumb": "thumbs/04-detailed-short-maid.webp",
+  "before": 80108,
+  "after": 73738,
+  "orig": "1024x683"
+ },
+ {
+  "src": "refs/05-chibi-blue-maid.webp",
+  "thumb": "thumbs/05-chibi-blue-maid.webp",
+  "before": 67364,
+  "after": 62598,
+  "orig": "1024x512"
+ },
+ {
+  "src": "refs/06-black-green-maid.webp",
+  "thumb": "thumbs/06-black-green-maid.webp",
+  "before": 74100,
+  "after": 68976,
+  "orig": "1024x683"
+ },
+ {
+  "src": "refs/07-black-red-maid.webp",
+  "thumb": "thumbs/07-black-red-maid.webp",
+  "before": 77250,
+  "after": 72244,
+  "orig": "1024x683"
+ },
+ {
+  "src": "gallery/asset-c01.webp",
+  "thumb": "thumbs/asset-c01.webp",
+  "before": 196714,
+  "after": 77742,
+  "orig": "1024x1536"
+ },
+ {
+  "src": "gallery/asset-c29.webp",
+  "thumb": "thumbs/asset-c29.webp",
+  "before": 237796,
+  "after": 90900,
+  "orig": "1536x1536"
+ },
+ {
+  "src": "gallery/asset-c77.webp",
+  "thumb": "thumbs/asset-c77.webp",
+  "before": 324054,
+  "after": 79154,
+  "orig": "2048x1152"
+ },
+ {
+  "src": "gallery/avatar-01.webp",
+  "thumb": "thumbs/avatar-01.webp",
+  "before": 191290,
+  "after": 87750,
+  "orig": "1024x1024"
+ },
+ {
+  "src": "gallery/avatar-05.webp",
+  "thumb": "thumbs/avatar-05.webp",
+  "before": 167166,
+  "after": 71900,
+  "orig": "1024x1024"
+ },
+ {
+  "src": "gallery/fat-fish-fight.webp",
+  "thumb": "thumbs/fat-fish-fight.webp",
+  "before": 809338,
+  "after": 208008,
+  "orig": "1536x2048"
+ },
+ {
+  "src": "gallery/five-whales.webp",
+  "thumb": "thumbs/five-whales.webp",
+  "before": 382316,
+  "after": 163664,
+  "orig": "1299x1211"
+ },
+ {
+  "src": "gallery/grokbot-avatar.webp",
+  "thumb": "thumbs/grokbot-avatar.webp",
+  "before": 96512,
+  "after": 37886,
+  "orig": "1254x1254"
+ },
+ {
+  "src": "gallery/jealous.webp",
+  "thumb": "thumbs/jealous.webp",
+  "before": 327264,
+  "after": 150960,
+  "orig": "1254x1254"
+ },
+ {
+  "src": "gallery/qban-set-01.webp",
+  "thumb": "thumbs/qban-set-01.webp",
+  "before": 382744,
+  "after": 179000,
+  "orig": "1448x1086"
+ },
+ {
+  "src": "gallery/qban-set-03.webp",
+  "thumb": "thumbs/qban-set-03.webp",
+  "before": 515626,
+  "after": 251820,
+  "orig": "1448x1086"
+ },
+ {
+  "src": "gallery/qban-set-05.webp",
+  "thumb": "thumbs/qban-set-05.webp",
+  "before": 448812,
+  "after": 214188,
+  "orig": "1448x1086"
+ },
+ {
+  "src": "gallery/shenshen-variant.webp",
+  "thumb": "thumbs/shenshen-variant.webp",
+  "before": 742420,
+  "after": 159674,
+  "orig": "1760x2400"
+ },
+ {
+  "src": "wallpaper/preview-1.png",
+  "thumb": "thumbs/preview-1.webp",
+  "before": 754335,
+  "after": 39758,
+  "orig": "1008x576"
+ },
+ {
+  "src": "wallpaper/preview-2.png",
+  "thumb": "thumbs/preview-2.webp",
+  "before": 949625,
+  "after": 52534,
+  "orig": "1008x576"
+ },
+ {
+  "src": "wallpaper/preview-3.png",
+  "thumb": "thumbs/preview-3.webp",
+  "before": 972884,
+  "after": 50978,
+  "orig": "1008x576"
+ }
+]
