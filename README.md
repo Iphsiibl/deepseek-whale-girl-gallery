@@ -5,8 +5,9 @@
 
 ## 在线预览
 
-> 发布后地址为 `https://<你的用户名>.github.io/<仓库名>/`
-> （仓库创建后此处会补全）
+**https://iphsiibl.github.io/deepseek-whale-girl-gallery/**
+
+由 GitHub Pages 发布（分支 `main` → 目录 `/docs`）。
 
 本地直接双击 `docs/index.html` 即可离线浏览，无需服务器、无外部请求、无跟踪脚本。
 
