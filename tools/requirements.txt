@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
-"""生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""
-
+# 画廊工具链依赖：make_thumbs.py / check_gallery.py / check_manifest.py 用 Pillow 读写与校验 WebP
+# 注意：本文件是 pip requirements 格式，只能用 # 注释，不能写成 Python docstring
 Pillow>=10.0
