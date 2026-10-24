@@ -1,9 +1,13 @@
 # 静态图集项目 · 独立审计报告
 
 审计人：Verifier（独立审计，未参与实现）
-审计日期：2026-10-23
+审计日期：2026-10-23（初审） / 2026-10-24（复审，见 §1.5）
 审计对象：`/workspace/gallery` 工作区未提交改动（`git diff HEAD` + 未跟踪文件）
 方法：自建检查脚本 + 真实 Chromium（Playwright）实跑 + 变异测试 + 产物重生成比对
+
+> **本报告有两次结论**：§1 起的正文是 **2026-10-23 初审**（基线见 §0），
+> **§1.5 是 2026-10-24 对提交 `bf87e52` 的复审**，**§1.6 是复审后追加的 CI 缺陷（我的初审漏项）**。
+> 最终结论 = **PASS**（详见 §1.5 修复验收表、§1.6 追加发现）。
 
 ---
 
@@ -32,14 +36,16 @@ b237ce622935  tools/verify_browser.py
 
 ## 1. 总体结论
 
-**VERDICT: FAIL（需修完「重要」级 6 项后再发布；无崩溃级/阻断级缺陷）**
+> **初审（2026-10-23，基线 = §0 的 sha256）：VERDICT: FAIL** —— 6 个「重要」级缺陷，无崩溃级/阻断级缺陷。
+>
+> **复审（2026-10-24，commit `bf87e52`）：VERDICT: PASS** —— 6 个「重要」项**全部已修并经我复验**，
+> 9 个「次要」项中 8 个已修，4 个「建议」项中 3 个已修。详见 **§1.5 复审**。
 
-理由：核心功能链路完全可用、且比原版好得多（下方「通过项」列了 30 多条实测证据），但仍存在 6 个
+初审理由：核心功能链路完全可用、且比原版好得多（下方「通过项」列了 30 多条实测证据），但仍存在 6 个
 「重要」级缺陷，其中 **重要-1 是许可表述的事实性错误**（把 3 张 MIT 壁纸说成 CC BY-NC-SA 4.0）——
 对于一个以"合规署名"为卖点的 CC 仓库，这一条必须修；**重要-3 是教程在教一个已证实的 bug**
 （`sizes` 旧公式会让 561–693px 视口 2x 屏的 15/31 张图选到过小档位），属于"承诺了但没实现/教错了"；
 **重要-2 / 4 / 5 / 6** 是死功能、残缺功能、校验盲区与 CI 误报风险。
-修完这 6 项（预估半天工作量）即可转为 PASS。
 
 核心链路（缩略图分档 → srcset 选档 → 瀑布流 → 灯箱）实测是通的、可复现的：
 
@@ -61,6 +67,140 @@ b237ce622935  tools/verify_browser.py
 （审计期间生产者仍在修改仓库，本报告的 6 个「重要」问题中有 3 个（灯箱焦点、`sizes` 公式、
 `sync_srcset.py` 缺失）**是在审计过程中被作者修掉的**；报告按 §0 的最终哈希复现，列出的都是
 **当前这一版仍然存在**的问题。）
+
+---
+
+## 1.5 复审（2026-10-24，commit `bf87e52`）
+
+初审后生产者继续修复并提交（`bf87e5299a8882e1712d946b177b6807a5177ce8`，2026-10-24 00:01:55，
+分支 `optimize/gallery-v2`）。我对**提交后的这棵树**重新复验，结论如下。
+
+复审基线 sha256-12：
+
+```
+9e859fbf4785  docs/index.html
+d41eef48812a  tools/make_thumbs.py
+70720701fa33  tools/check_gallery.py
+022d89066424  tools/check_manifest.py   (新增)
+29f6b68435b8  tools/sync_srcset.py
+ffcfe23bad4a  tools/verify_browser.py
+c159a3a013b7  README.md
+31982b1063b4  TUTORIAL.md
+0d2d79e2d0c9  .github/workflows/verify.yml
+```
+
+### 修复验收表
+
+| 原编号 | 问题 | 状态 | 复验证据 |
+| --- | --- | --- | --- |
+| 重要-1 | 页脚把 MIT 壁纸说成 CC BY-NC-SA | ✅ 已修 | `docs/index.html:645-648` 改为「许可与各图原图一致：**整体角色形象为 CC BY-NC-SA 4.0**…**场景壁纸素材为 MIT**，其余各图版权归各自作者、许可以源站标注为准」——与 3 张卡片的 `· MIT` 署名不再矛盾 |
+| 重要-2 | `#stat-live` 恒空（死功能） | ✅ 已修 | 浏览器实测 `#stat-live` = `' · 本次已加载 859 KB / 26 张展示图'` —— **与我独立测量的 859 KB / 26 张完全一致** |
+| 重要-3 | TUTORIAL 的 `sizes` 示例是旧 bug 公式 | ✅ 已修 | `TUTORIAL.md:179` 已同步为 5 段式公式，与 `docs/index.html` 31 处 `sizes` 完全一致 |
+| 重要-4 | 缩放 3× 溢出视口且无法平移 | ✅ 已修 | 缩放改为改 `width/height`（`docs/index.html:863-864`）而非 `transform`；`.lb-stage` 改为 `overflow:auto`（`:108`）。实测 `stageOverflow=auto, stageScrollH=2608 > stageClientH=1000` → 放大后**可滚动触达**。作者脚本也新增了「灯箱缩放正常：536px → 670px，放大后舞台可滚动」断言 |
+| 重要-5 | `check_gallery.py` 不校验 `width/height` 比例 | ✅ 已修 | `tools/check_gallery.py:200-210` 新增：用 Pillow 读原图真实像素，与声明值比对，不符则报「width/height 与原图不符」 |
+| 重要-6 | CI 逐字节比对含 `bytes` 的 manifest | ✅ 已修 | 新增 `tools/check_manifest.py`（**只比结构，不比字节数**），`verify.yml:37` 改为调用它；注释也改成了「只比结构…不比字节数 —— WebP 的字节输出依赖 libwebp 版本」 |
+| 次要-1 | `target_sizes` 20% 边界漏 1152 档 | ✅ 已修 | 新增 `docs/thumbs/02-nvpu-whale-girl-1152w.webp`，页面 `srcset` 已引用 |
+| 次要-2 | 重复 `alt`（3+2 张） | ✅ 已修 | 31 个 `alt` 重新统计，**无重复** |
+| 次要-3 | `sizes` 写错无人把关 | ✅ 已修 | `tools/verify_browser.py` 新增断言：「sizes 声明与实际列宽在 7 组视口/DPR 组合下均匹配」 |
+| 次要-4 | 站内非图片相对链接不校验 | ✅ 已修 | `check_gallery.py:113` 改为「站内相对链接失效」（不再限定图片后缀） |
+| 次要-5 | manifest 外的孤儿缩略图不拦截 | ✅ 已修 | `check_gallery.py:243` 新增「thumbs/ 里有清单未收录的文件」 |
+| 次要-6 | 瀑布流间距 16.4–17.8px ≠ 18px | ⚠ 已改善 | 改为 `contentW = cardBox.width - 2` + `cap.getBoundingClientRect().height`（`:758-763`），实测间距 **17.08–17.83px**；残余 <1px 为 `Math.ceil` 取整误差，无视觉影响 |
+| 次要-7 | 禁 JS 时分区徽章全空 | ✅ 已修 | 数量已写死进 HTML：`<span class="count">2 张</span>` 等 5 处。禁 JS 实测徽章 = `['2 张','6 张','7 张','13 张','3 张']` |
+| 次要-8 | CI 不跑浏览器端验证 | ✅ 已修 | `verify.yml:73` 新增 `browser:` job（playwright + `playwright install --with-deps chromium` + `verify_browser.py --no-js`） |
+| 次要-9 | `--clean` 在 NFS 上 `OSError 39` | ✅ 已修 | `make_thumbs.py:201-208` 改为逐个 `unlink(missing_ok=True)`，注释写明了 NFS/overlay 的原因 |
+| 建议-1 | `ATTRIBUTION.md` §3 缺作者列 | ✅ 已修 | 已补「作者 / 集合来源」列，7 张逐行列出 |
+| 建议-2 | 「看大图 ↗」指向的是缩略图 | ✅ 已修 | 文案改为「**高清版 ↗**」（`docs/index.html:673`） |
+| 建议-3 | `layoutAll(false)` 字体重排是死代码 | ✅ 已修 | 新增 `lastCapHeights`（`:730, 783-788`），caption 高度变化也会触发重排 |
+| 建议-4 | 提交前冻结一版 | ✅ 已修 | 已提交为 `bf87e52`，`git status` 干净 |
+
+### 复审结论
+
+**VERDICT: PASS**
+
+- 本次报告列出的 **19 个问题，18 个已修并经我独立复验，1 个（次要-6）改善到亚像素级**；
+- 复审基线上重跑作者自带的全套校验，**全绿**：
+  `check_gallery.py` exit 0 / `sync_srcset.py --check` exit 0 / `check_manifest.py` exit 0 /
+  `verify_browser.py --no-js` → 「浏览器端验证全部通过 ✓」（含"灯箱焦点被正确限制在对话框内
+  （10 次 Tab 全部循环）""sizes 声明与实际列宽在 7 组视口/DPR 组合下均匹配"等新增断言）；
+- **未发现任何新引入的回归**：31/31 图片加载成功、瀑布流 4 列 × 13 张顶部错开 8 种位置、
+  竖图比例 1.781、CLS = 0.0006、禁 JS 仍渲染 31 张、零控制台报错、零失败请求；
+- 站点仍是纯静态、零外部运行时请求（`docs/index.html` 里除内联 SVG 命名空间外无任何 http(s) 资源引用）、
+  `docs/.nojekyll` 在位，**可直接发布**。
+
+**遗留的唯一非阻塞项**：次要-6 的亚像素间距误差（17.08–17.83px vs 目标 18px），肉眼不可见，可不改。
+
+---
+
+## 1.6 复审新增发现：`tools/requirements.txt` 让 CI 全红（**我的初审漏掉了**）
+
+**发现时间**：2026-10-24 14:28，推送后查看 GitHub Actions 状态时。
+**性质**：**我的审计失误** —— 初审时我 `cat` 过这个文件，看见了 Python docstring，但**没有拿 pip 去解析它**，
+只把注意力放在 manifest 的 `bytes` 依赖上（重要-6）。直到把提交推上 GitHub、CI 跑红，才定位到。
+
+### 现象
+
+`.github/workflows/verify.yml` 的 `verify` 与 `browser` **两个 job 全部失败**，且都停在同一步：
+
+```
+✗ 安装依赖                                          failure
+- 校验页面与图片一致性                                skipped
+- 浏览器端验证（功能 / 性能 / 布局 / 无障碍）              skipped
+```
+
+CI 日志：
+
+```
+##[group]Run pip install -r tools/requirements.txt
+ERROR: Invalid requirement: '"""生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""': Expected package name at the start of dependency specifier
+    """生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""
+    ^ (from line 2 of tools/requirements.txt)
+##[error]Process completed with exit code 1.
+```
+
+### 根因
+
+`tools/requirements.txt` 是把 Python 脚本的写法直接照搬过来的：
+
+```
+#!/usr/bin/env python3
+"""生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""
+
+Pillow>=10.0
+```
+
+`pip` 解析 requirements 时**不认 docstring**，把第 2 行整行当成一个依赖名 → 解析失败 →
+`pip install -r` 整条命令退出码 1 → 后续所有校验步骤全被 skip。
+**换句话说：这套 CI 从 `tools/requirements.txt` 写出来那一刻起就是红的，一次都没真正跑过校验。**
+（`TUTORIAL.md` 与 `README.md` 都教用户 `pip install -r tools/requirements.txt`，用户本地同样会报错。）
+
+### 本地复现（干净 venv，无网络）
+
+```bash
+python3 -m venv /tmp/venv_ci
+/tmp/venv_ci/bin/pip install --dry-run --no-index -r tools/requirements.txt
+# ERROR: Invalid requirement: '"""生成画廊多档 WebP 缩略图 —— 依赖见 requirements.txt。"""' (from line 2)
+```
+
+注意：沙箱系统 pip 受 PEP 668 保护（externally-managed-environment），会先被环境检查拦下；
+**必须用干净 venv 才能看到真正的解析错误** —— 这也是我初审时用 `pip install` 没能发现它的原因之一。
+
+### 已修（commit `4efd948`）
+
+```
+# 画廊工具链依赖：make_thumbs.py / check_gallery.py / check_manifest.py 用 Pillow 读写与校验 WebP
+# 注意：本文件是 pip requirements 格式，只能用 # 注释，不能写成 Python docstring
+Pillow>=10.0
+```
+
+修完本地复验：解析通过（只剩 `--no-index` 造成的 "no matching distribution"，属离线环境正常现象）。
+已推送 `origin/main` 与 `origin/optimize/gallery-v2`。
+
+### 我该怎么做（自查教训）
+
+**依赖清单文件必须真的跑一次解析器验证，不能只 `cat` 一遍。** 本次静态检查全部通过、
+本地脚本全部能跑（沙箱里 Pillow 早已预装，`pip install` 根本没被触发），
+所以这个错误"在本地完全隐形"，只有 CI 才会暴露。凡是"CI 会执行、我不执行"的路径，
+都应单独做一次等价验证 —— 这次漏了，属于审计覆盖不全，记在这里。
 
 ---
 
@@ -718,6 +858,9 @@ python3 tools/verify_browser.py --no-js   # 浏览器端验证全部通过 ✓�
 ---
 
 ## 5. 修复优先级建议
+
+> **2026-10-24 更新：本节 1–6 项已全部完成并复验通过（§1.5），当前结论 PASS。**
+> 下面保留初审时的优先级排序，供追溯。
 
 1. **先修许可表述**（重要-1）—— 一行文本，零风险，但涉及 CC 合规。
 2. **补 `width/height` 比例校验**（重要-5）—— 约 8 行代码，堵住最容易犯也最难发现的错。
