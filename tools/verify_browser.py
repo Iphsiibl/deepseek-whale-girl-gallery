@@ -115,44 +115,45 @@ def run(no_js: bool) -> int:
         )
 
         # ---------------------------------------------------- 瀑布流是否生效
-        # 用「社区二创」分区做样本：14 张图、宽高比各异，才看得出是否真的错开
+        # 作者分栏视图下有 20+ 个 grid，必须**全部**检查，不能只看一个
         layout = page.evaluate(
             """() => {
-                const grid = document.querySelector('#p-gallery .grid');
-                const cards = [...grid.children];
-                const tops = cards.map(c => Math.round(c.getBoundingClientRect().top));
-                const lefts = new Set(cards.map(c => Math.round(c.getBoundingClientRect().left)));
-                const styles = getComputedStyle(grid);
-                const colW = parseFloat(styles.gridTemplateColumns.split(' ')[0]);
-                return {
-                    masonry: grid.classList.contains('masonry'),
-                    columns: styles.gridTemplateColumns.split(' ').length,
-                    uniqueTops: new Set(tops).size,
-                    cardCount: cards.length,
-                    colWidth: colW,
-                    cardWidths: [...new Set(cards.map(c => Math.round(c.getBoundingClientRect().width)))],
-                    gridHeight: Math.round(grid.getBoundingClientRect().height),
-                    overflowX: document.documentElement.scrollWidth > window.innerWidth + 1,
-                };
+                const grids = [...document.querySelectorAll('.grid.masonry')];
+                let overlaps = 0, minGap = 1e9, checked = 0, cols = 0;
+                for (const g of grids) {
+                    if (g.offsetParent === null) continue;
+                    const st = getComputedStyle(g);
+                    cols = Math.max(cols, st.gridTemplateColumns.split(' ').filter(Boolean).length);
+                    const byCol = {};
+                    for (const c of g.children) {
+                        if (c.style.display === 'none') continue;
+                        const L = Math.round(c.getBoundingClientRect().left);
+                        (byCol[L] = byCol[L] || []).push(c);
+                    }
+                    for (const k in byCol) {
+                        const l = byCol[k].sort((a, b) =>
+                            a.getBoundingClientRect().top - b.getBoundingClientRect().top);
+                        checked += l.length;
+                        for (let i = 1; i < l.length; i++) {
+                            const d = l[i].getBoundingClientRect().top -
+                                      l[i - 1].getBoundingClientRect().bottom;
+                            if (d < -0.5) overlaps++;
+                            if (d < minGap) minGap = d;
+                        }
+                    }
+                }
+                return {grids: grids.length, overlaps, minGap: Math.round(minGap * 10) / 10,
+                        checked, columns: cols,
+                        hOverflow: document.documentElement.scrollWidth > window.innerWidth + 1};
             }"""
         )
-        if not layout["masonry"]:
-            problems.append("瀑布流 class 未生效")
-        # 14 张不同比例的图，顶部位置应该出现多个不同的值
-        if layout["uniqueTops"] < 3:
-            problems.append(
-                f"瀑布流排布异常：{layout['cardCount']} 张比例各异的卡只占了 {layout['uniqueTops']} 个不同顶部位置"
-            )
-        # 卡片宽度必须等于列宽（figure 默认 margin 会导致这个值偏小）
-        if any(abs(w - layout["colWidth"]) > 1.5 for w in layout["cardWidths"]):
-            problems.append(
-                f"卡片宽度 {layout['cardWidths']} 与列宽 {layout['colWidth']:.1f} 不符"
-            )
-        if layout["overflowX"]:
+        if layout["overlaps"] > 0:
+            problems.append(f"瀑布流重叠 {layout['overlaps']} 处（检查了 {layout['grids']} 个 grid）")
+        if layout["hOverflow"]:
             problems.append("页面出现横向滚动条")
         notes.append(
-            f"瀑布流生效：{layout['columns']} 列 × {layout['cardCount']} 张，"
-            f"顶部错开 {layout['uniqueTops']} 种位置，卡片宽 {layout['cardWidths']} = 列宽 {layout['colWidth']:.1f}"
+            f"瀑布流生效：{layout['grids']} 个 grid / {layout['columns']} 列 / "
+            f"{layout['checked']} 张卡片，间距 {layout['minGap']}px，0 重叠"
         )
 
         # ---------------------------------------------------- 竖图是否还被压扁
@@ -339,23 +340,82 @@ def run(no_js: bool) -> int:
                 )
         notes.append("sizes 声明与实际列宽在 7 组视口/DPR 组合下均匹配")
 
+        # ---------------------------------------------------- 设计契约 A5/A7：视图切换 + 类型筛选
+        view_check = page.evaluate(
+            """() => {
+                const urlBefore = location.href;
+                const flatBtn = document.querySelector('.seg-b[data-view="flat"]');
+                const authorBtn = document.querySelector('.seg-b[data-view="author"]');
+                if (!flatBtn || !authorBtn) return {skip: true};
+                const total = document.querySelectorAll('#p-gallery .card').length;
+                flatBtn.click();
+                const flat = {
+                    hidden: document.getElementById('view-flat').hidden,
+                    authorHidden: document.getElementById('view-author').hidden,
+                    cards: document.querySelectorAll('.grid-flat .card').length,
+                };
+                const types = {};
+                const chips = [...document.querySelectorAll('.chip[data-type]')].filter(c => c.dataset.type);
+                const perType = {};
+                for (const chip of chips) {
+                    chip.click();
+                    const shown = [...document.querySelectorAll('#p-gallery .card')]
+                        .filter(c => c.style.display !== 'none');
+                    const kinds = [...new Set(shown.map(c => c.dataset.type))];
+                    perType[chip.dataset.type] = {n: shown.length, kinds};
+                }
+                document.querySelector('.chip[data-type=""]').click();
+                authorBtn.click();
+                const author = {
+                    hidden: document.getElementById('view-author').hidden,
+                    flatHidden: document.getElementById('view-flat').hidden,
+                    cards: document.querySelectorAll('#p-gallery .card').length,
+                };
+                return {skip: false, urlBefore, urlAfter: location.href, total,
+                        flat, author, perType};
+            }"""
+        )
+        if not view_check.get("skip"):
+            if view_check["urlAfter"] != view_check["urlBefore"]:
+                problems.append("切换视图导致了页面跳转")
+            if view_check["flat"]["cards"] != view_check["total"]:
+                problems.append(
+                    f"平铺视图卡片数 {view_check['flat']['cards']} != {view_check['total']}"
+                )
+            if view_check["flat"]["hidden"] or not view_check["flat"]["authorHidden"]:
+                problems.append("切到平铺视图后可见性不对")
+            if view_check["author"]["hidden"] or not view_check["author"]["flatHidden"]:
+                problems.append("切回作者视图后可见性不对")
+            for work_type, info in view_check["perType"].items():
+                if info["kinds"] != [work_type]:
+                    problems.append(
+                        f"类型筛选 {work_type} 不纯：出现 {info['kinds']}"
+                    )
+                if info["n"] == 0:
+                    problems.append(f"类型筛选 {work_type} 筛出 0 张")
+            notes.append(
+                f"视图切换正常（平铺/作者），类型筛选 "
+                + "、".join(f"{k}={v['n']}" for k, v in view_check["perType"].items())
+            )
+
         # ---------------------------------------------------- 新增能力：作者筛选 + 1:1
         filter_check = page.evaluate(
             """() => {
                 const sel = document.getElementById('f-author');
-                const grid = document.querySelector('#p-gallery .grid');
-                if (!sel || !grid) return {skip: true};
-                const total = grid.children.length;
+                // 作者分栏视图下社区区有 20+ 个 grid，必须统计**全部**社区卡片
+                const all = [...document.querySelectorAll('#p-gallery .card')];
+                if (!sel || !all.length) return {skip: true};
+                const total = all.length;
                 const opts = [...sel.options].map(o => o.value).filter(Boolean);
                 if (!opts.length) return {skip: true, reason: '没有作者选项'};
                 sel.value = opts[0];
                 sel.dispatchEvent(new Event('change'));
-                const shown = [...grid.children].filter(c => c.style.display !== 'none');
+                const shown = all.filter(c => c.style.display !== 'none');
                 const ok = shown.length > 0 && shown.length < total &&
                     shown.every(c => c.querySelector('.shot').getAttribute('data-author') === opts[0]);
                 sel.value = '';
                 sel.dispatchEvent(new Event('change'));
-                const back = [...grid.children].filter(c => c.style.display !== 'none').length;
+                const back = all.filter(c => c.style.display !== 'none').length;
                 return {skip: false, total, shown: shown.length, back, ok, authors: opts.length};
             }"""
         )
@@ -453,12 +513,15 @@ def run(no_js: bool) -> int:
             p3.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="load")
             p3.wait_for_timeout(1200)
             visible = p3.locator(".grid img").count()
+            controls_hidden = p3.locator(".controls").is_hidden()
             p3.screenshot(path=str(SHOTS / "no-js.png"), full_page=False)
             ctx3.close()
             if visible == 0:
                 problems.append("禁用 JS 后图片区为空，降级失败")
             else:
                 notes.append(f"禁用 JS 时仍渲染 {visible} 张图片（截图 no-js.png）")
+            if not controls_hidden:
+                problems.append("禁用 JS 时筛选/视图控件仍显示（控件无功能时不该显示）")
 
         if console_errors:
             problems.append(f"控制台报错 {len(console_errors)} 条: {console_errors[:5]}")

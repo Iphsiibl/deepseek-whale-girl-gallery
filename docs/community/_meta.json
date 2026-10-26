@@ -18,7 +18,8 @@
    "width": 1360,
    "height": 1496,
    "upstreamId": "issue-31-01",
-   "sha256": "dbb305a3f84a19f76b0a32d9e5294816ec0f34348a6ef73888632fb8c2e1f4b4"
+   "sha256": "dbb305a3f84a19f76b0a32d9e5294816ec0f34348a6ef73888632fb8c2e1f4b4",
+   "type": "character"
   },
   "issue-53-01": {
    "id": "issue-53-01",
@@ -35,7 +36,8 @@
    "width": 1145,
    "height": 1374,
    "upstreamId": "issue-53-01",
-   "sha256": "1f3db49d433b3b94bd701c5b6d7c44274c62dac844a58627c526d1fa3e9f3934"
+   "sha256": "1f3db49d433b3b94bd701c5b6d7c44274c62dac844a58627c526d1fa3e9f3934",
+   "type": "character"
   },
   "issue-53-02": {
    "id": "issue-53-02",
@@ -52,7 +54,8 @@
    "width": 1089,
    "height": 1445,
    "upstreamId": "issue-53-02",
-   "sha256": "940f91ebee4dcf3c77fd53b0b359f7e21f7a4f3f38823747971f0d175993786b"
+   "sha256": "940f91ebee4dcf3c77fd53b0b359f7e21f7a4f3f38823747971f0d175993786b",
+   "type": "character"
   },
   "issue-53-03": {
    "id": "issue-53-03",
@@ -69,7 +72,8 @@
    "width": 1139,
    "height": 1380,
    "upstreamId": "issue-53-03",
-   "sha256": "7520448e673097172491ff13607eec26eb510df47c76c297adcbeedcaf56670e"
+   "sha256": "7520448e673097172491ff13607eec26eb510df47c76c297adcbeedcaf56670e",
+   "type": "character"
   },
   "issue-53-04": {
    "id": "issue-53-04",
@@ -86,7 +90,8 @@
    "width": 1089,
    "height": 1445,
    "upstreamId": "issue-53-04",
-   "sha256": "d07ab8faf526ffa7ddd66312ebc2c7b01dfb6480ec6156529b04cda367686405"
+   "sha256": "d07ab8faf526ffa7ddd66312ebc2c7b01dfb6480ec6156529b04cda367686405",
+   "type": "character"
   },
   "issue-54-01": {
    "id": "issue-54-01",
@@ -103,7 +108,8 @@
    "width": 1736,
    "height": 2264,
    "upstreamId": "issue-54-01",
-   "sha256": "1ea7f69d131aa5287e7ccd93d18a3ee030136870c89df2eb3b65b6d1b26a9e9d"
+   "sha256": "1ea7f69d131aa5287e7ccd93d18a3ee030136870c89df2eb3b65b6d1b26a9e9d",
+   "type": "character"
   },
   "issue-55-01": {
    "id": "issue-55-01",
@@ -120,7 +126,8 @@
    "width": 2161,
    "height": 3840,
    "upstreamId": "issue-55-01",
-   "sha256": "2c3194e20ff975ced1ea6ff73e47fbc2cdbf272a22461c36157a7d478a8a75bc"
+   "sha256": "2c3194e20ff975ced1ea6ff73e47fbc2cdbf272a22461c36157a7d478a8a75bc",
+   "type": "character"
   },
   "issue-55-02": {
    "id": "issue-55-02",
@@ -137,7 +144,8 @@
    "width": 2161,
    "height": 3840,
    "upstreamId": "issue-55-02",
-   "sha256": "a841ad0c85cb775556641faf41bc8dc880b806262a36103353e4fadb164e1381"
+   "sha256": "a841ad0c85cb775556641faf41bc8dc880b806262a36103353e4fadb164e1381",
+   "type": "character"
   },
   "issue-55-03": {
    "id": "issue-55-03",
@@ -154,7 +162,8 @@
    "width": 2161,
    "height": 3840,
    "upstreamId": "issue-55-03",
-   "sha256": "4c1c9b0aab286b7c1d6c66957f5bb9d69b29e2e195917eebaeb09a9c41b7948c"
+   "sha256": "4c1c9b0aab286b7c1d6c66957f5bb9d69b29e2e195917eebaeb09a9c41b7948c",
+   "type": "character"
   },
   "issue-56-01": {
    "id": "issue-56-01",
@@ -171,7 +180,8 @@
    "width": 1037,
    "height": 1516,
    "upstreamId": "issue-56-01",
-   "sha256": "6d9779dd2380b0b5065657ec623a36cb022ffd567af005fd02744cf853d5a275"
+   "sha256": "6d9779dd2380b0b5065657ec623a36cb022ffd567af005fd02744cf853d5a275",
+   "type": "character"
   },
   "issue-57-01": {
    "id": "issue-57-01",
@@ -188,7 +198,8 @@
    "width": 750,
    "height": 1200,
    "upstreamId": "issue-57-01",
-   "sha256": "209e50440fab9173384c7e6b3e04ae58c434153455f31aed1c11b8b0900fd6d5"
+   "sha256": "209e50440fab9173384c7e6b3e04ae58c434153455f31aed1c11b8b0900fd6d5",
+   "type": "character"
   },
   "issue-60-01": {
    "id": "issue-60-01",
@@ -205,7 +216,8 @@
    "width": 1082,
    "height": 1453,
    "upstreamId": "issue-60-01",
-   "sha256": "a1bee9cb522550b1dfac8bea94536b5ecf5c7a478707023c7038c5c7ac57cc26"
+   "sha256": "a1bee9cb522550b1dfac8bea94536b5ecf5c7a478707023c7038c5c7ac57cc26",
+   "type": "character"
   },
   "issue-60-02": {
    "id": "issue-60-02",
@@ -222,7 +234,8 @@
    "width": 1086,
    "height": 1448,
    "upstreamId": "issue-60-02",
-   "sha256": "41e47e0db637b090d607c9e8a6e5f3afda16bea7ba79f862e461dbeea7023715"
+   "sha256": "41e47e0db637b090d607c9e8a6e5f3afda16bea7ba79f862e461dbeea7023715",
+   "type": "character"
   },
   "issue-62-01": {
    "id": "issue-62-01",
@@ -239,7 +252,8 @@
    "width": 3840,
    "height": 2560,
    "upstreamId": "issue-62-01",
-   "sha256": "75febec7eb812201e38b036b649e4a2e97fad9907418decc774933d15d23ccee"
+   "sha256": "75febec7eb812201e38b036b649e4a2e97fad9907418decc774933d15d23ccee",
+   "type": "character"
   },
   "issue-64-01": {
    "id": "issue-64-01",
@@ -256,7 +270,8 @@
    "width": 2880,
    "height": 2880,
    "upstreamId": "issue-64-01",
-   "sha256": "98b4ae6c8cdcfa82b85180907d020548af52603ebc581a22f522efeaa673b003"
+   "sha256": "98b4ae6c8cdcfa82b85180907d020548af52603ebc581a22f522efeaa673b003",
+   "type": "character"
   },
   "issue-66-01": {
    "id": "issue-66-01",
@@ -273,7 +288,8 @@
    "width": 1182,
    "height": 665,
    "upstreamId": "issue-66-01",
-   "sha256": "75b03c6010f11a984235eeda21b5648e4ef8d227b08fdb31b2f455bc23112fd1"
+   "sha256": "75b03c6010f11a984235eeda21b5648e4ef8d227b08fdb31b2f455bc23112fd1",
+   "type": "sheet"
   },
   "issue-66-02": {
    "id": "issue-66-02",
@@ -290,7 +306,8 @@
    "width": 1182,
    "height": 665,
    "upstreamId": "issue-66-02",
-   "sha256": "245759a66ce45505be3a6cee3cd8dd0275bee2d545e076cec94176347d143aa3"
+   "sha256": "245759a66ce45505be3a6cee3cd8dd0275bee2d545e076cec94176347d143aa3",
+   "type": "sheet"
   },
   "issue-66-03": {
    "id": "issue-66-03",
@@ -307,7 +324,8 @@
    "width": 1182,
    "height": 665,
    "upstreamId": "issue-66-03",
-   "sha256": "81358605da1d2ee0da1485f8ee63386e00e20d829bbbca63d181c4fee1042d39"
+   "sha256": "81358605da1d2ee0da1485f8ee63386e00e20d829bbbca63d181c4fee1042d39",
+   "type": "sheet"
   },
   "issue-68-01": {
    "id": "issue-68-01",
@@ -324,7 +342,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-68-01",
-   "sha256": "85e0bfe47a3510f055caf7a693f87818535100bb40ee2ffeecbd03a66e1364e8"
+   "sha256": "85e0bfe47a3510f055caf7a693f87818535100bb40ee2ffeecbd03a66e1364e8",
+   "type": "character"
   },
   "issue-69-01": {
    "id": "issue-69-01",
@@ -341,7 +360,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-69-01",
-   "sha256": "905aa2dcbb735a11977ac5412dfbebf3365a952c28c1677528159a7427acbd90"
+   "sha256": "905aa2dcbb735a11977ac5412dfbebf3365a952c28c1677528159a7427acbd90",
+   "type": "character"
   },
   "issue-72-01": {
    "id": "issue-72-01",
@@ -358,7 +378,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-72-01",
-   "sha256": "d3da76e3d201a7e0b9fc5f070375ee1e0d09742e84fe778f7612505ebf2a7fa3"
+   "sha256": "d3da76e3d201a7e0b9fc5f070375ee1e0d09742e84fe778f7612505ebf2a7fa3",
+   "type": "character"
   },
   "issue-73-01": {
    "id": "issue-73-01",
@@ -375,7 +396,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-73-01",
-   "sha256": "da223ca7d57d443b1d263f97548f45356f1de4e83e88ca1777996ad5ddc4d67f"
+   "sha256": "da223ca7d57d443b1d263f97548f45356f1de4e83e88ca1777996ad5ddc4d67f",
+   "type": "character"
   },
   "issue-16-01": {
    "id": "issue-16-01",
@@ -392,7 +414,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-16-01",
-   "sha256": "64cb7204d7095406b121aa442b9c9e87c24ffeafd6d640a2480d2f34a7af8887"
+   "sha256": "64cb7204d7095406b121aa442b9c9e87c24ffeafd6d640a2480d2f34a7af8887",
+   "type": "character"
   },
   "issue-11-01": {
    "id": "issue-11-01",
@@ -409,7 +432,8 @@
    "width": 1918,
    "height": 820,
    "upstreamId": "issue-11-01",
-   "sha256": "d118e4ebdc3c21c29fc0980665d66a0fa9d52fe576d34bdd3568f10d78c4106f"
+   "sha256": "d118e4ebdc3c21c29fc0980665d66a0fa9d52fe576d34bdd3568f10d78c4106f",
+   "type": "scene"
   },
   "issue-12-01": {
    "id": "issue-12-01",
@@ -426,7 +450,8 @@
    "width": 1299,
    "height": 1211,
    "upstreamId": "issue-12-01",
-   "sha256": "e552ec514b5b007adbef478350275104e3bca7a6c1d47fedc3a895e8d2b75799"
+   "sha256": "e552ec514b5b007adbef478350275104e3bca7a6c1d47fedc3a895e8d2b75799",
+   "type": "character"
   },
   "meme-01": {
    "id": "meme-01",
@@ -443,7 +468,8 @@
    "width": 720,
    "height": 715,
    "upstreamId": "meme-01",
-   "sha256": "f74e5d8369467dac4f5392f2b1b93ca2d5db54d0ea6288036178eb69aacd134b"
+   "sha256": "f74e5d8369467dac4f5392f2b1b93ca2d5db54d0ea6288036178eb69aacd134b",
+   "type": "meme"
   },
   "meme-02": {
    "id": "meme-02",
@@ -460,7 +486,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-02",
-   "sha256": "5449ed719b8e80db4243c50f0f1fb497a63ef0bb40b248223cb4bcf20918f764"
+   "sha256": "5449ed719b8e80db4243c50f0f1fb497a63ef0bb40b248223cb4bcf20918f764",
+   "type": "meme"
   },
   "meme-03": {
    "id": "meme-03",
@@ -477,7 +504,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-03",
-   "sha256": "eafbc11bba2107166b7d8e568c0aaf7b250b888f5c77fbe326dc014a1a9d3a73"
+   "sha256": "eafbc11bba2107166b7d8e568c0aaf7b250b888f5c77fbe326dc014a1a9d3a73",
+   "type": "meme"
   },
   "meme-04": {
    "id": "meme-04",
@@ -494,7 +522,8 @@
    "width": 718,
    "height": 702,
    "upstreamId": "meme-04",
-   "sha256": "2e7388581a836d28b4851257d819a6ddf7ef53b3f222b938183e2aa4e354ff67"
+   "sha256": "2e7388581a836d28b4851257d819a6ddf7ef53b3f222b938183e2aa4e354ff67",
+   "type": "meme"
   },
   "meme-05": {
    "id": "meme-05",
@@ -511,7 +540,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-05",
-   "sha256": "c637b79cf5eafa7f9a476a822dbdd444060607321ee50473a6d0dde64a010e78"
+   "sha256": "c637b79cf5eafa7f9a476a822dbdd444060607321ee50473a6d0dde64a010e78",
+   "type": "meme"
   },
   "meme-06": {
    "id": "meme-06",
@@ -528,7 +558,8 @@
    "width": 720,
    "height": 658,
    "upstreamId": "meme-06",
-   "sha256": "089c0dfb74484e46a5e8e07d392a0b5a911c68f249d771345e634fd79d914f29"
+   "sha256": "089c0dfb74484e46a5e8e07d392a0b5a911c68f249d771345e634fd79d914f29",
+   "type": "meme"
   },
   "meme-07": {
    "id": "meme-07",
@@ -545,7 +576,8 @@
    "width": 720,
    "height": 405,
    "upstreamId": "meme-07",
-   "sha256": "7c9407431c5abc074c8b7148b39464bb4383a0e1e76840337a380d811bcdacdc"
+   "sha256": "7c9407431c5abc074c8b7148b39464bb4383a0e1e76840337a380d811bcdacdc",
+   "type": "meme"
   },
   "meme-08": {
    "id": "meme-08",
@@ -562,7 +594,8 @@
    "width": 720,
    "height": 405,
    "upstreamId": "meme-08",
-   "sha256": "585f59e399db2bb8a283c85ae38d75bbd1d726cae3c92f21e58d7eb1f713281a"
+   "sha256": "585f59e399db2bb8a283c85ae38d75bbd1d726cae3c92f21e58d7eb1f713281a",
+   "type": "meme"
   },
   "meme-09": {
    "id": "meme-09",
@@ -579,7 +612,8 @@
    "width": 720,
    "height": 923,
    "upstreamId": "meme-09",
-   "sha256": "8c9f3929e249ce3a40e7e593eb84da66469ddab8f9bc875ed49378f91b967efd"
+   "sha256": "8c9f3929e249ce3a40e7e593eb84da66469ddab8f9bc875ed49378f91b967efd",
+   "type": "meme"
   },
   "meme-10": {
    "id": "meme-10",
@@ -596,7 +630,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-10",
-   "sha256": "6b34554362f71ee2bb9792dd82dd5ed24218dc608ba12fccdf1f7a8fbaf94b10"
+   "sha256": "6b34554362f71ee2bb9792dd82dd5ed24218dc608ba12fccdf1f7a8fbaf94b10",
+   "type": "meme"
   },
   "meme-11": {
    "id": "meme-11",
@@ -613,7 +648,8 @@
    "width": 720,
    "height": 983,
    "upstreamId": "meme-11",
-   "sha256": "240907e498051231a892b90c18d615f78a3ba967e57f24381a1a940068b56af1"
+   "sha256": "240907e498051231a892b90c18d615f78a3ba967e57f24381a1a940068b56af1",
+   "type": "meme"
   },
   "meme-12": {
    "id": "meme-12",
@@ -630,7 +666,8 @@
    "width": 720,
    "height": 536,
    "upstreamId": "meme-12",
-   "sha256": "cbe63945c2a16192aeea6c7b8af488169a7441c46be4463476fad851c3742de1"
+   "sha256": "cbe63945c2a16192aeea6c7b8af488169a7441c46be4463476fad851c3742de1",
+   "type": "meme"
   },
   "meme-13": {
    "id": "meme-13",
@@ -647,7 +684,8 @@
    "width": 720,
    "height": 405,
    "upstreamId": "meme-13",
-   "sha256": "b446614714f90c2f96147f936d2da92b38cc73901b5ec0ccf2a687de7855bfd0"
+   "sha256": "b446614714f90c2f96147f936d2da92b38cc73901b5ec0ccf2a687de7855bfd0",
+   "type": "meme"
   },
   "meme-14": {
    "id": "meme-14",
@@ -664,7 +702,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-14",
-   "sha256": "47b8dbeda81fa28562303cdb11206a46486040591c7351a10058a86876240a5f"
+   "sha256": "47b8dbeda81fa28562303cdb11206a46486040591c7351a10058a86876240a5f",
+   "type": "meme"
   },
   "meme-15": {
    "id": "meme-15",
@@ -681,7 +720,8 @@
    "width": 720,
    "height": 900,
    "upstreamId": "meme-15",
-   "sha256": "7780325fd4b3ba24163dd9dfc63acb4442e11c6d6e7e5851b70ae17b13f2a2d7"
+   "sha256": "7780325fd4b3ba24163dd9dfc63acb4442e11c6d6e7e5851b70ae17b13f2a2d7",
+   "type": "meme"
   },
   "meme-16": {
    "id": "meme-16",
@@ -698,7 +738,8 @@
    "width": 720,
    "height": 405,
    "upstreamId": "meme-16",
-   "sha256": "d12c2ff521bcec38c0859b897db335b9c1e1a4cc0cf03913a6173f82400db610"
+   "sha256": "d12c2ff521bcec38c0859b897db335b9c1e1a4cc0cf03913a6173f82400db610",
+   "type": "meme"
   },
   "meme-17": {
    "id": "meme-17",
@@ -715,7 +756,8 @@
    "width": 720,
    "height": 960,
    "upstreamId": "meme-17",
-   "sha256": "358ccf85ad9ce944b5456a900aea854b1172d52730d6ef7e54e13f699b382892"
+   "sha256": "358ccf85ad9ce944b5456a900aea854b1172d52730d6ef7e54e13f699b382892",
+   "type": "meme"
   },
   "meme-18": {
    "id": "meme-18",
@@ -732,7 +774,8 @@
    "width": 720,
    "height": 960,
    "upstreamId": "meme-18",
-   "sha256": "468e330393dec39983122acaa0ddc689a430e264313ef5580812779e3bcdcb11"
+   "sha256": "468e330393dec39983122acaa0ddc689a430e264313ef5580812779e3bcdcb11",
+   "type": "meme"
   },
   "meme-19": {
    "id": "meme-19",
@@ -749,7 +792,8 @@
    "width": 657,
    "height": 1215,
    "upstreamId": "meme-19",
-   "sha256": "2a3194c9f3132f3804aeb6a93810aee169f4b635b73c76b37fc21f838a8d6722"
+   "sha256": "2a3194c9f3132f3804aeb6a93810aee169f4b635b73c76b37fc21f838a8d6722",
+   "type": "meme"
   },
   "meme-20": {
    "id": "meme-20",
@@ -766,7 +810,8 @@
    "width": 720,
    "height": 639,
    "upstreamId": "meme-20",
-   "sha256": "1a57c00d99c8dbd253d7731be986ce46649f71cf5244b973fbe905a5bb74c9a5"
+   "sha256": "1a57c00d99c8dbd253d7731be986ce46649f71cf5244b973fbe905a5bb74c9a5",
+   "type": "meme"
   },
   "meme-21": {
    "id": "meme-21",
@@ -783,7 +828,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-21",
-   "sha256": "305855ce4b37ec3ed86301683a4c51b7ffb74c2ec24ed0a733f95599133d7639"
+   "sha256": "305855ce4b37ec3ed86301683a4c51b7ffb74c2ec24ed0a733f95599133d7639",
+   "type": "meme"
   },
   "meme-22": {
    "id": "meme-22",
@@ -800,7 +846,8 @@
    "width": 720,
    "height": 720,
    "upstreamId": "meme-22",
-   "sha256": "2436423342237d07568af1ffd54f3f17cd5125afa1d866031688265eb01dc423"
+   "sha256": "2436423342237d07568af1ffd54f3f17cd5125afa1d866031688265eb01dc423",
+   "type": "meme"
   },
   "meme-23": {
    "id": "meme-23",
@@ -817,7 +864,8 @@
    "width": 720,
    "height": 1080,
    "upstreamId": "meme-23",
-   "sha256": "34e9e06a8a9c9f685484867c25796fd685bc67a5597d37be26cf745e1b1ff971"
+   "sha256": "34e9e06a8a9c9f685484867c25796fd685bc67a5597d37be26cf745e1b1ff971",
+   "type": "meme"
   },
   "meme-24": {
    "id": "meme-24",
@@ -834,7 +882,8 @@
    "width": 720,
    "height": 788,
    "upstreamId": "meme-24",
-   "sha256": "aae33ab5c8c1415f5391a7e4b209ab19b5ca2e7d762719dad46a4bbb9492b59a"
+   "sha256": "aae33ab5c8c1415f5391a7e4b209ab19b5ca2e7d762719dad46a4bbb9492b59a",
+   "type": "meme"
   },
   "meme-25": {
    "id": "meme-25",
@@ -851,7 +900,8 @@
    "width": 720,
    "height": 960,
    "upstreamId": "meme-25",
-   "sha256": "a926320aaf671fb7cbe521e3862e18b90be12ca3f75a91ca40921a6d923b7a66"
+   "sha256": "a926320aaf671fb7cbe521e3862e18b90be12ca3f75a91ca40921a6d923b7a66",
+   "type": "meme"
   },
   "meme-26": {
    "id": "meme-26",
@@ -868,7 +918,8 @@
    "width": 960,
    "height": 960,
    "upstreamId": "meme-26",
-   "sha256": "9986b25dc5f839a3db468d8c35ad7d061ca607ef2791ee76397f9d9ff75a4146"
+   "sha256": "9986b25dc5f839a3db468d8c35ad7d061ca607ef2791ee76397f9d9ff75a4146",
+   "type": "meme"
   },
   "meme-27": {
    "id": "meme-27",
@@ -885,7 +936,8 @@
    "width": 942,
    "height": 1672,
    "upstreamId": "meme-27",
-   "sha256": "ccc2b81e9618262b9f5534e71c20ad79a6fd8806a54722f5dc2f50031caa7374"
+   "sha256": "ccc2b81e9618262b9f5534e71c20ad79a6fd8806a54722f5dc2f50031caa7374",
+   "type": "meme"
   },
   "meme-28": {
    "id": "meme-28",
@@ -902,7 +954,8 @@
    "width": 810,
    "height": 1614,
    "upstreamId": "meme-28",
-   "sha256": "4edf2ca45debc512d6908d117b1d9597fae502cbad9bfeef7afbff783a70bac3"
+   "sha256": "4edf2ca45debc512d6908d117b1d9597fae502cbad9bfeef7afbff783a70bac3",
+   "type": "meme"
   },
   "meme-29": {
    "id": "meme-29",
@@ -919,7 +972,8 @@
    "width": 1080,
    "height": 1856,
    "upstreamId": "meme-29",
-   "sha256": "1d0612d39326f7e34e2c6af9496e44aabd66d7c9761212ab21ae404ee5994ca9"
+   "sha256": "1d0612d39326f7e34e2c6af9496e44aabd66d7c9761212ab21ae404ee5994ca9",
+   "type": "meme"
   },
   "meme-30": {
    "id": "meme-30",
@@ -936,7 +990,8 @@
    "width": 1080,
    "height": 2341,
    "upstreamId": "meme-30",
-   "sha256": "50776d5522e9a2ec7921896f34a322affc1bc3feaecf1831fb5d8a21dad15bf6"
+   "sha256": "50776d5522e9a2ec7921896f34a322affc1bc3feaecf1831fb5d8a21dad15bf6",
+   "type": "meme"
   },
   "meme-31": {
    "id": "meme-31",
@@ -953,7 +1008,8 @@
    "width": 462,
    "height": 1298,
    "upstreamId": "meme-31",
-   "sha256": "7260c48384fcadbfd469feda940016354cdde2edcf79532478eebdcc7be5aedd"
+   "sha256": "7260c48384fcadbfd469feda940016354cdde2edcf79532478eebdcc7be5aedd",
+   "type": "meme"
   },
   "meme-32": {
    "id": "meme-32",
@@ -970,7 +1026,8 @@
    "width": 850,
    "height": 850,
    "upstreamId": "meme-32",
-   "sha256": "033aa6d6901915b51e1bdb8e278e46b56c8431737626588d9b09b6a238d1b992"
+   "sha256": "033aa6d6901915b51e1bdb8e278e46b56c8431737626588d9b09b6a238d1b992",
+   "type": "meme"
   },
   "meme-33": {
    "id": "meme-33",
@@ -987,7 +1044,8 @@
    "width": 3840,
    "height": 2160,
    "upstreamId": "meme-33",
-   "sha256": "77666c71c8bfc6db172c6e070c8fcf65b0299d96eab87711b964d254c17e96e9"
+   "sha256": "77666c71c8bfc6db172c6e070c8fcf65b0299d96eab87711b964d254c17e96e9",
+   "type": "meme"
   },
   "meme-34": {
    "id": "meme-34",
@@ -1004,7 +1062,8 @@
    "width": 3840,
    "height": 3840,
    "upstreamId": "meme-34",
-   "sha256": "1e2db1b1021dcafe44959253b7dd03806db3e44740d0253f11bf04ce1b55bc4f"
+   "sha256": "1e2db1b1021dcafe44959253b7dd03806db3e44740d0253f11bf04ce1b55bc4f",
+   "type": "meme"
   },
   "meme-35": {
    "id": "meme-35",
@@ -1021,7 +1080,8 @@
    "width": 2880,
    "height": 2880,
    "upstreamId": "meme-35",
-   "sha256": "2745aa3013627316daba1e2652bf407359f66f0b44a13b5a76b59a6ba441b6ef"
+   "sha256": "2745aa3013627316daba1e2652bf407359f66f0b44a13b5a76b59a6ba441b6ef",
+   "type": "meme"
   },
   "meme-36": {
    "id": "meme-36",
@@ -1038,7 +1098,8 @@
    "width": 3840,
    "height": 3840,
    "upstreamId": "meme-36",
-   "sha256": "cc2d9ba0cdc70d52e13ae498b59034146074b4cf60c2f0598a08ffcb54b860c3"
+   "sha256": "cc2d9ba0cdc70d52e13ae498b59034146074b4cf60c2f0598a08ffcb54b860c3",
+   "type": "meme"
   },
   "meme-37": {
    "id": "meme-37",
@@ -1055,7 +1116,8 @@
    "width": 1080,
    "height": 1080,
    "upstreamId": "meme-37",
-   "sha256": "b19f33b7dacc5ece6b415f69f6604bd7e8ca6bdd34a5316122af77e785fb709a"
+   "sha256": "b19f33b7dacc5ece6b415f69f6604bd7e8ca6bdd34a5316122af77e785fb709a",
+   "type": "meme"
   },
   "meme-38": {
    "id": "meme-38",
@@ -1072,7 +1134,8 @@
    "width": 1521,
    "height": 2408,
    "upstreamId": "meme-38",
-   "sha256": "143a54557ef2fe795918f16f239fe34907c75e1da6a025502da1b3d1a97aa150"
+   "sha256": "143a54557ef2fe795918f16f239fe34907c75e1da6a025502da1b3d1a97aa150",
+   "type": "meme"
   },
   "meme-39": {
    "id": "meme-39",
@@ -1089,7 +1152,8 @@
    "width": 1800,
    "height": 2546,
    "upstreamId": "meme-39",
-   "sha256": "cdbc09bc2d4f210ca10302dac1ed237703c7df74c89435b55210b27468e13a69"
+   "sha256": "cdbc09bc2d4f210ca10302dac1ed237703c7df74c89435b55210b27468e13a69",
+   "type": "meme"
   },
   "meme-40": {
    "id": "meme-40",
@@ -1106,7 +1170,8 @@
    "width": 1200,
    "height": 2000,
    "upstreamId": "meme-40",
-   "sha256": "d25fd1c863e6dea5e3ce0f2532a04b80d65e8422366e30556b570dd5ae273fa5"
+   "sha256": "d25fd1c863e6dea5e3ce0f2532a04b80d65e8422366e30556b570dd5ae273fa5",
+   "type": "meme"
   },
   "issue-02-01": {
    "id": "issue-02-01",
@@ -1123,7 +1188,8 @@
    "width": 1400,
    "height": 2048,
    "upstreamId": "issue-02-01",
-   "sha256": "17d5837449577aa5d77b2a589f4418f8d30f7b04e3874ccea4b9b03b8049c668"
+   "sha256": "17d5837449577aa5d77b2a589f4418f8d30f7b04e3874ccea4b9b03b8049c668",
+   "type": "character"
   },
   "issue-02-02": {
    "id": "issue-02-02",
@@ -1140,7 +1206,8 @@
    "width": 1400,
    "height": 2048,
    "upstreamId": "issue-02-02",
-   "sha256": "04bd6a929d90c7c610d9aad1da28e150c77793f64b69fe6daa318c7a0244da9d"
+   "sha256": "04bd6a929d90c7c610d9aad1da28e150c77793f64b69fe6daa318c7a0244da9d",
+   "type": "character"
   },
   "issue-02-03": {
    "id": "issue-02-03",
@@ -1157,7 +1224,8 @@
    "width": 1400,
    "height": 2048,
    "upstreamId": "issue-02-03",
-   "sha256": "fb1c19a68d98eb03782d9bba61e986bc826af66fdd060d57c1281cfeb3f6144a"
+   "sha256": "fb1c19a68d98eb03782d9bba61e986bc826af66fdd060d57c1281cfeb3f6144a",
+   "type": "character"
   },
   "issue-02-04": {
    "id": "issue-02-04",
@@ -1174,7 +1242,8 @@
    "width": 1400,
    "height": 2048,
    "upstreamId": "issue-02-04",
-   "sha256": "d93c9b4e331a1c92ef6e1b72bd9b27cffb6280311c28d8de19b74a9031b707f7"
+   "sha256": "d93c9b4e331a1c92ef6e1b72bd9b27cffb6280311c28d8de19b74a9031b707f7",
+   "type": "character"
   },
   "issue-02-05": {
    "id": "issue-02-05",
@@ -1191,7 +1260,8 @@
    "width": 1400,
    "height": 2048,
    "upstreamId": "issue-02-05",
-   "sha256": "44e4b2926b23658490e34bd29964506dbfd527d26c1bbe3ec1d96975f5f58dbc"
+   "sha256": "44e4b2926b23658490e34bd29964506dbfd527d26c1bbe3ec1d96975f5f58dbc",
+   "type": "character"
   },
   "issue-15-01": {
    "id": "issue-15-01",
@@ -1208,7 +1278,8 @@
    "width": 180,
    "height": 180,
    "upstreamId": "issue-15-01",
-   "sha256": "2badba75088a6b8e5f011f6adbf74281dfaa7e24b83b937bf64647522bf571c9"
+   "sha256": "2badba75088a6b8e5f011f6adbf74281dfaa7e24b83b937bf64647522bf571c9",
+   "type": "character"
   },
   "issue-17-01": {
    "id": "issue-17-01",
@@ -1225,7 +1296,8 @@
    "width": 832,
    "height": 1207,
    "upstreamId": "issue-17-01",
-   "sha256": "13ce86ce3bd67c6c77239408b290ccf89712d263ec288e4dc004081deeacfd2b"
+   "sha256": "13ce86ce3bd67c6c77239408b290ccf89712d263ec288e4dc004081deeacfd2b",
+   "type": "character"
   },
   "issue-18-01": {
    "id": "issue-18-01",
@@ -1242,7 +1314,8 @@
    "width": 1536,
    "height": 1024,
    "upstreamId": "issue-18-01",
-   "sha256": "b9b4432bcab01c63b6933e4a3c246e6c30f67075fc5f547bd03bc7b76e9013c3"
+   "sha256": "b9b4432bcab01c63b6933e4a3c246e6c30f67075fc5f547bd03bc7b76e9013c3",
+   "type": "character"
   },
   "issue-18-02": {
    "id": "issue-18-02",
@@ -1259,7 +1332,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-18-02",
-   "sha256": "efa97c554298d9899a2d59949f27f6bf3d3ef164bdb946938ba0e03249aa0c26"
+   "sha256": "efa97c554298d9899a2d59949f27f6bf3d3ef164bdb946938ba0e03249aa0c26",
+   "type": "character"
   },
   "issue-19-01": {
    "id": "issue-19-01",
@@ -1276,7 +1350,8 @@
    "width": 1184,
    "height": 1760,
    "upstreamId": "issue-19-01",
-   "sha256": "044c75ec35c29874e8343faad04b1ef1c5591051d410e85443f1078d6201c12c"
+   "sha256": "044c75ec35c29874e8343faad04b1ef1c5591051d410e85443f1078d6201c12c",
+   "type": "character"
   },
   "issue-20-01": {
    "id": "issue-20-01",
@@ -1293,7 +1368,8 @@
    "width": 1024,
    "height": 1536,
    "upstreamId": "issue-20-01",
-   "sha256": "ee8173263bbb606c924700beb783157a5c9c52b09eef2834c2a94133c479d36b"
+   "sha256": "ee8173263bbb606c924700beb783157a5c9c52b09eef2834c2a94133c479d36b",
+   "type": "character"
   },
   "issue-20-02": {
    "id": "issue-20-02",
@@ -1310,7 +1386,8 @@
    "width": 1024,
    "height": 1776,
    "upstreamId": "issue-20-02",
-   "sha256": "afd3ec310d05126a113082a1d4e867e84a714709b92340e8b647d59723d5ff1a"
+   "sha256": "afd3ec310d05126a113082a1d4e867e84a714709b92340e8b647d59723d5ff1a",
+   "type": "character"
   },
   "issue-21-01": {
    "id": "issue-21-01",
@@ -1327,7 +1404,8 @@
    "width": 1024,
    "height": 1536,
    "upstreamId": "issue-21-01",
-   "sha256": "901d4f39466eb2dfe89cf8533e6ee74ba3314b914951e2f0bbf8af096f5577a6"
+   "sha256": "901d4f39466eb2dfe89cf8533e6ee74ba3314b914951e2f0bbf8af096f5577a6",
+   "type": "character"
   },
   "issue-23-01": {
    "id": "issue-23-01",
@@ -1344,7 +1422,8 @@
    "width": 1086,
    "height": 1448,
    "upstreamId": "issue-23-01",
-   "sha256": "bcab93486c536bb3369f9eeec64d46e142c8f750bba589c45cbc6350d3eacc92"
+   "sha256": "bcab93486c536bb3369f9eeec64d46e142c8f750bba589c45cbc6350d3eacc92",
+   "type": "character"
   },
   "issue-25-01": {
    "id": "issue-25-01",
@@ -1361,7 +1440,8 @@
    "width": 1024,
    "height": 1536,
    "upstreamId": "issue-25-01",
-   "sha256": "973ccd741edc408b698e4aaecabe757bd6027a5d10281a6d373690a46aa18be6"
+   "sha256": "973ccd741edc408b698e4aaecabe757bd6027a5d10281a6d373690a46aa18be6",
+   "type": "character"
   },
   "issue-26-02": {
    "id": "issue-26-02",
@@ -1378,7 +1458,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-02",
-   "sha256": "380e1c57141abafd3729abce4195fa4ae51e4fde7ec9e53529c36c25fdb00c38"
+   "sha256": "380e1c57141abafd3729abce4195fa4ae51e4fde7ec9e53529c36c25fdb00c38",
+   "type": "character"
   },
   "issue-26-03": {
    "id": "issue-26-03",
@@ -1395,7 +1476,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-03",
-   "sha256": "acab666f25e394f00e2f17b7e050ce32a94659941d38640d82c2078efb276c40"
+   "sha256": "acab666f25e394f00e2f17b7e050ce32a94659941d38640d82c2078efb276c40",
+   "type": "character"
   },
   "issue-26-04": {
    "id": "issue-26-04",
@@ -1412,7 +1494,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-04",
-   "sha256": "39ab57a7010876f5376669b2b30ef1b0912ef82acfca1ad80fa6e272be234c26"
+   "sha256": "39ab57a7010876f5376669b2b30ef1b0912ef82acfca1ad80fa6e272be234c26",
+   "type": "character"
   },
   "issue-26-05": {
    "id": "issue-26-05",
@@ -1429,7 +1512,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-05",
-   "sha256": "4d2d4c657bbd3415147b3f5f433fdbc37f2e60c30bd4f8aa5c60d2d07f773904"
+   "sha256": "4d2d4c657bbd3415147b3f5f433fdbc37f2e60c30bd4f8aa5c60d2d07f773904",
+   "type": "character"
   },
   "issue-26-06": {
    "id": "issue-26-06",
@@ -1446,7 +1530,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-06",
-   "sha256": "0bd9f68cf2057e41346f8fb734fa42ede0eb1e64ef059593731e03907c50a425"
+   "sha256": "0bd9f68cf2057e41346f8fb734fa42ede0eb1e64ef059593731e03907c50a425",
+   "type": "character"
   },
   "issue-26-07": {
    "id": "issue-26-07",
@@ -1463,7 +1548,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-07",
-   "sha256": "22b0a0cc4059fb63ec44474e20b518a17087058f72f68d869d944343d8cc2de8"
+   "sha256": "22b0a0cc4059fb63ec44474e20b518a17087058f72f68d869d944343d8cc2de8",
+   "type": "character"
   },
   "issue-26-08": {
    "id": "issue-26-08",
@@ -1480,7 +1566,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-08",
-   "sha256": "b575b5f1ca112fdab900350360a296c848c7be4e3d504189799d8c62df3c542e"
+   "sha256": "b575b5f1ca112fdab900350360a296c848c7be4e3d504189799d8c62df3c542e",
+   "type": "character"
   },
   "issue-26-09": {
    "id": "issue-26-09",
@@ -1497,7 +1584,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-26-09",
-   "sha256": "c6f2a8d1aa65e72f3543d8e5c575260fb136f8c7704a9ffb3b94e04694a6463c"
+   "sha256": "c6f2a8d1aa65e72f3543d8e5c575260fb136f8c7704a9ffb3b94e04694a6463c",
+   "type": "character"
   },
   "issue-27-02": {
    "id": "issue-27-02",
@@ -1514,7 +1602,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-02",
-   "sha256": "023b0897d5db57e30d51a57e89712f9dbee24212fa2b3fb4f38600168be7416e"
+   "sha256": "023b0897d5db57e30d51a57e89712f9dbee24212fa2b3fb4f38600168be7416e",
+   "type": "character"
   },
   "issue-27-03": {
    "id": "issue-27-03",
@@ -1531,7 +1620,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-03",
-   "sha256": "372588a6192bd9520fc1a1a60b12c3b39098abb7a38406b62aea9129ec2f30b0"
+   "sha256": "372588a6192bd9520fc1a1a60b12c3b39098abb7a38406b62aea9129ec2f30b0",
+   "type": "character"
   },
   "issue-27-04": {
    "id": "issue-27-04",
@@ -1548,7 +1638,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-04",
-   "sha256": "ebdce50eb52eaa0573c5828a1358bd0ed6dc0fad5c0280fd830a03695d74e6c1"
+   "sha256": "ebdce50eb52eaa0573c5828a1358bd0ed6dc0fad5c0280fd830a03695d74e6c1",
+   "type": "character"
   },
   "issue-27-05": {
    "id": "issue-27-05",
@@ -1565,7 +1656,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-05",
-   "sha256": "73c04f71e29989223e89d6a4b3eaca36eda6d1c8d68015c30549ecb50e2dfa6c"
+   "sha256": "73c04f71e29989223e89d6a4b3eaca36eda6d1c8d68015c30549ecb50e2dfa6c",
+   "type": "character"
   },
   "issue-27-06": {
    "id": "issue-27-06",
@@ -1582,7 +1674,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-06",
-   "sha256": "92e242bf27aa66c7a87d950a53feaaeccfcfb78f6dc07e3b1180d3fc4fd449cb"
+   "sha256": "92e242bf27aa66c7a87d950a53feaaeccfcfb78f6dc07e3b1180d3fc4fd449cb",
+   "type": "character"
   },
   "issue-27-07": {
    "id": "issue-27-07",
@@ -1599,7 +1692,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-07",
-   "sha256": "9aeefd6e6954e1f6c12168bce2a22aa796cba2a8a7ba898b6a1c39a83ca111ff"
+   "sha256": "9aeefd6e6954e1f6c12168bce2a22aa796cba2a8a7ba898b6a1c39a83ca111ff",
+   "type": "character"
   },
   "issue-27-08": {
    "id": "issue-27-08",
@@ -1616,7 +1710,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-08",
-   "sha256": "478f21defc3665a9e9abd527f9af5a1dd516c209baabb59ee3a23673fb913991"
+   "sha256": "478f21defc3665a9e9abd527f9af5a1dd516c209baabb59ee3a23673fb913991",
+   "type": "character"
   },
   "issue-27-09": {
    "id": "issue-27-09",
@@ -1633,7 +1728,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-27-09",
-   "sha256": "5784645d2d820a15e3710b48cb9d0581588eb8b1c13b5c5e91b0850376185af1"
+   "sha256": "5784645d2d820a15e3710b48cb9d0581588eb8b1c13b5c5e91b0850376185af1",
+   "type": "character"
   },
   "issue-29-01": {
    "id": "issue-29-01",
@@ -1650,7 +1746,8 @@
    "width": 1254,
    "height": 1254,
    "upstreamId": "issue-29-01",
-   "sha256": "3f8951192d8dd5051230faf3804540e5648678b16ddc786c0a2b433e5c15f523"
+   "sha256": "3f8951192d8dd5051230faf3804540e5648678b16ddc786c0a2b433e5c15f523",
+   "type": "character"
   },
   "issue-30-01": {
    "id": "issue-30-01",
@@ -1667,7 +1764,8 @@
    "width": 1536,
    "height": 1516,
    "upstreamId": "issue-30-01",
-   "sha256": "9fc6d1a43a252f49bed2589e97d553683fb1152e7d66f4ca534bc179248e4233"
+   "sha256": "9fc6d1a43a252f49bed2589e97d553683fb1152e7d66f4ca534bc179248e4233",
+   "type": "character"
   },
   "issue-32-01": {
    "id": "issue-32-01",
@@ -1684,7 +1782,8 @@
    "width": 1672,
    "height": 941,
    "upstreamId": "issue-32-01",
-   "sha256": "b1b2202ce3f36d9688d48f54f9d487e56f18ec751d418dded8466e0d2adebdc7"
+   "sha256": "b1b2202ce3f36d9688d48f54f9d487e56f18ec751d418dded8466e0d2adebdc7",
+   "type": "scene"
   },
   "issue-32-02": {
    "id": "issue-32-02",
@@ -1701,7 +1800,8 @@
    "width": 1024,
    "height": 1536,
    "upstreamId": "issue-32-02",
-   "sha256": "801567ff12355d151f8d280dff37ebd2dc97736d0605d2b818e2dcce16913594"
+   "sha256": "801567ff12355d151f8d280dff37ebd2dc97736d0605d2b818e2dcce16913594",
+   "type": "character"
   },
   "issue-32-03": {
    "id": "issue-32-03",
@@ -1718,7 +1818,8 @@
    "width": 1536,
    "height": 2048,
    "upstreamId": "issue-32-03",
-   "sha256": "5e38439ff51b7056dc63cb3092e9038c7e051feb2044e5117c4704c5b1534571"
+   "sha256": "5e38439ff51b7056dc63cb3092e9038c7e051feb2044e5117c4704c5b1534571",
+   "type": "character"
   },
   "issue-32-04": {
    "id": "issue-32-04",
@@ -1735,7 +1836,8 @@
    "width": 2320,
    "height": 1302,
    "upstreamId": "issue-32-04",
-   "sha256": "bb207f93203a8b4c1c9faa001319b2a2f7f9b6d76bf62db9bd9bd6491fc86927"
+   "sha256": "bb207f93203a8b4c1c9faa001319b2a2f7f9b6d76bf62db9bd9bd6491fc86927",
+   "type": "scene"
   },
   "issue-32-05": {
    "id": "issue-32-05",
@@ -1752,7 +1854,8 @@
    "width": 2214,
    "height": 1197,
    "upstreamId": "issue-32-05",
-   "sha256": "baf6ae1119f4d6e95f1a536c0d7b0ec89015d4f5090d27754779bae0445612f3"
+   "sha256": "baf6ae1119f4d6e95f1a536c0d7b0ec89015d4f5090d27754779bae0445612f3",
+   "type": "scene"
   },
   "issue-34-01": {
    "id": "issue-34-01",
@@ -1769,7 +1872,8 @@
    "width": 1920,
    "height": 1280,
    "upstreamId": "issue-34-01",
-   "sha256": "1ad6126707ed43ac502ec0f9e2ba27edb4bedba35a64852d80d6945afc7c310b"
+   "sha256": "1ad6126707ed43ac502ec0f9e2ba27edb4bedba35a64852d80d6945afc7c310b",
+   "type": "character"
   },
   "issue-36-01": {
    "id": "issue-36-01",
@@ -1786,7 +1890,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-01",
-   "sha256": "dbed500ab660502e897e70a2ce7ac1e9dd5bc6eba0a6dae34b01b47f48f8eb30"
+   "sha256": "dbed500ab660502e897e70a2ce7ac1e9dd5bc6eba0a6dae34b01b47f48f8eb30",
+   "type": "sheet"
   },
   "issue-36-02": {
    "id": "issue-36-02",
@@ -1803,7 +1908,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-02",
-   "sha256": "d559ea2213157f1ed9a0200951da338fae611f3b9cbc8a088dd39080609ceeb2"
+   "sha256": "d559ea2213157f1ed9a0200951da338fae611f3b9cbc8a088dd39080609ceeb2",
+   "type": "sheet"
   },
   "issue-36-03": {
    "id": "issue-36-03",
@@ -1820,7 +1926,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-03",
-   "sha256": "76a880051d0e7af76ff90a4c8842eee40ea003a3bab383bc57a023754c6e65d2"
+   "sha256": "76a880051d0e7af76ff90a4c8842eee40ea003a3bab383bc57a023754c6e65d2",
+   "type": "sheet"
   },
   "issue-36-04": {
    "id": "issue-36-04",
@@ -1837,7 +1944,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-04",
-   "sha256": "d3198020b5c4aaef224d963035580a040a97cfb41d54177ae1b5b04a08530661"
+   "sha256": "d3198020b5c4aaef224d963035580a040a97cfb41d54177ae1b5b04a08530661",
+   "type": "sheet"
   },
   "issue-36-05": {
    "id": "issue-36-05",
@@ -1854,7 +1962,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-05",
-   "sha256": "72fe3dbbb9697f2ab08fd0b71df2953b32469c87766964944a41108ee483507d"
+   "sha256": "72fe3dbbb9697f2ab08fd0b71df2953b32469c87766964944a41108ee483507d",
+   "type": "sheet"
   },
   "issue-36-06": {
    "id": "issue-36-06",
@@ -1871,7 +1980,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-06",
-   "sha256": "7dd90c200c5a161d3b7440e7541a6dacc1b94261b804377f337a6d2dceab736d"
+   "sha256": "7dd90c200c5a161d3b7440e7541a6dacc1b94261b804377f337a6d2dceab736d",
+   "type": "sheet"
   },
   "issue-36-07": {
    "id": "issue-36-07",
@@ -1888,7 +1998,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-07",
-   "sha256": "56173bcc2ce7ba4c8a17e340b8880b432b8dd87eb2c67c1ee4db09b499520866"
+   "sha256": "56173bcc2ce7ba4c8a17e340b8880b432b8dd87eb2c67c1ee4db09b499520866",
+   "type": "sheet"
   },
   "issue-36-08": {
    "id": "issue-36-08",
@@ -1905,7 +2016,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-08",
-   "sha256": "319747cb4d2ecaade6d6d7f96b11d994fe4cbc127f6f6bda5f2cc5b5d8331be7"
+   "sha256": "319747cb4d2ecaade6d6d7f96b11d994fe4cbc127f6f6bda5f2cc5b5d8331be7",
+   "type": "sheet"
   },
   "issue-36-09": {
    "id": "issue-36-09",
@@ -1922,7 +2034,8 @@
    "width": 1448,
    "height": 1086,
    "upstreamId": "issue-36-09",
-   "sha256": "7a653bb828d525249503fc9098072b6810e699b6b4883df109b14a0598eba3da"
+   "sha256": "7a653bb828d525249503fc9098072b6810e699b6b4883df109b14a0598eba3da",
+   "type": "sheet"
   },
   "issue-37-01": {
    "id": "issue-37-01",
@@ -1939,7 +2052,8 @@
    "width": 1024,
    "height": 1536,
    "upstreamId": "issue-37-01",
-   "sha256": "60fd5985baef8f314863cb2e0d7d83fb299e9e2720616b2e9ff23fb328efa6b4"
+   "sha256": "60fd5985baef8f314863cb2e0d7d83fb299e9e2720616b2e9ff23fb328efa6b4",
+   "type": "character"
   },
   "issue-37-02": {
    "id": "issue-37-02",
@@ -1956,7 +2070,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-37-02",
-   "sha256": "6913025c4037ef966d962dcaea400457c6333bf6cf6e7b5ab43350f118c05f35"
+   "sha256": "6913025c4037ef966d962dcaea400457c6333bf6cf6e7b5ab43350f118c05f35",
+   "type": "character"
   },
   "issue-37-03": {
    "id": "issue-37-03",
@@ -1973,7 +2088,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-37-03",
-   "sha256": "1285a635c963986a7bc71db20f0ca3820e017c1b549384390ee6107980895c56"
+   "sha256": "1285a635c963986a7bc71db20f0ca3820e017c1b549384390ee6107980895c56",
+   "type": "character"
   },
   "issue-37-04": {
    "id": "issue-37-04",
@@ -1990,7 +2106,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-37-04",
-   "sha256": "2a636a3ec0b39b8bb189a2c0b1a5457a46f19da8359c427a805ce814c9e52d16"
+   "sha256": "2a636a3ec0b39b8bb189a2c0b1a5457a46f19da8359c427a805ce814c9e52d16",
+   "type": "character"
   },
   "issue-37-05": {
    "id": "issue-37-05",
@@ -2007,7 +2124,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-37-05",
-   "sha256": "3fbfbcec7abeb32002cfa785d7e1d8dd076f3ef0ffd1c62a52dc8fb8d5e01c69"
+   "sha256": "3fbfbcec7abeb32002cfa785d7e1d8dd076f3ef0ffd1c62a52dc8fb8d5e01c69",
+   "type": "character"
   },
   "issue-37-06": {
    "id": "issue-37-06",
@@ -2024,7 +2142,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-37-06",
-   "sha256": "87d6a3ad7368503ca6aa0b8b8155d8cdb3b745e230277524318f667fee42b7c6"
+   "sha256": "87d6a3ad7368503ca6aa0b8b8155d8cdb3b745e230277524318f667fee42b7c6",
+   "type": "character"
   },
   "issue-37-07": {
    "id": "issue-37-07",
@@ -2041,7 +2160,8 @@
    "width": 1536,
    "height": 1536,
    "upstreamId": "issue-37-07",
-   "sha256": "c080f236e9fd01e79553da100686cb6b32242e607c3c99b38f8b382e8d231f06"
+   "sha256": "c080f236e9fd01e79553da100686cb6b32242e607c3c99b38f8b382e8d231f06",
+   "type": "character"
   },
   "issue-37-08": {
    "id": "issue-37-08",
@@ -2058,7 +2178,8 @@
    "width": 1536,
    "height": 1536,
    "upstreamId": "issue-37-08",
-   "sha256": "d9da57bdcc0ddd50254413fdd8546f62ca443aa6035e332a38cfe29f1764a1df"
+   "sha256": "d9da57bdcc0ddd50254413fdd8546f62ca443aa6035e332a38cfe29f1764a1df",
+   "type": "character"
   },
   "issue-37-09": {
    "id": "issue-37-09",
@@ -2075,7 +2196,8 @@
    "width": 1536,
    "height": 1536,
    "upstreamId": "issue-37-09",
-   "sha256": "4aa114c8947ace9e7a4a763aaab39b137b2d1c9e993e04b96dfe82163d4debd0"
+   "sha256": "4aa114c8947ace9e7a4a763aaab39b137b2d1c9e993e04b96dfe82163d4debd0",
+   "type": "character"
   },
   "issue-37-10": {
    "id": "issue-37-10",
@@ -2092,7 +2214,8 @@
    "width": 1536,
    "height": 1536,
    "upstreamId": "issue-37-10",
-   "sha256": "5f7869afc8c2b125d011b82978f5935cbb0bf1b7feea4faca8381d1d2de9aac9"
+   "sha256": "5f7869afc8c2b125d011b82978f5935cbb0bf1b7feea4faca8381d1d2de9aac9",
+   "type": "character"
   },
   "issue-37-11": {
    "id": "issue-37-11",
@@ -2109,7 +2232,8 @@
    "width": 2048,
    "height": 1152,
    "upstreamId": "issue-37-11",
-   "sha256": "8ccb1baa436604deeaa9ed457123828c007641bea4d4e8fe6c67cdfc4ccb7bef"
+   "sha256": "8ccb1baa436604deeaa9ed457123828c007641bea4d4e8fe6c67cdfc4ccb7bef",
+   "type": "scene"
   },
   "issue-37-12": {
    "id": "issue-37-12",
@@ -2126,7 +2250,8 @@
    "width": 2048,
    "height": 1152,
    "upstreamId": "issue-37-12",
-   "sha256": "e6ca3ff742ca363aa8d2bbcabd50864c4afe5f316f65fc6a58738fc7323fc478"
+   "sha256": "e6ca3ff742ca363aa8d2bbcabd50864c4afe5f316f65fc6a58738fc7323fc478",
+   "type": "scene"
   },
   "issue-38-01": {
    "id": "issue-38-01",
@@ -2143,7 +2268,8 @@
    "width": 2500,
    "height": 3350,
    "upstreamId": "issue-38-01",
-   "sha256": "06f40e03ba53ef474b4467a3e65e8d84a64ec4bc24bd889a70a489fd07d4df9a"
+   "sha256": "06f40e03ba53ef474b4467a3e65e8d84a64ec4bc24bd889a70a489fd07d4df9a",
+   "type": "character"
   },
   "issue-39-01": {
    "id": "issue-39-01",
@@ -2160,7 +2286,8 @@
    "width": 1080,
    "height": 1080,
    "upstreamId": "issue-39-01",
-   "sha256": "f5ffd392e17162e2e4bcfb4256be98e3e9e9b692ad84c96c2ec5de1bdac4d672"
+   "sha256": "f5ffd392e17162e2e4bcfb4256be98e3e9e9b692ad84c96c2ec5de1bdac4d672",
+   "type": "character"
   },
   "issue-40-01": {
    "id": "issue-40-01",
@@ -2177,7 +2304,8 @@
    "width": 1252,
    "height": 1252,
    "upstreamId": "issue-40-01",
-   "sha256": "f685519209c24f9e18ebe7a1a10968ea4949a9543203131598daa6fe84282788"
+   "sha256": "f685519209c24f9e18ebe7a1a10968ea4949a9543203131598daa6fe84282788",
+   "type": "character"
   },
   "issue-41-01": {
    "id": "issue-41-01",
@@ -2194,7 +2322,8 @@
    "width": 1086,
    "height": 1448,
    "upstreamId": "issue-41-01",
-   "sha256": "ed0b1c9479709dca330a10ff596ab5ce1a5fb811eb6e2b0c00769883cf18a2fa"
+   "sha256": "ed0b1c9479709dca330a10ff596ab5ce1a5fb811eb6e2b0c00769883cf18a2fa",
+   "type": "character"
   },
   "issue-42-01": {
    "id": "issue-42-01",
@@ -2211,7 +2340,8 @@
    "width": 1792,
    "height": 1344,
    "upstreamId": "issue-42-01",
-   "sha256": "a95ea730cedfd053bdd66f15bd0f20d01650b33876feb2426c356bde2ea129a8"
+   "sha256": "a95ea730cedfd053bdd66f15bd0f20d01650b33876feb2426c356bde2ea129a8",
+   "type": "character"
   },
   "issue-44-01": {
    "id": "issue-44-01",
@@ -2228,7 +2358,8 @@
    "width": 1536,
    "height": 1024,
    "upstreamId": "issue-44-01",
-   "sha256": "52e4094158edc0b1ce286e4400930e727633d8627b251503dc6372f2ad742eab"
+   "sha256": "52e4094158edc0b1ce286e4400930e727633d8627b251503dc6372f2ad742eab",
+   "type": "character"
   },
   "issue-46-01": {
    "id": "issue-46-01",
@@ -2245,7 +2376,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-01",
-   "sha256": "0370c18936059d3565f93bef9ed46afc8242ea0aa3a153a126d5d91f02e4ed23"
+   "sha256": "0370c18936059d3565f93bef9ed46afc8242ea0aa3a153a126d5d91f02e4ed23",
+   "type": "character"
   },
   "issue-46-02": {
    "id": "issue-46-02",
@@ -2262,7 +2394,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-02",
-   "sha256": "25a3d30b5eebcb4bf3b43ce177dde242cfa4685f5a6fa9f1dfb318c3c83d3b59"
+   "sha256": "25a3d30b5eebcb4bf3b43ce177dde242cfa4685f5a6fa9f1dfb318c3c83d3b59",
+   "type": "character"
   },
   "issue-46-03": {
    "id": "issue-46-03",
@@ -2279,7 +2412,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-03",
-   "sha256": "f1c4ed2df8037bf98633a73ac98eab7d66b0f54f08fcab18b3102ba4ebe1a6d7"
+   "sha256": "f1c4ed2df8037bf98633a73ac98eab7d66b0f54f08fcab18b3102ba4ebe1a6d7",
+   "type": "character"
   },
   "issue-46-04": {
    "id": "issue-46-04",
@@ -2296,7 +2430,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-04",
-   "sha256": "945a6aa35c295a19a33750549ee44c7af47fb70b55745f29ffaf8c2502ba474f"
+   "sha256": "945a6aa35c295a19a33750549ee44c7af47fb70b55745f29ffaf8c2502ba474f",
+   "type": "character"
   },
   "issue-46-05": {
    "id": "issue-46-05",
@@ -2313,7 +2448,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-05",
-   "sha256": "1279140e1138f15bcccd02aa7978f9a709255e45edd243201180f00e1461e912"
+   "sha256": "1279140e1138f15bcccd02aa7978f9a709255e45edd243201180f00e1461e912",
+   "type": "character"
   },
   "issue-46-06": {
    "id": "issue-46-06",
@@ -2330,7 +2466,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-06",
-   "sha256": "a98a65a6fcb37d680e501ac8e284ebe42499e338075af12f88fef1cae9a23d02"
+   "sha256": "a98a65a6fcb37d680e501ac8e284ebe42499e338075af12f88fef1cae9a23d02",
+   "type": "character"
   },
   "issue-46-07": {
    "id": "issue-46-07",
@@ -2347,7 +2484,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-07",
-   "sha256": "c6dcc20d509db2abf8f4e08697caa301b6fe302ed2dc73114ea9b913ccf445c0"
+   "sha256": "c6dcc20d509db2abf8f4e08697caa301b6fe302ed2dc73114ea9b913ccf445c0",
+   "type": "character"
   },
   "issue-46-08": {
    "id": "issue-46-08",
@@ -2364,7 +2502,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-08",
-   "sha256": "a9e23cfceedf7e3ef229049ef282d040be550f56f7da38471ec8af2d31412525"
+   "sha256": "a9e23cfceedf7e3ef229049ef282d040be550f56f7da38471ec8af2d31412525",
+   "type": "character"
   },
   "issue-46-09": {
    "id": "issue-46-09",
@@ -2381,7 +2520,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-09",
-   "sha256": "574e9b45d0ea0f6574b789abb10d26ecfbd21046398823aeb16e4034601bc90e"
+   "sha256": "574e9b45d0ea0f6574b789abb10d26ecfbd21046398823aeb16e4034601bc90e",
+   "type": "character"
   },
   "issue-46-10": {
    "id": "issue-46-10",
@@ -2398,7 +2538,8 @@
    "width": 1024,
    "height": 1024,
    "upstreamId": "issue-46-10",
-   "sha256": "82ce860eb45588657377edb13faf3cc58bf7b8ec4b009a5011c724614469ed4e"
+   "sha256": "82ce860eb45588657377edb13faf3cc58bf7b8ec4b009a5011c724614469ed4e",
+   "type": "character"
   },
   "issue-47-01": {
    "id": "issue-47-01",
@@ -2415,7 +2556,8 @@
    "width": 1049,
    "height": 1500,
    "upstreamId": "issue-47-01",
-   "sha256": "ff1a6fc24a4344cdea2b06caef93ff8d1f7ca97f8d07c423355d4d61780a29ba"
+   "sha256": "ff1a6fc24a4344cdea2b06caef93ff8d1f7ca97f8d07c423355d4d61780a29ba",
+   "type": "character"
   },
   "issue-48-01": {
    "id": "issue-48-01",
@@ -2432,7 +2574,8 @@
    "width": 1760,
    "height": 2400,
    "upstreamId": "issue-48-01",
-   "sha256": "1209e308c84a04d30bd9369d31d0180f9e31cfb960f3bb012d15bcfe20325126"
+   "sha256": "1209e308c84a04d30bd9369d31d0180f9e31cfb960f3bb012d15bcfe20325126",
+   "type": "character"
   },
   "issue-50-01": {
    "id": "issue-50-01",
@@ -2449,7 +2592,8 @@
    "width": 1312,
    "height": 1792,
    "upstreamId": "issue-50-01",
-   "sha256": "c638710658d5fd26433f8ddd26f6dad7d28090bcbb71939585e1a34b57c044eb"
+   "sha256": "c638710658d5fd26433f8ddd26f6dad7d28090bcbb71939585e1a34b57c044eb",
+   "type": "character"
   },
   "issue-51-01": {
    "id": "issue-51-01",
@@ -2466,7 +2610,8 @@
    "width": 1760,
    "height": 2400,
    "upstreamId": "issue-51-01",
-   "sha256": "18c403a9f6ed0a048bddee2297ab6968b6993ee20545b832dc478d60af17b629"
+   "sha256": "18c403a9f6ed0a048bddee2297ab6968b6993ee20545b832dc478d60af17b629",
+   "type": "character"
   },
   "issue-51-02": {
    "id": "issue-51-02",
@@ -2483,7 +2628,8 @@
    "width": 1760,
    "height": 2400,
    "upstreamId": "issue-51-02",
-   "sha256": "1ec3f1bbbcec82fdfdf52bb94f0ad9f70d473ad0b4a6eb5f519200ee277d8f49"
+   "sha256": "1ec3f1bbbcec82fdfdf52bb94f0ad9f70d473ad0b4a6eb5f519200ee277d8f49",
+   "type": "character"
   },
   "issue-51-03": {
    "id": "issue-51-03",
@@ -2500,7 +2646,8 @@
    "width": 1760,
    "height": 2400,
    "upstreamId": "issue-51-03",
-   "sha256": "99256c933cc1b04d424b964836595cfffd528667843b830fd5b3e67e66b0774b"
+   "sha256": "99256c933cc1b04d424b964836595cfffd528667843b830fd5b3e67e66b0774b",
+   "type": "character"
   }
  }
 }

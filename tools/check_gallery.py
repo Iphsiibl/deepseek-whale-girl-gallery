@@ -271,6 +271,45 @@ def main() -> int:
                 if not work.get("issueUrl") and not work.get("source"):
                     problems.append(f"社区作品有作者但缺少来源信息: {wid}")
 
+            # ---- 设计契约 A1/A2/A4：类型与作者分栏必须与出处文件一致 ----
+            # 页面上的卡片按 data-type / data-author 聚合，与 _meta.json 逐一对账。
+            card_pairs: dict[tuple[str, str], int] = {}
+            for block in re.finditer(
+                r'<figure\b[^>]*class="card"[^>]*>(.*?)</figure>', html, flags=re.DOTALL
+            ):
+                head = block.group(0)[: block.group(0).find(">") + 1]
+                attrs_map = attrs(head)
+                work_type = attrs_map.get("data-type", "")
+                author = attrs_map.get("data-author", "")
+                if not work_type:
+                    continue
+                key = (work_type, author)
+                card_pairs[key] = card_pairs.get(key, 0) + 1
+            meta_pairs: dict[tuple[str, str], int] = {}
+            for work in meta.values():
+                if work.get("file", "") not in meta_files:
+                    continue
+                key = (work.get("type", ""), work.get("author") or "作者未知（上游未标注）")
+                meta_pairs[key] = meta_pairs.get(key, 0) + 1
+            for key in sorted(set(meta_pairs) - set(card_pairs)):
+                problems.append(
+                    f"页面缺少 (类型,作者) 组合的卡片: {key[0]} / {key[1]}（共 {meta_pairs[key]} 件）"
+                )
+            for key in sorted(set(card_pairs) - set(meta_pairs)):
+                problems.append(f"页面多出了出处文件里没有的 (类型,作者) 组合: {key[0]} / {key[1]}")
+            for key in sorted(set(card_pairs) & set(meta_pairs)):
+                if card_pairs[key] != meta_pairs[key]:
+                    problems.append(
+                        f"(类型,作者) 件数不一致: {key[0]} / {key[1]} "
+                        f"页面 {card_pairs[key]} vs 出处 {meta_pairs[key]}"
+                    )
+            # 类型总数必须等于社区卡片总数
+            type_total = sum(meta_pairs.values())
+            if type_total != len(meta_files):
+                problems.append(
+                    f"社区作品类型合计 {type_total} != 原图数 {len(meta_files)}"
+                )
+
     # ---------------------------------------------------------------- 结果
     print(f"页面图片 {img_count} 张 · 引用原图 {len(referenced_sources)} 张 · 磁盘原图 {len(on_disk)} 张")
     if manifest_path.exists():
