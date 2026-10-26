@@ -1,0 +1,11 @@
+{"requests":[
+{"text":"纯静态、零依赖的鲸鱼娘画廊，一百六十五张图。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-01.mp3"},
+{"text":"四十一位作者，署名标在每张图下面。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-02.mp3"},
+{"text":"七套换装三视图，可以直接拿去当垫图。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-03.mp3"},
+{"text":"重头戏是社区二创，一百四十七件作品，来自四十一位画师。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-04.mp3"},
+{"text":"每张图下面都标着作者和投稿出处，顶部还能按画师筛选。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-05.mp3"},
+{"text":"瀑布流按真实宽高比落位，立绘不会被压扁，关掉脚本也照样能看。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-06.mp3"},
+{"text":"点开就进灯箱，能切到一比一的原始像素，大图能滚动看细节。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-07.mp3"},
+{"text":"往下是三张场景壁纸。","voice_id":"female-yujie","emotion":"neutral","speed":0.95,"volume":1.0,"output_file":"vo-08.mp3"},
+{"text":"技术上零构建，地址就在下方，逐图署名，点个收藏。","voice_id":"female-yujie","emotion":"happy","speed":0.95,"volume":1.0,"output_file":"vo-09.mp3"}
+]}
