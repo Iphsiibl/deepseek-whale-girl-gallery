@@ -24,9 +24,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import shutil
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 try:
@@ -42,7 +44,7 @@ DOCS_DIR = REPO_ROOT / "docs"
 THUMB_DIR = DOCS_DIR / "thumbs"
 
 #: 原图分组目录 -> 页面分区 id（顺序即页面展示顺序）
-GROUPS: tuple[str, ...] = ("sheets", "moegirl", "refs", "gallery", "wallpaper")
+GROUPS: tuple[str, ...] = ("sheets", "moegirl", "refs", "community", "wallpaper")
 
 #: 缩略图宽度档位（像素）。页面按 ``sizes`` + DPR 选档。
 SIZES: tuple[int, ...] = (480, 960, 1440, 1920)
@@ -208,7 +210,21 @@ def build(force: bool, clean: bool) -> dict:
                 shutil.rmtree(entry, ignore_errors=True)
     THUMB_DIR.mkdir(parents=True, exist_ok=True)
 
-    items = [make_one(src, group, force) for group, src in collect_sources()]
+    sources = collect_sources()
+    items: list[dict] = []
+    # Pillow 的编码在 C 层执行、编码时会释放 GIL，线程能真正并行。
+    # 图一多（本作 150+ 张 × 4 档 ≈ 600 个文件），串行编码要十几分钟，
+    # 并行后能压到几分钟；结果按原顺序收集，manifest 依旧可复现。
+    workers = min(8, max(1, os.cpu_count() or 2))
+    if len(sources) > 1 and workers > 1:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(make_one, src, group, force) for group, src in sources]
+            for index, future in enumerate(futures, 1):
+                items.append(future.result())
+                if index % 25 == 0 or index == len(futures):
+                    print(f"  已处理 {index}/{len(futures)} 张原图", flush=True)
+    else:
+        items = [make_one(src, group, force) for group, src in sources]
     manifest = {
         "sizes": list(SIZES),
         "quality": QUALITY,

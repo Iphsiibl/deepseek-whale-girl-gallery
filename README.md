@@ -20,11 +20,15 @@
 ├── .github/workflows/  # CI：校验页面与图片一致性
 ├── tools/
 │   ├── make_thumbs.py  # 生成多档展示版 WebP（480 / 960 / 1440 / 1920 宽）
+│   ├── import_upstream.py # 从鲸鱼娘开源资产库批量导入社区作品 + 记录出处
+│   ├── build_cards.py  # 由出处文件生成页面上的社区卡片
+│   ├── build_attribution.py # 由出处文件生成 ATTRIBUTION.md 署名表
 │   ├── sync_srcset.py  # 把清单里的档位同步进页面 srcset / data-full
 │   ├── check_gallery.py# 校验页面引用、缩略图清单、原图孤儿
 │   ├── check_manifest.py # 比对清单结构（不比字节，避开 libwebp 版本差异）
 │   ├── verify_browser.py # Playwright 浏览器端验证（功能 / 性能 / 布局 / 无障碍）
 │   └── requirements.txt
+├── tools/upstream/     # 上游资产库清单快照（可复现导入的基准）
 └── docs/               # GitHub Pages 发布根目录
     ├── index.html      # 画廊页面（单文件，内联 CSS/JS）
     ├── .nojekyll       # 关闭 Jekyll 处理，图片原样发布
@@ -32,7 +36,7 @@
     ├── sheets/         # 角色设定图原图（Q 版 / 成熟比例三视图）
     ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录原图
     ├── refs/           # 换装三视图原图（7 套）
-    ├── gallery/        # 社区二创原图
+    ├── community/      # 社区二创全集原图（147 件）+ 逐图出处 _meta.json
     └── wallpaper/      # 场景壁纸原图
 ```
 
@@ -43,9 +47,9 @@
 | 角色设定图 | 2 | Q 版三视图、成熟比例三视图，均附完整生成 Prompt |
 | 萌娘百科收录图 | 6 | 含流传最广的「女仆鲸鱼娘」原立绘（1152×2048）与条目头图（2732×4096） |
 | 换装三视图 | 7 | 黑礼服人鱼 / 简约短裙 / 长裙 / 细节洛丽塔短裙 / Q 版 / 黑绿 / 黑红 |
-| 社区二创 | 13 | Q 版设定图、素材扩展包、表情包、头像、变体 |
+| 社区二创全集 | 147 | 来自鲸鱼娘开源资产库，41 位作者，逐图署名 + 投稿出处 |
 | 场景壁纸 | 3 | 1008×576 静帧 |
-| **合计** | **31** | 原图 20.6 MB |
+| **合计** | **165** | 原图 67.4 MB |
 
 ## 角色设定备忘
 
@@ -65,6 +69,9 @@
 
 - 本仓库的**页面代码与整理工作**采用 [CC BY-NC-SA 4.0](LICENSE)（署名 — 非商业性使用 — 相同方式共享）。
 - 仓库内的**每一张图片版权归各自作者所有**，许可条件以源站标注为准，详见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+- 社区二创全集收录自 [鲸鱼娘开源资产库](https://github.com/TreapGoGo/deepseek-whale-girl)：
+  上游明确声明「**收录不把图片变成 MIT 素材**」，每件作品仍按其作者/投稿声明授权，
+  逐件记录在 [ATTRIBUTION.md](ATTRIBUTION.md)；上游未标注作者的作品如实记为「作者未知（上游未标注）」，不做推测。
 - 整体角色形象源自「溟月」（CC BY-NC-SA 4.0）：需署名、**禁止商用**、衍生作品须以相同协议开放。
 - 本仓库为社区同人整理，与深度求索公司无隶属或背书关系。
 - 如你是相关权利人并希望移除内容，请提 issue。

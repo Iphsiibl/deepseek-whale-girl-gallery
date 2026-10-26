@@ -7,9 +7,9 @@
  ],
  "quality": 80,
  "method": 6,
- "count": 31,
- "origBytes": 21590751,
- "thumbBytes": 3890010,
+ "count": 165,
+ "origBytes": 70652437,
+ "thumbBytes": 24461460,
  "items": [
   {
    "group": "sheets",
@@ -480,8 +480,1746 @@
    "thumbBytes": 60858
   },
   {
-   "group": "gallery",
-   "src": "gallery/asset-c01.webp",
+   "group": "community",
+   "src": "community/issue-02-01.webp",
+   "origBytes": 252536,
+   "origW": 1400,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1400
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-02-01-480w.webp",
+     "w": 480,
+     "bytes": 26280
+    },
+    {
+     "path": "thumbs/issue-02-01-960w.webp",
+     "w": 960,
+     "bytes": 61430
+    },
+    {
+     "path": "thumbs/issue-02-01-1400w.webp",
+     "w": 1400,
+     "bytes": 95044
+    }
+   ],
+   "srcset": "thumbs/issue-02-01-480w.webp 480w, thumbs/issue-02-01-960w.webp 960w, thumbs/issue-02-01-1400w.webp 1400w",
+   "thumb": "thumbs/issue-02-01-1400w.webp",
+   "thumbSmall": "thumbs/issue-02-01-480w.webp",
+   "thumbBytes": 95044
+  },
+  {
+   "group": "community",
+   "src": "community/issue-02-02.webp",
+   "origBytes": 263628,
+   "origW": 1400,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1400
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-02-02-480w.webp",
+     "w": 480,
+     "bytes": 30282
+    },
+    {
+     "path": "thumbs/issue-02-02-960w.webp",
+     "w": 960,
+     "bytes": 68300
+    },
+    {
+     "path": "thumbs/issue-02-02-1400w.webp",
+     "w": 1400,
+     "bytes": 102980
+    }
+   ],
+   "srcset": "thumbs/issue-02-02-480w.webp 480w, thumbs/issue-02-02-960w.webp 960w, thumbs/issue-02-02-1400w.webp 1400w",
+   "thumb": "thumbs/issue-02-02-1400w.webp",
+   "thumbSmall": "thumbs/issue-02-02-480w.webp",
+   "thumbBytes": 102980
+  },
+  {
+   "group": "community",
+   "src": "community/issue-02-03.webp",
+   "origBytes": 277772,
+   "origW": 1400,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1400
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-02-03-480w.webp",
+     "w": 480,
+     "bytes": 26048
+    },
+    {
+     "path": "thumbs/issue-02-03-960w.webp",
+     "w": 960,
+     "bytes": 69926
+    },
+    {
+     "path": "thumbs/issue-02-03-1400w.webp",
+     "w": 1400,
+     "bytes": 111460
+    }
+   ],
+   "srcset": "thumbs/issue-02-03-480w.webp 480w, thumbs/issue-02-03-960w.webp 960w, thumbs/issue-02-03-1400w.webp 1400w",
+   "thumb": "thumbs/issue-02-03-1400w.webp",
+   "thumbSmall": "thumbs/issue-02-03-480w.webp",
+   "thumbBytes": 111460
+  },
+  {
+   "group": "community",
+   "src": "community/issue-02-04.webp",
+   "origBytes": 281146,
+   "origW": 1400,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1400
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-02-04-480w.webp",
+     "w": 480,
+     "bytes": 27140
+    },
+    {
+     "path": "thumbs/issue-02-04-960w.webp",
+     "w": 960,
+     "bytes": 69936
+    },
+    {
+     "path": "thumbs/issue-02-04-1400w.webp",
+     "w": 1400,
+     "bytes": 109856
+    }
+   ],
+   "srcset": "thumbs/issue-02-04-480w.webp 480w, thumbs/issue-02-04-960w.webp 960w, thumbs/issue-02-04-1400w.webp 1400w",
+   "thumb": "thumbs/issue-02-04-1400w.webp",
+   "thumbSmall": "thumbs/issue-02-04-480w.webp",
+   "thumbBytes": 109856
+  },
+  {
+   "group": "community",
+   "src": "community/issue-02-05.webp",
+   "origBytes": 281384,
+   "origW": 1400,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1400
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-02-05-480w.webp",
+     "w": 480,
+     "bytes": 26528
+    },
+    {
+     "path": "thumbs/issue-02-05-960w.webp",
+     "w": 960,
+     "bytes": 69464
+    },
+    {
+     "path": "thumbs/issue-02-05-1400w.webp",
+     "w": 1400,
+     "bytes": 109156
+    }
+   ],
+   "srcset": "thumbs/issue-02-05-480w.webp 480w, thumbs/issue-02-05-960w.webp 960w, thumbs/issue-02-05-1400w.webp 1400w",
+   "thumb": "thumbs/issue-02-05-1400w.webp",
+   "thumbSmall": "thumbs/issue-02-05-480w.webp",
+   "thumbBytes": 109156
+  },
+  {
+   "group": "community",
+   "src": "community/issue-11-01.webp",
+   "origBytes": 691392,
+   "origW": 1918,
+   "origH": 820,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1918
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-11-01-480w.webp",
+     "w": 480,
+     "bytes": 37148
+    },
+    {
+     "path": "thumbs/issue-11-01-960w.webp",
+     "w": 960,
+     "bytes": 118778
+    },
+    {
+     "path": "thumbs/issue-11-01-1440w.webp",
+     "w": 1440,
+     "bytes": 218838
+    },
+    {
+     "path": "thumbs/issue-11-01-1918w.webp",
+     "w": 1918,
+     "bytes": 327190
+    }
+   ],
+   "srcset": "thumbs/issue-11-01-480w.webp 480w, thumbs/issue-11-01-960w.webp 960w, thumbs/issue-11-01-1440w.webp 1440w, thumbs/issue-11-01-1918w.webp 1918w",
+   "thumb": "thumbs/issue-11-01-1918w.webp",
+   "thumbSmall": "thumbs/issue-11-01-480w.webp",
+   "thumbBytes": 327190
+  },
+  {
+   "group": "community",
+   "src": "community/issue-12-01.webp",
+   "origBytes": 382316,
+   "origW": 1299,
+   "origH": 1211,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1299
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-12-01-480w.webp",
+     "w": 480,
+     "bytes": 38874
+    },
+    {
+     "path": "thumbs/issue-12-01-960w.webp",
+     "w": 960,
+     "bytes": 109440
+    },
+    {
+     "path": "thumbs/issue-12-01-1299w.webp",
+     "w": 1299,
+     "bytes": 163664
+    }
+   ],
+   "srcset": "thumbs/issue-12-01-480w.webp 480w, thumbs/issue-12-01-960w.webp 960w, thumbs/issue-12-01-1299w.webp 1299w",
+   "thumb": "thumbs/issue-12-01-1299w.webp",
+   "thumbSmall": "thumbs/issue-12-01-480w.webp",
+   "thumbBytes": 163664
+  },
+  {
+   "group": "community",
+   "src": "community/issue-15-01.webp",
+   "origBytes": 11690,
+   "origW": 180,
+   "origH": 180,
+   "alpha": false,
+   "sizes": [
+    180
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-15-01-180w.webp",
+     "w": 180,
+     "bytes": 5568
+    }
+   ],
+   "srcset": "thumbs/issue-15-01-180w.webp 180w",
+   "thumb": "thumbs/issue-15-01-180w.webp",
+   "thumbSmall": "thumbs/issue-15-01-180w.webp",
+   "thumbBytes": 5568
+  },
+  {
+   "group": "community",
+   "src": "community/issue-16-01.webp",
+   "origBytes": 96512,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-16-01-480w.webp",
+     "w": 480,
+     "bytes": 12666
+    },
+    {
+     "path": "thumbs/issue-16-01-960w.webp",
+     "w": 960,
+     "bytes": 26734
+    },
+    {
+     "path": "thumbs/issue-16-01-1254w.webp",
+     "w": 1254,
+     "bytes": 37886
+    }
+   ],
+   "srcset": "thumbs/issue-16-01-480w.webp 480w, thumbs/issue-16-01-960w.webp 960w, thumbs/issue-16-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-16-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-16-01-480w.webp",
+   "thumbBytes": 37886
+  },
+  {
+   "group": "community",
+   "src": "community/issue-17-01.webp",
+   "origBytes": 198656,
+   "origW": 832,
+   "origH": 1207,
+   "alpha": false,
+   "sizes": [
+    480,
+    832
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-17-01-480w.webp",
+     "w": 480,
+     "bytes": 40104
+    },
+    {
+     "path": "thumbs/issue-17-01-832w.webp",
+     "w": 832,
+     "bytes": 83268
+    }
+   ],
+   "srcset": "thumbs/issue-17-01-480w.webp 480w, thumbs/issue-17-01-832w.webp 832w",
+   "thumb": "thumbs/issue-17-01-832w.webp",
+   "thumbSmall": "thumbs/issue-17-01-480w.webp",
+   "thumbBytes": 83268
+  },
+  {
+   "group": "community",
+   "src": "community/issue-18-01.webp",
+   "origBytes": 418498,
+   "origW": 1536,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-18-01-480w.webp",
+     "w": 480,
+     "bytes": 41120
+    },
+    {
+     "path": "thumbs/issue-18-01-960w.webp",
+     "w": 960,
+     "bytes": 114340
+    },
+    {
+     "path": "thumbs/issue-18-01-1440w.webp",
+     "w": 1440,
+     "bytes": 194724
+    }
+   ],
+   "srcset": "thumbs/issue-18-01-480w.webp 480w, thumbs/issue-18-01-960w.webp 960w, thumbs/issue-18-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-18-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-18-01-480w.webp",
+   "thumbBytes": 194724
+  },
+  {
+   "group": "community",
+   "src": "community/issue-18-02.webp",
+   "origBytes": 406922,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-18-02-480w.webp",
+     "w": 480,
+     "bytes": 43760
+    },
+    {
+     "path": "thumbs/issue-18-02-960w.webp",
+     "w": 960,
+     "bytes": 120616
+    },
+    {
+     "path": "thumbs/issue-18-02-1440w.webp",
+     "w": 1440,
+     "bytes": 199392
+    }
+   ],
+   "srcset": "thumbs/issue-18-02-480w.webp 480w, thumbs/issue-18-02-960w.webp 960w, thumbs/issue-18-02-1440w.webp 1440w",
+   "thumb": "thumbs/issue-18-02-1440w.webp",
+   "thumbSmall": "thumbs/issue-18-02-480w.webp",
+   "thumbBytes": 199392
+  },
+  {
+   "group": "community",
+   "src": "community/issue-19-01.webp",
+   "origBytes": 879294,
+   "origW": 1184,
+   "origH": 1760,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1184
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-19-01-480w.webp",
+     "w": 480,
+     "bytes": 69320
+    },
+    {
+     "path": "thumbs/issue-19-01-960w.webp",
+     "w": 960,
+     "bytes": 271194
+    },
+    {
+     "path": "thumbs/issue-19-01-1184w.webp",
+     "w": 1184,
+     "bytes": 383796
+    }
+   ],
+   "srcset": "thumbs/issue-19-01-480w.webp 480w, thumbs/issue-19-01-960w.webp 960w, thumbs/issue-19-01-1184w.webp 1184w",
+   "thumb": "thumbs/issue-19-01-1184w.webp",
+   "thumbSmall": "thumbs/issue-19-01-480w.webp",
+   "thumbBytes": 383796
+  },
+  {
+   "group": "community",
+   "src": "community/issue-20-01.webp",
+   "origBytes": 509272,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-20-01-480w.webp",
+     "w": 480,
+     "bytes": 68122
+    },
+    {
+     "path": "thumbs/issue-20-01-960w.webp",
+     "w": 960,
+     "bytes": 180902
+    }
+   ],
+   "srcset": "thumbs/issue-20-01-480w.webp 480w, thumbs/issue-20-01-960w.webp 960w",
+   "thumb": "thumbs/issue-20-01-960w.webp",
+   "thumbSmall": "thumbs/issue-20-01-480w.webp",
+   "thumbBytes": 180902
+  },
+  {
+   "group": "community",
+   "src": "community/issue-20-02.webp",
+   "origBytes": 520398,
+   "origW": 1024,
+   "origH": 1776,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-20-02-480w.webp",
+     "w": 480,
+     "bytes": 70824
+    },
+    {
+     "path": "thumbs/issue-20-02-960w.webp",
+     "w": 960,
+     "bytes": 185490
+    }
+   ],
+   "srcset": "thumbs/issue-20-02-480w.webp 480w, thumbs/issue-20-02-960w.webp 960w",
+   "thumb": "thumbs/issue-20-02-960w.webp",
+   "thumbSmall": "thumbs/issue-20-02-480w.webp",
+   "thumbBytes": 185490
+  },
+  {
+   "group": "community",
+   "src": "community/issue-21-01.webp",
+   "origBytes": 534818,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-21-01-480w.webp",
+     "w": 480,
+     "bytes": 49506
+    },
+    {
+     "path": "thumbs/issue-21-01-960w.webp",
+     "w": 960,
+     "bytes": 156200
+    }
+   ],
+   "srcset": "thumbs/issue-21-01-480w.webp 480w, thumbs/issue-21-01-960w.webp 960w",
+   "thumb": "thumbs/issue-21-01-960w.webp",
+   "thumbSmall": "thumbs/issue-21-01-480w.webp",
+   "thumbBytes": 156200
+  },
+  {
+   "group": "community",
+   "src": "community/issue-23-01.webp",
+   "origBytes": 338508,
+   "origW": 1086,
+   "origH": 1448,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-23-01-480w.webp",
+     "w": 480,
+     "bytes": 44176
+    },
+    {
+     "path": "thumbs/issue-23-01-960w.webp",
+     "w": 960,
+     "bytes": 122790
+    }
+   ],
+   "srcset": "thumbs/issue-23-01-480w.webp 480w, thumbs/issue-23-01-960w.webp 960w",
+   "thumb": "thumbs/issue-23-01-960w.webp",
+   "thumbSmall": "thumbs/issue-23-01-480w.webp",
+   "thumbBytes": 122790
+  },
+  {
+   "group": "community",
+   "src": "community/issue-25-01.webp",
+   "origBytes": 530050,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-25-01-480w.webp",
+     "w": 480,
+     "bytes": 102690
+    },
+    {
+     "path": "thumbs/issue-25-01-960w.webp",
+     "w": 960,
+     "bytes": 256052
+    }
+   ],
+   "srcset": "thumbs/issue-25-01-480w.webp 480w, thumbs/issue-25-01-960w.webp 960w",
+   "thumb": "thumbs/issue-25-01-960w.webp",
+   "thumbSmall": "thumbs/issue-25-01-480w.webp",
+   "thumbBytes": 256052
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-02.webp",
+   "origBytes": 395946,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-02-480w.webp",
+     "w": 480,
+     "bytes": 60892
+    },
+    {
+     "path": "thumbs/issue-26-02-960w.webp",
+     "w": 960,
+     "bytes": 145740
+    },
+    {
+     "path": "thumbs/issue-26-02-1254w.webp",
+     "w": 1254,
+     "bytes": 199964
+    }
+   ],
+   "srcset": "thumbs/issue-26-02-480w.webp 480w, thumbs/issue-26-02-960w.webp 960w, thumbs/issue-26-02-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-02-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-02-480w.webp",
+   "thumbBytes": 199964
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-03.webp",
+   "origBytes": 495904,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-03-480w.webp",
+     "w": 480,
+     "bytes": 68942
+    },
+    {
+     "path": "thumbs/issue-26-03-960w.webp",
+     "w": 960,
+     "bytes": 177514
+    },
+    {
+     "path": "thumbs/issue-26-03-1254w.webp",
+     "w": 1254,
+     "bytes": 247670
+    }
+   ],
+   "srcset": "thumbs/issue-26-03-480w.webp 480w, thumbs/issue-26-03-960w.webp 960w, thumbs/issue-26-03-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-03-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-03-480w.webp",
+   "thumbBytes": 247670
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-04.webp",
+   "origBytes": 472078,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-04-480w.webp",
+     "w": 480,
+     "bytes": 70970
+    },
+    {
+     "path": "thumbs/issue-26-04-960w.webp",
+     "w": 960,
+     "bytes": 178848
+    },
+    {
+     "path": "thumbs/issue-26-04-1254w.webp",
+     "w": 1254,
+     "bytes": 243810
+    }
+   ],
+   "srcset": "thumbs/issue-26-04-480w.webp 480w, thumbs/issue-26-04-960w.webp 960w, thumbs/issue-26-04-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-04-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-04-480w.webp",
+   "thumbBytes": 243810
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-05.webp",
+   "origBytes": 488688,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-05-480w.webp",
+     "w": 480,
+     "bytes": 75566
+    },
+    {
+     "path": "thumbs/issue-26-05-960w.webp",
+     "w": 960,
+     "bytes": 188452
+    },
+    {
+     "path": "thumbs/issue-26-05-1254w.webp",
+     "w": 1254,
+     "bytes": 257066
+    }
+   ],
+   "srcset": "thumbs/issue-26-05-480w.webp 480w, thumbs/issue-26-05-960w.webp 960w, thumbs/issue-26-05-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-05-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-05-480w.webp",
+   "thumbBytes": 257066
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-06.webp",
+   "origBytes": 417446,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-06-480w.webp",
+     "w": 480,
+     "bytes": 62474
+    },
+    {
+     "path": "thumbs/issue-26-06-960w.webp",
+     "w": 960,
+     "bytes": 153932
+    },
+    {
+     "path": "thumbs/issue-26-06-1254w.webp",
+     "w": 1254,
+     "bytes": 206198
+    }
+   ],
+   "srcset": "thumbs/issue-26-06-480w.webp 480w, thumbs/issue-26-06-960w.webp 960w, thumbs/issue-26-06-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-06-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-06-480w.webp",
+   "thumbBytes": 206198
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-07.webp",
+   "origBytes": 471626,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-07-480w.webp",
+     "w": 480,
+     "bytes": 68934
+    },
+    {
+     "path": "thumbs/issue-26-07-960w.webp",
+     "w": 960,
+     "bytes": 174864
+    },
+    {
+     "path": "thumbs/issue-26-07-1254w.webp",
+     "w": 1254,
+     "bytes": 239786
+    }
+   ],
+   "srcset": "thumbs/issue-26-07-480w.webp 480w, thumbs/issue-26-07-960w.webp 960w, thumbs/issue-26-07-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-07-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-07-480w.webp",
+   "thumbBytes": 239786
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-08.webp",
+   "origBytes": 422614,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-08-480w.webp",
+     "w": 480,
+     "bytes": 61144
+    },
+    {
+     "path": "thumbs/issue-26-08-960w.webp",
+     "w": 960,
+     "bytes": 152038
+    },
+    {
+     "path": "thumbs/issue-26-08-1254w.webp",
+     "w": 1254,
+     "bytes": 209298
+    }
+   ],
+   "srcset": "thumbs/issue-26-08-480w.webp 480w, thumbs/issue-26-08-960w.webp 960w, thumbs/issue-26-08-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-08-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-08-480w.webp",
+   "thumbBytes": 209298
+  },
+  {
+   "group": "community",
+   "src": "community/issue-26-09.webp",
+   "origBytes": 437020,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-26-09-480w.webp",
+     "w": 480,
+     "bytes": 65586
+    },
+    {
+     "path": "thumbs/issue-26-09-960w.webp",
+     "w": 960,
+     "bytes": 164874
+    },
+    {
+     "path": "thumbs/issue-26-09-1254w.webp",
+     "w": 1254,
+     "bytes": 226476
+    }
+   ],
+   "srcset": "thumbs/issue-26-09-480w.webp 480w, thumbs/issue-26-09-960w.webp 960w, thumbs/issue-26-09-1254w.webp 1254w",
+   "thumb": "thumbs/issue-26-09-1254w.webp",
+   "thumbSmall": "thumbs/issue-26-09-480w.webp",
+   "thumbBytes": 226476
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-02.webp",
+   "origBytes": 531842,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-02-480w.webp",
+     "w": 480,
+     "bytes": 51184
+    },
+    {
+     "path": "thumbs/issue-27-02-960w.webp",
+     "w": 960,
+     "bytes": 146560
+    },
+    {
+     "path": "thumbs/issue-27-02-1440w.webp",
+     "w": 1440,
+     "bytes": 249512
+    }
+   ],
+   "srcset": "thumbs/issue-27-02-480w.webp 480w, thumbs/issue-27-02-960w.webp 960w, thumbs/issue-27-02-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-02-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-02-480w.webp",
+   "thumbBytes": 249512
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-03.webp",
+   "origBytes": 599518,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-03-480w.webp",
+     "w": 480,
+     "bytes": 56628
+    },
+    {
+     "path": "thumbs/issue-27-03-960w.webp",
+     "w": 960,
+     "bytes": 167842
+    },
+    {
+     "path": "thumbs/issue-27-03-1440w.webp",
+     "w": 1440,
+     "bytes": 282872
+    }
+   ],
+   "srcset": "thumbs/issue-27-03-480w.webp 480w, thumbs/issue-27-03-960w.webp 960w, thumbs/issue-27-03-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-03-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-03-480w.webp",
+   "thumbBytes": 282872
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-04.webp",
+   "origBytes": 549588,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-04-480w.webp",
+     "w": 480,
+     "bytes": 51898
+    },
+    {
+     "path": "thumbs/issue-27-04-960w.webp",
+     "w": 960,
+     "bytes": 150836
+    },
+    {
+     "path": "thumbs/issue-27-04-1440w.webp",
+     "w": 1440,
+     "bytes": 256382
+    }
+   ],
+   "srcset": "thumbs/issue-27-04-480w.webp 480w, thumbs/issue-27-04-960w.webp 960w, thumbs/issue-27-04-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-04-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-04-480w.webp",
+   "thumbBytes": 256382
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-05.webp",
+   "origBytes": 629288,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-05-480w.webp",
+     "w": 480,
+     "bytes": 59838
+    },
+    {
+     "path": "thumbs/issue-27-05-960w.webp",
+     "w": 960,
+     "bytes": 175632
+    },
+    {
+     "path": "thumbs/issue-27-05-1440w.webp",
+     "w": 1440,
+     "bytes": 301686
+    }
+   ],
+   "srcset": "thumbs/issue-27-05-480w.webp 480w, thumbs/issue-27-05-960w.webp 960w, thumbs/issue-27-05-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-05-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-05-480w.webp",
+   "thumbBytes": 301686
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-06.webp",
+   "origBytes": 623202,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-06-480w.webp",
+     "w": 480,
+     "bytes": 58832
+    },
+    {
+     "path": "thumbs/issue-27-06-960w.webp",
+     "w": 960,
+     "bytes": 175036
+    },
+    {
+     "path": "thumbs/issue-27-06-1440w.webp",
+     "w": 1440,
+     "bytes": 303256
+    }
+   ],
+   "srcset": "thumbs/issue-27-06-480w.webp 480w, thumbs/issue-27-06-960w.webp 960w, thumbs/issue-27-06-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-06-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-06-480w.webp",
+   "thumbBytes": 303256
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-07.webp",
+   "origBytes": 555164,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-07-480w.webp",
+     "w": 480,
+     "bytes": 53956
+    },
+    {
+     "path": "thumbs/issue-27-07-960w.webp",
+     "w": 960,
+     "bytes": 159264
+    },
+    {
+     "path": "thumbs/issue-27-07-1440w.webp",
+     "w": 1440,
+     "bytes": 270800
+    }
+   ],
+   "srcset": "thumbs/issue-27-07-480w.webp 480w, thumbs/issue-27-07-960w.webp 960w, thumbs/issue-27-07-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-07-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-07-480w.webp",
+   "thumbBytes": 270800
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-08.webp",
+   "origBytes": 661564,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-08-480w.webp",
+     "w": 480,
+     "bytes": 66484
+    },
+    {
+     "path": "thumbs/issue-27-08-960w.webp",
+     "w": 960,
+     "bytes": 192840
+    },
+    {
+     "path": "thumbs/issue-27-08-1440w.webp",
+     "w": 1440,
+     "bytes": 332964
+    }
+   ],
+   "srcset": "thumbs/issue-27-08-480w.webp 480w, thumbs/issue-27-08-960w.webp 960w, thumbs/issue-27-08-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-08-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-08-480w.webp",
+   "thumbBytes": 332964
+  },
+  {
+   "group": "community",
+   "src": "community/issue-27-09.webp",
+   "origBytes": 782130,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-27-09-480w.webp",
+     "w": 480,
+     "bytes": 74126
+    },
+    {
+     "path": "thumbs/issue-27-09-960w.webp",
+     "w": 960,
+     "bytes": 231886
+    },
+    {
+     "path": "thumbs/issue-27-09-1440w.webp",
+     "w": 1440,
+     "bytes": 404490
+    }
+   ],
+   "srcset": "thumbs/issue-27-09-480w.webp 480w, thumbs/issue-27-09-960w.webp 960w, thumbs/issue-27-09-1440w.webp 1440w",
+   "thumb": "thumbs/issue-27-09-1440w.webp",
+   "thumbSmall": "thumbs/issue-27-09-480w.webp",
+   "thumbBytes": 404490
+  },
+  {
+   "group": "community",
+   "src": "community/issue-29-01.webp",
+   "origBytes": 327264,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-29-01-480w.webp",
+     "w": 480,
+     "bytes": 46542
+    },
+    {
+     "path": "thumbs/issue-29-01-960w.webp",
+     "w": 960,
+     "bytes": 111066
+    },
+    {
+     "path": "thumbs/issue-29-01-1254w.webp",
+     "w": 1254,
+     "bytes": 150960
+    }
+   ],
+   "srcset": "thumbs/issue-29-01-480w.webp 480w, thumbs/issue-29-01-960w.webp 960w, thumbs/issue-29-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-29-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-29-01-480w.webp",
+   "thumbBytes": 150960
+  },
+  {
+   "group": "community",
+   "src": "community/issue-30-01.webp",
+   "origBytes": 398138,
+   "origW": 1536,
+   "origH": 1516,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-30-01-480w.webp",
+     "w": 480,
+     "bytes": 42314
+    },
+    {
+     "path": "thumbs/issue-30-01-960w.webp",
+     "w": 960,
+     "bytes": 109168
+    },
+    {
+     "path": "thumbs/issue-30-01-1440w.webp",
+     "w": 1440,
+     "bytes": 176454
+    }
+   ],
+   "srcset": "thumbs/issue-30-01-480w.webp 480w, thumbs/issue-30-01-960w.webp 960w, thumbs/issue-30-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-30-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-30-01-480w.webp",
+   "thumbBytes": 176454
+  },
+  {
+   "group": "community",
+   "src": "community/issue-31-01.webp",
+   "origBytes": 177482,
+   "origW": 1360,
+   "origH": 1496,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-31-01-480w.webp",
+     "w": 480,
+     "bytes": 24050
+    },
+    {
+     "path": "thumbs/issue-31-01-960w.webp",
+     "w": 960,
+     "bytes": 53252
+    },
+    {
+     "path": "thumbs/issue-31-01-1360w.webp",
+     "w": 1360,
+     "bytes": 77584
+    }
+   ],
+   "srcset": "thumbs/issue-31-01-480w.webp 480w, thumbs/issue-31-01-960w.webp 960w, thumbs/issue-31-01-1360w.webp 1360w",
+   "thumb": "thumbs/issue-31-01-1360w.webp",
+   "thumbSmall": "thumbs/issue-31-01-480w.webp",
+   "thumbBytes": 77584
+  },
+  {
+   "group": "community",
+   "src": "community/issue-32-01.webp",
+   "origBytes": 333150,
+   "origW": 1672,
+   "origH": 941,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1672
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-32-01-480w.webp",
+     "w": 480,
+     "bytes": 25160
+    },
+    {
+     "path": "thumbs/issue-32-01-960w.webp",
+     "w": 960,
+     "bytes": 64756
+    },
+    {
+     "path": "thumbs/issue-32-01-1440w.webp",
+     "w": 1440,
+     "bytes": 108418
+    },
+    {
+     "path": "thumbs/issue-32-01-1672w.webp",
+     "w": 1672,
+     "bytes": 131112
+    }
+   ],
+   "srcset": "thumbs/issue-32-01-480w.webp 480w, thumbs/issue-32-01-960w.webp 960w, thumbs/issue-32-01-1440w.webp 1440w, thumbs/issue-32-01-1672w.webp 1672w",
+   "thumb": "thumbs/issue-32-01-1672w.webp",
+   "thumbSmall": "thumbs/issue-32-01-480w.webp",
+   "thumbBytes": 131112
+  },
+  {
+   "group": "community",
+   "src": "community/issue-32-02.webp",
+   "origBytes": 338168,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-32-02-480w.webp",
+     "w": 480,
+     "bytes": 49402
+    },
+    {
+     "path": "thumbs/issue-32-02-960w.webp",
+     "w": 960,
+     "bytes": 123448
+    }
+   ],
+   "srcset": "thumbs/issue-32-02-480w.webp 480w, thumbs/issue-32-02-960w.webp 960w",
+   "thumb": "thumbs/issue-32-02-960w.webp",
+   "thumbSmall": "thumbs/issue-32-02-480w.webp",
+   "thumbBytes": 123448
+  },
+  {
+   "group": "community",
+   "src": "community/issue-32-03.webp",
+   "origBytes": 809338,
+   "origW": 1536,
+   "origH": 2048,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-32-03-480w.webp",
+     "w": 480,
+     "bytes": 49566
+    },
+    {
+     "path": "thumbs/issue-32-03-960w.webp",
+     "w": 960,
+     "bytes": 154984
+    },
+    {
+     "path": "thumbs/issue-32-03-1440w.webp",
+     "w": 1440,
+     "bytes": 258574
+    }
+   ],
+   "srcset": "thumbs/issue-32-03-480w.webp 480w, thumbs/issue-32-03-960w.webp 960w, thumbs/issue-32-03-1440w.webp 1440w",
+   "thumb": "thumbs/issue-32-03-1440w.webp",
+   "thumbSmall": "thumbs/issue-32-03-480w.webp",
+   "thumbBytes": 258574
+  },
+  {
+   "group": "community",
+   "src": "community/issue-32-04.webp",
+   "origBytes": 557268,
+   "origW": 2320,
+   "origH": 1302,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-32-04-480w.webp",
+     "w": 480,
+     "bytes": 25344
+    },
+    {
+     "path": "thumbs/issue-32-04-960w.webp",
+     "w": 960,
+     "bytes": 72678
+    },
+    {
+     "path": "thumbs/issue-32-04-1440w.webp",
+     "w": 1440,
+     "bytes": 125904
+    },
+    {
+     "path": "thumbs/issue-32-04-1920w.webp",
+     "w": 1920,
+     "bytes": 181390
+    }
+   ],
+   "srcset": "thumbs/issue-32-04-480w.webp 480w, thumbs/issue-32-04-960w.webp 960w, thumbs/issue-32-04-1440w.webp 1440w, thumbs/issue-32-04-1920w.webp 1920w",
+   "thumb": "thumbs/issue-32-04-1920w.webp",
+   "thumbSmall": "thumbs/issue-32-04-480w.webp",
+   "thumbBytes": 181390
+  },
+  {
+   "group": "community",
+   "src": "community/issue-32-05.webp",
+   "origBytes": 579936,
+   "origW": 2214,
+   "origH": 1197,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-32-05-480w.webp",
+     "w": 480,
+     "bytes": 26652
+    },
+    {
+     "path": "thumbs/issue-32-05-960w.webp",
+     "w": 960,
+     "bytes": 78072
+    },
+    {
+     "path": "thumbs/issue-32-05-1440w.webp",
+     "w": 1440,
+     "bytes": 140998
+    },
+    {
+     "path": "thumbs/issue-32-05-1920w.webp",
+     "w": 1920,
+     "bytes": 204588
+    }
+   ],
+   "srcset": "thumbs/issue-32-05-480w.webp 480w, thumbs/issue-32-05-960w.webp 960w, thumbs/issue-32-05-1440w.webp 1440w, thumbs/issue-32-05-1920w.webp 1920w",
+   "thumb": "thumbs/issue-32-05-1920w.webp",
+   "thumbSmall": "thumbs/issue-32-05-480w.webp",
+   "thumbBytes": 204588
+  },
+  {
+   "group": "community",
+   "src": "community/issue-34-01.webp",
+   "origBytes": 473090,
+   "origW": 1920,
+   "origH": 1280,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-34-01-480w.webp",
+     "w": 480,
+     "bytes": 19516
+    },
+    {
+     "path": "thumbs/issue-34-01-960w.webp",
+     "w": 960,
+     "bytes": 53698
+    },
+    {
+     "path": "thumbs/issue-34-01-1440w.webp",
+     "w": 1440,
+     "bytes": 95652
+    }
+   ],
+   "srcset": "thumbs/issue-34-01-480w.webp 480w, thumbs/issue-34-01-960w.webp 960w, thumbs/issue-34-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-34-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-34-01-480w.webp",
+   "thumbBytes": 95652
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-01.webp",
+   "origBytes": 382744,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-01-480w.webp",
+     "w": 480,
+     "bytes": 42078
+    },
+    {
+     "path": "thumbs/issue-36-01-960w.webp",
+     "w": 960,
+     "bytes": 111262
+    },
+    {
+     "path": "thumbs/issue-36-01-1440w.webp",
+     "w": 1440,
+     "bytes": 175078
+    }
+   ],
+   "srcset": "thumbs/issue-36-01-480w.webp 480w, thumbs/issue-36-01-960w.webp 960w, thumbs/issue-36-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-01-480w.webp",
+   "thumbBytes": 175078
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-02.webp",
+   "origBytes": 483440,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-02-480w.webp",
+     "w": 480,
+     "bytes": 47452
+    },
+    {
+     "path": "thumbs/issue-36-02-960w.webp",
+     "w": 960,
+     "bytes": 141616
+    },
+    {
+     "path": "thumbs/issue-36-02-1440w.webp",
+     "w": 1440,
+     "bytes": 238344
+    }
+   ],
+   "srcset": "thumbs/issue-36-02-480w.webp 480w, thumbs/issue-36-02-960w.webp 960w, thumbs/issue-36-02-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-02-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-02-480w.webp",
+   "thumbBytes": 238344
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-03.webp",
+   "origBytes": 515626,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-03-480w.webp",
+     "w": 480,
+     "bytes": 48194
+    },
+    {
+     "path": "thumbs/issue-36-03-960w.webp",
+     "w": 960,
+     "bytes": 147296
+    },
+    {
+     "path": "thumbs/issue-36-03-1440w.webp",
+     "w": 1440,
+     "bytes": 247864
+    }
+   ],
+   "srcset": "thumbs/issue-36-03-480w.webp 480w, thumbs/issue-36-03-960w.webp 960w, thumbs/issue-36-03-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-03-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-03-480w.webp",
+   "thumbBytes": 247864
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-04.webp",
+   "origBytes": 422488,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-04-480w.webp",
+     "w": 480,
+     "bytes": 38366
+    },
+    {
+     "path": "thumbs/issue-36-04-960w.webp",
+     "w": 960,
+     "bytes": 114324
+    },
+    {
+     "path": "thumbs/issue-36-04-1440w.webp",
+     "w": 1440,
+     "bytes": 188724
+    }
+   ],
+   "srcset": "thumbs/issue-36-04-480w.webp 480w, thumbs/issue-36-04-960w.webp 960w, thumbs/issue-36-04-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-04-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-04-480w.webp",
+   "thumbBytes": 188724
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-05.webp",
+   "origBytes": 448812,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-05-480w.webp",
+     "w": 480,
+     "bytes": 45206
+    },
+    {
+     "path": "thumbs/issue-36-05-960w.webp",
+     "w": 960,
+     "bytes": 127922
+    },
+    {
+     "path": "thumbs/issue-36-05-1440w.webp",
+     "w": 1440,
+     "bytes": 207900
+    }
+   ],
+   "srcset": "thumbs/issue-36-05-480w.webp 480w, thumbs/issue-36-05-960w.webp 960w, thumbs/issue-36-05-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-05-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-05-480w.webp",
+   "thumbBytes": 207900
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-06.webp",
+   "origBytes": 424480,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-06-480w.webp",
+     "w": 480,
+     "bytes": 41904
+    },
+    {
+     "path": "thumbs/issue-36-06-960w.webp",
+     "w": 960,
+     "bytes": 118948
+    },
+    {
+     "path": "thumbs/issue-36-06-1440w.webp",
+     "w": 1440,
+     "bytes": 197396
+    }
+   ],
+   "srcset": "thumbs/issue-36-06-480w.webp 480w, thumbs/issue-36-06-960w.webp 960w, thumbs/issue-36-06-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-06-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-06-480w.webp",
+   "thumbBytes": 197396
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-07.webp",
+   "origBytes": 462810,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-07-480w.webp",
+     "w": 480,
+     "bytes": 44772
+    },
+    {
+     "path": "thumbs/issue-36-07-960w.webp",
+     "w": 960,
+     "bytes": 126700
+    },
+    {
+     "path": "thumbs/issue-36-07-1440w.webp",
+     "w": 1440,
+     "bytes": 202496
+    }
+   ],
+   "srcset": "thumbs/issue-36-07-480w.webp 480w, thumbs/issue-36-07-960w.webp 960w, thumbs/issue-36-07-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-07-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-07-480w.webp",
+   "thumbBytes": 202496
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-08.webp",
+   "origBytes": 426866,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-08-480w.webp",
+     "w": 480,
+     "bytes": 42438
+    },
+    {
+     "path": "thumbs/issue-36-08-960w.webp",
+     "w": 960,
+     "bytes": 120932
+    },
+    {
+     "path": "thumbs/issue-36-08-1440w.webp",
+     "w": 1440,
+     "bytes": 198112
+    }
+   ],
+   "srcset": "thumbs/issue-36-08-480w.webp 480w, thumbs/issue-36-08-960w.webp 960w, thumbs/issue-36-08-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-08-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-08-480w.webp",
+   "thumbBytes": 198112
+  },
+  {
+   "group": "community",
+   "src": "community/issue-36-09.webp",
+   "origBytes": 347816,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-36-09-480w.webp",
+     "w": 480,
+     "bytes": 41156
+    },
+    {
+     "path": "thumbs/issue-36-09-960w.webp",
+     "w": 960,
+     "bytes": 99526
+    },
+    {
+     "path": "thumbs/issue-36-09-1440w.webp",
+     "w": 1440,
+     "bytes": 148124
+    }
+   ],
+   "srcset": "thumbs/issue-36-09-480w.webp 480w, thumbs/issue-36-09-960w.webp 960w, thumbs/issue-36-09-1440w.webp 1440w",
+   "thumb": "thumbs/issue-36-09-1440w.webp",
+   "thumbSmall": "thumbs/issue-36-09-480w.webp",
+   "thumbBytes": 148124
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-01.webp",
    "origBytes": 196714,
    "origW": 1024,
    "origH": 1536,
@@ -492,24 +2230,164 @@
    ],
    "files": [
     {
-     "path": "thumbs/asset-c01-480w.webp",
+     "path": "thumbs/issue-37-01-480w.webp",
      "w": 480,
      "bytes": 26118
     },
     {
-     "path": "thumbs/asset-c01-960w.webp",
+     "path": "thumbs/issue-37-01-960w.webp",
      "w": 960,
      "bytes": 70484
     }
    ],
-   "srcset": "thumbs/asset-c01-480w.webp 480w, thumbs/asset-c01-960w.webp 960w",
-   "thumb": "thumbs/asset-c01-960w.webp",
-   "thumbSmall": "thumbs/asset-c01-480w.webp",
+   "srcset": "thumbs/issue-37-01-480w.webp 480w, thumbs/issue-37-01-960w.webp 960w",
+   "thumb": "thumbs/issue-37-01-960w.webp",
+   "thumbSmall": "thumbs/issue-37-01-480w.webp",
    "thumbBytes": 70484
   },
   {
-   "group": "gallery",
-   "src": "gallery/asset-c29.webp",
+   "group": "community",
+   "src": "community/issue-37-02.webp",
+   "origBytes": 185770,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-02-480w.webp",
+     "w": 480,
+     "bytes": 28132
+    },
+    {
+     "path": "thumbs/issue-37-02-960w.webp",
+     "w": 960,
+     "bytes": 70914
+    }
+   ],
+   "srcset": "thumbs/issue-37-02-480w.webp 480w, thumbs/issue-37-02-960w.webp 960w",
+   "thumb": "thumbs/issue-37-02-960w.webp",
+   "thumbSmall": "thumbs/issue-37-02-480w.webp",
+   "thumbBytes": 70914
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-03.webp",
+   "origBytes": 147900,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-03-480w.webp",
+     "w": 480,
+     "bytes": 25230
+    },
+    {
+     "path": "thumbs/issue-37-03-960w.webp",
+     "w": 960,
+     "bytes": 56218
+    }
+   ],
+   "srcset": "thumbs/issue-37-03-480w.webp 480w, thumbs/issue-37-03-960w.webp 960w",
+   "thumb": "thumbs/issue-37-03-960w.webp",
+   "thumbSmall": "thumbs/issue-37-03-480w.webp",
+   "thumbBytes": 56218
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-04.webp",
+   "origBytes": 205244,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-04-480w.webp",
+     "w": 480,
+     "bytes": 27484
+    },
+    {
+     "path": "thumbs/issue-37-04-960w.webp",
+     "w": 960,
+     "bytes": 73032
+    }
+   ],
+   "srcset": "thumbs/issue-37-04-480w.webp 480w, thumbs/issue-37-04-960w.webp 960w",
+   "thumb": "thumbs/issue-37-04-960w.webp",
+   "thumbSmall": "thumbs/issue-37-04-480w.webp",
+   "thumbBytes": 73032
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-05.webp",
+   "origBytes": 216830,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-05-480w.webp",
+     "w": 480,
+     "bytes": 27964
+    },
+    {
+     "path": "thumbs/issue-37-05-960w.webp",
+     "w": 960,
+     "bytes": 80006
+    }
+   ],
+   "srcset": "thumbs/issue-37-05-480w.webp 480w, thumbs/issue-37-05-960w.webp 960w",
+   "thumb": "thumbs/issue-37-05-960w.webp",
+   "thumbSmall": "thumbs/issue-37-05-480w.webp",
+   "thumbBytes": 80006
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-06.webp",
+   "origBytes": 179262,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-06-480w.webp",
+     "w": 480,
+     "bytes": 28686
+    },
+    {
+     "path": "thumbs/issue-37-06-960w.webp",
+     "w": 960,
+     "bytes": 68450
+    }
+   ],
+   "srcset": "thumbs/issue-37-06-480w.webp 480w, thumbs/issue-37-06-960w.webp 960w",
+   "thumb": "thumbs/issue-37-06-960w.webp",
+   "thumbSmall": "thumbs/issue-37-06-480w.webp",
+   "thumbBytes": 68450
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-07.webp",
    "origBytes": 237796,
    "origW": 1536,
    "origH": 1536,
@@ -521,29 +2399,131 @@
    ],
    "files": [
     {
-     "path": "thumbs/asset-c29-480w.webp",
+     "path": "thumbs/issue-37-07-480w.webp",
      "w": 480,
      "bytes": 18196
     },
     {
-     "path": "thumbs/asset-c29-960w.webp",
+     "path": "thumbs/issue-37-07-960w.webp",
      "w": 960,
      "bytes": 50464
     },
     {
-     "path": "thumbs/asset-c29-1440w.webp",
+     "path": "thumbs/issue-37-07-1440w.webp",
      "w": 1440,
      "bytes": 83182
     }
    ],
-   "srcset": "thumbs/asset-c29-480w.webp 480w, thumbs/asset-c29-960w.webp 960w, thumbs/asset-c29-1440w.webp 1440w",
-   "thumb": "thumbs/asset-c29-1440w.webp",
-   "thumbSmall": "thumbs/asset-c29-480w.webp",
+   "srcset": "thumbs/issue-37-07-480w.webp 480w, thumbs/issue-37-07-960w.webp 960w, thumbs/issue-37-07-1440w.webp 1440w",
+   "thumb": "thumbs/issue-37-07-1440w.webp",
+   "thumbSmall": "thumbs/issue-37-07-480w.webp",
    "thumbBytes": 83182
   },
   {
-   "group": "gallery",
-   "src": "gallery/asset-c77.webp",
+   "group": "community",
+   "src": "community/issue-37-08.webp",
+   "origBytes": 238590,
+   "origW": 1536,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-08-480w.webp",
+     "w": 480,
+     "bytes": 21210
+    },
+    {
+     "path": "thumbs/issue-37-08-960w.webp",
+     "w": 960,
+     "bytes": 54624
+    },
+    {
+     "path": "thumbs/issue-37-08-1440w.webp",
+     "w": 1440,
+     "bytes": 90786
+    }
+   ],
+   "srcset": "thumbs/issue-37-08-480w.webp 480w, thumbs/issue-37-08-960w.webp 960w, thumbs/issue-37-08-1440w.webp 1440w",
+   "thumb": "thumbs/issue-37-08-1440w.webp",
+   "thumbSmall": "thumbs/issue-37-08-480w.webp",
+   "thumbBytes": 90786
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-09.webp",
+   "origBytes": 204022,
+   "origW": 1536,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-09-480w.webp",
+     "w": 480,
+     "bytes": 18536
+    },
+    {
+     "path": "thumbs/issue-37-09-960w.webp",
+     "w": 960,
+     "bytes": 46994
+    },
+    {
+     "path": "thumbs/issue-37-09-1440w.webp",
+     "w": 1440,
+     "bytes": 78648
+    }
+   ],
+   "srcset": "thumbs/issue-37-09-480w.webp 480w, thumbs/issue-37-09-960w.webp 960w, thumbs/issue-37-09-1440w.webp 1440w",
+   "thumb": "thumbs/issue-37-09-1440w.webp",
+   "thumbSmall": "thumbs/issue-37-09-480w.webp",
+   "thumbBytes": 78648
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-10.webp",
+   "origBytes": 176160,
+   "origW": 1536,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-10-480w.webp",
+     "w": 480,
+     "bytes": 14850
+    },
+    {
+     "path": "thumbs/issue-37-10-960w.webp",
+     "w": 960,
+     "bytes": 37124
+    },
+    {
+     "path": "thumbs/issue-37-10-1440w.webp",
+     "w": 1440,
+     "bytes": 61092
+    }
+   ],
+   "srcset": "thumbs/issue-37-10-480w.webp 480w, thumbs/issue-37-10-960w.webp 960w, thumbs/issue-37-10-1440w.webp 1440w",
+   "thumb": "thumbs/issue-37-10-1440w.webp",
+   "thumbSmall": "thumbs/issue-37-10-480w.webp",
+   "thumbBytes": 61092
+  },
+  {
+   "group": "community",
+   "src": "community/issue-37-11.webp",
    "origBytes": 324054,
    "origW": 2048,
    "origH": 1152,
@@ -556,34 +2536,278 @@
    ],
    "files": [
     {
-     "path": "thumbs/asset-c77-480w.webp",
+     "path": "thumbs/issue-37-11-480w.webp",
      "w": 480,
      "bytes": 11396
     },
     {
-     "path": "thumbs/asset-c77-960w.webp",
+     "path": "thumbs/issue-37-11-960w.webp",
      "w": 960,
      "bytes": 36102
     },
     {
-     "path": "thumbs/asset-c77-1440w.webp",
+     "path": "thumbs/issue-37-11-1440w.webp",
      "w": 1440,
      "bytes": 68354
     },
     {
-     "path": "thumbs/asset-c77-1920w.webp",
+     "path": "thumbs/issue-37-11-1920w.webp",
      "w": 1920,
      "bytes": 100412
     }
    ],
-   "srcset": "thumbs/asset-c77-480w.webp 480w, thumbs/asset-c77-960w.webp 960w, thumbs/asset-c77-1440w.webp 1440w, thumbs/asset-c77-1920w.webp 1920w",
-   "thumb": "thumbs/asset-c77-1920w.webp",
-   "thumbSmall": "thumbs/asset-c77-480w.webp",
+   "srcset": "thumbs/issue-37-11-480w.webp 480w, thumbs/issue-37-11-960w.webp 960w, thumbs/issue-37-11-1440w.webp 1440w, thumbs/issue-37-11-1920w.webp 1920w",
+   "thumb": "thumbs/issue-37-11-1920w.webp",
+   "thumbSmall": "thumbs/issue-37-11-480w.webp",
    "thumbBytes": 100412
   },
   {
-   "group": "gallery",
-   "src": "gallery/avatar-01.webp",
+   "group": "community",
+   "src": "community/issue-37-12.webp",
+   "origBytes": 299434,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-37-12-480w.webp",
+     "w": 480,
+     "bytes": 15266
+    },
+    {
+     "path": "thumbs/issue-37-12-960w.webp",
+     "w": 960,
+     "bytes": 42958
+    },
+    {
+     "path": "thumbs/issue-37-12-1440w.webp",
+     "w": 1440,
+     "bytes": 79030
+    },
+    {
+     "path": "thumbs/issue-37-12-1920w.webp",
+     "w": 1920,
+     "bytes": 115722
+    }
+   ],
+   "srcset": "thumbs/issue-37-12-480w.webp 480w, thumbs/issue-37-12-960w.webp 960w, thumbs/issue-37-12-1440w.webp 1440w, thumbs/issue-37-12-1920w.webp 1920w",
+   "thumb": "thumbs/issue-37-12-1920w.webp",
+   "thumbSmall": "thumbs/issue-37-12-480w.webp",
+   "thumbBytes": 115722
+  },
+  {
+   "group": "community",
+   "src": "community/issue-38-01.webp",
+   "origBytes": 296784,
+   "origW": 2500,
+   "origH": 3350,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-38-01-480w.webp",
+     "w": 480,
+     "bytes": 16970
+    },
+    {
+     "path": "thumbs/issue-38-01-960w.webp",
+     "w": 960,
+     "bytes": 38242
+    },
+    {
+     "path": "thumbs/issue-38-01-1440w.webp",
+     "w": 1440,
+     "bytes": 61448
+    },
+    {
+     "path": "thumbs/issue-38-01-1920w.webp",
+     "w": 1920,
+     "bytes": 86964
+    }
+   ],
+   "srcset": "thumbs/issue-38-01-480w.webp 480w, thumbs/issue-38-01-960w.webp 960w, thumbs/issue-38-01-1440w.webp 1440w, thumbs/issue-38-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-38-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-38-01-480w.webp",
+   "thumbBytes": 86964
+  },
+  {
+   "group": "community",
+   "src": "community/issue-39-01.webp",
+   "origBytes": 304142,
+   "origW": 1080,
+   "origH": 1080,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-39-01-480w.webp",
+     "w": 480,
+     "bytes": 45858
+    },
+    {
+     "path": "thumbs/issue-39-01-960w.webp",
+     "w": 960,
+     "bytes": 121220
+    }
+   ],
+   "srcset": "thumbs/issue-39-01-480w.webp 480w, thumbs/issue-39-01-960w.webp 960w",
+   "thumb": "thumbs/issue-39-01-960w.webp",
+   "thumbSmall": "thumbs/issue-39-01-480w.webp",
+   "thumbBytes": 121220
+  },
+  {
+   "group": "community",
+   "src": "community/issue-40-01.webp",
+   "origBytes": 153920,
+   "origW": 1252,
+   "origH": 1252,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1252
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-40-01-480w.webp",
+     "w": 480,
+     "bytes": 30514
+    },
+    {
+     "path": "thumbs/issue-40-01-960w.webp",
+     "w": 960,
+     "bytes": 67404
+    },
+    {
+     "path": "thumbs/issue-40-01-1252w.webp",
+     "w": 1252,
+     "bytes": 93760
+    }
+   ],
+   "srcset": "thumbs/issue-40-01-480w.webp 480w, thumbs/issue-40-01-960w.webp 960w, thumbs/issue-40-01-1252w.webp 1252w",
+   "thumb": "thumbs/issue-40-01-1252w.webp",
+   "thumbSmall": "thumbs/issue-40-01-480w.webp",
+   "thumbBytes": 93760
+  },
+  {
+   "group": "community",
+   "src": "community/issue-41-01.webp",
+   "origBytes": 220534,
+   "origW": 1086,
+   "origH": 1448,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-41-01-480w.webp",
+     "w": 480,
+     "bytes": 37636
+    },
+    {
+     "path": "thumbs/issue-41-01-960w.webp",
+     "w": 960,
+     "bytes": 89366
+    }
+   ],
+   "srcset": "thumbs/issue-41-01-480w.webp 480w, thumbs/issue-41-01-960w.webp 960w",
+   "thumb": "thumbs/issue-41-01-960w.webp",
+   "thumbSmall": "thumbs/issue-41-01-480w.webp",
+   "thumbBytes": 89366
+  },
+  {
+   "group": "community",
+   "src": "community/issue-42-01.webp",
+   "origBytes": 707328,
+   "origW": 1792,
+   "origH": 1344,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1792
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-42-01-480w.webp",
+     "w": 480,
+     "bytes": 34232
+    },
+    {
+     "path": "thumbs/issue-42-01-960w.webp",
+     "w": 960,
+     "bytes": 100262
+    },
+    {
+     "path": "thumbs/issue-42-01-1440w.webp",
+     "w": 1440,
+     "bytes": 184764
+    },
+    {
+     "path": "thumbs/issue-42-01-1792w.webp",
+     "w": 1792,
+     "bytes": 268538
+    }
+   ],
+   "srcset": "thumbs/issue-42-01-480w.webp 480w, thumbs/issue-42-01-960w.webp 960w, thumbs/issue-42-01-1440w.webp 1440w, thumbs/issue-42-01-1792w.webp 1792w",
+   "thumb": "thumbs/issue-42-01-1792w.webp",
+   "thumbSmall": "thumbs/issue-42-01-480w.webp",
+   "thumbBytes": 268538
+  },
+  {
+   "group": "community",
+   "src": "community/issue-44-01.webp",
+   "origBytes": 447206,
+   "origW": 1536,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-44-01-480w.webp",
+     "w": 480,
+     "bytes": 44702
+    },
+    {
+     "path": "thumbs/issue-44-01-960w.webp",
+     "w": 960,
+     "bytes": 125776
+    },
+    {
+     "path": "thumbs/issue-44-01-1440w.webp",
+     "w": 1440,
+     "bytes": 208492
+    }
+   ],
+   "srcset": "thumbs/issue-44-01-480w.webp 480w, thumbs/issue-44-01-960w.webp 960w, thumbs/issue-44-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-44-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-44-01-480w.webp",
+   "thumbBytes": 208492
+  },
+  {
+   "group": "community",
+   "src": "community/issue-46-01.webp",
    "origBytes": 191290,
    "origW": 1024,
    "origH": 1024,
@@ -594,24 +2818,108 @@
    ],
    "files": [
     {
-     "path": "thumbs/avatar-01-480w.webp",
+     "path": "thumbs/issue-46-01-480w.webp",
      "w": 480,
      "bytes": 33796
     },
     {
-     "path": "thumbs/avatar-01-960w.webp",
+     "path": "thumbs/issue-46-01-960w.webp",
      "w": 960,
      "bytes": 80856
     }
    ],
-   "srcset": "thumbs/avatar-01-480w.webp 480w, thumbs/avatar-01-960w.webp 960w",
-   "thumb": "thumbs/avatar-01-960w.webp",
-   "thumbSmall": "thumbs/avatar-01-480w.webp",
+   "srcset": "thumbs/issue-46-01-480w.webp 480w, thumbs/issue-46-01-960w.webp 960w",
+   "thumb": "thumbs/issue-46-01-960w.webp",
+   "thumbSmall": "thumbs/issue-46-01-480w.webp",
    "thumbBytes": 80856
   },
   {
-   "group": "gallery",
-   "src": "gallery/avatar-05.webp",
+   "group": "community",
+   "src": "community/issue-46-02.webp",
+   "origBytes": 158604,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-46-02-480w.webp",
+     "w": 480,
+     "bytes": 29910
+    },
+    {
+     "path": "thumbs/issue-46-02-960w.webp",
+     "w": 960,
+     "bytes": 61292
+    }
+   ],
+   "srcset": "thumbs/issue-46-02-480w.webp 480w, thumbs/issue-46-02-960w.webp 960w",
+   "thumb": "thumbs/issue-46-02-960w.webp",
+   "thumbSmall": "thumbs/issue-46-02-480w.webp",
+   "thumbBytes": 61292
+  },
+  {
+   "group": "community",
+   "src": "community/issue-46-03.webp",
+   "origBytes": 147190,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-46-03-480w.webp",
+     "w": 480,
+     "bytes": 27580
+    },
+    {
+     "path": "thumbs/issue-46-03-960w.webp",
+     "w": 960,
+     "bytes": 58426
+    }
+   ],
+   "srcset": "thumbs/issue-46-03-480w.webp 480w, thumbs/issue-46-03-960w.webp 960w",
+   "thumb": "thumbs/issue-46-03-960w.webp",
+   "thumbSmall": "thumbs/issue-46-03-480w.webp",
+   "thumbBytes": 58426
+  },
+  {
+   "group": "community",
+   "src": "community/issue-46-04.webp",
+   "origBytes": 160604,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-46-04-480w.webp",
+     "w": 480,
+     "bytes": 28038
+    },
+    {
+     "path": "thumbs/issue-46-04-960w.webp",
+     "w": 960,
+     "bytes": 64996
+    }
+   ],
+   "srcset": "thumbs/issue-46-04-480w.webp 480w, thumbs/issue-46-04-960w.webp 960w",
+   "thumb": "thumbs/issue-46-04-960w.webp",
+   "thumbSmall": "thumbs/issue-46-04-480w.webp",
+   "thumbBytes": 64996
+  },
+  {
+   "group": "community",
+   "src": "community/issue-46-05.webp",
    "origBytes": 167166,
    "origW": 1024,
    "origH": 1024,
@@ -622,262 +2930,192 @@
    ],
    "files": [
     {
-     "path": "thumbs/avatar-05-480w.webp",
+     "path": "thumbs/issue-46-05-480w.webp",
      "w": 480,
      "bytes": 29826
     },
     {
-     "path": "thumbs/avatar-05-960w.webp",
+     "path": "thumbs/issue-46-05-960w.webp",
      "w": 960,
      "bytes": 66816
     }
    ],
-   "srcset": "thumbs/avatar-05-480w.webp 480w, thumbs/avatar-05-960w.webp 960w",
-   "thumb": "thumbs/avatar-05-960w.webp",
-   "thumbSmall": "thumbs/avatar-05-480w.webp",
+   "srcset": "thumbs/issue-46-05-480w.webp 480w, thumbs/issue-46-05-960w.webp 960w",
+   "thumb": "thumbs/issue-46-05-960w.webp",
+   "thumbSmall": "thumbs/issue-46-05-480w.webp",
    "thumbBytes": 66816
   },
   {
-   "group": "gallery",
-   "src": "gallery/fat-fish-fight.webp",
-   "origBytes": 809338,
-   "origW": 1536,
-   "origH": 2048,
+   "group": "community",
+   "src": "community/issue-46-06.webp",
+   "origBytes": 188546,
+   "origW": 1024,
+   "origH": 1024,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1440
+    960
    ],
    "files": [
     {
-     "path": "thumbs/fat-fish-fight-480w.webp",
+     "path": "thumbs/issue-46-06-480w.webp",
      "w": 480,
-     "bytes": 49566
+     "bytes": 37176
     },
     {
-     "path": "thumbs/fat-fish-fight-960w.webp",
+     "path": "thumbs/issue-46-06-960w.webp",
      "w": 960,
-     "bytes": 154984
-    },
-    {
-     "path": "thumbs/fat-fish-fight-1440w.webp",
-     "w": 1440,
-     "bytes": 258574
+     "bytes": 78468
     }
    ],
-   "srcset": "thumbs/fat-fish-fight-480w.webp 480w, thumbs/fat-fish-fight-960w.webp 960w, thumbs/fat-fish-fight-1440w.webp 1440w",
-   "thumb": "thumbs/fat-fish-fight-1440w.webp",
-   "thumbSmall": "thumbs/fat-fish-fight-480w.webp",
-   "thumbBytes": 258574
+   "srcset": "thumbs/issue-46-06-480w.webp 480w, thumbs/issue-46-06-960w.webp 960w",
+   "thumb": "thumbs/issue-46-06-960w.webp",
+   "thumbSmall": "thumbs/issue-46-06-480w.webp",
+   "thumbBytes": 78468
   },
   {
-   "group": "gallery",
-   "src": "gallery/five-whales.webp",
-   "origBytes": 382316,
-   "origW": 1299,
-   "origH": 1211,
+   "group": "community",
+   "src": "community/issue-46-07.webp",
+   "origBytes": 179558,
+   "origW": 1024,
+   "origH": 1024,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1299
+    960
    ],
    "files": [
     {
-     "path": "thumbs/five-whales-480w.webp",
+     "path": "thumbs/issue-46-07-480w.webp",
      "w": 480,
-     "bytes": 38874
+     "bytes": 35042
     },
     {
-     "path": "thumbs/five-whales-960w.webp",
+     "path": "thumbs/issue-46-07-960w.webp",
      "w": 960,
-     "bytes": 109440
-    },
-    {
-     "path": "thumbs/five-whales-1299w.webp",
-     "w": 1299,
-     "bytes": 163664
+     "bytes": 75096
     }
    ],
-   "srcset": "thumbs/five-whales-480w.webp 480w, thumbs/five-whales-960w.webp 960w, thumbs/five-whales-1299w.webp 1299w",
-   "thumb": "thumbs/five-whales-1299w.webp",
-   "thumbSmall": "thumbs/five-whales-480w.webp",
-   "thumbBytes": 163664
+   "srcset": "thumbs/issue-46-07-480w.webp 480w, thumbs/issue-46-07-960w.webp 960w",
+   "thumb": "thumbs/issue-46-07-960w.webp",
+   "thumbSmall": "thumbs/issue-46-07-480w.webp",
+   "thumbBytes": 75096
   },
   {
-   "group": "gallery",
-   "src": "gallery/grokbot-avatar.webp",
-   "origBytes": 96512,
-   "origW": 1254,
-   "origH": 1254,
+   "group": "community",
+   "src": "community/issue-46-08.webp",
+   "origBytes": 149540,
+   "origW": 1024,
+   "origH": 1024,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1254
+    960
    ],
    "files": [
     {
-     "path": "thumbs/grokbot-avatar-480w.webp",
+     "path": "thumbs/issue-46-08-480w.webp",
      "w": 480,
-     "bytes": 12666
+     "bytes": 25092
     },
     {
-     "path": "thumbs/grokbot-avatar-960w.webp",
+     "path": "thumbs/issue-46-08-960w.webp",
      "w": 960,
-     "bytes": 26734
-    },
-    {
-     "path": "thumbs/grokbot-avatar-1254w.webp",
-     "w": 1254,
-     "bytes": 37886
+     "bytes": 60266
     }
    ],
-   "srcset": "thumbs/grokbot-avatar-480w.webp 480w, thumbs/grokbot-avatar-960w.webp 960w, thumbs/grokbot-avatar-1254w.webp 1254w",
-   "thumb": "thumbs/grokbot-avatar-1254w.webp",
-   "thumbSmall": "thumbs/grokbot-avatar-480w.webp",
-   "thumbBytes": 37886
+   "srcset": "thumbs/issue-46-08-480w.webp 480w, thumbs/issue-46-08-960w.webp 960w",
+   "thumb": "thumbs/issue-46-08-960w.webp",
+   "thumbSmall": "thumbs/issue-46-08-480w.webp",
+   "thumbBytes": 60266
   },
   {
-   "group": "gallery",
-   "src": "gallery/jealous.webp",
-   "origBytes": 327264,
-   "origW": 1254,
-   "origH": 1254,
+   "group": "community",
+   "src": "community/issue-46-09.webp",
+   "origBytes": 191850,
+   "origW": 1024,
+   "origH": 1024,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1254
+    960
    ],
    "files": [
     {
-     "path": "thumbs/jealous-480w.webp",
+     "path": "thumbs/issue-46-09-480w.webp",
      "w": 480,
-     "bytes": 46542
+     "bytes": 35878
     },
     {
-     "path": "thumbs/jealous-960w.webp",
+     "path": "thumbs/issue-46-09-960w.webp",
      "w": 960,
-     "bytes": 111066
-    },
-    {
-     "path": "thumbs/jealous-1254w.webp",
-     "w": 1254,
-     "bytes": 150960
+     "bytes": 80788
     }
    ],
-   "srcset": "thumbs/jealous-480w.webp 480w, thumbs/jealous-960w.webp 960w, thumbs/jealous-1254w.webp 1254w",
-   "thumb": "thumbs/jealous-1254w.webp",
-   "thumbSmall": "thumbs/jealous-480w.webp",
-   "thumbBytes": 150960
+   "srcset": "thumbs/issue-46-09-480w.webp 480w, thumbs/issue-46-09-960w.webp 960w",
+   "thumb": "thumbs/issue-46-09-960w.webp",
+   "thumbSmall": "thumbs/issue-46-09-480w.webp",
+   "thumbBytes": 80788
   },
   {
-   "group": "gallery",
-   "src": "gallery/qban-set-01.webp",
-   "origBytes": 382744,
-   "origW": 1448,
-   "origH": 1086,
+   "group": "community",
+   "src": "community/issue-46-10.webp",
+   "origBytes": 193478,
+   "origW": 1024,
+   "origH": 1024,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1440
+    960
    ],
    "files": [
     {
-     "path": "thumbs/qban-set-01-480w.webp",
+     "path": "thumbs/issue-46-10-480w.webp",
      "w": 480,
-     "bytes": 42078
+     "bytes": 35490
     },
     {
-     "path": "thumbs/qban-set-01-960w.webp",
+     "path": "thumbs/issue-46-10-960w.webp",
      "w": 960,
-     "bytes": 111262
-    },
-    {
-     "path": "thumbs/qban-set-01-1440w.webp",
-     "w": 1440,
-     "bytes": 175078
+     "bytes": 80954
     }
    ],
-   "srcset": "thumbs/qban-set-01-480w.webp 480w, thumbs/qban-set-01-960w.webp 960w, thumbs/qban-set-01-1440w.webp 1440w",
-   "thumb": "thumbs/qban-set-01-1440w.webp",
-   "thumbSmall": "thumbs/qban-set-01-480w.webp",
-   "thumbBytes": 175078
+   "srcset": "thumbs/issue-46-10-480w.webp 480w, thumbs/issue-46-10-960w.webp 960w",
+   "thumb": "thumbs/issue-46-10-960w.webp",
+   "thumbSmall": "thumbs/issue-46-10-480w.webp",
+   "thumbBytes": 80954
   },
   {
-   "group": "gallery",
-   "src": "gallery/qban-set-03.webp",
-   "origBytes": 515626,
-   "origW": 1448,
-   "origH": 1086,
+   "group": "community",
+   "src": "community/issue-47-01.webp",
+   "origBytes": 733526,
+   "origW": 1049,
+   "origH": 1500,
    "alpha": false,
    "sizes": [
     480,
-    960,
-    1440
+    960
    ],
    "files": [
     {
-     "path": "thumbs/qban-set-03-480w.webp",
+     "path": "thumbs/issue-47-01-480w.webp",
      "w": 480,
-     "bytes": 48194
+     "bytes": 102580
     },
     {
-     "path": "thumbs/qban-set-03-960w.webp",
+     "path": "thumbs/issue-47-01-960w.webp",
      "w": 960,
-     "bytes": 147296
-    },
-    {
-     "path": "thumbs/qban-set-03-1440w.webp",
-     "w": 1440,
-     "bytes": 247864
+     "bytes": 304404
     }
    ],
-   "srcset": "thumbs/qban-set-03-480w.webp 480w, thumbs/qban-set-03-960w.webp 960w, thumbs/qban-set-03-1440w.webp 1440w",
-   "thumb": "thumbs/qban-set-03-1440w.webp",
-   "thumbSmall": "thumbs/qban-set-03-480w.webp",
-   "thumbBytes": 247864
+   "srcset": "thumbs/issue-47-01-480w.webp 480w, thumbs/issue-47-01-960w.webp 960w",
+   "thumb": "thumbs/issue-47-01-960w.webp",
+   "thumbSmall": "thumbs/issue-47-01-480w.webp",
+   "thumbBytes": 304404
   },
   {
-   "group": "gallery",
-   "src": "gallery/qban-set-05.webp",
-   "origBytes": 448812,
-   "origW": 1448,
-   "origH": 1086,
-   "alpha": false,
-   "sizes": [
-    480,
-    960,
-    1440
-   ],
-   "files": [
-    {
-     "path": "thumbs/qban-set-05-480w.webp",
-     "w": 480,
-     "bytes": 45206
-    },
-    {
-     "path": "thumbs/qban-set-05-960w.webp",
-     "w": 960,
-     "bytes": 127922
-    },
-    {
-     "path": "thumbs/qban-set-05-1440w.webp",
-     "w": 1440,
-     "bytes": 207900
-    }
-   ],
-   "srcset": "thumbs/qban-set-05-480w.webp 480w, thumbs/qban-set-05-960w.webp 960w, thumbs/qban-set-05-1440w.webp 1440w",
-   "thumb": "thumbs/qban-set-05-1440w.webp",
-   "thumbSmall": "thumbs/qban-set-05-480w.webp",
-   "thumbBytes": 207900
-  },
-  {
-   "group": "gallery",
-   "src": "gallery/shenshen-variant.webp",
+   "group": "community",
+   "src": "community/issue-48-01.webp",
    "origBytes": 742420,
    "origW": 1760,
    "origH": 2400,
@@ -890,30 +3128,2078 @@
    ],
    "files": [
     {
-     "path": "thumbs/shenshen-variant-480w.webp",
+     "path": "thumbs/issue-48-01-480w.webp",
      "w": 480,
      "bytes": 44756
     },
     {
-     "path": "thumbs/shenshen-variant-960w.webp",
+     "path": "thumbs/issue-48-01-960w.webp",
      "w": 960,
      "bytes": 122934
     },
     {
-     "path": "thumbs/shenshen-variant-1440w.webp",
+     "path": "thumbs/issue-48-01-1440w.webp",
      "w": 1440,
      "bytes": 207456
     },
     {
-     "path": "thumbs/shenshen-variant-1760w.webp",
+     "path": "thumbs/issue-48-01-1760w.webp",
      "w": 1760,
      "bytes": 270878
     }
    ],
-   "srcset": "thumbs/shenshen-variant-480w.webp 480w, thumbs/shenshen-variant-960w.webp 960w, thumbs/shenshen-variant-1440w.webp 1440w, thumbs/shenshen-variant-1760w.webp 1760w",
-   "thumb": "thumbs/shenshen-variant-1760w.webp",
-   "thumbSmall": "thumbs/shenshen-variant-480w.webp",
+   "srcset": "thumbs/issue-48-01-480w.webp 480w, thumbs/issue-48-01-960w.webp 960w, thumbs/issue-48-01-1440w.webp 1440w, thumbs/issue-48-01-1760w.webp 1760w",
+   "thumb": "thumbs/issue-48-01-1760w.webp",
+   "thumbSmall": "thumbs/issue-48-01-480w.webp",
    "thumbBytes": 270878
+  },
+  {
+   "group": "community",
+   "src": "community/issue-50-01.webp",
+   "origBytes": 718246,
+   "origW": 1312,
+   "origH": 1792,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1312
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-50-01-480w.webp",
+     "w": 480,
+     "bytes": 60016
+    },
+    {
+     "path": "thumbs/issue-50-01-960w.webp",
+     "w": 960,
+     "bytes": 180616
+    },
+    {
+     "path": "thumbs/issue-50-01-1312w.webp",
+     "w": 1312,
+     "bytes": 310260
+    }
+   ],
+   "srcset": "thumbs/issue-50-01-480w.webp 480w, thumbs/issue-50-01-960w.webp 960w, thumbs/issue-50-01-1312w.webp 1312w",
+   "thumb": "thumbs/issue-50-01-1312w.webp",
+   "thumbSmall": "thumbs/issue-50-01-480w.webp",
+   "thumbBytes": 310260
+  },
+  {
+   "group": "community",
+   "src": "community/issue-51-01.webp",
+   "origBytes": 955364,
+   "origW": 1760,
+   "origH": 2400,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1760
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-51-01-480w.webp",
+     "w": 480,
+     "bytes": 65954
+    },
+    {
+     "path": "thumbs/issue-51-01-960w.webp",
+     "w": 960,
+     "bytes": 176790
+    },
+    {
+     "path": "thumbs/issue-51-01-1440w.webp",
+     "w": 1440,
+     "bytes": 298886
+    },
+    {
+     "path": "thumbs/issue-51-01-1760w.webp",
+     "w": 1760,
+     "bytes": 386060
+    }
+   ],
+   "srcset": "thumbs/issue-51-01-480w.webp 480w, thumbs/issue-51-01-960w.webp 960w, thumbs/issue-51-01-1440w.webp 1440w, thumbs/issue-51-01-1760w.webp 1760w",
+   "thumb": "thumbs/issue-51-01-1760w.webp",
+   "thumbSmall": "thumbs/issue-51-01-480w.webp",
+   "thumbBytes": 386060
+  },
+  {
+   "group": "community",
+   "src": "community/issue-51-02.webp",
+   "origBytes": 870056,
+   "origW": 1760,
+   "origH": 2400,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1760
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-51-02-480w.webp",
+     "w": 480,
+     "bytes": 63992
+    },
+    {
+     "path": "thumbs/issue-51-02-960w.webp",
+     "w": 960,
+     "bytes": 168950
+    },
+    {
+     "path": "thumbs/issue-51-02-1440w.webp",
+     "w": 1440,
+     "bytes": 274022
+    },
+    {
+     "path": "thumbs/issue-51-02-1760w.webp",
+     "w": 1760,
+     "bytes": 346850
+    }
+   ],
+   "srcset": "thumbs/issue-51-02-480w.webp 480w, thumbs/issue-51-02-960w.webp 960w, thumbs/issue-51-02-1440w.webp 1440w, thumbs/issue-51-02-1760w.webp 1760w",
+   "thumb": "thumbs/issue-51-02-1760w.webp",
+   "thumbSmall": "thumbs/issue-51-02-480w.webp",
+   "thumbBytes": 346850
+  },
+  {
+   "group": "community",
+   "src": "community/issue-51-03.webp",
+   "origBytes": 617506,
+   "origW": 1760,
+   "origH": 2400,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1760
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-51-03-480w.webp",
+     "w": 480,
+     "bytes": 51436
+    },
+    {
+     "path": "thumbs/issue-51-03-960w.webp",
+     "w": 960,
+     "bytes": 120602
+    },
+    {
+     "path": "thumbs/issue-51-03-1440w.webp",
+     "w": 1440,
+     "bytes": 183064
+    },
+    {
+     "path": "thumbs/issue-51-03-1760w.webp",
+     "w": 1760,
+     "bytes": 223896
+    }
+   ],
+   "srcset": "thumbs/issue-51-03-480w.webp 480w, thumbs/issue-51-03-960w.webp 960w, thumbs/issue-51-03-1440w.webp 1440w, thumbs/issue-51-03-1760w.webp 1760w",
+   "thumb": "thumbs/issue-51-03-1760w.webp",
+   "thumbSmall": "thumbs/issue-51-03-480w.webp",
+   "thumbBytes": 223896
+  },
+  {
+   "group": "community",
+   "src": "community/issue-53-01.webp",
+   "origBytes": 185610,
+   "origW": 1145,
+   "origH": 1374,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1145
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-53-01-480w.webp",
+     "w": 480,
+     "bytes": 28370
+    },
+    {
+     "path": "thumbs/issue-53-01-960w.webp",
+     "w": 960,
+     "bytes": 63178
+    },
+    {
+     "path": "thumbs/issue-53-01-1145w.webp",
+     "w": 1145,
+     "bytes": 81022
+    }
+   ],
+   "srcset": "thumbs/issue-53-01-480w.webp 480w, thumbs/issue-53-01-960w.webp 960w, thumbs/issue-53-01-1145w.webp 1145w",
+   "thumb": "thumbs/issue-53-01-1145w.webp",
+   "thumbSmall": "thumbs/issue-53-01-480w.webp",
+   "thumbBytes": 81022
+  },
+  {
+   "group": "community",
+   "src": "community/issue-53-02.webp",
+   "origBytes": 179250,
+   "origW": 1089,
+   "origH": 1445,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-53-02-480w.webp",
+     "w": 480,
+     "bytes": 27912
+    },
+    {
+     "path": "thumbs/issue-53-02-960w.webp",
+     "w": 960,
+     "bytes": 64890
+    }
+   ],
+   "srcset": "thumbs/issue-53-02-480w.webp 480w, thumbs/issue-53-02-960w.webp 960w",
+   "thumb": "thumbs/issue-53-02-960w.webp",
+   "thumbSmall": "thumbs/issue-53-02-480w.webp",
+   "thumbBytes": 64890
+  },
+  {
+   "group": "community",
+   "src": "community/issue-53-03.webp",
+   "origBytes": 135212,
+   "origW": 1139,
+   "origH": 1380,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1139
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-53-03-480w.webp",
+     "w": 480,
+     "bytes": 27638
+    },
+    {
+     "path": "thumbs/issue-53-03-960w.webp",
+     "w": 960,
+     "bytes": 58762
+    },
+    {
+     "path": "thumbs/issue-53-03-1139w.webp",
+     "w": 1139,
+     "bytes": 71330
+    }
+   ],
+   "srcset": "thumbs/issue-53-03-480w.webp 480w, thumbs/issue-53-03-960w.webp 960w, thumbs/issue-53-03-1139w.webp 1139w",
+   "thumb": "thumbs/issue-53-03-1139w.webp",
+   "thumbSmall": "thumbs/issue-53-03-480w.webp",
+   "thumbBytes": 71330
+  },
+  {
+   "group": "community",
+   "src": "community/issue-53-04.webp",
+   "origBytes": 133066,
+   "origW": 1089,
+   "origH": 1445,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-53-04-480w.webp",
+     "w": 480,
+     "bytes": 28226
+    },
+    {
+     "path": "thumbs/issue-53-04-960w.webp",
+     "w": 960,
+     "bytes": 65474
+    }
+   ],
+   "srcset": "thumbs/issue-53-04-480w.webp 480w, thumbs/issue-53-04-960w.webp 960w",
+   "thumb": "thumbs/issue-53-04-960w.webp",
+   "thumbSmall": "thumbs/issue-53-04-480w.webp",
+   "thumbBytes": 65474
+  },
+  {
+   "group": "community",
+   "src": "community/issue-54-01.webp",
+   "origBytes": 672732,
+   "origW": 1736,
+   "origH": 2264,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1736
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-54-01-480w.webp",
+     "w": 480,
+     "bytes": 46082
+    },
+    {
+     "path": "thumbs/issue-54-01-960w.webp",
+     "w": 960,
+     "bytes": 121980
+    },
+    {
+     "path": "thumbs/issue-54-01-1440w.webp",
+     "w": 1440,
+     "bytes": 203924
+    },
+    {
+     "path": "thumbs/issue-54-01-1736w.webp",
+     "w": 1736,
+     "bytes": 268846
+    }
+   ],
+   "srcset": "thumbs/issue-54-01-480w.webp 480w, thumbs/issue-54-01-960w.webp 960w, thumbs/issue-54-01-1440w.webp 1440w, thumbs/issue-54-01-1736w.webp 1736w",
+   "thumb": "thumbs/issue-54-01-1736w.webp",
+   "thumbSmall": "thumbs/issue-54-01-480w.webp",
+   "thumbBytes": 268846
+  },
+  {
+   "group": "community",
+   "src": "community/issue-55-01.webp",
+   "origBytes": 1959680,
+   "origW": 2161,
+   "origH": 3840,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-55-01-480w.webp",
+     "w": 480,
+     "bytes": 86180
+    },
+    {
+     "path": "thumbs/issue-55-01-960w.webp",
+     "w": 960,
+     "bytes": 291038
+    },
+    {
+     "path": "thumbs/issue-55-01-1440w.webp",
+     "w": 1440,
+     "bytes": 538112
+    },
+    {
+     "path": "thumbs/issue-55-01-1920w.webp",
+     "w": 1920,
+     "bytes": 793970
+    }
+   ],
+   "srcset": "thumbs/issue-55-01-480w.webp 480w, thumbs/issue-55-01-960w.webp 960w, thumbs/issue-55-01-1440w.webp 1440w, thumbs/issue-55-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-55-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-55-01-480w.webp",
+   "thumbBytes": 793970
+  },
+  {
+   "group": "community",
+   "src": "community/issue-55-02.webp",
+   "origBytes": 1765970,
+   "origW": 2161,
+   "origH": 3840,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-55-02-480w.webp",
+     "w": 480,
+     "bytes": 76478
+    },
+    {
+     "path": "thumbs/issue-55-02-960w.webp",
+     "w": 960,
+     "bytes": 236900
+    },
+    {
+     "path": "thumbs/issue-55-02-1440w.webp",
+     "w": 1440,
+     "bytes": 407210
+    },
+    {
+     "path": "thumbs/issue-55-02-1920w.webp",
+     "w": 1920,
+     "bytes": 582774
+    }
+   ],
+   "srcset": "thumbs/issue-55-02-480w.webp 480w, thumbs/issue-55-02-960w.webp 960w, thumbs/issue-55-02-1440w.webp 1440w, thumbs/issue-55-02-1920w.webp 1920w",
+   "thumb": "thumbs/issue-55-02-1920w.webp",
+   "thumbSmall": "thumbs/issue-55-02-480w.webp",
+   "thumbBytes": 582774
+  },
+  {
+   "group": "community",
+   "src": "community/issue-55-03.webp",
+   "origBytes": 1769092,
+   "origW": 2161,
+   "origH": 3840,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-55-03-480w.webp",
+     "w": 480,
+     "bytes": 86312
+    },
+    {
+     "path": "thumbs/issue-55-03-960w.webp",
+     "w": 960,
+     "bytes": 262562
+    },
+    {
+     "path": "thumbs/issue-55-03-1440w.webp",
+     "w": 1440,
+     "bytes": 451586
+    },
+    {
+     "path": "thumbs/issue-55-03-1920w.webp",
+     "w": 1920,
+     "bytes": 629710
+    }
+   ],
+   "srcset": "thumbs/issue-55-03-480w.webp 480w, thumbs/issue-55-03-960w.webp 960w, thumbs/issue-55-03-1440w.webp 1440w, thumbs/issue-55-03-1920w.webp 1920w",
+   "thumb": "thumbs/issue-55-03-1920w.webp",
+   "thumbSmall": "thumbs/issue-55-03-480w.webp",
+   "thumbBytes": 629710
+  },
+  {
+   "group": "community",
+   "src": "community/issue-56-01.webp",
+   "origBytes": 182654,
+   "origW": 1037,
+   "origH": 1516,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-56-01-480w.webp",
+     "w": 480,
+     "bytes": 26910
+    },
+    {
+     "path": "thumbs/issue-56-01-960w.webp",
+     "w": 960,
+     "bytes": 69692
+    }
+   ],
+   "srcset": "thumbs/issue-56-01-480w.webp 480w, thumbs/issue-56-01-960w.webp 960w",
+   "thumb": "thumbs/issue-56-01-960w.webp",
+   "thumbSmall": "thumbs/issue-56-01-480w.webp",
+   "thumbBytes": 69692
+  },
+  {
+   "group": "community",
+   "src": "community/issue-57-01.webp",
+   "origBytes": 200210,
+   "origW": 750,
+   "origH": 1200,
+   "alpha": false,
+   "sizes": [
+    480,
+    750
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-57-01-480w.webp",
+     "w": 480,
+     "bytes": 42582
+    },
+    {
+     "path": "thumbs/issue-57-01-750w.webp",
+     "w": 750,
+     "bytes": 80404
+    }
+   ],
+   "srcset": "thumbs/issue-57-01-480w.webp 480w, thumbs/issue-57-01-750w.webp 750w",
+   "thumb": "thumbs/issue-57-01-750w.webp",
+   "thumbSmall": "thumbs/issue-57-01-480w.webp",
+   "thumbBytes": 80404
+  },
+  {
+   "group": "community",
+   "src": "community/issue-60-01.webp",
+   "origBytes": 248442,
+   "origW": 1082,
+   "origH": 1453,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-60-01-480w.webp",
+     "w": 480,
+     "bytes": 36126
+    },
+    {
+     "path": "thumbs/issue-60-01-960w.webp",
+     "w": 960,
+     "bytes": 91684
+    }
+   ],
+   "srcset": "thumbs/issue-60-01-480w.webp 480w, thumbs/issue-60-01-960w.webp 960w",
+   "thumb": "thumbs/issue-60-01-960w.webp",
+   "thumbSmall": "thumbs/issue-60-01-480w.webp",
+   "thumbBytes": 91684
+  },
+  {
+   "group": "community",
+   "src": "community/issue-60-02.webp",
+   "origBytes": 319966,
+   "origW": 1086,
+   "origH": 1448,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-60-02-480w.webp",
+     "w": 480,
+     "bytes": 43880
+    },
+    {
+     "path": "thumbs/issue-60-02-960w.webp",
+     "w": 960,
+     "bytes": 110098
+    }
+   ],
+   "srcset": "thumbs/issue-60-02-480w.webp 480w, thumbs/issue-60-02-960w.webp 960w",
+   "thumb": "thumbs/issue-60-02-960w.webp",
+   "thumbSmall": "thumbs/issue-60-02-480w.webp",
+   "thumbBytes": 110098
+  },
+  {
+   "group": "community",
+   "src": "community/issue-62-01.webp",
+   "origBytes": 1330444,
+   "origW": 3840,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-62-01-480w.webp",
+     "w": 480,
+     "bytes": 29896
+    },
+    {
+     "path": "thumbs/issue-62-01-960w.webp",
+     "w": 960,
+     "bytes": 86620
+    },
+    {
+     "path": "thumbs/issue-62-01-1440w.webp",
+     "w": 1440,
+     "bytes": 159054
+    },
+    {
+     "path": "thumbs/issue-62-01-1920w.webp",
+     "w": 1920,
+     "bytes": 244490
+    }
+   ],
+   "srcset": "thumbs/issue-62-01-480w.webp 480w, thumbs/issue-62-01-960w.webp 960w, thumbs/issue-62-01-1440w.webp 1440w, thumbs/issue-62-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-62-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-62-01-480w.webp",
+   "thumbBytes": 244490
+  },
+  {
+   "group": "community",
+   "src": "community/issue-64-01.webp",
+   "origBytes": 534968,
+   "origW": 2880,
+   "origH": 2880,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-64-01-480w.webp",
+     "w": 480,
+     "bytes": 25062
+    },
+    {
+     "path": "thumbs/issue-64-01-960w.webp",
+     "w": 960,
+     "bytes": 58460
+    },
+    {
+     "path": "thumbs/issue-64-01-1440w.webp",
+     "w": 1440,
+     "bytes": 94450
+    },
+    {
+     "path": "thumbs/issue-64-01-1920w.webp",
+     "w": 1920,
+     "bytes": 130600
+    }
+   ],
+   "srcset": "thumbs/issue-64-01-480w.webp 480w, thumbs/issue-64-01-960w.webp 960w, thumbs/issue-64-01-1440w.webp 1440w, thumbs/issue-64-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-64-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-64-01-480w.webp",
+   "thumbBytes": 130600
+  },
+  {
+   "group": "community",
+   "src": "community/issue-66-01.webp",
+   "origBytes": 130270,
+   "origW": 1182,
+   "origH": 665,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1182
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-66-01-480w.webp",
+     "w": 480,
+     "bytes": 15808
+    },
+    {
+     "path": "thumbs/issue-66-01-960w.webp",
+     "w": 960,
+     "bytes": 41950
+    },
+    {
+     "path": "thumbs/issue-66-01-1182w.webp",
+     "w": 1182,
+     "bytes": 57646
+    }
+   ],
+   "srcset": "thumbs/issue-66-01-480w.webp 480w, thumbs/issue-66-01-960w.webp 960w, thumbs/issue-66-01-1182w.webp 1182w",
+   "thumb": "thumbs/issue-66-01-1182w.webp",
+   "thumbSmall": "thumbs/issue-66-01-480w.webp",
+   "thumbBytes": 57646
+  },
+  {
+   "group": "community",
+   "src": "community/issue-66-02.webp",
+   "origBytes": 129486,
+   "origW": 1182,
+   "origH": 665,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1182
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-66-02-480w.webp",
+     "w": 480,
+     "bytes": 15840
+    },
+    {
+     "path": "thumbs/issue-66-02-960w.webp",
+     "w": 960,
+     "bytes": 43312
+    },
+    {
+     "path": "thumbs/issue-66-02-1182w.webp",
+     "w": 1182,
+     "bytes": 60174
+    }
+   ],
+   "srcset": "thumbs/issue-66-02-480w.webp 480w, thumbs/issue-66-02-960w.webp 960w, thumbs/issue-66-02-1182w.webp 1182w",
+   "thumb": "thumbs/issue-66-02-1182w.webp",
+   "thumbSmall": "thumbs/issue-66-02-480w.webp",
+   "thumbBytes": 60174
+  },
+  {
+   "group": "community",
+   "src": "community/issue-66-03.webp",
+   "origBytes": 143536,
+   "origW": 1182,
+   "origH": 665,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1182
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-66-03-480w.webp",
+     "w": 480,
+     "bytes": 16786
+    },
+    {
+     "path": "thumbs/issue-66-03-960w.webp",
+     "w": 960,
+     "bytes": 46386
+    },
+    {
+     "path": "thumbs/issue-66-03-1182w.webp",
+     "w": 1182,
+     "bytes": 64082
+    }
+   ],
+   "srcset": "thumbs/issue-66-03-480w.webp 480w, thumbs/issue-66-03-960w.webp 960w, thumbs/issue-66-03-1182w.webp 1182w",
+   "thumb": "thumbs/issue-66-03-1182w.webp",
+   "thumbSmall": "thumbs/issue-66-03-480w.webp",
+   "thumbBytes": 64082
+  },
+  {
+   "group": "community",
+   "src": "community/issue-68-01.webp",
+   "origBytes": 511512,
+   "origW": 1448,
+   "origH": 1086,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-68-01-480w.webp",
+     "w": 480,
+     "bytes": 45494
+    },
+    {
+     "path": "thumbs/issue-68-01-960w.webp",
+     "w": 960,
+     "bytes": 133538
+    },
+    {
+     "path": "thumbs/issue-68-01-1440w.webp",
+     "w": 1440,
+     "bytes": 225112
+    }
+   ],
+   "srcset": "thumbs/issue-68-01-480w.webp 480w, thumbs/issue-68-01-960w.webp 960w, thumbs/issue-68-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-68-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-68-01-480w.webp",
+   "thumbBytes": 225112
+  },
+  {
+   "group": "community",
+   "src": "community/issue-69-01.webp",
+   "origBytes": 546442,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-69-01-480w.webp",
+     "w": 480,
+     "bytes": 70486
+    },
+    {
+     "path": "thumbs/issue-69-01-960w.webp",
+     "w": 960,
+     "bytes": 199016
+    },
+    {
+     "path": "thumbs/issue-69-01-1254w.webp",
+     "w": 1254,
+     "bytes": 278000
+    }
+   ],
+   "srcset": "thumbs/issue-69-01-480w.webp 480w, thumbs/issue-69-01-960w.webp 960w, thumbs/issue-69-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-69-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-69-01-480w.webp",
+   "thumbBytes": 278000
+  },
+  {
+   "group": "community",
+   "src": "community/issue-72-01.webp",
+   "origBytes": 532780,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-72-01-480w.webp",
+     "w": 480,
+     "bytes": 74704
+    },
+    {
+     "path": "thumbs/issue-72-01-960w.webp",
+     "w": 960,
+     "bytes": 197396
+    },
+    {
+     "path": "thumbs/issue-72-01-1254w.webp",
+     "w": 1254,
+     "bytes": 270154
+    }
+   ],
+   "srcset": "thumbs/issue-72-01-480w.webp 480w, thumbs/issue-72-01-960w.webp 960w, thumbs/issue-72-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-72-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-72-01-480w.webp",
+   "thumbBytes": 270154
+  },
+  {
+   "group": "community",
+   "src": "community/issue-73-01.webp",
+   "origBytes": 179576,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-73-01-480w.webp",
+     "w": 480,
+     "bytes": 34922
+    },
+    {
+     "path": "thumbs/issue-73-01-960w.webp",
+     "w": 960,
+     "bytes": 82778
+    }
+   ],
+   "srcset": "thumbs/issue-73-01-480w.webp 480w, thumbs/issue-73-01-960w.webp 960w",
+   "thumb": "thumbs/issue-73-01-960w.webp",
+   "thumbSmall": "thumbs/issue-73-01-480w.webp",
+   "thumbBytes": 82778
+  },
+  {
+   "group": "community",
+   "src": "community/meme-01.webp",
+   "origBytes": 60604,
+   "origW": 720,
+   "origH": 715,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-01-480w.webp",
+     "w": 480,
+     "bytes": 27128
+    },
+    {
+     "path": "thumbs/meme-01-720w.webp",
+     "w": 720,
+     "bytes": 40064
+    }
+   ],
+   "srcset": "thumbs/meme-01-480w.webp 480w, thumbs/meme-01-720w.webp 720w",
+   "thumb": "thumbs/meme-01-720w.webp",
+   "thumbSmall": "thumbs/meme-01-480w.webp",
+   "thumbBytes": 40064
+  },
+  {
+   "group": "community",
+   "src": "community/meme-02.webp",
+   "origBytes": 70254,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-02-480w.webp",
+     "w": 480,
+     "bytes": 32830
+    },
+    {
+     "path": "thumbs/meme-02-720w.webp",
+     "w": 720,
+     "bytes": 52240
+    }
+   ],
+   "srcset": "thumbs/meme-02-480w.webp 480w, thumbs/meme-02-720w.webp 720w",
+   "thumb": "thumbs/meme-02-720w.webp",
+   "thumbSmall": "thumbs/meme-02-480w.webp",
+   "thumbBytes": 52240
+  },
+  {
+   "group": "community",
+   "src": "community/meme-03.webp",
+   "origBytes": 103016,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-03-480w.webp",
+     "w": 480,
+     "bytes": 47412
+    },
+    {
+     "path": "thumbs/meme-03-720w.webp",
+     "w": 720,
+     "bytes": 74634
+    }
+   ],
+   "srcset": "thumbs/meme-03-480w.webp 480w, thumbs/meme-03-720w.webp 720w",
+   "thumb": "thumbs/meme-03-720w.webp",
+   "thumbSmall": "thumbs/meme-03-480w.webp",
+   "thumbBytes": 74634
+  },
+  {
+   "group": "community",
+   "src": "community/meme-04.webp",
+   "origBytes": 59960,
+   "origW": 718,
+   "origH": 702,
+   "alpha": false,
+   "sizes": [
+    480,
+    718
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-04-480w.webp",
+     "w": 480,
+     "bytes": 26282
+    },
+    {
+     "path": "thumbs/meme-04-718w.webp",
+     "w": 718,
+     "bytes": 42462
+    }
+   ],
+   "srcset": "thumbs/meme-04-480w.webp 480w, thumbs/meme-04-718w.webp 718w",
+   "thumb": "thumbs/meme-04-718w.webp",
+   "thumbSmall": "thumbs/meme-04-480w.webp",
+   "thumbBytes": 42462
+  },
+  {
+   "group": "community",
+   "src": "community/meme-05.webp",
+   "origBytes": 79690,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-05-480w.webp",
+     "w": 480,
+     "bytes": 35482
+    },
+    {
+     "path": "thumbs/meme-05-720w.webp",
+     "w": 720,
+     "bytes": 57302
+    }
+   ],
+   "srcset": "thumbs/meme-05-480w.webp 480w, thumbs/meme-05-720w.webp 720w",
+   "thumb": "thumbs/meme-05-720w.webp",
+   "thumbSmall": "thumbs/meme-05-480w.webp",
+   "thumbBytes": 57302
+  },
+  {
+   "group": "community",
+   "src": "community/meme-06.webp",
+   "origBytes": 82446,
+   "origW": 720,
+   "origH": 658,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-06-480w.webp",
+     "w": 480,
+     "bytes": 35430
+    },
+    {
+     "path": "thumbs/meme-06-720w.webp",
+     "w": 720,
+     "bytes": 59740
+    }
+   ],
+   "srcset": "thumbs/meme-06-480w.webp 480w, thumbs/meme-06-720w.webp 720w",
+   "thumb": "thumbs/meme-06-720w.webp",
+   "thumbSmall": "thumbs/meme-06-480w.webp",
+   "thumbBytes": 59740
+  },
+  {
+   "group": "community",
+   "src": "community/meme-07.webp",
+   "origBytes": 86226,
+   "origW": 720,
+   "origH": 405,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-07-480w.webp",
+     "w": 480,
+     "bytes": 37536
+    },
+    {
+     "path": "thumbs/meme-07-720w.webp",
+     "w": 720,
+     "bytes": 67424
+    }
+   ],
+   "srcset": "thumbs/meme-07-480w.webp 480w, thumbs/meme-07-720w.webp 720w",
+   "thumb": "thumbs/meme-07-720w.webp",
+   "thumbSmall": "thumbs/meme-07-480w.webp",
+   "thumbBytes": 67424
+  },
+  {
+   "group": "community",
+   "src": "community/meme-08.webp",
+   "origBytes": 90226,
+   "origW": 720,
+   "origH": 405,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-08-480w.webp",
+     "w": 480,
+     "bytes": 39578
+    },
+    {
+     "path": "thumbs/meme-08-720w.webp",
+     "w": 720,
+     "bytes": 72146
+    }
+   ],
+   "srcset": "thumbs/meme-08-480w.webp 480w, thumbs/meme-08-720w.webp 720w",
+   "thumb": "thumbs/meme-08-720w.webp",
+   "thumbSmall": "thumbs/meme-08-480w.webp",
+   "thumbBytes": 72146
+  },
+  {
+   "group": "community",
+   "src": "community/meme-09.webp",
+   "origBytes": 63742,
+   "origW": 720,
+   "origH": 923,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-09-480w.webp",
+     "w": 480,
+     "bytes": 30954
+    },
+    {
+     "path": "thumbs/meme-09-720w.webp",
+     "w": 720,
+     "bytes": 44212
+    }
+   ],
+   "srcset": "thumbs/meme-09-480w.webp 480w, thumbs/meme-09-720w.webp 720w",
+   "thumb": "thumbs/meme-09-720w.webp",
+   "thumbSmall": "thumbs/meme-09-480w.webp",
+   "thumbBytes": 44212
+  },
+  {
+   "group": "community",
+   "src": "community/meme-10.webp",
+   "origBytes": 124152,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-10-480w.webp",
+     "w": 480,
+     "bytes": 58436
+    },
+    {
+     "path": "thumbs/meme-10-720w.webp",
+     "w": 720,
+     "bytes": 94358
+    }
+   ],
+   "srcset": "thumbs/meme-10-480w.webp 480w, thumbs/meme-10-720w.webp 720w",
+   "thumb": "thumbs/meme-10-720w.webp",
+   "thumbSmall": "thumbs/meme-10-480w.webp",
+   "thumbBytes": 94358
+  },
+  {
+   "group": "community",
+   "src": "community/meme-11.webp",
+   "origBytes": 90334,
+   "origW": 720,
+   "origH": 983,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-11-480w.webp",
+     "w": 480,
+     "bytes": 36922
+    },
+    {
+     "path": "thumbs/meme-11-720w.webp",
+     "w": 720,
+     "bytes": 58360
+    }
+   ],
+   "srcset": "thumbs/meme-11-480w.webp 480w, thumbs/meme-11-720w.webp 720w",
+   "thumb": "thumbs/meme-11-720w.webp",
+   "thumbSmall": "thumbs/meme-11-480w.webp",
+   "thumbBytes": 58360
+  },
+  {
+   "group": "community",
+   "src": "community/meme-12.webp",
+   "origBytes": 75488,
+   "origW": 720,
+   "origH": 536,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-12-480w.webp",
+     "w": 480,
+     "bytes": 34788
+    },
+    {
+     "path": "thumbs/meme-12-720w.webp",
+     "w": 720,
+     "bytes": 56174
+    }
+   ],
+   "srcset": "thumbs/meme-12-480w.webp 480w, thumbs/meme-12-720w.webp 720w",
+   "thumb": "thumbs/meme-12-720w.webp",
+   "thumbSmall": "thumbs/meme-12-480w.webp",
+   "thumbBytes": 56174
+  },
+  {
+   "group": "community",
+   "src": "community/meme-13.webp",
+   "origBytes": 74276,
+   "origW": 720,
+   "origH": 405,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-13-480w.webp",
+     "w": 480,
+     "bytes": 31754
+    },
+    {
+     "path": "thumbs/meme-13-720w.webp",
+     "w": 720,
+     "bytes": 55946
+    }
+   ],
+   "srcset": "thumbs/meme-13-480w.webp 480w, thumbs/meme-13-720w.webp 720w",
+   "thumb": "thumbs/meme-13-720w.webp",
+   "thumbSmall": "thumbs/meme-13-480w.webp",
+   "thumbBytes": 55946
+  },
+  {
+   "group": "community",
+   "src": "community/meme-14.webp",
+   "origBytes": 78286,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-14-480w.webp",
+     "w": 480,
+     "bytes": 36664
+    },
+    {
+     "path": "thumbs/meme-14-720w.webp",
+     "w": 720,
+     "bytes": 56388
+    }
+   ],
+   "srcset": "thumbs/meme-14-480w.webp 480w, thumbs/meme-14-720w.webp 720w",
+   "thumb": "thumbs/meme-14-720w.webp",
+   "thumbSmall": "thumbs/meme-14-480w.webp",
+   "thumbBytes": 56388
+  },
+  {
+   "group": "community",
+   "src": "community/meme-15.webp",
+   "origBytes": 129710,
+   "origW": 720,
+   "origH": 900,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-15-480w.webp",
+     "w": 480,
+     "bytes": 47834
+    },
+    {
+     "path": "thumbs/meme-15-720w.webp",
+     "w": 720,
+     "bytes": 97252
+    }
+   ],
+   "srcset": "thumbs/meme-15-480w.webp 480w, thumbs/meme-15-720w.webp 720w",
+   "thumb": "thumbs/meme-15-720w.webp",
+   "thumbSmall": "thumbs/meme-15-480w.webp",
+   "thumbBytes": 97252
+  },
+  {
+   "group": "community",
+   "src": "community/meme-16.webp",
+   "origBytes": 77596,
+   "origW": 720,
+   "origH": 405,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-16-480w.webp",
+     "w": 480,
+     "bytes": 34544
+    },
+    {
+     "path": "thumbs/meme-16-720w.webp",
+     "w": 720,
+     "bytes": 60460
+    }
+   ],
+   "srcset": "thumbs/meme-16-480w.webp 480w, thumbs/meme-16-720w.webp 720w",
+   "thumb": "thumbs/meme-16-720w.webp",
+   "thumbSmall": "thumbs/meme-16-480w.webp",
+   "thumbBytes": 60460
+  },
+  {
+   "group": "community",
+   "src": "community/meme-17.webp",
+   "origBytes": 66536,
+   "origW": 720,
+   "origH": 960,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-17-480w.webp",
+     "w": 480,
+     "bytes": 28336
+    },
+    {
+     "path": "thumbs/meme-17-720w.webp",
+     "w": 720,
+     "bytes": 46316
+    }
+   ],
+   "srcset": "thumbs/meme-17-480w.webp 480w, thumbs/meme-17-720w.webp 720w",
+   "thumb": "thumbs/meme-17-720w.webp",
+   "thumbSmall": "thumbs/meme-17-480w.webp",
+   "thumbBytes": 46316
+  },
+  {
+   "group": "community",
+   "src": "community/meme-18.webp",
+   "origBytes": 63916,
+   "origW": 720,
+   "origH": 960,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-18-480w.webp",
+     "w": 480,
+     "bytes": 26398
+    },
+    {
+     "path": "thumbs/meme-18-720w.webp",
+     "w": 720,
+     "bytes": 44254
+    }
+   ],
+   "srcset": "thumbs/meme-18-480w.webp 480w, thumbs/meme-18-720w.webp 720w",
+   "thumb": "thumbs/meme-18-720w.webp",
+   "thumbSmall": "thumbs/meme-18-480w.webp",
+   "thumbBytes": 44254
+  },
+  {
+   "group": "community",
+   "src": "community/meme-19.webp",
+   "origBytes": 116524,
+   "origW": 657,
+   "origH": 1215,
+   "alpha": false,
+   "sizes": [
+    480,
+    657
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-19-480w.webp",
+     "w": 480,
+     "bytes": 49612
+    },
+    {
+     "path": "thumbs/meme-19-657w.webp",
+     "w": 657,
+     "bytes": 78470
+    }
+   ],
+   "srcset": "thumbs/meme-19-480w.webp 480w, thumbs/meme-19-657w.webp 657w",
+   "thumb": "thumbs/meme-19-657w.webp",
+   "thumbSmall": "thumbs/meme-19-480w.webp",
+   "thumbBytes": 78470
+  },
+  {
+   "group": "community",
+   "src": "community/meme-20.webp",
+   "origBytes": 70496,
+   "origW": 720,
+   "origH": 639,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-20-480w.webp",
+     "w": 480,
+     "bytes": 32638
+    },
+    {
+     "path": "thumbs/meme-20-720w.webp",
+     "w": 720,
+     "bytes": 50306
+    }
+   ],
+   "srcset": "thumbs/meme-20-480w.webp 480w, thumbs/meme-20-720w.webp 720w",
+   "thumb": "thumbs/meme-20-720w.webp",
+   "thumbSmall": "thumbs/meme-20-480w.webp",
+   "thumbBytes": 50306
+  },
+  {
+   "group": "community",
+   "src": "community/meme-21.webp",
+   "origBytes": 82264,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-21-480w.webp",
+     "w": 480,
+     "bytes": 37462
+    },
+    {
+     "path": "thumbs/meme-21-720w.webp",
+     "w": 720,
+     "bytes": 60516
+    }
+   ],
+   "srcset": "thumbs/meme-21-480w.webp 480w, thumbs/meme-21-720w.webp 720w",
+   "thumb": "thumbs/meme-21-720w.webp",
+   "thumbSmall": "thumbs/meme-21-480w.webp",
+   "thumbBytes": 60516
+  },
+  {
+   "group": "community",
+   "src": "community/meme-22.webp",
+   "origBytes": 68556,
+   "origW": 720,
+   "origH": 720,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-22-480w.webp",
+     "w": 480,
+     "bytes": 27478
+    },
+    {
+     "path": "thumbs/meme-22-720w.webp",
+     "w": 720,
+     "bytes": 46442
+    }
+   ],
+   "srcset": "thumbs/meme-22-480w.webp 480w, thumbs/meme-22-720w.webp 720w",
+   "thumb": "thumbs/meme-22-720w.webp",
+   "thumbSmall": "thumbs/meme-22-480w.webp",
+   "thumbBytes": 46442
+  },
+  {
+   "group": "community",
+   "src": "community/meme-23.webp",
+   "origBytes": 116364,
+   "origW": 720,
+   "origH": 1080,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-23-480w.webp",
+     "w": 480,
+     "bytes": 46268
+    },
+    {
+     "path": "thumbs/meme-23-720w.webp",
+     "w": 720,
+     "bytes": 80766
+    }
+   ],
+   "srcset": "thumbs/meme-23-480w.webp 480w, thumbs/meme-23-720w.webp 720w",
+   "thumb": "thumbs/meme-23-720w.webp",
+   "thumbSmall": "thumbs/meme-23-480w.webp",
+   "thumbBytes": 80766
+  },
+  {
+   "group": "community",
+   "src": "community/meme-24.webp",
+   "origBytes": 107518,
+   "origW": 720,
+   "origH": 788,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-24-480w.webp",
+     "w": 480,
+     "bytes": 43036
+    },
+    {
+     "path": "thumbs/meme-24-720w.webp",
+     "w": 720,
+     "bytes": 76896
+    }
+   ],
+   "srcset": "thumbs/meme-24-480w.webp 480w, thumbs/meme-24-720w.webp 720w",
+   "thumb": "thumbs/meme-24-720w.webp",
+   "thumbSmall": "thumbs/meme-24-480w.webp",
+   "thumbBytes": 76896
+  },
+  {
+   "group": "community",
+   "src": "community/meme-25.webp",
+   "origBytes": 87754,
+   "origW": 720,
+   "origH": 960,
+   "alpha": false,
+   "sizes": [
+    480,
+    720
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-25-480w.webp",
+     "w": 480,
+     "bytes": 34878
+    },
+    {
+     "path": "thumbs/meme-25-720w.webp",
+     "w": 720,
+     "bytes": 61898
+    }
+   ],
+   "srcset": "thumbs/meme-25-480w.webp 480w, thumbs/meme-25-720w.webp 720w",
+   "thumb": "thumbs/meme-25-720w.webp",
+   "thumbSmall": "thumbs/meme-25-480w.webp",
+   "thumbBytes": 61898
+  },
+  {
+   "group": "community",
+   "src": "community/meme-26.webp",
+   "origBytes": 198678,
+   "origW": 960,
+   "origH": 960,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-26-480w.webp",
+     "w": 480,
+     "bytes": 55862
+    },
+    {
+     "path": "thumbs/meme-26-960w.webp",
+     "w": 960,
+     "bytes": 134964
+    }
+   ],
+   "srcset": "thumbs/meme-26-480w.webp 480w, thumbs/meme-26-960w.webp 960w",
+   "thumb": "thumbs/meme-26-960w.webp",
+   "thumbSmall": "thumbs/meme-26-480w.webp",
+   "thumbBytes": 134964
+  },
+  {
+   "group": "community",
+   "src": "community/meme-27.webp",
+   "origBytes": 267972,
+   "origW": 942,
+   "origH": 1672,
+   "alpha": false,
+   "sizes": [
+    480,
+    942
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-27-480w.webp",
+     "w": 480,
+     "bytes": 80486
+    },
+    {
+     "path": "thumbs/meme-27-942w.webp",
+     "w": 942,
+     "bytes": 174962
+    }
+   ],
+   "srcset": "thumbs/meme-27-480w.webp 480w, thumbs/meme-27-942w.webp 942w",
+   "thumb": "thumbs/meme-27-942w.webp",
+   "thumbSmall": "thumbs/meme-27-480w.webp",
+   "thumbBytes": 174962
+  },
+  {
+   "group": "community",
+   "src": "community/meme-28.webp",
+   "origBytes": 163056,
+   "origW": 810,
+   "origH": 1614,
+   "alpha": false,
+   "sizes": [
+    480,
+    810
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-28-480w.webp",
+     "w": 480,
+     "bytes": 66390
+    },
+    {
+     "path": "thumbs/meme-28-810w.webp",
+     "w": 810,
+     "bytes": 113416
+    }
+   ],
+   "srcset": "thumbs/meme-28-480w.webp 480w, thumbs/meme-28-810w.webp 810w",
+   "thumb": "thumbs/meme-28-810w.webp",
+   "thumbSmall": "thumbs/meme-28-480w.webp",
+   "thumbBytes": 113416
+  },
+  {
+   "group": "community",
+   "src": "community/meme-29.webp",
+   "origBytes": 132822,
+   "origW": 1080,
+   "origH": 1856,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-29-480w.webp",
+     "w": 480,
+     "bytes": 43518
+    },
+    {
+     "path": "thumbs/meme-29-960w.webp",
+     "w": 960,
+     "bytes": 86366
+    }
+   ],
+   "srcset": "thumbs/meme-29-480w.webp 480w, thumbs/meme-29-960w.webp 960w",
+   "thumb": "thumbs/meme-29-960w.webp",
+   "thumbSmall": "thumbs/meme-29-480w.webp",
+   "thumbBytes": 86366
+  },
+  {
+   "group": "community",
+   "src": "community/meme-30.webp",
+   "origBytes": 307106,
+   "origW": 1080,
+   "origH": 2341,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-30-480w.webp",
+     "w": 480,
+     "bytes": 90780
+    },
+    {
+     "path": "thumbs/meme-30-960w.webp",
+     "w": 960,
+     "bytes": 192540
+    }
+   ],
+   "srcset": "thumbs/meme-30-480w.webp 480w, thumbs/meme-30-960w.webp 960w",
+   "thumb": "thumbs/meme-30-960w.webp",
+   "thumbSmall": "thumbs/meme-30-480w.webp",
+   "thumbBytes": 192540
+  },
+  {
+   "group": "community",
+   "src": "community/meme-31.webp",
+   "origBytes": 102002,
+   "origW": 462,
+   "origH": 1298,
+   "alpha": false,
+   "sizes": [
+    462
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-31-462w.webp",
+     "w": 462,
+     "bytes": 71030
+    }
+   ],
+   "srcset": "thumbs/meme-31-462w.webp 462w",
+   "thumb": "thumbs/meme-31-462w.webp",
+   "thumbSmall": "thumbs/meme-31-462w.webp",
+   "thumbBytes": 71030
+  },
+  {
+   "group": "community",
+   "src": "community/meme-32.webp",
+   "origBytes": 94114,
+   "origW": 850,
+   "origH": 850,
+   "alpha": false,
+   "sizes": [
+    480,
+    850
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-32-480w.webp",
+     "w": 480,
+     "bytes": 26736
+    },
+    {
+     "path": "thumbs/meme-32-850w.webp",
+     "w": 850,
+     "bytes": 60744
+    }
+   ],
+   "srcset": "thumbs/meme-32-480w.webp 480w, thumbs/meme-32-850w.webp 850w",
+   "thumb": "thumbs/meme-32-850w.webp",
+   "thumbSmall": "thumbs/meme-32-480w.webp",
+   "thumbBytes": 60744
+  },
+  {
+   "group": "community",
+   "src": "community/meme-33.webp",
+   "origBytes": 978122,
+   "origW": 3840,
+   "origH": 2160,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-33-480w.webp",
+     "w": 480,
+     "bytes": 16070
+    },
+    {
+     "path": "thumbs/meme-33-960w.webp",
+     "w": 960,
+     "bytes": 48246
+    },
+    {
+     "path": "thumbs/meme-33-1440w.webp",
+     "w": 1440,
+     "bytes": 95160
+    },
+    {
+     "path": "thumbs/meme-33-1920w.webp",
+     "w": 1920,
+     "bytes": 158770
+    }
+   ],
+   "srcset": "thumbs/meme-33-480w.webp 480w, thumbs/meme-33-960w.webp 960w, thumbs/meme-33-1440w.webp 1440w, thumbs/meme-33-1920w.webp 1920w",
+   "thumb": "thumbs/meme-33-1920w.webp",
+   "thumbSmall": "thumbs/meme-33-480w.webp",
+   "thumbBytes": 158770
+  },
+  {
+   "group": "community",
+   "src": "community/meme-34.webp",
+   "origBytes": 1099854,
+   "origW": 3840,
+   "origH": 3840,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-34-480w.webp",
+     "w": 480,
+     "bytes": 17822
+    },
+    {
+     "path": "thumbs/meme-34-960w.webp",
+     "w": 960,
+     "bytes": 67102
+    },
+    {
+     "path": "thumbs/meme-34-1440w.webp",
+     "w": 1440,
+     "bytes": 134256
+    },
+    {
+     "path": "thumbs/meme-34-1920w.webp",
+     "w": 1920,
+     "bytes": 214024
+    }
+   ],
+   "srcset": "thumbs/meme-34-480w.webp 480w, thumbs/meme-34-960w.webp 960w, thumbs/meme-34-1440w.webp 1440w, thumbs/meme-34-1920w.webp 1920w",
+   "thumb": "thumbs/meme-34-1920w.webp",
+   "thumbSmall": "thumbs/meme-34-480w.webp",
+   "thumbBytes": 214024
+  },
+  {
+   "group": "community",
+   "src": "community/meme-35.webp",
+   "origBytes": 561862,
+   "origW": 2880,
+   "origH": 2880,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-35-480w.webp",
+     "w": 480,
+     "bytes": 29238
+    },
+    {
+     "path": "thumbs/meme-35-960w.webp",
+     "w": 960,
+     "bytes": 73658
+    },
+    {
+     "path": "thumbs/meme-35-1440w.webp",
+     "w": 1440,
+     "bytes": 120132
+    },
+    {
+     "path": "thumbs/meme-35-1920w.webp",
+     "w": 1920,
+     "bytes": 166274
+    }
+   ],
+   "srcset": "thumbs/meme-35-480w.webp 480w, thumbs/meme-35-960w.webp 960w, thumbs/meme-35-1440w.webp 1440w, thumbs/meme-35-1920w.webp 1920w",
+   "thumb": "thumbs/meme-35-1920w.webp",
+   "thumbSmall": "thumbs/meme-35-480w.webp",
+   "thumbBytes": 166274
+  },
+  {
+   "group": "community",
+   "src": "community/meme-36.webp",
+   "origBytes": 780080,
+   "origW": 3840,
+   "origH": 3840,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-36-480w.webp",
+     "w": 480,
+     "bytes": 38620
+    },
+    {
+     "path": "thumbs/meme-36-960w.webp",
+     "w": 960,
+     "bytes": 92980
+    },
+    {
+     "path": "thumbs/meme-36-1440w.webp",
+     "w": 1440,
+     "bytes": 152296
+    },
+    {
+     "path": "thumbs/meme-36-1920w.webp",
+     "w": 1920,
+     "bytes": 209576
+    }
+   ],
+   "srcset": "thumbs/meme-36-480w.webp 480w, thumbs/meme-36-960w.webp 960w, thumbs/meme-36-1440w.webp 1440w, thumbs/meme-36-1920w.webp 1920w",
+   "thumb": "thumbs/meme-36-1920w.webp",
+   "thumbSmall": "thumbs/meme-36-480w.webp",
+   "thumbBytes": 209576
+  },
+  {
+   "group": "community",
+   "src": "community/meme-37.webp",
+   "origBytes": 106428,
+   "origW": 1080,
+   "origH": 1080,
+   "alpha": true,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-37-480w.webp",
+     "w": 480,
+     "bytes": 34470
+    },
+    {
+     "path": "thumbs/meme-37-960w.webp",
+     "w": 960,
+     "bytes": 80554
+    }
+   ],
+   "srcset": "thumbs/meme-37-480w.webp 480w, thumbs/meme-37-960w.webp 960w",
+   "thumb": "thumbs/meme-37-960w.webp",
+   "thumbSmall": "thumbs/meme-37-480w.webp",
+   "thumbBytes": 80554
+  },
+  {
+   "group": "community",
+   "src": "community/meme-38.webp",
+   "origBytes": 266190,
+   "origW": 1521,
+   "origH": 2408,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-38-480w.webp",
+     "w": 480,
+     "bytes": 25224
+    },
+    {
+     "path": "thumbs/meme-38-960w.webp",
+     "w": 960,
+     "bytes": 65636
+    },
+    {
+     "path": "thumbs/meme-38-1440w.webp",
+     "w": 1440,
+     "bytes": 116104
+    }
+   ],
+   "srcset": "thumbs/meme-38-480w.webp 480w, thumbs/meme-38-960w.webp 960w, thumbs/meme-38-1440w.webp 1440w",
+   "thumb": "thumbs/meme-38-1440w.webp",
+   "thumbSmall": "thumbs/meme-38-480w.webp",
+   "thumbBytes": 116104
+  },
+  {
+   "group": "community",
+   "src": "community/meme-39.webp",
+   "origBytes": 252324,
+   "origW": 1800,
+   "origH": 2546,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1800
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-39-480w.webp",
+     "w": 480,
+     "bytes": 16368
+    },
+    {
+     "path": "thumbs/meme-39-960w.webp",
+     "w": 960,
+     "bytes": 45688
+    },
+    {
+     "path": "thumbs/meme-39-1440w.webp",
+     "w": 1440,
+     "bytes": 77620
+    },
+    {
+     "path": "thumbs/meme-39-1800w.webp",
+     "w": 1800,
+     "bytes": 111928
+    }
+   ],
+   "srcset": "thumbs/meme-39-480w.webp 480w, thumbs/meme-39-960w.webp 960w, thumbs/meme-39-1440w.webp 1440w, thumbs/meme-39-1800w.webp 1800w",
+   "thumb": "thumbs/meme-39-1800w.webp",
+   "thumbSmall": "thumbs/meme-39-480w.webp",
+   "thumbBytes": 111928
+  },
+  {
+   "group": "community",
+   "src": "community/meme-40.webp",
+   "origBytes": 232336,
+   "origW": 1200,
+   "origH": 2000,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1200
+   ],
+   "files": [
+    {
+     "path": "thumbs/meme-40-480w.webp",
+     "w": 480,
+     "bytes": 32014
+    },
+    {
+     "path": "thumbs/meme-40-960w.webp",
+     "w": 960,
+     "bytes": 79482
+    },
+    {
+     "path": "thumbs/meme-40-1200w.webp",
+     "w": 1200,
+     "bytes": 107756
+    }
+   ],
+   "srcset": "thumbs/meme-40-480w.webp 480w, thumbs/meme-40-960w.webp 960w, thumbs/meme-40-1200w.webp 1200w",
+   "thumb": "thumbs/meme-40-1200w.webp",
+   "thumbSmall": "thumbs/meme-40-480w.webp",
+   "thumbBytes": 107756
   },
   {
    "group": "wallpaper",

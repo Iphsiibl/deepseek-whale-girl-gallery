@@ -31,7 +31,7 @@ HREF = re.compile(r'href\s*=\s*"([^"]+)"')
 
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
 #: 原图分组目录
-SOURCE_GROUPS = ("sheets", "moegirl", "refs", "gallery", "wallpaper")
+SOURCE_GROUPS = ("sheets", "moegirl", "refs", "community", "wallpaper")
 
 
 def attrs(tag: str) -> dict[str, str]:
@@ -241,6 +241,35 @@ def main() -> int:
         }
         for stray in sorted(on_disk_thumbs - manifest_thumbs):
             problems.append(f"thumbs/ 里有清单未收录的文件: {stray}")
+
+    # ---------------------------------------------------------------- 社区出处
+    # 社区作品是批量导入的，出处必须与文件一一对应：
+    # 磁盘上的每个文件都要登记在 _meta.json，且都要出现在页面上。
+    meta_path = DOCS_DIR / "community" / "_meta.json"
+    if (DOCS_DIR / "community").is_dir():
+        if not meta_path.exists():
+            problems.append("缺少 docs/community/_meta.json，请运行 python tools/import_upstream.py")
+        else:
+            meta = json.loads(meta_path.read_text(encoding="utf-8")).get("works", {})
+            meta_files = {w.get("file", "") for w in meta.values()}
+            disk_files = {
+                f"community/{p.name}"
+                for p in (DOCS_DIR / "community").iterdir()
+                if p.is_file() and p.suffix.lower() in IMAGE_EXTS
+            }
+            for missing in sorted(disk_files - meta_files):
+                problems.append(f"社区原图未登记出处: {missing}")
+            for extra in sorted(meta_files - disk_files):
+                problems.append(f"出处文件记录了不存在的社区原图: {extra}")
+            for wid, work in meta.items():
+                author = (work.get("author") or "").strip()
+                known_author = bool(author) and author != "作者未知"
+                if not known_author:
+                    # 上游没标作者就如实记着，不猜、不算错
+                    continue
+                # 作者已知却查不到出处，是我们自己记录上的缺口，必须报
+                if not work.get("issueUrl") and not work.get("source"):
+                    problems.append(f"社区作品有作者但缺少来源信息: {wid}")
 
     # ---------------------------------------------------------------- 结果
     print(f"页面图片 {img_count} 张 · 引用原图 {len(referenced_sources)} 张 · 磁盘原图 {len(on_disk)} 张")

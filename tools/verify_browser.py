@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import http.server
+import json
 import socketserver
 import sys
 import threading
@@ -51,9 +52,11 @@ def run(no_js: bool) -> int:
         page.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="networkidle")
         page.wait_for_timeout(1200)
 
-        # 滚到底触发全部懒加载，再回到顶部
-        page.evaluate("() => window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(2000)
+        # 逐屏下滑触发全部懒加载（图片一多，滚到底一次并不能加载完）
+        for _ in range(60):
+            page.evaluate("() => window.scrollBy(0, window.innerHeight * 0.9)")
+            page.wait_for_timeout(120)
+        page.wait_for_timeout(1500)
         page.evaluate("() => window.scrollTo(0, 0)")
         page.wait_for_timeout(600)
 
@@ -91,9 +94,24 @@ def run(no_js: bool) -> int:
                 };
             }"""
         )
+        # "理论全量"从清单里算，不写死 —— 图一多，写死的数字就变成误导
+        try:
+            manifest = json.loads(
+                (DOCS_DIR / "thumbs" / "_manifest.json").read_text(encoding="utf-8")
+            )
+            base = min(manifest["sizes"])
+            total = sum(
+                entry["bytes"]
+                for item in manifest["items"]
+                for entry in item["files"]
+                if entry["w"] == base
+            )
+            theory = f"{base}w 档全量约 {total / 1024:.0f} KB"
+        except Exception:  # noqa: BLE001
+            theory = "（清单不可读）"
         notes.append(
             f"实际下载 {transfer['count']} 张展示图 / {transfer['bytes'] / 1024:.0f} KB"
-            f"（1x 视口，理论 480w 档全量约 954 KB）"
+            f"（1x 视口，{theory}）"
         )
 
         # ---------------------------------------------------- 瀑布流是否生效
@@ -284,23 +302,129 @@ def run(no_js: bool) -> int:
                     const g = document.querySelector('#p-gallery .grid');
                     const st = getComputedStyle(g);
                     const cw = parseFloat(st.gridTemplateColumns.split(' ')[0]);
-                    const imgs = [...g.querySelectorAll('img')]
-                        .map(i => (i.currentSrc || '').match(/-(\\d+)w\\.webp$/))
-                        .filter(Boolean).map(m => parseInt(m[1], 10));
-                    return {cw, min: imgs.length ? Math.min(...imgs) : null, n: imgs.length};
+                    const imgs = [...g.querySelectorAll('img')].map(i => {
+                        const m = (i.currentSrc || '').match(/-(\\d+)w\\.webp$/);
+                        const all = (i.getAttribute('srcset') || '').match(/-(\\d+)w/g) || [];
+                        const max = all.length ? Math.max(...all.map(x => parseInt(x, 10))) : 0;
+                        return {tier: m ? parseInt(m[1], 10) : null, max: max};
+                    }).filter(x => x.tier);
+                    return {cw, imgs: imgs, n: imgs.length};
                 }"""
             )
             ctx2.close()
-            if tiers["min"] is None:
+            if not tiers["n"]:
                 problems.append(f"视口 {vw}px @{dsf}x 下没有图片加载，无法校验档位")
                 continue
             needed = tiers["cw"] * dsf
-            if tiers["min"] < needed - 0.5:
+            # 只在"本来有更好的档位却没选"时判错：
+            # 原图本身就只有 180px 宽时，任何档位都小于所需设备像素，
+            # 那是素材尺寸的限制，不是 sizes 声明写错了。
+            missed = [
+                x for x in tiers["imgs"]
+                if x["tier"] < needed - 0.5 and x["max"] >= needed
+            ]
+            source_limited = [
+                x for x in tiers["imgs"] if x["max"] < needed
+            ]
+            if missed:
                 problems.append(
                     f"视口 {vw}px @{dsf}x：实际列宽 {tiers['cw']:.0f}px 需 {needed:.0f} 设备像素，"
-                    f"但浏览器只拿到 {tiers['min']}w 档（sizes 声明可能偏小）"
+                    f"但有 {len(missed)} 张图浏览器只拿到 {missed[0]['tier']}w 档"
+                    f"（该图最大档 {missed[0]['max']}w，sizes 声明可能偏小）"
+                )
+            if source_limited:
+                notes.append(
+                    f"视口 {vw}px @{dsf}x：{len(source_limited)} 张图的原图宽度就小于 {needed:.0f} 设备像素"
+                    f"（素材本身限制，非选档问题）"
                 )
         notes.append("sizes 声明与实际列宽在 7 组视口/DPR 组合下均匹配")
+
+        # ---------------------------------------------------- 新增能力：作者筛选 + 1:1
+        filter_check = page.evaluate(
+            """() => {
+                const sel = document.getElementById('f-author');
+                const grid = document.querySelector('#p-gallery .grid');
+                if (!sel || !grid) return {skip: true};
+                const total = grid.children.length;
+                const opts = [...sel.options].map(o => o.value).filter(Boolean);
+                if (!opts.length) return {skip: true, reason: '没有作者选项'};
+                sel.value = opts[0];
+                sel.dispatchEvent(new Event('change'));
+                const shown = [...grid.children].filter(c => c.style.display !== 'none');
+                const ok = shown.length > 0 && shown.length < total &&
+                    shown.every(c => c.querySelector('.shot').getAttribute('data-author') === opts[0]);
+                sel.value = '';
+                sel.dispatchEvent(new Event('change'));
+                const back = [...grid.children].filter(c => c.style.display !== 'none').length;
+                return {skip: false, total, shown: shown.length, back, ok, authors: opts.length};
+            }"""
+        )
+        if not filter_check.get("skip"):
+            if not filter_check.get("ok"):
+                problems.append(
+                    f"作者筛选异常：{filter_check['shown']}/{filter_check['total']} 显示，"
+                    f"作者匹配={filter_check.get('ok')}"
+                )
+            if filter_check.get("back") != filter_check.get("total"):
+                problems.append(
+                    f"清空筛选后没有恢复全部：{filter_check.get('back')}/{filter_check.get('total')}"
+                )
+            else:
+                notes.append(
+                    f"作者筛选正常：{filter_check['authors']} 位作者，"
+                    f"筛出 {filter_check['shown']}/{filter_check['total']} 张"
+                )
+
+        # 1:1 原始像素：应换成原图并按原始尺寸显示
+        actual_check = page.evaluate(
+            """async () => {
+                const card = [...document.querySelectorAll('#p-gallery .grid .card')]
+                    .find(c => {
+                        const s = c.querySelector('.shot');
+                        const m = (s.getAttribute('data-full') || '').match(/-(\\d+)w/);
+                        return m && parseInt(s.getAttribute('data-size').split('×')[0], 10) > parseInt(m[1], 10);
+                    });
+                if (!card) return {skip: true};
+                const shot = card.querySelector('.shot');
+                const before = shot.getAttribute('data-full');
+                const orig = shot.getAttribute('data-orig');
+                card.querySelector('.shot').click();
+                await new Promise(r => setTimeout(r, 800));
+                const img = document.getElementById('lb-img');
+                const thumbW = img.naturalWidth;
+                document.getElementById('lb-actual').click();
+                await new Promise(r => setTimeout(r, 2500));
+                const src = img.getAttribute('src');
+                const natW = img.naturalWidth;
+                const shownW = Math.round(img.getBoundingClientRect().width);
+                const stage = document.getElementById('lb-stage');
+                const scrollable = stage.scrollHeight > stage.clientHeight;
+                document.getElementById('lb-actual').click();
+                await new Promise(r => setTimeout(r, 600));
+                document.getElementById('lb-close').click();
+                return {skip: false, before, orig, src, thumbW, natW, shownW, scrollable};
+            }"""
+        )
+        if not actual_check.get("skip"):
+            if actual_check["src"] != actual_check["orig"]:
+                problems.append(
+                    f"1:1 没有换到原图：{actual_check['src']} ≠ {actual_check['orig']}"
+                )
+            if actual_check["natW"] <= actual_check["thumbW"]:
+                problems.append(
+                    f"1:1 分辨率没有提高：{actual_check['thumbW']} → {actual_check['natW']}"
+                )
+            if actual_check["shownW"] < actual_check["natW"] - 1:
+                problems.append(
+                    f"1:1 没有按原始像素显示：显示宽 {actual_check['shownW']} < 原始宽 {actual_check['natW']}"
+                )
+            if not actual_check["scrollable"]:
+                problems.append("1:1 下舞台不可滚动，看不到原图局部")
+            else:
+                notes.append(
+                    f"1:1 原始像素正常：{actual_check['thumbW']}w → {actual_check['natW']}w，"
+                    f"按原始尺寸显示且可滚动"
+                )
 
         # ---------------------------------------------------- 截图
         for name, width, height, dsf in [

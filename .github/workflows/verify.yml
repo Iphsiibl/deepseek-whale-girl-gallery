@@ -28,6 +28,11 @@ jobs:
       - name: 校验 srcset 与缩略图清单同步
         run: python tools/sync_srcset.py --check
 
+      - name: 校验社区卡片与出处文件同步
+        run: |
+          python tools/build_cards.py --check
+          python tools/build_attribution.py --check
+
       - name: 重新生成缩略图，比对清单结构
         run: |
           python tools/make_thumbs.py --clean

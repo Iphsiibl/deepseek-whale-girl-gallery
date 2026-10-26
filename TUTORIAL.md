@@ -156,6 +156,46 @@ python tools/sync_srcset.py           # 把清单里的档位同步进页面 src
 既是浪费仓库空间，也让高像素密度屏幕拿不到本该有的清晰度。
 `sync_srcset.py` 就是干这个的，幂等，可以随时跑。
 
+### 4.4 批量导入：让画廊"最全面"
+
+一张张手工加图，加到一百张就做不下去了。本例的解法是**找一个已经维护好的上游资产库**，
+再把它机器可读的清单一起拿过来。
+
+`TreapGoGo/deepseek-whale-girl`（鲸鱼娘开源资产库）就是这样的上游：它维护了一份
+`site/assets/gallery/manifest.json`，每件作品都记着标题、作者、来源、投稿 issue、
+创作类型、尺寸和许可。拿到清单，导入就变成了可脚本化的事：
+
+```bash
+python tools/import_upstream.py --dry-run   # 先看计划
+python tools/import_upstream.py             # 下载原图 + 写出处文件
+python tools/make_thumbs.py                 # 给新图生成档位
+python tools/build_cards.py                 # 生成页面卡片
+python tools/build_attribution.py           # 生成 ATTRIBUTION.md 署名表
+```
+
+四个工具的分工：
+
+| 工具 | 职责 | 产物 |
+| --- | --- | --- |
+| `import_upstream.py` | 按清单下载原图，记录逐图出处 | `docs/community/*.webp`、`docs/community/_meta.json` |
+| `make_thumbs.py` | 给所有原图生成多档缩略图 | `docs/thumbs/`、`_manifest.json` |
+| `build_cards.py` | 由出处文件生成页面卡片 | `docs/index.html` 的社区分区 |
+| `build_attribution.py` | 由出处文件生成署名表 | `ATTRIBUTION.md` |
+
+**手写 HTML 在这个量级必然失控**：140 多张卡片，人工同步 `srcset`、宽高、作者、
+出处链接，迟早会漏。生成器让"页面 = 出处文件 = 缩略图清单"三者永远一致，
+CI 里跑 `--check` 就能挡住任何漂移。
+
+三条要守住的规矩：
+
+- **不改变作品许可。** 上游明确声明「收录不把图片变成 MIT 素材」——收录行为
+  不会把别人的作品变成你的许可证能覆盖的东西。逐图许可照实记录。
+- **资料缺失就如实记录，不猜。** 上游有 37 件作品没标作者，就写「作者未知
+  （上游未标注）」，不要从画风去猜作者是谁。
+- **去重要按内容，不是按文件名。** 同一张图可能以不同文件名出现在本地和上游。
+  本例用 16×16 灰度平均哈希（aHash）比对，汉明距离 ≤4 视为同一张，
+  确认后删掉低清的那份。
+
 ---
 
 ## 5. 写页面
@@ -281,6 +321,11 @@ python tools/check_gallery.py
 另有 `tools/check_manifest.py`：比对清单的**结构**与仓库里已提交的是否一致。
 注意只能比结构、不能比字节 —— 清单里的 `bytes` 字段是 WebP 编码产物的字节数，
 依赖 libwebp 版本，不同机器编出来会差几十字节，比字节会误报。
+
+批量导入的作品还多两层校验（`tools/build_cards.py --check`、
+`tools/build_attribution.py --check`）：页面卡片与 `ATTRIBUTION.md` 署名表
+都从 `docs/community/_meta.json` 生成，两者一旦与出处文件不一致就失败。
+这样"加了一张图却忘了写署名"或"改了出处没重新生成页面"都会在 CI 里被挡住。
 
 `sizes` 写错是所有性能错误里最隐蔽的一种（不会报错、不会红、只会静悄悄选错档位），
 所以由 `tools/verify_browser.py` 在浏览器里守住：它遍历多组视口宽度与 DPR，
