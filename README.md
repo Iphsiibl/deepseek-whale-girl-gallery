@@ -36,7 +36,8 @@
     ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录原图
     ├── refs/           # 换装三视图原图
     ├── community/      # 社区二创全集原图
-    └── wallpaper/      # 场景壁纸原图
+    ├── wallpaper/      # 场景壁纸原图
+    └── python/         # EasyPython 交互课件（另一个项目，见下「其他项目」）
 ```
 
 ## 内容一览
@@ -63,6 +64,13 @@
 3. **2026.08.15** — DeepSeek 模型开始自行加载「鲸鱼娘」人格标签，官方半承认
 
 > 注：该形象并非深度求索官方发布，立绘最初甚至是用竞品模型画的。
+
+## 其他项目
+
+- **[EasyPython · Python 知识点总结](https://iphsiibl.github.io/deepseek-whale-girl-gallery/python/)**
+  — 从语法到现代 Python 工程实践的单文件交互课件：38 节正文、34 道随堂测验、42 条术语速查、277 段可运行代码。
+  零依赖、零外部请求，双击 `docs/python/index.html` 即可离线阅读。
+  <br><img src="docs/python/banner.png" alt="EasyPython · Python 知识点总结" width="520">
 
 ## 许可与署名
 
