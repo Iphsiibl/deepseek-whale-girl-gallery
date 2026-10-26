@@ -96,8 +96,13 @@
   .chip.on{background:rgba(95,200,255,.16);border-color:rgba(95,200,255,.5);color:var(--ink)}
   .controls label{color:var(--muted);font-size:12.5px;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
   .controls select{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);
-    border-radius:8px;padding:5px 9px;font-size:12.5px;font-family:inherit;max-width:210px}
+    border-radius:8px;padding:5px 9px;font-size:12.5px;font-family:inherit;max-width:210px;
+    color-scheme:dark}
   .controls select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  /* 下拉展开时 option 用的是系统默认白底，却继承上面浅色的字 —— 浅字压白底看不清。
+     color-scheme:dark 让浏览器整块用深色渲染，option 显式配色作为兜底。 */
+  .controls select option{background:#122a4f;color:#e8f1ff}
+  .controls select option:checked{background:#1d3f70;color:#fff;font-weight:600}
   .controls .chk input{accent-color:var(--accent);width:14px;height:14px;margin:0}
   .filters-count{color:var(--gold);font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
 
