@@ -8,9 +8,6 @@
 
 **https://iphsiibl.github.io/deepseek-whale-girl-gallery/**
 
-由 GitHub Pages 发布（分支 `main` → 目录 `/docs`）。
-
-
 ## 目录结构
 
 ```
@@ -37,8 +34,8 @@
     ├── thumbs/         # 展示版 WebP（多档，按设备像素比选档）
     ├── sheets/         # 角色设定图原图（Q 版 / 成熟比例三视图）
     ├── moegirl/        # 萌娘百科「DeepSeek娘」条目收录原图
-    ├── refs/           # 换装三视图原图（7 套）
-    ├── community/      # 社区二创全集原图（147 件）+ 逐图出处 _meta.json
+    ├── refs/           # 换装三视图原图
+    ├── community/      # 社区二创全集原图
     └── wallpaper/      # 场景壁纸原图
 ```
 
