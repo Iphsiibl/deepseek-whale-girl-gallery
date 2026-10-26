@@ -1,5 +1,7 @@
 # DeepSeek 鲸鱼娘 · 角色图集
 
+![DeepSeek 鲸鱼娘 · 角色图集](banner.jpg)
+
 「吃白饭的蓝色大肥鱼」——社区共同养出来的 DeepSeek 拟人形象（鲸鱼娘）角色图集。
 
 ## 在线预览
@@ -17,6 +19,8 @@
 ├── TUTORIAL.md         # 案例教程：静态画廊发布到 GitHub Pages 全流程
 ├── LICENSE             # CC BY-NC-SA 4.0 全文（适用于本仓库的整理与页面代码）
 ├── ATTRIBUTION.md      # 每张图片的作者与出处（CC BY 要求署名）
+├── banner.jpg          # GitHub 社交预览图 / README 顶部横幅（1280×640）
+├── video-cover.jpg     # 视频封面（1920×1080）
 ├── .github/workflows/  # CI：校验页面与图片一致性
 ├── tools/
 │   ├── make_thumbs.py  # 生成多档展示版 WebP（480 / 960 / 1440 / 1920 宽）
