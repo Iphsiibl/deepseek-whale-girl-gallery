@@ -1,0 +1,340 @@
+{
+ "version": 1,
+ "sections": {
+  "sheets": {
+   "anchor": "p-sheets",
+   "heading": "一、角色设定图（三视图 · 细节拆解）",
+   "note": "最常用于保持角色一致性的“锚点图”。两张分别对应 Q 版与成熟比例，原站同页均附完整生成 Prompt。",
+   "items": [
+    {
+     "id": "01-chibi-character-sheet",
+     "orig": "sheets/01-chibi-character-sheet.png",
+     "width": 1448,
+     "height": 1086,
+     "title": "Q 版大肥鱼 · 三视图",
+     "desc": "三头身 / 波浪长发 / 鲸鳍耳 / 圆尾",
+     "author": "TreapGoGo · 社区维护",
+     "alt": "Q 版大肥鱼设定图",
+     "links": [
+      {
+       "href": "sheets/01-chibi-character-sheet.png",
+       "label": "原图 PNG · 2.0 MB"
+      },
+      {
+       "href": "https://treapgogo.github.io/deepseek-whale-girl/",
+       "label": "资产库 ↗"
+      }
+     ]
+    },
+    {
+     "id": "02-mature-character-sheet",
+     "orig": "sheets/02-mature-character-sheet.png",
+     "width": 1448,
+     "height": 1086,
+     "title": "成熟比例鲸鱼娘 · 三视图",
+     "desc": "长裙女仆装 / 过膝袜 / 玛丽珍鞋",
+     "author": "TreapGoGo · 社区维护",
+     "alt": "成熟比例鲸鱼娘设定图",
+     "links": [
+      {
+       "href": "sheets/02-mature-character-sheet.png",
+       "label": "原图 PNG · 2.2 MB"
+      },
+      {
+       "href": "https://treapgogo.github.io/deepseek-whale-girl/",
+       "label": "资产库 ↗"
+      }
+     ]
+    }
+   ]
+  },
+  "moegirl": {
+   "anchor": "p-moegirl",
+   "heading": "二、萌娘百科收录图（条目官方归档）",
+   "note": "萌娘百科「DeepSeek娘」条目正文收录的代表性图像，含作者署名。",
+   "items": [
+    {
+     "id": "02-nvpu-whale-girl",
+     "orig": "moegirl/02-nvpu-whale-girl.png",
+     "width": 1152,
+     "height": 2048,
+     "title": "女仆鲸鱼娘",
+     "desc": "目前流传最广的原立绘（by ZipZipPipe）",
+     "author": "ZipZipPipe（原型：上善无形「溟月」）",
+     "alt": "女仆鲸鱼娘",
+     "links": [
+      {
+       "href": "moegirl/02-nvpu-whale-girl.png",
+       "label": "原图 PNG · 2.9 MB"
+      }
+     ]
+    },
+    {
+     "id": "01-16yeluomao-ds",
+     "orig": "moegirl/01-16yeluomao-ds.jpg",
+     "width": 2732,
+     "height": 4096,
+     "title": "十六夜猫咪ds",
+     "desc": "条目 infobox 头图 · 2732×4096",
+     "author": "十六夜猫咪QWQ",
+     "alt": "十六夜猫咪ds",
+     "links": [
+      {
+       "href": "moegirl/01-16yeluomao-ds.jpg",
+       "label": "原图 JPG · 4.6 MB"
+      }
+     ],
+     "dataDesc": "条目 infobox 头图"
+    },
+    {
+     "id": "04-deepseek4f",
+     "orig": "moegirl/04-deepseek4f.jpg",
+     "width": 1488,
+     "height": 2000,
+     "title": "DeepSeek娘 动漫形象",
+     "desc": "条目收录的动漫风版本",
+     "author": "萌娘百科 Commons",
+     "alt": "DeepSeek娘动漫形象",
+     "links": [
+      {
+       "href": "moegirl/04-deepseek4f.jpg",
+       "label": "原图 JPG · 864 KB"
+      }
+     ]
+    },
+    {
+     "id": "03-harness-girl",
+     "orig": "moegirl/03-harness-girl.jpg",
+     "width": 1200,
+     "height": 900,
+     "title": "DeepSeek Harness 娘",
+     "desc": "「一切皆插件」——对应 DSH 黑鲸标识",
+     "author": "萌娘百科 Commons",
+     "alt": "DeepSeek Harness 娘",
+     "links": [
+      {
+       "href": "moegirl/03-harness-girl.jpg",
+       "label": "原图 JPG · 96 KB"
+      }
+     ]
+    },
+    {
+     "id": "05-gpt-drew-emoji",
+     "orig": "moegirl/05-gpt-drew-emoji.webp",
+     "width": 1254,
+     "height": 1254,
+     "title": "表情包",
+     "desc": "「吹了半天还是要我来帮她画」",
+     "author": "萌娘百科 Commons",
+     "alt": "ChatGPT绘制DeepSeek娘表情包",
+     "links": [
+      {
+       "href": "moegirl/05-gpt-drew-emoji.webp",
+       "label": "原图 WEBP · 125 KB"
+      }
+     ]
+    },
+    {
+     "id": "06-ds-and-claude",
+     "orig": "moegirl/06-ds-and-claude.webp",
+     "width": 900,
+     "height": 1200,
+     "title": "DeepSeek娘与Claude娘",
+     "desc": "跨模型拟人化对话梗",
+     "author": "萌娘百科 Commons",
+     "alt": "DeepSeek娘与Claude娘",
+     "links": [
+      {
+       "href": "moegirl/06-ds-and-claude.webp",
+       "label": "原图 WEBP · 213 KB"
+      }
+     ]
+    }
+   ]
+  },
+  "refs": {
+   "anchor": "p-refs",
+   "heading": "三、换装三视图参考（{n} 套）",
+   "note": "不同服装变体的三视图设定集，可直接用作垫图 / img2img / ControlNet Reference。",
+   "items": [
+    {
+     "id": "01-black-gown",
+     "orig": "refs/01-black-gown.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "01 黑礼服人鱼",
+     "desc": "黑哥特蕾丝 + 人鱼尾出镜",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "黑礼服人鱼",
+     "links": [
+      {
+       "href": "refs/01-black-gown.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "02-simple-short-maid",
+     "orig": "refs/02-simple-short-maid.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "02 简约短裙女仆",
+     "desc": "蓝白基础款",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "简约短裙女仆",
+     "links": [
+      {
+       "href": "refs/02-simple-short-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "03-long-skirt-maid",
+     "orig": "refs/03-long-skirt-maid.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "03 长裙女仆",
+     "desc": "裙襬金色星象刺繡",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "长裙女仆",
+     "links": [
+      {
+       "href": "refs/03-long-skirt-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "04-detailed-short-maid",
+     "orig": "refs/04-detailed-short-maid.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "04 细节短裙女仆",
+     "desc": "围裙繡小鯨魚 · 細節最多",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "细节短裙女仆",
+     "links": [
+      {
+       "href": "refs/04-detailed-short-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "05-chibi-blue-maid",
+     "orig": "refs/05-chibi-blue-maid.webp",
+     "width": 1024,
+     "height": 512,
+     "title": "05 Q版蓝女仆",
+     "desc": "二头身 · 表情包首选",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "Q版蓝女仆",
+     "links": [
+      {
+       "href": "refs/05-chibi-blue-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "06-black-green-maid",
+     "orig": "refs/06-black-green-maid.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "06 黑绿女仆",
+     "desc": "黑髮灰尾綠瞳變體",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "黑绿女仆",
+     "links": [
+      {
+       "href": "refs/06-black-green-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    },
+    {
+     "id": "07-black-red-maid",
+     "orig": "refs/07-black-red-maid.webp",
+     "width": 1024,
+     "height": 683,
+     "title": "07 黑红女仆",
+     "desc": "黑髮紅瞳 · 配色最豔",
+     "author": "AI 萌图 · 三视图设定集",
+     "alt": "黑红女仆",
+     "links": [
+      {
+       "href": "refs/07-black-red-maid.webp",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "AI 萌图 · 大肥鱼娘三视图设定集"
+    }
+   ]
+  },
+  "wallpaper": {
+   "anchor": "p-wallpaper",
+   "heading": "五、壁纸",
+   "note": "DeepSeek Harness 社区皮肤的动态壁纸静帧。",
+   "items": [
+    {
+     "id": "preview-1",
+     "orig": "wallpaper/preview-1.png",
+     "width": 1008,
+     "height": 576,
+     "title": "卧室夜景",
+     "desc": "dsh-whale-girl-wallpaper",
+     "author": "dsh-whale-girl-wallpaper · MIT",
+     "alt": "鲸鱼娘壁纸 1",
+     "links": [
+      {
+       "href": "wallpaper/preview-1.png",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "dsh-whale-girl-wallpaper（MIT）"
+    },
+    {
+     "id": "preview-2",
+     "orig": "wallpaper/preview-2.png",
+     "width": 1008,
+     "height": 576,
+     "title": "书桌夜景",
+     "desc": "dsh-whale-girl-wallpaper",
+     "author": "dsh-whale-girl-wallpaper · MIT",
+     "alt": "鲸鱼娘壁纸 2",
+     "links": [
+      {
+       "href": "wallpaper/preview-2.png",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "dsh-whale-girl-wallpaper（MIT）"
+    },
+    {
+     "id": "preview-3",
+     "orig": "wallpaper/preview-3.png",
+     "width": 1008,
+     "height": 576,
+     "title": "书桌学习",
+     "desc": "dsh-whale-girl-wallpaper",
+     "author": "dsh-whale-girl-wallpaper · MIT",
+     "alt": "鲸鱼娘壁纸 3",
+     "links": [
+      {
+       "href": "wallpaper/preview-3.png",
+       "label": "原图"
+      }
+     ],
+     "dataAuthor": "dsh-whale-girl-wallpaper（MIT）"
+    }
+   ]
+  }
+ }
+}

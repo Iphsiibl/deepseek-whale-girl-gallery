@@ -18,9 +18,12 @@
 ├── banner.jpg          # GitHub 预览图
 ├── .github/workflows/  # CI：校验页面与图片一致性
 ├── tools/
+│   ├── gallery.py      # 图片管理 CLI：add / remove / list / sync
 │   ├── make_thumbs.py  # 生成多档展示版 WebP（480 / 960 / 1440 / 1920 宽）
 │   ├── import_upstream.py # 从鲸鱼娘开源资产库批量导入社区作品 + 记录出处
 │   ├── build_cards.py  # 由出处文件生成页面上的社区卡片
+│   ├── render.py       # 由数据源生成其余 4 个分区的图块
+│   ├── extract_static.py # 一次性工具：把手写 HTML 抽成数据源（仅首次迁移用）
 │   ├── build_attribution.py # 由出处文件生成 ATTRIBUTION.md 署名表
 │   ├── sync_srcset.py  # 把清单里的档位同步进页面 srcset / data-full
 │   ├── check_gallery.py# 校验页面引用、缩略图清单、原图孤儿
@@ -30,6 +33,7 @@
 ├── tools/upstream/     # 上游资产库清单快照（可复现导入的基准）
 └── docs/               # GitHub Pages 发布根目录
     ├── index.html      # 画廊页面（单文件，内联 CSS/JS）
+    ├── _gallery.json   # 静态分区的数据源（设定图 / 百科 / 换装 / 壁纸）
     ├── .nojekyll       # 关闭 Jekyll 处理，图片原样发布
     ├── thumbs/         # 展示版 WebP（多档，按设备像素比选档）
     ├── sheets/         # 角色设定图原图（Q 版 / 成熟比例三视图）
@@ -62,6 +66,42 @@
 2. **2026.04** — UP「ZipZipPipe」以 GPT Image 2 融入 DeepSeek 元素，换上深蓝白女仆装，**女仆鲸鱼娘**成型
 
 > 注：该形象并非深度求索官方发布，立绘最初甚至是用竞品模型画的。
+
+## 增删图片
+
+页面上的 165 张图**全部由数据源生成** —— 不要手改 `docs/index.html`，
+CI 会把不一致抓出来。
+
+| 分区 | 数据源 | 渲染脚本 |
+| --- | --- | --- |
+| 社区二创 | `docs/community/_meta.json` | `tools/build_cards.py` |
+| 其余 4 个分区 | `docs/_gallery.json` | `tools/render.py` |
+
+增删用统一 CLI，一条命令连着做完「拷原图 → 算宽高 → 生成多档缩略图 →
+重渲染页面 → 更新署名表 → 跑校验」：
+
+```bash
+# 看现在有什么
+python tools/gallery.py list
+
+# 加一张图
+python tools/gallery.py add ~/Pictures/新图.png --section refs \
+    --title "08 新造型" --author "AI 萌图" --desc "蓝白基础款"
+
+# 删一张图（原图与多档缩略图会一起清掉）
+python tools/gallery.py remove 01-black-gown --section refs
+
+# 只重建，不改内容（改完元数据之后跑）
+python tools/gallery.py sync
+```
+
+`--section` 可选值：`sheets`（角色设定图）、`moegirl`（萌娘百科）、
+`refs`（换装三视图）、`wallpaper`（壁纸）、`community`（社区二创）。
+
+常用选项：`--id` 自定义 ID（同时决定缩略图文件名）、`--desc` 副标题、
+`--source` 出处链接、`--license` 许可标注、`--dry-run` 只看计划不落盘。
+
+页面顶部的总张数、分区标题里的张数、README 统计表里的数字都会跟着自动更新。
 
 ## 许可与署名
 

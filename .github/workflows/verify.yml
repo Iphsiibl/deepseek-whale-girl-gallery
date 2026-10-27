@@ -33,6 +33,13 @@ jobs:
           python tools/build_cards.py --check
           python tools/build_attribution.py --check
 
+      - name: 校验静态分区与数据源同步
+        run: |
+          # 角色设定图 / 萌娘百科 / 换装三视图 / 壁纸 这 4 个分区现在也是
+          # 数据源驱动的（docs/_gallery.json → tools/render.py），
+          # 手改 index.html 会被这项检查抓出来。
+          python tools/render.py --check
+
       - name: 重新生成缩略图，比对清单结构
         run: |
           python tools/make_thumbs.py --clean

@@ -293,6 +293,48 @@ card.style.gridRowEnd = "span " + span;
 
 ---
 
+### 5.5 页面别手写：让数据源生成图块
+
+手写 `<figure>` 有三个隐性成本：
+
+1. `srcset` 的档位列表跟缩略图清单必须一致 —— 漏写一档，那个文件永远不会被下载
+2. `data-full` 要指向最高档（灯箱大图），`src` 要指向不超过 960w 的兜底档
+3. 分区标题里的「N 张」、页面顶部的总张数、README 里的统计表，都得手改
+
+所以图块应该是**生成物**，不是手写物：
+
+```
+docs/_gallery.json          数据源（标题 / 作者 / 链接等元数据）
+docs/thumbs/_manifest.json  缩略图清单（有哪些档位、多宽）
+        ↓ tools/render.py
+docs/index.html             静态分区
+```
+
+社区二创那张图是另一条链：`docs/community/_meta.json` → `tools/build_cards.py`。
+
+渲染器只从数据源取元数据，**档位一律从清单算**，所以加图时不用手抄 `srcset`：
+
+```python
+fallback = next((w for w in reversed(widths) if w <= 960), widths[-1])  # src
+srcset = ", ".join(f"{f['path']} {f['w']}w" for f in files)           # srcset
+data_full = files[-1]["path"]                                        # 灯箱大图
+```
+
+再配一个 CLI，把「拷原图 → 算宽高 → 生成缩略图 → 重渲染 → 更新署名表 → 跑校验」
+包成一条命令，增删图片就变成：
+
+```bash
+python tools/gallery.py add 新图.png --section refs --title "08 新造型" --author "AI 萌图"
+python tools/gallery.py remove 01-black-gown --section refs
+```
+
+**坑：卡片显示文本和 `data-*` 元数据是两套，不能合并。** 作者栏就有过简写版 ——
+卡片上写「AI 萌图 · 三视图设定集」，`data-author` 里却写「AI 萌图 · 大肥鱼娘三视图设定集」。
+所以渲染时显示用 `title/desc/author`，属性用 `dataTitle/dataDesc/dataAuthor`（缺省继承显示值）。
+合并成一个字段，灯箱里的作者名就会跟着变。
+
+改完记得在 CI 里加一条 `python tools/render.py --check`，手改 `index.html` 就能被抓出来。
+
 ## 6. 校验
 
 手抄 `srcset` 极易出错 —— 本例中就出现过 `03-long-skirt-maid` 写成
