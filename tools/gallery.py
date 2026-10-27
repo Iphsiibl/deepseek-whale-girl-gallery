@@ -110,7 +110,9 @@ def load_json(path: Path, default):
 
 
 def save_json(path: Path, data) -> None:
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    # 与 import_upstream.py / build_cards.py 的写法保持一致：不加末尾换行，
+    # 否则每次 sync 都会凭空多出一个 "\ No newline at end of file" 的 diff。
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def image_size(path: Path) -> tuple[int, int]:
@@ -157,7 +159,7 @@ def cmd_list(args: argparse.Namespace) -> int:
     meta = load_json(META, {"works": {}})
     manifest = manifest_index()
 
-    sections = args.section or list(ALL_SECTIONS)
+    sections = [args.section] if args.section else list(ALL_SECTIONS)
     total = 0
     for key in sections:
         if key == COMMUNITY:
