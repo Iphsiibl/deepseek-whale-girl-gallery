@@ -7,6 +7,10 @@ desktop.ini
 *.tmp
 *.bak
 ~$*
+.tmp_*
+.shots/
+.staging/
+.deliverables/
 
 # Python
 __pycache__/

@@ -71,6 +71,11 @@ DATA = DOCS_DIR / "_gallery.json"
 META = DOCS_DIR / "community" / "_meta.json"
 MANIFEST = DOCS_DIR / "thumbs" / "_manifest.json"
 
+# 同目录模块：既要能 `python tools/gallery.py` 直接跑，也要能被 admin.py 当模块导入
+if str(TOOLS_DIR) not in sys.path:
+    sys.path.insert(0, str(TOOLS_DIR))
+from imageopt import store_image  # noqa: E402
+
 #: 静态分区：key → (原图目录, README 显示名)
 STATIC_SECTIONS = {
     "sheets": ("sheets", "角色设定图"),
@@ -95,12 +100,19 @@ def human(size: int) -> str:
     return f"{size / 1024:.0f} KB"
 
 
-def run(script: str, *args: str) -> None:
-    """跑一个 tools/ 下的脚本，出错直接抛出。"""
+def run(script: str, *args: str) -> str:
+    """跑一个 tools/ 下的脚本，出错直接抛出。返回脚本的输出。
+
+    输出先收再打，是为了让管理台（admin.py）能把整条重建链的日志收进面板里。
+    """
     cmd = [sys.executable, str(TOOLS_DIR / script), *args]
-    proc = subprocess.run(cmd, cwd=REPO_ROOT, text=True)
+    proc = subprocess.run(cmd, cwd=REPO_ROOT, text=True, capture_output=True)
+    out = (proc.stdout or "") + (proc.stderr or "")
+    if out.strip():
+        print(out.rstrip())
     if proc.returncode != 0:
         raise SystemExit(f"::error::{script} 执行失败（退出码 {proc.returncode}）")
+    return out
 
 
 def load_json(path: Path, default):
@@ -186,95 +198,219 @@ def cmd_list(args: argparse.Namespace) -> int:
     return 0
 
 
-# ---------------------------------------------------------------- add
+# ---------------------------------------------------------------- 增删（数据层）
+#
+# 这一层只做两件事：把文件存进 docs/、把条目写进数据源。**不重建页面。**
+# CLI（gallery.py add/remove）和图形化管理台（admin.py）都调它，
+# 保证两条路写出来的数据完全一致 —— 不能各写各的。
 
 
-def cmd_add(args: argparse.Namespace) -> int:
-    src = Path(args.image).expanduser()
+def add_item(
+    section: str,
+    image_id: str,
+    src: Path,
+    *,
+    title: str,
+    author: str,
+    desc: str = "",
+    alt: str = "",
+    source: str = "",
+    license: str = "",
+    content_type: str = "",
+    issue=None,
+    issue_url: str = "",
+    attachment: str = "",
+    creation_type: str = "",
+    handmade: bool = True,
+    compress: bool = True,
+) -> dict:
+    """把一张图登记进数据源。
+
+    默认入库即压缩（``imageopt.store_image``：长边 2560 / WebP q82）。
+    返回 ``{"id", "section", "file", "compress": {...}}``。
+    """
+    if section not in ALL_SECTIONS:
+        raise ValueError(f"未知分区：{section}")
+    if not ID_RE.match(image_id):
+        raise ValueError(f"ID 非法：{image_id}（只允许字母、数字、点、横线、下划线与中文）")
+    src = Path(src)
     if not src.is_file():
-        return int(bool(print(f"::error::找不到文件 {src}"))) or 1
-    if src.suffix.lower() not in SOURCE_EXTS:
-        print(f"::error::不支持的格式 {src.suffix}（支持 {'/'.join(sorted(SOURCE_EXTS))}）")
-        return 1
+        raise ValueError(f"找不到文件 {src}")
+    ext = src.suffix.lower()
+    if ext not in SOURCE_EXTS:
+        raise ValueError(f"不支持的格式 {ext}（支持 {'/'.join(sorted(SOURCE_EXTS))}）")
 
-    section = args.section
     group = "community" if section == COMMUNITY else STATIC_SECTIONS[section][0]
     target_dir = DOCS_DIR / group
     target_dir.mkdir(parents=True, exist_ok=True)
 
-    image_id = args.id or src.stem
-    if not ID_RE.match(image_id):
-        print(f"::error::ID 非法：{image_id}（只允许字母、数字、点、横线、下划线与中文）")
-        return 1
-
-    target = target_dir / f"{image_id}{src.suffix.lower()}"
-    if target.exists() and target.resolve() != src.resolve():
-        print(f"::error::{target.relative_to(REPO_ROOT)} 已存在，换个 --id 或先 remove")
-        return 1
-
-    width, height = image_size(src)
-    size_bytes = src.stat().st_size
-    print(f"目标分区：{section}")
-    print(f"  文件：{target.relative_to(REPO_ROOT)}")
-    print(f"  尺寸：{width}×{height}  ·  {human(size_bytes)}")
-    print(f"  ID  ：{image_id}")
-
-    if args.dry_run:
-        print("（--dry-run，未落盘）")
-        return 0
-
-    if target.resolve() != src.resolve():
-        shutil.copy2(src, target)
+    # 落盘（顺带压缩）——压缩完扩展名可能变成 .webp，所以文件名要用落盘结果
+    target, cinfo = store_image(src, target_dir, image_id, compress=compress)
+    rel = f"{group}/{target.name}"
+    width, height = cinfo["width"], cinfo["height"]
 
     if section == COMMUNITY:
         meta = load_json(META, {"works": {}})
         works = meta.setdefault("works", {})
         work = {
             "id": image_id,
-            "file": f"community/{image_id}{src.suffix.lower()}",
-            "title": args.title,
-            "author": args.author,
-            "source": args.source or "",
-            "issue": args.issue,
-            "issueUrl": args.issue_url or "",
-            "attachment": args.attachment or "",
-            "license": args.license or "",
-            "handmade": True,
-            "creationType": args.creation_type or "手工创作",
+            "file": rel,
+            "title": title,
+            "author": author,
+            "source": source or "",
+            "issue": issue,
+            "issueUrl": issue_url or "",
+            "attachment": attachment or "",
+            "license": license or "",
+            "handmade": bool(handmade),
+            "creationType": creation_type or ("手工创作" if handmade else "AI 创作"),
             "width": width,
             "height": height,
             "upstreamId": None,
             "sha256": "",
         }
-        if args.type:
-            work["type"] = args.type
+        if content_type:
+            work["type"] = content_type
         works[image_id] = work
         save_json(META, meta)
-        print(f"  已写入 {META.relative_to(REPO_ROOT)}")
     else:
         data = load_json(DATA, {"version": 1, "sections": {}})
         sec = data["sections"].setdefault(
             section,
             {"anchor": f"p-{section}", "heading": section, "note": "", "items": []},
         )
-        links = [{"href": f"{group}/{image_id}{src.suffix.lower()}", "label": f"原图 · {human(size_bytes)}"}]
-        if args.source:
-            links.append({"href": args.source, "label": "出处 ↗"})
+        links = [{"href": rel, "label": f"原图 · {human(cinfo['after'])}"}]
+        if source:
+            links.append({"href": source, "label": "出处 ↗"})
         item = {
             "id": image_id,
-            "orig": f"{group}/{image_id}{src.suffix.lower()}",
+            "orig": rel,
             "width": width,
             "height": height,
-            "title": args.title,
-            "desc": args.desc or "",
-            "author": args.author,
-            "alt": args.alt or args.title,
+            "title": title,
+            "desc": desc or "",
+            "author": author,
+            "alt": alt or title,
             "links": links,
         }
         sec["items"] = [i for i in sec["items"] if i.get("id") != image_id]
         sec["items"].append(item)
         save_json(DATA, data)
-        print(f"  已写入 {DATA.relative_to(REPO_ROOT)}")
+
+    return {"id": image_id, "section": section, "file": rel, "compress": cinfo}
+
+
+def find_item(section: str | None, image_id: str) -> tuple[str, str, str]:
+    """找出图片所在的分区、ID 和原图相对路径。找不到就抛 ValueError。"""
+    data = load_json(DATA, {"sections": {}})
+    meta = load_json(META, {"works": {}})
+
+    targets: list[tuple[str, str, str]] = []
+    scopes = [section] if section else list(ALL_SECTIONS)
+    for key in scopes:
+        if key == COMMUNITY:
+            for wid, w in meta.get("works", {}).items():
+                targets.append((COMMUNITY, wid, w.get("file", "")))
+        else:
+            for item in data.get("sections", {}).get(key, {}).get("items", []):
+                targets.append((key, item.get("id", ""), item.get("orig", "")))
+
+    hit = [t for t in targets if t[1] == image_id]
+    if not hit:
+        raise ValueError(f"找不到 ID「{image_id}」，用 python tools/gallery.py list 看看有哪些")
+    if len(hit) > 1:
+        raise ValueError(f"ID「{image_id}」在多个分区里都有，请指定分区")
+    return hit[0]
+
+
+def remove_item(section: str | None, image_id: str) -> dict:
+    """删掉一张图（缩略图 + 原图 + 数据源条目）。"""
+    sec, wid, orig = find_item(section, image_id)
+    manifest = manifest_index()
+    entry = manifest.get(orig)
+
+    removed: list[str] = []
+    for f in (entry or {}).get("files", []):
+        p = DOCS_DIR / f["path"]
+        if p.exists():
+            p.unlink()
+            removed.append(f["path"])
+    orig_path = DOCS_DIR / orig
+    if orig_path.exists():
+        orig_path.unlink()
+        removed.append(orig)
+
+    if sec == COMMUNITY:
+        meta = load_json(META, {"works": {}})
+        meta.get("works", {}).pop(wid, None)
+        save_json(META, meta)
+    else:
+        data = load_json(DATA, {"sections": {}})
+        items = data["sections"][sec]["items"]
+        data["sections"][sec]["items"] = [i for i in items if i.get("id") != wid]
+        save_json(DATA, data)
+
+    return {"id": wid, "section": sec, "removed": removed}
+
+
+# ---------------------------------------------------------------- add
+
+
+def cmd_add(args: argparse.Namespace) -> int:
+    src = Path(args.image).expanduser()
+    if not src.is_file():
+        print(f"::error::找不到文件 {src}")
+        return 1
+    if src.suffix.lower() not in SOURCE_EXTS:
+        print(f"::error::不支持的格式 {src.suffix}（支持 {'/'.join(sorted(SOURCE_EXTS))}）")
+        return 1
+
+    section = args.section
+    group = "community" if section == COMMUNITY else STATIC_SECTIONS[section][0]
+    image_id = args.id or src.stem
+    if not ID_RE.match(image_id):
+        print(f"::error::ID 非法：{image_id}（只允许字母、数字、点、横线、下划线与中文）")
+        return 1
+
+    width, height = image_size(src)
+    size_bytes = src.stat().st_size
+    print(f"目标分区：{section}")
+    print(f"  文件：{group}/{image_id}.webp" if not args.raw else f"  文件：{group}/{image_id}{src.suffix.lower()}")
+    print(f"  尺寸：{width}×{height}  ·  {human(size_bytes)}")
+    print(f"  ID  ：{image_id}")
+    print("  压缩：关闭（原样入库）" if args.raw else "  压缩：开启（长边 2560 · WebP q82）")
+
+    if args.dry_run:
+        print("（--dry-run，未落盘）")
+        return 0
+
+    try:
+        result = add_item(
+            section,
+            image_id,
+            src,
+            title=args.title,
+            author=args.author,
+            desc=args.desc,
+            alt=args.alt,
+            source=args.source,
+            license=args.license,
+            content_type=args.type,
+            issue=args.issue,
+            issue_url=args.issue_url,
+            attachment=args.attachment,
+            creation_type=args.creation_type,
+            handmade=not args.ai,
+            compress=not args.raw,
+        )
+    except ValueError as exc:
+        print(f"::error::{exc}")
+        return 1
+
+    cinfo = result["compress"]
+    if not args.raw:
+        print(f"  压缩后：{result['file']} · {human(cinfo['after'])}（省 {human(cinfo['saved'])}）")
+    print(f"  已写入 {META.relative_to(REPO_ROOT) if section == COMMUNITY else DATA.relative_to(REPO_ROOT)}")
 
     print()
     sync(check_manifest=False)
@@ -286,64 +422,24 @@ def cmd_add(args: argparse.Namespace) -> int:
 
 
 def cmd_remove(args: argparse.Namespace) -> int:
-    data = load_json(DATA, {"sections": {}})
-    meta = load_json(META, {"works": {}})
-    manifest = manifest_index()
-
-    # 定位：指定分区就只在该分区找，否则全找
-    targets: list[tuple[str, str, str]] = []  # (section, id, 原图相对路径)
-    if args.section:
-        scopes = [args.section]
-    else:
-        scopes = list(ALL_SECTIONS)
-    for key in scopes:
-        if key == COMMUNITY:
-            for wid, w in meta.get("works", {}).items():
-                targets.append((COMMUNITY, wid, w.get("file", "")))
-        else:
-            for item in data.get("sections", {}).get(key, {}).get("items", []):
-                targets.append((key, item.get("id", ""), item.get("orig", "")))
-
-    hit = [t for t in targets if t[1] == args.id]
-    if not hit:
-        print(f"::error::找不到 ID「{args.id}」，用 python tools/gallery.py list 看看有哪些")
-        return 1
-    if len(hit) > 1:
-        print(f"::error::ID「{args.id}」在多个分区里都有，请加 --section 指定")
+    try:
+        section, image_id, orig = find_item(args.section, args.id)
+    except ValueError as exc:
+        print(f"::error::{exc}")
         return 1
 
-    section, image_id, orig = hit[0]
     print(f"将删除：{section} / {image_id}")
     print(f"  原图：{orig}")
+    manifest = manifest_index()
     entry = manifest.get(orig)
-    if entry:
-        for f in entry.get("files", []):
-            print(f"  缩略图：{f['path']}")
+    for f in (entry or {}).get("files", []):
+        print(f"  缩略图：{f['path']}")
     if args.dry_run:
         print("（--dry-run，未落盘）")
         return 0
 
-    # 删文件
-    for f in (entry or {}).get("files", []):
-        p = DOCS_DIR / f["path"]
-        if p.exists():
-            p.unlink()
-    orig_path = DOCS_DIR / orig
-    if orig_path.exists():
-        orig_path.unlink()
-
-    # 删数据源条目
-    if section == COMMUNITY:
-        meta = load_json(META, {"works": {}})
-        meta.get("works", {}).pop(image_id, None)
-        save_json(META, meta)
-        print(f"  已从 {META.relative_to(REPO_ROOT)} 移除")
-    else:
-        data = load_json(DATA, {"sections": {}})
-        items = data["sections"][section]["items"]
-        data["sections"][section]["items"] = [i for i in items if i.get("id") != image_id]
-        save_json(DATA, data)
-        print(f"  已从 {DATA.relative_to(REPO_ROOT)} 移除")
+    remove_item(args.section, args.id)
+    print("  已从数据源移除")
 
     print()
     sync(check_manifest=False)
@@ -380,6 +476,8 @@ def main() -> int:
     p_add.add_argument("--issue-url", default="", help="上游 issue 链接（社区分区）")
     p_add.add_argument("--attachment", default="", help="附件直链（社区分区）")
     p_add.add_argument("--creation-type", default="", help="创作方式说明（社区分区）")
+    p_add.add_argument("--raw", action="store_true", help="跳过压缩，原样入库（默认入库即压缩）")
+    p_add.add_argument("--ai", action="store_true", help="标记为 AI 生成（默认按手工创作记录）")
     p_add.add_argument("--dry-run", action="store_true", help="只打印计划")
     p_add.set_defaults(func=cmd_add)
 

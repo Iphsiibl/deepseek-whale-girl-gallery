@@ -20,18 +20,26 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DOCS_DIR = REPO_ROOT / "docs"
 SHOTS = Path("/tmp/gallery-shots")
 
-PORT = 8765
+# 让系统分配空闲端口：写死端口会和本地管理台（8765）撞车，
+# Windows 上 SO_REUSEADDR 允许两个进程绑同一个端口，谁先被连上全看运气。
+PORT = 0
 
 
 def serve() -> socketserver.TCPServer:
     handler = lambda *a, **kw: http.server.SimpleHTTPRequestHandler(*a, directory=str(DOCS_DIR), **kw)
     socketserver.TCPServer.allow_reuse_address = True
-    httpd = socketserver.TCPServer(("127.0.0.1", PORT), handler)
+
+    # 浏览器会同时开好几条连接下载缩略图，单线程服务器会把监听队列塞满，
+    # 直接回 "连接被拒绝"（net::ERR_CONNECTION_REFUSED），测出来的就是假的失败。
+    class Threaded(socketserver.ThreadingMixIn, socketserver.TCPServer):
+        daemon_threads = True
+
+    httpd = Threaded(("127.0.0.1", PORT), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd
 
 
-def run(no_js: bool) -> int:
+def run(no_js: bool, port: int) -> int:
     from playwright.sync_api import sync_playwright
 
     SHOTS.mkdir(parents=True, exist_ok=True)
@@ -46,10 +54,12 @@ def run(no_js: bool) -> int:
         console_errors: list[str] = []
         failed_requests: list[str] = []
         page.on("console", lambda m: console_errors.append(m.text) if m.type == "error" else None)
+        # 脚本里抛出的异常不会走 console，必须单独监听，否则页面"静默半死"时看不到原因
+        page.on("pageerror", lambda e: console_errors.append(f"pageerror: {e}"))
         page.on("requestfailed", lambda r: failed_requests.append(f"{r.url} — {r.failure}"))
         page.on("response", lambda r: failed_requests.append(f"{r.url} — HTTP {r.status}") if r.status >= 400 else None)
 
-        page.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="networkidle")
+        page.goto(f"http://127.0.0.1:{port}/index.html", wait_until="networkidle")
         page.wait_for_timeout(1200)
 
         # 逐屏下滑触发全部懒加载（图片一多，滚到底一次并不能加载完）
@@ -294,7 +304,7 @@ def run(no_js: bool) -> int:
                 viewport={"width": vw, "height": 900}, device_scale_factor=dsf
             )
             p2 = ctx2.new_page()
-            p2.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="networkidle")
+            p2.goto(f"http://127.0.0.1:{port}/index.html", wait_until="networkidle")
             p2.wait_for_timeout(800)
             p2.evaluate("() => document.querySelector('#p-gallery').scrollIntoView()")
             p2.wait_for_timeout(1200)
@@ -435,6 +445,53 @@ def run(no_js: bool) -> int:
                     f"筛出 {filter_check['shown']}/{filter_check['total']} 张"
                 )
 
+        # ---------------------------------------------------- 深浅主题
+        theme_before = page.evaluate(
+            """() => {
+                const btn = document.getElementById('theme-toggle');
+                if (!btn) return {skip: true};
+                return {
+                    skip: false,
+                    theme: document.documentElement.getAttribute('data-theme'),
+                    bg: getComputedStyle(document.body).backgroundColor,
+                    label: btn.textContent.trim(),
+                };
+            }"""
+        )
+        if theme_before.get("skip"):
+            notes.append("页面没有主题切换按钮，跳过主题检查")
+        else:
+            page.click("#theme-toggle")
+            page.wait_for_timeout(300)
+            theme_after = page.evaluate(
+                """() => {
+                    const btn = document.getElementById('theme-toggle');
+                    return {
+                        theme: document.documentElement.getAttribute('data-theme'),
+                        bg: getComputedStyle(document.body).backgroundColor,
+                        label: btn.textContent.trim(),
+                        saved: localStorage.getItem('dsg-theme'),
+                    };
+                }"""
+            )
+            if theme_after["theme"] == theme_before["theme"]:
+                problems.append("点击主题按钮后 data-theme 没有变化")
+            if theme_after["bg"] == theme_before["bg"]:
+                problems.append("切换主题后页面背景色没有变化")
+            if theme_after["saved"] != theme_after["theme"]:
+                problems.append(
+                    f"主题没有写入 localStorage：saved={theme_after['saved']!r}"
+                )
+            if theme_after["label"] == theme_before["label"]:
+                problems.append("主题按钮文案没有跟着切换")
+            # 切回原主题，避免影响后续检查
+            page.click("#theme-toggle")
+            page.wait_for_timeout(200)
+            notes.append(
+                f"深浅主题切换正常（{theme_before['theme']} ⇄ {theme_after['theme']}，"
+                f"背景 {theme_before['bg']} → {theme_after['bg']}）"
+            )
+
         # 1:1 原始像素：应换成原图并按原始尺寸显示
         actual_check = page.evaluate(
             """async () => {
@@ -498,7 +555,7 @@ def run(no_js: bool) -> int:
                 viewport={"width": width, "height": height}, device_scale_factor=dsf
             )
             p2 = ctx2.new_page()
-            p2.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="networkidle")
+            p2.goto(f"http://127.0.0.1:{port}/index.html", wait_until="networkidle")
             p2.wait_for_timeout(1500)
             p2.screenshot(path=str(SHOTS / f"{name}.png"), full_page=(name == "mobile"))
             ctx2.close()
@@ -510,7 +567,7 @@ def run(no_js: bool) -> int:
                 java_script_enabled=False, viewport={"width": 1440, "height": 1000}
             )
             p3 = ctx3.new_page()
-            p3.goto(f"http://127.0.0.1:{PORT}/index.html", wait_until="load")
+            p3.goto(f"http://127.0.0.1:{port}/index.html", wait_until="load")
             p3.wait_for_timeout(1200)
             visible = p3.locator(".grid img").count()
             controls_hidden = p3.locator(".controls").is_hidden()
@@ -556,8 +613,9 @@ def main() -> int:
         return 1
 
     httpd = serve()
+    port = httpd.server_address[1]
     try:
-        return run(args.no_js)
+        return run(args.no_js, port)
     finally:
         httpd.shutdown()
 

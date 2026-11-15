@@ -22,6 +22,9 @@ jobs:
       - name: 安装依赖
         run: pip install -r tools/requirements.txt
 
+      - name: 校验工具脚本可编译
+        run: python -m compileall -q tools
+
       - name: 校验页面与图片一致性
         run: python tools/check_gallery.py
 

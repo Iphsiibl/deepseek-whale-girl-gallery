@@ -125,7 +125,8 @@ def build_card(work: dict, item: dict, author: str, work_type: str, solo: int = 
     width, height = work.get("width") or 0, work.get("height") or 0
 
     title = work.get("title") or work["id"]
-    desc = work.get("creationType") or "社区作品"
+    # 副标题优先用作者/管理台写的描述，其次回落到创作方式标注
+    desc = work.get("desc") or work.get("creationType") or "社区作品"
     source = work.get("source") or ""
     issue_url = work.get("issueUrl") or ""
     license_ = work.get("license") or ""

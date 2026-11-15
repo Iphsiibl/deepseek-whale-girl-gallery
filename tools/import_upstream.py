@@ -48,6 +48,10 @@ DOCS_DIR = REPO_ROOT / "docs"
 TARGET_DIR = DOCS_DIR / "community"
 META_PATH = TARGET_DIR / "_meta.json"
 
+if str(TOOLS_DIR) not in sys.path:
+    sys.path.insert(0, str(TOOLS_DIR))
+from imageopt import store_image  # noqa: E402
+
 UPSTREAM_REPO = "TreapGoGo/deepseek-whale-girl"
 UPSTREAM_RAW = f"https://raw.githubusercontent.com/{UPSTREAM_REPO}/main/site/"
 UPSTREAM_API = f"https://api.github.com/repos/{UPSTREAM_REPO}"
@@ -57,10 +61,20 @@ VENDORED_MANIFEST = TOOLS_DIR / "upstream" / "manifest.json"
 SKIP_GALLERY_FALSE = True
 
 #: 已知需要人工确认的重复（本地已存在的精选图 vs 上游同名作品）
+#: community-2026-09-29 是 moegirl/02-nvpu-whale-girl.png 的低清副本，页面已有清晰版
+SKIP_LOCAL_IDS = {"community-2026-09-29"}
 
 
 def log(message: str) -> None:
     print(message, flush=True)
+
+
+def rel_to_repo(path: Path) -> str:
+    """尽量显示仓库内相对路径；不在仓库里就显示绝对路径。"""
+    try:
+        return str(path.relative_to(REPO_ROOT))
+    except ValueError:
+        return str(path)
 
 
 def fetch(url: str, *, token: str | None = None, timeout: int = 90, retries: int = 4) -> bytes:
@@ -143,6 +157,132 @@ def collect_existing_hashes() -> dict[str, str]:
     return result
 
 
+def _normalize_local_work(work: dict) -> dict:
+    """把本地清单里的字段名统一成上游清单的叫法。"""
+    rel = work.get("file") or work.get("original") or work.get("path") or ""
+    rel = str(rel).lstrip("./")
+    issue = work.get("issue")
+    issue_url = work.get("issueUrl") or work.get("issue_url") or ""
+    if not issue_url and issue:
+        issue_url = f"https://github.com/{UPSTREAM_REPO}/issues/{issue}"
+    return {
+        "id": work.get("id") or Path(rel).stem,
+        "rel": rel,
+        "title": work.get("title", ""),
+        "author": work.get("author", ""),
+        "source": work.get("source", ""),
+        "issue": issue,
+        "issueUrl": issue_url,
+        "attachment": work.get("attachment", ""),
+        "license": work.get("license", ""),
+        "handmade": work.get("handmade"),
+        "creationType": work.get("creationType", ""),
+        "width": work.get("width"),
+        "height": work.get("height"),
+    }
+
+
+def import_local_manifest(manifest_path: Path, src_dir: Path, *, dry_run: bool = False,
+                          force: bool = False, compress: bool = True) -> int:
+    """从**本地**清单 + 本地文件目录导入社区作品。
+
+    用途：投稿 issue 里的新作品、或手工整理的图集，先放到一个目录里，
+    再用一份 JSON 清单描述它们，最后由本函数统一入库（压缩 → 缩略图 → 页面）。
+    清单格式：
+
+        {"works": [{"id": "issue-99-01", "file": "issue-99-01.png",
+                    "title": "…", "author": "…", "issue": 99,
+                    "issueUrl": "https://github.com/…/issues/99",
+                    "license": "CC BY-NC-SA 4.0", "handmade": false,
+                    "creationType": "ai", "width": 2048, "height": 2048}]}
+    """
+    raw = json.loads(manifest_path.read_text(encoding="utf-8"))
+    works = raw.get("works", raw) if isinstance(raw, dict) else raw
+    if isinstance(works, dict):
+        works = list(works.values())
+    # 先剔除不需要的条目：上游标了 gallery:false 的总览图、与已有图重复的副本
+    dropped: list[str] = []
+    kept: list[dict] = []
+    for w in works:
+        wid = str(w.get("id") or Path(str(w.get("file") or w.get("original") or w.get("path") or "")).stem)
+        if SKIP_GALLERY_FALSE and w.get("gallery") is False:
+            dropped.append(f"{wid}（gallery:false 总览图）")
+            continue
+        if wid in SKIP_LOCAL_IDS:
+            dropped.append(f"{wid}（与页面已有图重复）")
+            continue
+        kept.append(w)
+    works = [_normalize_local_work(w) for w in kept]
+    works = [w for w in works if w["id"]]
+
+    TARGET_DIR.mkdir(parents=True, exist_ok=True)
+    meta: dict[str, dict] = {}
+    if META_PATH.exists():
+        meta = json.loads(META_PATH.read_text(encoding="utf-8")).get("works", {})
+
+    added, skipped, missing = 0, 0, []
+    for work in works:
+        src = src_dir / Path(work["rel"]).name
+        if not src.is_file():
+            missing.append(work["id"])
+            continue
+        suffix = src.suffix.lower() or ".webp"
+        target = TARGET_DIR / f"{work['id']}{suffix}"
+        if target.exists() and not force:
+            skipped += 1
+        else:
+            if compress and suffix != ".webp":
+                target = target.with_suffix(".webp")
+            if compress:
+                stored, info = store_image(src, TARGET_DIR, work["id"], compress=True)
+                target = stored
+                work["width"] = info.get("width") or work.get("width")
+                work["height"] = info.get("height") or work.get("height")
+            else:
+                shutil.copy2(src, target)
+            added += 1
+
+        entry = meta.get(work["id"], {})
+        entry.update(
+            {
+                "id": work["id"],
+                "file": f"community/{target.name}",
+                "title": work.get("title", ""),
+                "author": work.get("author", ""),
+                "source": work.get("source", ""),
+                "issue": work.get("issue"),
+                "issueUrl": work.get("issueUrl", ""),
+                "attachment": work.get("attachment", ""),
+                "license": work.get("license", ""),
+                "handmade": work.get("handmade"),
+                "creationType": work.get("creationType", ""),
+                "width": work.get("width"),
+                "height": work.get("height"),
+                "upstreamId": work["id"],
+            }
+        )
+        entry.setdefault("sha256", hashlib.sha256(target.read_bytes()).hexdigest())
+        meta[work["id"]] = entry
+
+    log(f"本地清单 {manifest_path.name}：{len(works)} 件 → 新增 {added}，已存在 {skipped}，缺文件 {len(missing)}")
+    if dropped:
+        log(f"  跳过 {len(dropped)} 件：{', '.join(dropped[:8])}{' …' if len(dropped) > 8 else ''}")
+    if missing:
+        log(f"  缺文件：{', '.join(missing[:10])}")
+    if dry_run:
+        return 0
+
+    payload = {
+        "source": f"https://github.com/{UPSTREAM_REPO}",
+        "sourceLicense": "MIT（网站代码；作品许可逐件记录于 license 字段）",
+        "manifestUpdated": raw.get("updated", "") if isinstance(raw, dict) else "",
+        "works": meta,
+    }
+    META_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"出处文件 → {rel_to_repo(META_PATH)}（{len(meta)} 件）")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="从鲸鱼娘开源资产库导入社区作品")
     parser.add_argument("--dry-run", action="store_true", help="只打印计划，不下载")
@@ -150,7 +290,27 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="已存在的文件也重新下载")
     parser.add_argument("--refresh", action="store_true", help="先刷新上游清单")
     parser.add_argument("--token", default="", help="GitHub token（可选，用于 API 通道）")
+    parser.add_argument(
+        "--local-manifest",
+        default="",
+        help="本地清单 JSON（配合 --local-dir 使用，从本地目录导入作品）",
+    )
+    parser.add_argument("--local-dir", default="", help="本地作品目录（原图所在处）")
+    parser.add_argument("--no-compress", action="store_true", help="本地导入时不压缩，原样入库")
     args = parser.parse_args()
+
+    if args.local_manifest:
+        manifest_path = Path(args.local_manifest)
+        if not manifest_path.is_file():
+            sys.exit(f"找不到本地清单 {manifest_path}")
+        src_dir = Path(args.local_dir) if args.local_dir else manifest_path.parent
+        return import_local_manifest(
+            manifest_path,
+            src_dir,
+            dry_run=args.dry_run,
+            force=args.force,
+            compress=not args.no_compress,
+        )
 
     token = args.token or os.environ.get("GITHUB_TOKEN") or None
     if args.refresh:

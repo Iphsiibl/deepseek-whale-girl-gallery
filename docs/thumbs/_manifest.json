@@ -7,9 +7,9 @@
  ],
  "quality": 80,
  "method": 6,
- "count": 165,
- "origBytes": 70652437,
- "thumbBytes": 24461460,
+ "count": 224,
+ "origBytes": 80389425,
+ "thumbBytes": 32451940,
  "items": [
   {
    "group": "sheets",
@@ -648,6 +648,74 @@
    "thumb": "thumbs/issue-02-05-1400w.webp",
    "thumbSmall": "thumbs/issue-02-05-480w.webp",
    "thumbBytes": 109156
+  },
+  {
+   "group": "community",
+   "src": "community/issue-100-01.webp",
+   "origBytes": 152690,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-100-01-480w.webp",
+     "w": 480,
+     "bytes": 42776
+    },
+    {
+     "path": "thumbs/issue-100-01-960w.webp",
+     "w": 960,
+     "bytes": 101482
+    },
+    {
+     "path": "thumbs/issue-100-01-1254w.webp",
+     "w": 1254,
+     "bytes": 140210
+    }
+   ],
+   "srcset": "thumbs/issue-100-01-480w.webp 480w, thumbs/issue-100-01-960w.webp 960w, thumbs/issue-100-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-100-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-100-01-480w.webp",
+   "thumbBytes": 140210
+  },
+  {
+   "group": "community",
+   "src": "community/issue-102-01.webp",
+   "origBytes": 184824,
+   "origW": 1536,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-102-01-480w.webp",
+     "w": 480,
+     "bytes": 32112
+    },
+    {
+     "path": "thumbs/issue-102-01-960w.webp",
+     "w": 960,
+     "bytes": 89016
+    },
+    {
+     "path": "thumbs/issue-102-01-1440w.webp",
+     "w": 1440,
+     "bytes": 149526
+    }
+   ],
+   "srcset": "thumbs/issue-102-01-480w.webp 480w, thumbs/issue-102-01-960w.webp 960w, thumbs/issue-102-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-102-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-102-01-480w.webp",
+   "thumbBytes": 149526
   },
   {
    "group": "community",
@@ -4014,6 +4082,1860 @@
    "thumb": "thumbs/issue-73-01-960w.webp",
    "thumbSmall": "thumbs/issue-73-01-480w.webp",
    "thumbBytes": 82778
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-01.webp",
+   "origBytes": 282058,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-01-480w.webp",
+     "w": 480,
+     "bytes": 51314
+    },
+    {
+     "path": "thumbs/issue-77-01-960w.webp",
+     "w": 960,
+     "bytes": 146564
+    },
+    {
+     "path": "thumbs/issue-77-01-1440w.webp",
+     "w": 1440,
+     "bytes": 239134
+    }
+   ],
+   "srcset": "thumbs/issue-77-01-480w.webp 480w, thumbs/issue-77-01-960w.webp 960w, thumbs/issue-77-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-01-480w.webp",
+   "thumbBytes": 239134
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-02.webp",
+   "origBytes": 362586,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-02-480w.webp",
+     "w": 480,
+     "bytes": 72248
+    },
+    {
+     "path": "thumbs/issue-77-02-960w.webp",
+     "w": 960,
+     "bytes": 191160
+    },
+    {
+     "path": "thumbs/issue-77-02-1440w.webp",
+     "w": 1440,
+     "bytes": 308320
+    }
+   ],
+   "srcset": "thumbs/issue-77-02-480w.webp 480w, thumbs/issue-77-02-960w.webp 960w, thumbs/issue-77-02-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-02-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-02-480w.webp",
+   "thumbBytes": 308320
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-03.webp",
+   "origBytes": 362994,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-03-480w.webp",
+     "w": 480,
+     "bytes": 71456
+    },
+    {
+     "path": "thumbs/issue-77-03-960w.webp",
+     "w": 960,
+     "bytes": 192238
+    },
+    {
+     "path": "thumbs/issue-77-03-1440w.webp",
+     "w": 1440,
+     "bytes": 310126
+    }
+   ],
+   "srcset": "thumbs/issue-77-03-480w.webp 480w, thumbs/issue-77-03-960w.webp 960w, thumbs/issue-77-03-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-03-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-03-480w.webp",
+   "thumbBytes": 310126
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-04.webp",
+   "origBytes": 340104,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-04-480w.webp",
+     "w": 480,
+     "bytes": 65708
+    },
+    {
+     "path": "thumbs/issue-77-04-960w.webp",
+     "w": 960,
+     "bytes": 180578
+    },
+    {
+     "path": "thumbs/issue-77-04-1440w.webp",
+     "w": 1440,
+     "bytes": 293908
+    }
+   ],
+   "srcset": "thumbs/issue-77-04-480w.webp 480w, thumbs/issue-77-04-960w.webp 960w, thumbs/issue-77-04-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-04-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-04-480w.webp",
+   "thumbBytes": 293908
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-05.webp",
+   "origBytes": 329620,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-05-480w.webp",
+     "w": 480,
+     "bytes": 63954
+    },
+    {
+     "path": "thumbs/issue-77-05-960w.webp",
+     "w": 960,
+     "bytes": 174704
+    },
+    {
+     "path": "thumbs/issue-77-05-1440w.webp",
+     "w": 1440,
+     "bytes": 283222
+    }
+   ],
+   "srcset": "thumbs/issue-77-05-480w.webp 480w, thumbs/issue-77-05-960w.webp 960w, thumbs/issue-77-05-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-05-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-05-480w.webp",
+   "thumbBytes": 283222
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-06.webp",
+   "origBytes": 310100,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-06-480w.webp",
+     "w": 480,
+     "bytes": 59986
+    },
+    {
+     "path": "thumbs/issue-77-06-960w.webp",
+     "w": 960,
+     "bytes": 163276
+    },
+    {
+     "path": "thumbs/issue-77-06-1440w.webp",
+     "w": 1440,
+     "bytes": 267438
+    }
+   ],
+   "srcset": "thumbs/issue-77-06-480w.webp 480w, thumbs/issue-77-06-960w.webp 960w, thumbs/issue-77-06-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-06-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-06-480w.webp",
+   "thumbBytes": 267438
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-07.webp",
+   "origBytes": 271470,
+   "origW": 2560,
+   "origH": 1446,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-07-480w.webp",
+     "w": 480,
+     "bytes": 20380
+    },
+    {
+     "path": "thumbs/issue-77-07-960w.webp",
+     "w": 960,
+     "bytes": 60208
+    },
+    {
+     "path": "thumbs/issue-77-07-1440w.webp",
+     "w": 1440,
+     "bytes": 111358
+    },
+    {
+     "path": "thumbs/issue-77-07-1920w.webp",
+     "w": 1920,
+     "bytes": 163646
+    }
+   ],
+   "srcset": "thumbs/issue-77-07-480w.webp 480w, thumbs/issue-77-07-960w.webp 960w, thumbs/issue-77-07-1440w.webp 1440w, thumbs/issue-77-07-1920w.webp 1920w",
+   "thumb": "thumbs/issue-77-07-1920w.webp",
+   "thumbSmall": "thumbs/issue-77-07-480w.webp",
+   "thumbBytes": 163646
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-08.webp",
+   "origBytes": 434174,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-08-480w.webp",
+     "w": 480,
+     "bytes": 67822
+    },
+    {
+     "path": "thumbs/issue-77-08-960w.webp",
+     "w": 960,
+     "bytes": 217514
+    },
+    {
+     "path": "thumbs/issue-77-08-1440w.webp",
+     "w": 1440,
+     "bytes": 367344
+    }
+   ],
+   "srcset": "thumbs/issue-77-08-480w.webp 480w, thumbs/issue-77-08-960w.webp 960w, thumbs/issue-77-08-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-08-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-08-480w.webp",
+   "thumbBytes": 367344
+  },
+  {
+   "group": "community",
+   "src": "community/issue-77-09.webp",
+   "origBytes": 314356,
+   "origW": 1446,
+   "origH": 2560,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-77-09-480w.webp",
+     "w": 480,
+     "bytes": 59550
+    },
+    {
+     "path": "thumbs/issue-77-09-960w.webp",
+     "w": 960,
+     "bytes": 166288
+    },
+    {
+     "path": "thumbs/issue-77-09-1440w.webp",
+     "w": 1440,
+     "bytes": 271430
+    }
+   ],
+   "srcset": "thumbs/issue-77-09-480w.webp 480w, thumbs/issue-77-09-960w.webp 960w, thumbs/issue-77-09-1440w.webp 1440w",
+   "thumb": "thumbs/issue-77-09-1440w.webp",
+   "thumbSmall": "thumbs/issue-77-09-480w.webp",
+   "thumbBytes": 271430
+  },
+  {
+   "group": "community",
+   "src": "community/issue-78-01.webp",
+   "origBytes": 304316,
+   "origW": 1122,
+   "origH": 1402,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1122
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-78-01-480w.webp",
+     "w": 480,
+     "bytes": 81080
+    },
+    {
+     "path": "thumbs/issue-78-01-960w.webp",
+     "w": 960,
+     "bytes": 217200
+    },
+    {
+     "path": "thumbs/issue-78-01-1122w.webp",
+     "w": 1122,
+     "bytes": 283676
+    }
+   ],
+   "srcset": "thumbs/issue-78-01-480w.webp 480w, thumbs/issue-78-01-960w.webp 960w, thumbs/issue-78-01-1122w.webp 1122w",
+   "thumb": "thumbs/issue-78-01-1122w.webp",
+   "thumbSmall": "thumbs/issue-78-01-480w.webp",
+   "thumbBytes": 283676
+  },
+  {
+   "group": "community",
+   "src": "community/issue-79-01.webp",
+   "origBytes": 235930,
+   "origW": 1664,
+   "origH": 2496,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1664
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-79-01-480w.webp",
+     "w": 480,
+     "bytes": 35072
+    },
+    {
+     "path": "thumbs/issue-79-01-960w.webp",
+     "w": 960,
+     "bytes": 91510
+    },
+    {
+     "path": "thumbs/issue-79-01-1440w.webp",
+     "w": 1440,
+     "bytes": 153174
+    },
+    {
+     "path": "thumbs/issue-79-01-1664w.webp",
+     "w": 1664,
+     "bytes": 203524
+    }
+   ],
+   "srcset": "thumbs/issue-79-01-480w.webp 480w, thumbs/issue-79-01-960w.webp 960w, thumbs/issue-79-01-1440w.webp 1440w, thumbs/issue-79-01-1664w.webp 1664w",
+   "thumb": "thumbs/issue-79-01-1664w.webp",
+   "thumbSmall": "thumbs/issue-79-01-480w.webp",
+   "thumbBytes": 203524
+  },
+  {
+   "group": "community",
+   "src": "community/issue-79-02.webp",
+   "origBytes": 143152,
+   "origW": 1664,
+   "origH": 2496,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1664
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-79-02-480w.webp",
+     "w": 480,
+     "bytes": 25710
+    },
+    {
+     "path": "thumbs/issue-79-02-960w.webp",
+     "w": 960,
+     "bytes": 64884
+    },
+    {
+     "path": "thumbs/issue-79-02-1440w.webp",
+     "w": 1440,
+     "bytes": 105824
+    },
+    {
+     "path": "thumbs/issue-79-02-1664w.webp",
+     "w": 1664,
+     "bytes": 130052
+    }
+   ],
+   "srcset": "thumbs/issue-79-02-480w.webp 480w, thumbs/issue-79-02-960w.webp 960w, thumbs/issue-79-02-1440w.webp 1440w, thumbs/issue-79-02-1664w.webp 1664w",
+   "thumb": "thumbs/issue-79-02-1664w.webp",
+   "thumbSmall": "thumbs/issue-79-02-480w.webp",
+   "thumbBytes": 130052
+  },
+  {
+   "group": "community",
+   "src": "community/issue-80-01.webp",
+   "origBytes": 50602,
+   "origW": 454,
+   "origH": 532,
+   "alpha": true,
+   "sizes": [
+    454
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-80-01-454w.webp",
+     "w": 454,
+     "bytes": 48898
+    }
+   ],
+   "srcset": "thumbs/issue-80-01-454w.webp 454w",
+   "thumb": "thumbs/issue-80-01-454w.webp",
+   "thumbSmall": "thumbs/issue-80-01-454w.webp",
+   "thumbBytes": 48898
+  },
+  {
+   "group": "community",
+   "src": "community/issue-80-02.webp",
+   "origBytes": 55306,
+   "origW": 480,
+   "origH": 537,
+   "alpha": true,
+   "sizes": [
+    480
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-80-02-480w.webp",
+     "w": 480,
+     "bytes": 52674
+    }
+   ],
+   "srcset": "thumbs/issue-80-02-480w.webp 480w",
+   "thumb": "thumbs/issue-80-02-480w.webp",
+   "thumbSmall": "thumbs/issue-80-02-480w.webp",
+   "thumbBytes": 52674
+  },
+  {
+   "group": "community",
+   "src": "community/issue-80-03.webp",
+   "origBytes": 54068,
+   "origW": 493,
+   "origH": 534,
+   "alpha": true,
+   "sizes": [
+    480
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-80-03-480w.webp",
+     "w": 480,
+     "bytes": 50300
+    }
+   ],
+   "srcset": "thumbs/issue-80-03-480w.webp 480w",
+   "thumb": "thumbs/issue-80-03-480w.webp",
+   "thumbSmall": "thumbs/issue-80-03-480w.webp",
+   "thumbBytes": 50300
+  },
+  {
+   "group": "community",
+   "src": "community/issue-80-04.webp",
+   "origBytes": 51768,
+   "origW": 456,
+   "origH": 518,
+   "alpha": true,
+   "sizes": [
+    456
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-80-04-456w.webp",
+     "w": 456,
+     "bytes": 49896
+    }
+   ],
+   "srcset": "thumbs/issue-80-04-456w.webp 456w",
+   "thumb": "thumbs/issue-80-04-456w.webp",
+   "thumbSmall": "thumbs/issue-80-04-456w.webp",
+   "thumbBytes": 49896
+  },
+  {
+   "group": "community",
+   "src": "community/issue-80-05.webp",
+   "origBytes": 39596,
+   "origW": 395,
+   "origH": 429,
+   "alpha": true,
+   "sizes": [
+    395
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-80-05-395w.webp",
+     "w": 395,
+     "bytes": 37758
+    }
+   ],
+   "srcset": "thumbs/issue-80-05-395w.webp 395w",
+   "thumb": "thumbs/issue-80-05-395w.webp",
+   "thumbSmall": "thumbs/issue-80-05-395w.webp",
+   "thumbBytes": 37758
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-01.webp",
+   "origBytes": 140250,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-01-480w.webp",
+     "w": 480,
+     "bytes": 18572
+    },
+    {
+     "path": "thumbs/issue-82-01-960w.webp",
+     "w": 960,
+     "bytes": 47426
+    },
+    {
+     "path": "thumbs/issue-82-01-1440w.webp",
+     "w": 1440,
+     "bytes": 78832
+    },
+    {
+     "path": "thumbs/issue-82-01-1920w.webp",
+     "w": 1920,
+     "bytes": 112180
+    }
+   ],
+   "srcset": "thumbs/issue-82-01-480w.webp 480w, thumbs/issue-82-01-960w.webp 960w, thumbs/issue-82-01-1440w.webp 1440w, thumbs/issue-82-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-01-480w.webp",
+   "thumbBytes": 112180
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-02.webp",
+   "origBytes": 172490,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-02-480w.webp",
+     "w": 480,
+     "bytes": 21642
+    },
+    {
+     "path": "thumbs/issue-82-02-960w.webp",
+     "w": 960,
+     "bytes": 55856
+    },
+    {
+     "path": "thumbs/issue-82-02-1440w.webp",
+     "w": 1440,
+     "bytes": 95642
+    },
+    {
+     "path": "thumbs/issue-82-02-1920w.webp",
+     "w": 1920,
+     "bytes": 137090
+    }
+   ],
+   "srcset": "thumbs/issue-82-02-480w.webp 480w, thumbs/issue-82-02-960w.webp 960w, thumbs/issue-82-02-1440w.webp 1440w, thumbs/issue-82-02-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-02-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-02-480w.webp",
+   "thumbBytes": 137090
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-03.webp",
+   "origBytes": 106752,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-03-480w.webp",
+     "w": 480,
+     "bytes": 12198
+    },
+    {
+     "path": "thumbs/issue-82-03-960w.webp",
+     "w": 960,
+     "bytes": 34450
+    },
+    {
+     "path": "thumbs/issue-82-03-1440w.webp",
+     "w": 1440,
+     "bytes": 59706
+    },
+    {
+     "path": "thumbs/issue-82-03-1920w.webp",
+     "w": 1920,
+     "bytes": 87470
+    }
+   ],
+   "srcset": "thumbs/issue-82-03-480w.webp 480w, thumbs/issue-82-03-960w.webp 960w, thumbs/issue-82-03-1440w.webp 1440w, thumbs/issue-82-03-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-03-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-03-480w.webp",
+   "thumbBytes": 87470
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-04.webp",
+   "origBytes": 151572,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-04-480w.webp",
+     "w": 480,
+     "bytes": 19624
+    },
+    {
+     "path": "thumbs/issue-82-04-960w.webp",
+     "w": 960,
+     "bytes": 49950
+    },
+    {
+     "path": "thumbs/issue-82-04-1440w.webp",
+     "w": 1440,
+     "bytes": 82852
+    },
+    {
+     "path": "thumbs/issue-82-04-1920w.webp",
+     "w": 1920,
+     "bytes": 118510
+    }
+   ],
+   "srcset": "thumbs/issue-82-04-480w.webp 480w, thumbs/issue-82-04-960w.webp 960w, thumbs/issue-82-04-1440w.webp 1440w, thumbs/issue-82-04-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-04-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-04-480w.webp",
+   "thumbBytes": 118510
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-05.webp",
+   "origBytes": 129838,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-05-480w.webp",
+     "w": 480,
+     "bytes": 16942
+    },
+    {
+     "path": "thumbs/issue-82-05-960w.webp",
+     "w": 960,
+     "bytes": 43808
+    },
+    {
+     "path": "thumbs/issue-82-05-1440w.webp",
+     "w": 1440,
+     "bytes": 73094
+    },
+    {
+     "path": "thumbs/issue-82-05-1920w.webp",
+     "w": 1920,
+     "bytes": 103948
+    }
+   ],
+   "srcset": "thumbs/issue-82-05-480w.webp 480w, thumbs/issue-82-05-960w.webp 960w, thumbs/issue-82-05-1440w.webp 1440w, thumbs/issue-82-05-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-05-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-05-480w.webp",
+   "thumbBytes": 103948
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-06.webp",
+   "origBytes": 138370,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-06-480w.webp",
+     "w": 480,
+     "bytes": 18474
+    },
+    {
+     "path": "thumbs/issue-82-06-960w.webp",
+     "w": 960,
+     "bytes": 47274
+    },
+    {
+     "path": "thumbs/issue-82-06-1440w.webp",
+     "w": 1440,
+     "bytes": 78280
+    },
+    {
+     "path": "thumbs/issue-82-06-1920w.webp",
+     "w": 1920,
+     "bytes": 111998
+    }
+   ],
+   "srcset": "thumbs/issue-82-06-480w.webp 480w, thumbs/issue-82-06-960w.webp 960w, thumbs/issue-82-06-1440w.webp 1440w, thumbs/issue-82-06-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-06-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-06-480w.webp",
+   "thumbBytes": 111998
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-07.webp",
+   "origBytes": 141406,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-07-480w.webp",
+     "w": 480,
+     "bytes": 16332
+    },
+    {
+     "path": "thumbs/issue-82-07-960w.webp",
+     "w": 960,
+     "bytes": 44820
+    },
+    {
+     "path": "thumbs/issue-82-07-1440w.webp",
+     "w": 1440,
+     "bytes": 78684
+    },
+    {
+     "path": "thumbs/issue-82-07-1920w.webp",
+     "w": 1920,
+     "bytes": 112744
+    }
+   ],
+   "srcset": "thumbs/issue-82-07-480w.webp 480w, thumbs/issue-82-07-960w.webp 960w, thumbs/issue-82-07-1440w.webp 1440w, thumbs/issue-82-07-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-07-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-07-480w.webp",
+   "thumbBytes": 112744
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-08.webp",
+   "origBytes": 133876,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-08-480w.webp",
+     "w": 480,
+     "bytes": 13636
+    },
+    {
+     "path": "thumbs/issue-82-08-960w.webp",
+     "w": 960,
+     "bytes": 37866
+    },
+    {
+     "path": "thumbs/issue-82-08-1440w.webp",
+     "w": 1440,
+     "bytes": 69478
+    },
+    {
+     "path": "thumbs/issue-82-08-1920w.webp",
+     "w": 1920,
+     "bytes": 103602
+    }
+   ],
+   "srcset": "thumbs/issue-82-08-480w.webp 480w, thumbs/issue-82-08-960w.webp 960w, thumbs/issue-82-08-1440w.webp 1440w, thumbs/issue-82-08-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-08-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-08-480w.webp",
+   "thumbBytes": 103602
+  },
+  {
+   "group": "community",
+   "src": "community/issue-82-09.webp",
+   "origBytes": 129500,
+   "origW": 2048,
+   "origH": 1152,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-82-09-480w.webp",
+     "w": 480,
+     "bytes": 15588
+    },
+    {
+     "path": "thumbs/issue-82-09-960w.webp",
+     "w": 960,
+     "bytes": 40692
+    },
+    {
+     "path": "thumbs/issue-82-09-1440w.webp",
+     "w": 1440,
+     "bytes": 70382
+    },
+    {
+     "path": "thumbs/issue-82-09-1920w.webp",
+     "w": 1920,
+     "bytes": 103076
+    }
+   ],
+   "srcset": "thumbs/issue-82-09-480w.webp 480w, thumbs/issue-82-09-960w.webp 960w, thumbs/issue-82-09-1440w.webp 1440w, thumbs/issue-82-09-1920w.webp 1920w",
+   "thumb": "thumbs/issue-82-09-1920w.webp",
+   "thumbSmall": "thumbs/issue-82-09-480w.webp",
+   "thumbBytes": 103076
+  },
+  {
+   "group": "community",
+   "src": "community/issue-83-01.webp",
+   "origBytes": 99254,
+   "origW": 1208,
+   "origH": 1302,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1208
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-83-01-480w.webp",
+     "w": 480,
+     "bytes": 29602
+    },
+    {
+     "path": "thumbs/issue-83-01-960w.webp",
+     "w": 960,
+     "bytes": 67696
+    },
+    {
+     "path": "thumbs/issue-83-01-1208w.webp",
+     "w": 1208,
+     "bytes": 90438
+    }
+   ],
+   "srcset": "thumbs/issue-83-01-480w.webp 480w, thumbs/issue-83-01-960w.webp 960w, thumbs/issue-83-01-1208w.webp 1208w",
+   "thumb": "thumbs/issue-83-01-1208w.webp",
+   "thumbSmall": "thumbs/issue-83-01-480w.webp",
+   "thumbBytes": 90438
+  },
+  {
+   "group": "community",
+   "src": "community/issue-84-01.webp",
+   "origBytes": 103472,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-84-01-480w.webp",
+     "w": 480,
+     "bytes": 30632
+    },
+    {
+     "path": "thumbs/issue-84-01-960w.webp",
+     "w": 960,
+     "bytes": 70194
+    },
+    {
+     "path": "thumbs/issue-84-01-1254w.webp",
+     "w": 1254,
+     "bytes": 96414
+    }
+   ],
+   "srcset": "thumbs/issue-84-01-480w.webp 480w, thumbs/issue-84-01-960w.webp 960w, thumbs/issue-84-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-84-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-84-01-480w.webp",
+   "thumbBytes": 96414
+  },
+  {
+   "group": "community",
+   "src": "community/issue-85-01.webp",
+   "origBytes": 134948,
+   "origW": 1024,
+   "origH": 1408,
+   "alpha": true,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-85-01-480w.webp",
+     "w": 480,
+     "bytes": 53150
+    },
+    {
+     "path": "thumbs/issue-85-01-960w.webp",
+     "w": 960,
+     "bytes": 130112
+    }
+   ],
+   "srcset": "thumbs/issue-85-01-480w.webp 480w, thumbs/issue-85-01-960w.webp 960w",
+   "thumb": "thumbs/issue-85-01-960w.webp",
+   "thumbSmall": "thumbs/issue-85-01-480w.webp",
+   "thumbBytes": 130112
+  },
+  {
+   "group": "community",
+   "src": "community/issue-86-01.webp",
+   "origBytes": 158744,
+   "origW": 1024,
+   "origH": 1536,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-86-01-480w.webp",
+     "w": 480,
+     "bytes": 47710
+    },
+    {
+     "path": "thumbs/issue-86-01-960w.webp",
+     "w": 960,
+     "bytes": 119966
+    }
+   ],
+   "srcset": "thumbs/issue-86-01-480w.webp 480w, thumbs/issue-86-01-960w.webp 960w",
+   "thumb": "thumbs/issue-86-01-960w.webp",
+   "thumbSmall": "thumbs/issue-86-01-480w.webp",
+   "thumbBytes": 119966
+  },
+  {
+   "group": "community",
+   "src": "community/issue-86-02.webp",
+   "origBytes": 35026,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-86-02-480w.webp",
+     "w": 480,
+     "bytes": 13316
+    },
+    {
+     "path": "thumbs/issue-86-02-960w.webp",
+     "w": 960,
+     "bytes": 29406
+    }
+   ],
+   "srcset": "thumbs/issue-86-02-480w.webp 480w, thumbs/issue-86-02-960w.webp 960w",
+   "thumb": "thumbs/issue-86-02-960w.webp",
+   "thumbSmall": "thumbs/issue-86-02-480w.webp",
+   "thumbBytes": 29406
+  },
+  {
+   "group": "community",
+   "src": "community/issue-86-03.webp",
+   "origBytes": 50998,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-86-03-480w.webp",
+     "w": 480,
+     "bytes": 20000
+    },
+    {
+     "path": "thumbs/issue-86-03-960w.webp",
+     "w": 960,
+     "bytes": 42826
+    }
+   ],
+   "srcset": "thumbs/issue-86-03-480w.webp 480w, thumbs/issue-86-03-960w.webp 960w",
+   "thumb": "thumbs/issue-86-03-960w.webp",
+   "thumbSmall": "thumbs/issue-86-03-480w.webp",
+   "thumbBytes": 42826
+  },
+  {
+   "group": "community",
+   "src": "community/issue-86-04.webp",
+   "origBytes": 58058,
+   "origW": 1024,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-86-04-480w.webp",
+     "w": 480,
+     "bytes": 22278
+    },
+    {
+     "path": "thumbs/issue-86-04-960w.webp",
+     "w": 960,
+     "bytes": 48880
+    }
+   ],
+   "srcset": "thumbs/issue-86-04-480w.webp 480w, thumbs/issue-86-04-960w.webp 960w",
+   "thumb": "thumbs/issue-86-04-960w.webp",
+   "thumbSmall": "thumbs/issue-86-04-480w.webp",
+   "thumbBytes": 48880
+  },
+  {
+   "group": "community",
+   "src": "community/issue-87-01.webp",
+   "origBytes": 210872,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-87-01-480w.webp",
+     "w": 480,
+     "bytes": 51448
+    },
+    {
+     "path": "thumbs/issue-87-01-960w.webp",
+     "w": 960,
+     "bytes": 134066
+    },
+    {
+     "path": "thumbs/issue-87-01-1254w.webp",
+     "w": 1254,
+     "bytes": 194088
+    }
+   ],
+   "srcset": "thumbs/issue-87-01-480w.webp 480w, thumbs/issue-87-01-960w.webp 960w, thumbs/issue-87-01-1254w.webp 1254w",
+   "thumb": "thumbs/issue-87-01-1254w.webp",
+   "thumbSmall": "thumbs/issue-87-01-480w.webp",
+   "thumbBytes": 194088
+  },
+  {
+   "group": "community",
+   "src": "community/issue-89-01.webp",
+   "origBytes": 170012,
+   "origW": 2560,
+   "origH": 1429,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-89-01-480w.webp",
+     "w": 480,
+     "bytes": 18564
+    },
+    {
+     "path": "thumbs/issue-89-01-960w.webp",
+     "w": 960,
+     "bytes": 48254
+    },
+    {
+     "path": "thumbs/issue-89-01-1440w.webp",
+     "w": 1440,
+     "bytes": 78690
+    },
+    {
+     "path": "thumbs/issue-89-01-1920w.webp",
+     "w": 1920,
+     "bytes": 109624
+    }
+   ],
+   "srcset": "thumbs/issue-89-01-480w.webp 480w, thumbs/issue-89-01-960w.webp 960w, thumbs/issue-89-01-1440w.webp 1440w, thumbs/issue-89-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-89-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-89-01-480w.webp",
+   "thumbBytes": 109624
+  },
+  {
+   "group": "community",
+   "src": "community/issue-93-01.webp",
+   "origBytes": 184078,
+   "origW": 2400,
+   "origH": 1800,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-93-01-480w.webp",
+     "w": 480,
+     "bytes": 17678
+    },
+    {
+     "path": "thumbs/issue-93-01-960w.webp",
+     "w": 960,
+     "bytes": 48948
+    },
+    {
+     "path": "thumbs/issue-93-01-1440w.webp",
+     "w": 1440,
+     "bytes": 84926
+    },
+    {
+     "path": "thumbs/issue-93-01-1920w.webp",
+     "w": 1920,
+     "bytes": 122852
+    }
+   ],
+   "srcset": "thumbs/issue-93-01-480w.webp 480w, thumbs/issue-93-01-960w.webp 960w, thumbs/issue-93-01-1440w.webp 1440w, thumbs/issue-93-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-93-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-93-01-480w.webp",
+   "thumbBytes": 122852
+  },
+  {
+   "group": "community",
+   "src": "community/issue-94-01.webp",
+   "origBytes": 422838,
+   "origW": 2400,
+   "origH": 1792,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-94-01-480w.webp",
+     "w": 480,
+     "bytes": 37784
+    },
+    {
+     "path": "thumbs/issue-94-01-960w.webp",
+     "w": 960,
+     "bytes": 106028
+    },
+    {
+     "path": "thumbs/issue-94-01-1440w.webp",
+     "w": 1440,
+     "bytes": 189766
+    },
+    {
+     "path": "thumbs/issue-94-01-1920w.webp",
+     "w": 1920,
+     "bytes": 281270
+    }
+   ],
+   "srcset": "thumbs/issue-94-01-480w.webp 480w, thumbs/issue-94-01-960w.webp 960w, thumbs/issue-94-01-1440w.webp 1440w, thumbs/issue-94-01-1920w.webp 1920w",
+   "thumb": "thumbs/issue-94-01-1920w.webp",
+   "thumbSmall": "thumbs/issue-94-01-480w.webp",
+   "thumbBytes": 281270
+  },
+  {
+   "group": "community",
+   "src": "community/issue-94-02.webp",
+   "origBytes": 444024,
+   "origW": 2400,
+   "origH": 1792,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-94-02-480w.webp",
+     "w": 480,
+     "bytes": 46244
+    },
+    {
+     "path": "thumbs/issue-94-02-960w.webp",
+     "w": 960,
+     "bytes": 126640
+    },
+    {
+     "path": "thumbs/issue-94-02-1440w.webp",
+     "w": 1440,
+     "bytes": 218952
+    },
+    {
+     "path": "thumbs/issue-94-02-1920w.webp",
+     "w": 1920,
+     "bytes": 306296
+    }
+   ],
+   "srcset": "thumbs/issue-94-02-480w.webp 480w, thumbs/issue-94-02-960w.webp 960w, thumbs/issue-94-02-1440w.webp 1440w, thumbs/issue-94-02-1920w.webp 1920w",
+   "thumb": "thumbs/issue-94-02-1920w.webp",
+   "thumbSmall": "thumbs/issue-94-02-480w.webp",
+   "thumbBytes": 306296
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-01.webp",
+   "origBytes": 12574,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-01-360w.webp",
+     "w": 360,
+     "bytes": 11674
+    }
+   ],
+   "srcset": "thumbs/issue-95-01-360w.webp 360w",
+   "thumb": "thumbs/issue-95-01-360w.webp",
+   "thumbSmall": "thumbs/issue-95-01-360w.webp",
+   "thumbBytes": 11674
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-02.webp",
+   "origBytes": 12822,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-02-360w.webp",
+     "w": 360,
+     "bytes": 11494
+    }
+   ],
+   "srcset": "thumbs/issue-95-02-360w.webp 360w",
+   "thumb": "thumbs/issue-95-02-360w.webp",
+   "thumbSmall": "thumbs/issue-95-02-360w.webp",
+   "thumbBytes": 11494
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-03.webp",
+   "origBytes": 15924,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-03-360w.webp",
+     "w": 360,
+     "bytes": 14242
+    }
+   ],
+   "srcset": "thumbs/issue-95-03-360w.webp 360w",
+   "thumb": "thumbs/issue-95-03-360w.webp",
+   "thumbSmall": "thumbs/issue-95-03-360w.webp",
+   "thumbBytes": 14242
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-04.webp",
+   "origBytes": 17184,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-04-360w.webp",
+     "w": 360,
+     "bytes": 13930
+    }
+   ],
+   "srcset": "thumbs/issue-95-04-360w.webp 360w",
+   "thumb": "thumbs/issue-95-04-360w.webp",
+   "thumbSmall": "thumbs/issue-95-04-360w.webp",
+   "thumbBytes": 13930
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-05.webp",
+   "origBytes": 17146,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-05-360w.webp",
+     "w": 360,
+     "bytes": 14184
+    }
+   ],
+   "srcset": "thumbs/issue-95-05-360w.webp 360w",
+   "thumb": "thumbs/issue-95-05-360w.webp",
+   "thumbSmall": "thumbs/issue-95-05-360w.webp",
+   "thumbBytes": 14184
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-06.webp",
+   "origBytes": 13088,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-06-360w.webp",
+     "w": 360,
+     "bytes": 12198
+    }
+   ],
+   "srcset": "thumbs/issue-95-06-360w.webp 360w",
+   "thumb": "thumbs/issue-95-06-360w.webp",
+   "thumbSmall": "thumbs/issue-95-06-360w.webp",
+   "thumbBytes": 12198
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-07.webp",
+   "origBytes": 12684,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-07-360w.webp",
+     "w": 360,
+     "bytes": 11904
+    }
+   ],
+   "srcset": "thumbs/issue-95-07-360w.webp 360w",
+   "thumb": "thumbs/issue-95-07-360w.webp",
+   "thumbSmall": "thumbs/issue-95-07-360w.webp",
+   "thumbBytes": 11904
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-08.webp",
+   "origBytes": 12644,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-08-360w.webp",
+     "w": 360,
+     "bytes": 11744
+    }
+   ],
+   "srcset": "thumbs/issue-95-08-360w.webp 360w",
+   "thumb": "thumbs/issue-95-08-360w.webp",
+   "thumbSmall": "thumbs/issue-95-08-360w.webp",
+   "thumbBytes": 11744
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-09.webp",
+   "origBytes": 11952,
+   "origW": 360,
+   "origH": 360,
+   "alpha": false,
+   "sizes": [
+    360
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-09-360w.webp",
+     "w": 360,
+     "bytes": 11180
+    }
+   ],
+   "srcset": "thumbs/issue-95-09-360w.webp 360w",
+   "thumb": "thumbs/issue-95-09-360w.webp",
+   "thumbSmall": "thumbs/issue-95-09-360w.webp",
+   "thumbBytes": 11180
+  },
+  {
+   "group": "community",
+   "src": "community/issue-95-10.webp",
+   "origBytes": 123896,
+   "origW": 1080,
+   "origH": 1080,
+   "alpha": false,
+   "sizes": [
+    480,
+    960
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-95-10-480w.webp",
+     "w": 480,
+     "bytes": 31642
+    },
+    {
+     "path": "thumbs/issue-95-10-960w.webp",
+     "w": 960,
+     "bytes": 87834
+    }
+   ],
+   "srcset": "thumbs/issue-95-10-480w.webp 480w, thumbs/issue-95-10-960w.webp 960w",
+   "thumb": "thumbs/issue-95-10-960w.webp",
+   "thumbSmall": "thumbs/issue-95-10-480w.webp",
+   "thumbBytes": 87834
+  },
+  {
+   "group": "community",
+   "src": "community/issue-96-01.webp",
+   "origBytes": 147772,
+   "origW": 1672,
+   "origH": 941,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1672
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-96-01-480w.webp",
+     "w": 480,
+     "bytes": 22510
+    },
+    {
+     "path": "thumbs/issue-96-01-960w.webp",
+     "w": 960,
+     "bytes": 59388
+    },
+    {
+     "path": "thumbs/issue-96-01-1440w.webp",
+     "w": 1440,
+     "bytes": 100334
+    },
+    {
+     "path": "thumbs/issue-96-01-1672w.webp",
+     "w": 1672,
+     "bytes": 126020
+    }
+   ],
+   "srcset": "thumbs/issue-96-01-480w.webp 480w, thumbs/issue-96-01-960w.webp 960w, thumbs/issue-96-01-1440w.webp 1440w, thumbs/issue-96-01-1672w.webp 1672w",
+   "thumb": "thumbs/issue-96-01-1672w.webp",
+   "thumbSmall": "thumbs/issue-96-01-480w.webp",
+   "thumbBytes": 126020
+  },
+  {
+   "group": "community",
+   "src": "community/issue-98-01.webp",
+   "origBytes": 106860,
+   "origW": 1680,
+   "origH": 1680,
+   "alpha": true,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1680
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-98-01-480w.webp",
+     "w": 480,
+     "bytes": 13466
+    },
+    {
+     "path": "thumbs/issue-98-01-960w.webp",
+     "w": 960,
+     "bytes": 41980
+    },
+    {
+     "path": "thumbs/issue-98-01-1440w.webp",
+     "w": 1440,
+     "bytes": 77164
+    },
+    {
+     "path": "thumbs/issue-98-01-1680w.webp",
+     "w": 1680,
+     "bytes": 98454
+    }
+   ],
+   "srcset": "thumbs/issue-98-01-480w.webp 480w, thumbs/issue-98-01-960w.webp 960w, thumbs/issue-98-01-1440w.webp 1440w, thumbs/issue-98-01-1680w.webp 1680w",
+   "thumb": "thumbs/issue-98-01-1680w.webp",
+   "thumbSmall": "thumbs/issue-98-01-480w.webp",
+   "thumbBytes": 98454
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-01.webp",
+   "origBytes": 258128,
+   "origW": 1535,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-01-480w.webp",
+     "w": 480,
+     "bytes": 39336
+    },
+    {
+     "path": "thumbs/issue-99-01-960w.webp",
+     "w": 960,
+     "bytes": 118086
+    },
+    {
+     "path": "thumbs/issue-99-01-1440w.webp",
+     "w": 1440,
+     "bytes": 210572
+    }
+   ],
+   "srcset": "thumbs/issue-99-01-480w.webp 480w, thumbs/issue-99-01-960w.webp 960w, thumbs/issue-99-01-1440w.webp 1440w",
+   "thumb": "thumbs/issue-99-01-1440w.webp",
+   "thumbSmall": "thumbs/issue-99-01-480w.webp",
+   "thumbBytes": 210572
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-02.webp",
+   "origBytes": 134928,
+   "origW": 942,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    942
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-02-480w.webp",
+     "w": 480,
+     "bytes": 46040
+    },
+    {
+     "path": "thumbs/issue-99-02-942w.webp",
+     "w": 942,
+     "bytes": 123196
+    }
+   ],
+   "srcset": "thumbs/issue-99-02-480w.webp 480w, thumbs/issue-99-02-942w.webp 942w",
+   "thumb": "thumbs/issue-99-02-942w.webp",
+   "thumbSmall": "thumbs/issue-99-02-480w.webp",
+   "thumbBytes": 123196
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-03.webp",
+   "origBytes": 181726,
+   "origW": 1254,
+   "origH": 1254,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1254
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-03-480w.webp",
+     "w": 480,
+     "bytes": 47228
+    },
+    {
+     "path": "thumbs/issue-99-03-960w.webp",
+     "w": 960,
+     "bytes": 117392
+    },
+    {
+     "path": "thumbs/issue-99-03-1254w.webp",
+     "w": 1254,
+     "bytes": 167562
+    }
+   ],
+   "srcset": "thumbs/issue-99-03-480w.webp 480w, thumbs/issue-99-03-960w.webp 960w, thumbs/issue-99-03-1254w.webp 1254w",
+   "thumb": "thumbs/issue-99-03-1254w.webp",
+   "thumbSmall": "thumbs/issue-99-03-480w.webp",
+   "thumbBytes": 167562
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-04.webp",
+   "origBytes": 211602,
+   "origW": 1672,
+   "origH": 941,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1672
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-04-480w.webp",
+     "w": 480,
+     "bytes": 32480
+    },
+    {
+     "path": "thumbs/issue-99-04-960w.webp",
+     "w": 960,
+     "bytes": 89728
+    },
+    {
+     "path": "thumbs/issue-99-04-1440w.webp",
+     "w": 1440,
+     "bytes": 154128
+    },
+    {
+     "path": "thumbs/issue-99-04-1672w.webp",
+     "w": 1672,
+     "bytes": 195082
+    }
+   ],
+   "srcset": "thumbs/issue-99-04-480w.webp 480w, thumbs/issue-99-04-960w.webp 960w, thumbs/issue-99-04-1440w.webp 1440w, thumbs/issue-99-04-1672w.webp 1672w",
+   "thumb": "thumbs/issue-99-04-1672w.webp",
+   "thumbSmall": "thumbs/issue-99-04-480w.webp",
+   "thumbBytes": 195082
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-05.webp",
+   "origBytes": 268702,
+   "origW": 1536,
+   "origH": 1024,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-05-480w.webp",
+     "w": 480,
+     "bytes": 33442
+    },
+    {
+     "path": "thumbs/issue-99-05-960w.webp",
+     "w": 960,
+     "bytes": 112016
+    },
+    {
+     "path": "thumbs/issue-99-05-1440w.webp",
+     "w": 1440,
+     "bytes": 211554
+    }
+   ],
+   "srcset": "thumbs/issue-99-05-480w.webp 480w, thumbs/issue-99-05-960w.webp 960w, thumbs/issue-99-05-1440w.webp 1440w",
+   "thumb": "thumbs/issue-99-05-1440w.webp",
+   "thumbSmall": "thumbs/issue-99-05-480w.webp",
+   "thumbBytes": 211554
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-06.webp",
+   "origBytes": 376636,
+   "origW": 2304,
+   "origH": 1728,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1920
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-06-480w.webp",
+     "w": 480,
+     "bytes": 34104
+    },
+    {
+     "path": "thumbs/issue-99-06-960w.webp",
+     "w": 960,
+     "bytes": 99938
+    },
+    {
+     "path": "thumbs/issue-99-06-1440w.webp",
+     "w": 1440,
+     "bytes": 179004
+    },
+    {
+     "path": "thumbs/issue-99-06-1920w.webp",
+     "w": 1920,
+     "bytes": 253606
+    }
+   ],
+   "srcset": "thumbs/issue-99-06-480w.webp 480w, thumbs/issue-99-06-960w.webp 960w, thumbs/issue-99-06-1440w.webp 1440w, thumbs/issue-99-06-1920w.webp 1920w",
+   "thumb": "thumbs/issue-99-06-1920w.webp",
+   "thumbSmall": "thumbs/issue-99-06-480w.webp",
+   "thumbBytes": 253606
+  },
+  {
+   "group": "community",
+   "src": "community/issue-99-07.webp",
+   "origBytes": 204628,
+   "origW": 1672,
+   "origH": 941,
+   "alpha": false,
+   "sizes": [
+    480,
+    960,
+    1440,
+    1672
+   ],
+   "files": [
+    {
+     "path": "thumbs/issue-99-07-480w.webp",
+     "w": 480,
+     "bytes": 32906
+    },
+    {
+     "path": "thumbs/issue-99-07-960w.webp",
+     "w": 960,
+     "bytes": 88870
+    },
+    {
+     "path": "thumbs/issue-99-07-1440w.webp",
+     "w": 1440,
+     "bytes": 149626
+    },
+    {
+     "path": "thumbs/issue-99-07-1672w.webp",
+     "w": 1672,
+     "bytes": 190178
+    }
+   ],
+   "srcset": "thumbs/issue-99-07-480w.webp 480w, thumbs/issue-99-07-960w.webp 960w, thumbs/issue-99-07-1440w.webp 1440w, thumbs/issue-99-07-1672w.webp 1672w",
+   "thumb": "thumbs/issue-99-07-1672w.webp",
+   "thumbSmall": "thumbs/issue-99-07-480w.webp",
+   "thumbBytes": 190178
   },
   {
    "group": "community",

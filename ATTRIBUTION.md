@@ -54,7 +54,7 @@
 
 <!-- BEGIN:community-table -->
 
-共 147 件，来自 [鲸鱼娘开源资产库 · 社区画廊](https://github.com/TreapGoGo/deepseek-whale-girl)（作品各自授权，上游明确声明「收录不把图片变成 MIT 素材」）。
+共 206 件，来自 [鲸鱼娘开源资产库 · 社区画廊](https://github.com/TreapGoGo/deepseek-whale-girl)（作品各自授权，上游明确声明「收录不把图片变成 MIT 素材」）。
 上游未标注作者的作品如实记为「作者未知（上游未标注）」，不做推测。
 
 | 文件 | 作品 | 作者 | 投稿 | 创作类型 | 来源 / 许可 |
@@ -175,6 +175,65 @@
 | `community/issue-69-01.webp` | 鲸鱼娘的数学翻车现场 | CanYouImag | [#69](https://github.com/TreapGoGo/deepseek-whale-girl/issues/69) | 使用了生成式 AI 或 AI 辅助 · AI/未标注 | 本人原创 |
 | `community/issue-72-01.webp` | Claude 之怒 | 二十一世纪旅行者 | [#72](https://github.com/TreapGoGo/deepseek-whale-girl/issues/72) | 使用了生成式 AI 或 AI 辅助 · AI/未标注 | 本人原创 |
 | `community/issue-73-01.webp` | 这个问题我无法回答，咱们换个话题聊聊吧 | Pfolg | [#73](https://github.com/TreapGoGo/deepseek-whale-girl/issues/73) | 使用了生成式 AI 或 AI 辅助 · AI/未标注 | 本人原创 |
+| `community/issue-77-01.webp` | 个人 Comfyui 作品选集 · 教室抱臂 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-02.webp` | 个人 Comfyui 作品选集 · 女仆装全身 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-03.webp` | 个人 Comfyui 作品选集 · 女仆持板 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-04.webp` | 个人 Comfyui 作品选集 · 半身微笑 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-05.webp` | 个人 Comfyui 作品选集 · 半身浅笑 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-06.webp` | 个人 Comfyui 作品选集 · 半身侧发 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-07.webp` | 个人 Comfyui 作品选集 · 书房伏案 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-08.webp` | 个人 Comfyui 作品选集 · 水边户外 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-77-09.webp` | 个人 Comfyui 作品选集 · 女仆撑脸 | SuzakuinAyaka | [#77](https://github.com/TreapGoGo/deepseek-whale-girl/issues/77) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/77 · CC BY-NC-SA 4.0 |
+| `community/issue-78-01.webp` | 暮色海湾蓝鲸女仆咖啡馆 | yiwanhd-lang | [#78](https://github.com/TreapGoGo/deepseek-whale-girl/issues/78) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/78 · CC BY-NC-SA 4.0 |
+| `community/issue-79-01.webp` | 鲸鱼娘女仆贴纸两枚 · 蓝毛害羞 | ffff9527 | [#79](https://github.com/TreapGoGo/deepseek-whale-girl/issues/79) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/79 · CC BY-NC-SA 4.0 |
+| `community/issue-79-02.webp` | 鲸鱼娘女仆贴纸两枚 · 白毛比心（线稿） | ffff9527 | [#79](https://github.com/TreapGoGo/deepseek-whale-girl/issues/79) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/79 · CC BY-NC-SA 4.0 |
+| `community/issue-80-01.webp` | 大肥鱼桌宠 Chubby Whale · 发呆 | SlimeNull | [#80](https://github.com/TreapGoGo/deepseek-whale-girl/issues/80) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/80 · CC BY-NC-SA 4.0 |
+| `community/issue-80-02.webp` | 大肥鱼桌宠 Chubby Whale · 欢呼 | SlimeNull | [#80](https://github.com/TreapGoGo/deepseek-whale-girl/issues/80) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/80 · CC BY-NC-SA 4.0 |
+| `community/issue-80-03.webp` | 大肥鱼桌宠 Chubby Whale · 吃饭 | SlimeNull | [#80](https://github.com/TreapGoGo/deepseek-whale-girl/issues/80) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/80 · CC BY-NC-SA 4.0 |
+| `community/issue-80-04.webp` | 大肥鱼桌宠 Chubby Whale · 走路 | SlimeNull | [#80](https://github.com/TreapGoGo/deepseek-whale-girl/issues/80) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/80 · CC BY-NC-SA 4.0 |
+| `community/issue-80-05.webp` | 大肥鱼桌宠 Chubby Whale · 睡觉 | SlimeNull | [#80](https://github.com/TreapGoGo/deepseek-whale-girl/issues/80) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/80 · CC BY-NC-SA 4.0 |
+| `community/issue-82-01.webp` | 鲸鱼娘高清壁纸 · 挥手 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-02.webp` | 鲸鱼娘高清壁纸 · 水下白花 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-03.webp` | 鲸鱼娘高清壁纸 · 粉紫半身 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-04.webp` | 鲸鱼娘高清壁纸 · 伸手伴鱼 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-05.webp` | 鲸鱼娘高清壁纸 · 白裙伸手 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-06.webp` | 鲸鱼娘高清壁纸 · 蓝天气泡 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-07.webp` | 鲸鱼娘高清壁纸 · 粉底微笑 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-08.webp` | 鲸鱼娘高清壁纸 · 粉紫抬手 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-82-09.webp` | 鲸鱼娘高清壁纸 · 暖光室内 | nanashi-u | [#82](https://github.com/TreapGoGo/deepseek-whale-girl/issues/82) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/82 · CC BY-NC-SA 4.0 |
+| `community/issue-83-01.webp` | HARNESS？ · Q 版抱鲸鱼玩偶 | OBSERVER | [#83](https://github.com/TreapGoGo/deepseek-whale-girl/issues/83) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/83 · CC BY-NC-SA 4.0 |
+| `community/issue-84-01.webp` | 抖一抖用户还有没有 TOKEN | OBSERVER | [#84](https://github.com/TreapGoGo/deepseek-whale-girl/issues/84) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/84 · CC BY-NC-SA 4.0 |
+| `community/issue-85-01.webp` | 少女版鲸鱼娘 · 透明背景全身 | 阿强 | [#85](https://github.com/TreapGoGo/deepseek-whale-girl/issues/85) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/85 · CC BY-NC-SA 4.0 |
+| `community/issue-86-01.webp` | Seedream + Z-Image 双线出图 · 餐桌日常 | 3949343 | [#86](https://github.com/TreapGoGo/deepseek-whale-girl/issues/86) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/86 · MIT |
+| `community/issue-86-02.webp` | Seedream + Z-Image 双线出图 · Q 版立绘 | 3949343 | [#86](https://github.com/TreapGoGo/deepseek-whale-girl/issues/86) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/86 · MIT |
+| `community/issue-86-03.webp` | Seedream + Z-Image 双线出图 · Q 版挥手 | 3949343 | [#86](https://github.com/TreapGoGo/deepseek-whale-girl/issues/86) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/86 · MIT |
+| `community/issue-86-04.webp` | Seedream + Z-Image 双线出图 · Q 版端茶 | 3949343 | [#86](https://github.com/TreapGoGo/deepseek-whale-girl/issues/86) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/86 · MIT |
+| `community/issue-87-01.webp` | 拿捏细节：这次绝不滑跪！ | CanYouImag | [#87](https://github.com/TreapGoGo/deepseek-whale-girl/issues/87) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/87 · CC BY-NC-SA 4.0 |
+| `community/issue-89-01.webp` | 小肥鱼常服 · 三视图 | 邦多利素世 | [#89](https://github.com/TreapGoGo/deepseek-whale-girl/issues/89) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/89 · CC BY-NC-SA 4.0 |
+| `community/issue-93-01.webp` | 宝贝鱼 · Q 版鲸鱼娘角色对照表 | 宝贝鱼（B 站：真红love的宝贝鱼 / UID 1328674） | [#93](https://github.com/TreapGoGo/deepseek-whale-girl/issues/93) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/93 · CC BY-NC-SA 4.0 |
+| `community/issue-94-01.webp` | 熊猫服大肥鱼许愿机 · 设定图 | yuzuriwalnori | [#94](https://github.com/TreapGoGo/deepseek-whale-girl/issues/94) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/94 · CC BY-NC-SA 4.0 |
+| `community/issue-94-02.webp` | 熊猫服大肥鱼许愿机 · 办公摸鱼 | yuzuriwalnori | [#94](https://github.com/TreapGoGo/deepseek-whale-girl/issues/94) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/94 · CC BY-NC-SA 4.0 |
+| `community/issue-95-01.webp` | 鱼 · Q 版日常贴纸 · 嗨 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-02.webp` | 鱼 · Q 版日常贴纸 · 好 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-03.webp` | 鱼 · Q 版日常贴纸 · 笑死 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-04.webp` | 鱼 · Q 版日常贴纸 · 呜呜 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-05.webp` | 鱼 · Q 版日常贴纸 · …… | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-06.webp` | 鱼 · Q 版日常贴纸 · ？ | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-07.webp` | 鱼 · Q 版日常贴纸 · 哼 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-08.webp` | 鱼 · Q 版日常贴纸 · 困了 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-09.webp` | 鱼 · Q 版日常贴纸 · 先撤了 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-95-10.webp` | 鱼 · Q 版日常贴纸 · 九宫格总览 | 稻草的鱼 | [#95](https://github.com/TreapGoGo/deepseek-whale-girl/issues/95) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/95 · CC BY-NC 4.0 |
+| `community/issue-96-01.webp` | 你跑的倒是比另一人快些 | trigger1 | [#96](https://github.com/TreapGoGo/deepseek-whale-girl/issues/96) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/96 · CC BY-NC-SA 4.0 |
+| `community/issue-98-01.webp` | 绷带小鲸鱼 | Wy0341 | [#98](https://github.com/TreapGoGo/deepseek-whale-girl/issues/98) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/98 · CC BY-NC-SA 4.0 |
+| `community/issue-99-01.webp` | 服装二创 · 四套服装设定 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-02.webp` | 服装二创 · 白裙设定线稿 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-03.webp` | 服装二创 · Q 版大头特写 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-04.webp` | 服装二创 · 多姿势拼贴 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-05.webp` | 服装二创 · 白衣造型设定图 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-06.webp` | 服装二创 · 蓝发半身特写 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-99-07.webp` | 服装二创 · 花与水景插画 | 枫羽 | [#99](https://github.com/TreapGoGo/deepseek-whale-girl/issues/99) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/99 · CC BY-NC-SA 4.0 |
+| `community/issue-100-01.webp` | 又是类魂 | 2293716689 | [#100](https://github.com/TreapGoGo/deepseek-whale-girl/issues/100) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/100 · CC BY-NC-SA 4.0 |
+| `community/issue-102-01.webp` | 三视图较详细版 · 角色三视图与配色 | 稀饭&GPT（辅助） | [#102](https://github.com/TreapGoGo/deepseek-whale-girl/issues/102) | ai · AI/未标注 | https://github.com/TreapGoGo/deepseek-whale-girl/issues/102 · CC BY-NC-SA 4.0 |
 | `community/meme-01.webp` | 鲸鱼娘社区二创梗图 1 | 作者未知 | — | 历史收录，创作类型未说明 · AI/未标注 | — |
 | `community/meme-02.webp` | 鲸鱼娘社区二创梗图 2 | 作者未知 | — | 历史收录，创作类型未说明 · AI/未标注 | — |
 | `community/meme-03.webp` | 鲸鱼娘社区二创梗图 3 | 作者未知 | — | 历史收录，创作类型未说明 · AI/未标注 | — |

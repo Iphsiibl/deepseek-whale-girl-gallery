@@ -335,6 +335,52 @@ python tools/gallery.py remove 01-black-gown --section refs
 
 改完记得在 CI 里加一条 `python tools/render.py --check`，手改 `index.html` 就能被抓出来。
 
+### 5.6 本地管理台：把"加图"变成点几下
+
+命令行适合脚本化，但"给这张图起个标题"这种活儿，鼠标比键盘快。
+本例后来补了一个本地管理台（`tools/admin.py` + `tools/admin_ui.html`）：
+
+```bash
+python tools/admin.py      # http://127.0.0.1:8765
+```
+
+它只监听回环地址，本地起、本地关，不对外网开放。功能上覆盖了日常维护：
+
+| 操作 | 说明 |
+| --- | --- |
+| 批量上传 | 拖一个文件夹进去，一次几十张；标题支持 `{name}` `{n}` `{ext}` 占位符 |
+| 入库即压缩 | 新图先过 `tools/imageopt.py`（长边 2560 · WebP q82），再生成多档展示图 |
+| 改元数据 | 卡片上点"编辑"，改标题 / 作者 / 类型 / 描述 / 出处 / 许可 |
+| 删图 | 原图与全部缩略图一起清掉 |
+| 看日志 | 右下角实时显示这一轮重建跑了什么、校验有没有过 |
+
+**关键是让管理台和 CLI 共用同一层数据函数**（`gallery.add_item` / `gallery.remove_item`），
+两边写出来的 JSON 完全一样 —— 否则迟早出现"管理台加的图和脚本加的图格式不同"，
+CI 会在最不该炸的时候炸。
+
+两个实现上的注意点：
+
+- **multipart 解析别用 `cgi`**。Python 3.11 起 `cgi` 已废弃、3.13 移除，
+  用 `email.parser.BytesParser` 解析更稳（`cgi.FieldStorage` 的坑也少）。
+- **上传后压缩是硬要求，不是优化项**。原图 4 MB 的 PNG 直接进仓库，
+  首屏和仓库体积都会跟着涨；先压到长边 2560 再生成档位，才有一致的表现。
+
+### 5.7 主题与"图变多就不卡"
+
+两张图的时候不需要考虑性能，两百张的时候必须考虑。本例做了三件事：
+
+1. **深浅两套主题**：颜色全部收进 CSS 变量，`<html data-theme="dark|light">` 切换，
+   `localStorage` 记住选择，首屏用 `<head>` 里的内联脚本提前应用（避免闪白）。
+   注意 `color-scheme` 也要跟着变，否则滚动条和表单控件还是深色。
+2. **瀑布流改成"算出来"而不是"量出来"**：列宽由 CSS 变量算，JS 不再逐张
+   `getBoundingClientRect()`。这一步是关键 —— 一旦给作者分栏加上
+   `content-visibility: auto`，屏幕外的元素根本没有布局盒，量不出来；
+   改成纯计算后才能配合离屏跳过，图再多也不卡。
+3. **`content-visibility: auto` + `contain-intrinsic-size`**：屏幕外的分栏整块不渲染。
+
+验收靠 `tools/verify_browser.py`：它会断言瀑布流零重叠、`CLS = 0`、
+`sizes` 在多组视口下与真实列宽匹配，以及**主题切换后背景色真的变了**。
+
 ## 6. 校验
 
 手抄 `srcset` 极易出错 —— 本例中就出现过 `03-long-skirt-maid` 写成

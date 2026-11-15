@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大肥鱼画廊 · 管理台</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🐋</text></svg>">
+<script>
+  // 主题：和画廊页面共用一套变量与同一个 localStorage 键
+  (function () {
+    var t = localStorage.getItem("dsg-theme");
+    if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#081227; --bg2:#0f2247; --surface:rgba(255,255,255,.04); --surface-2:rgba(255,255,255,.07);
+  --ink:#e8f1ff; --muted:#9fb4d4; --strong:#f3f8ff; --line:rgba(150,200,255,.16);
+  --accent:#5fc8ff; --accent-soft:rgba(95,200,255,.14); --gold:#f0c987;
+  --danger:#ff7b8a; --ok:#7ee0a8; --shadow:0 18px 50px rgba(0,0,0,.45);
+  --radius:14px;
+}
+html[data-theme="light"]{
+  color-scheme:light;
+  --bg:#eef3fa; --bg2:#dde8f5; --surface:#ffffff; --surface-2:#f2f6fc;
+  --ink:#16233a; --muted:#5b6b83; --strong:#0b1626; --line:rgba(20,50,90,.14);
+  --accent:#0f7fbf; --accent-soft:rgba(15,127,191,.10); --gold:#a9761c;
+  --danger:#d03a4c; --ok:#1d8a53; --shadow:0 14px 36px rgba(25,50,90,.12);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  min-height:100vh; color:var(--ink);
+  font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+  background:
+    radial-gradient(1100px 600px at 12% -10%, color-mix(in srgb, var(--bg2) 80%, transparent), transparent 62%),
+    radial-gradient(900px 500px at 105% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 55%),
+    var(--bg);
+  background-attachment:fixed;
+}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--accent)}
+.wrap{max-width:1560px;margin:0 auto;padding:18px 22px 40px}
+
+/* ---------- 顶栏 ---------- */
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700;color:var(--strong)}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.brand small{font-weight:400;color:var(--muted);font-size:12px}
+.spacer{flex:1}
+.btn{
+  border:1px solid var(--line); background:var(--surface-2); color:var(--ink);
+  padding:7px 13px; border-radius:10px; cursor:pointer; transition:.15s; white-space:nowrap;
+}
+.btn:hover{border-color:var(--accent); color:var(--strong); transform:translateY(-1px)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:#04121f; font-weight:600}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.danger{border-color:color-mix(in srgb,var(--danger) 55%, transparent); color:var(--danger)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* ---------- 布局 ---------- */
+.cols{display:grid;grid-template-columns:330px minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:980px){.cols{grid-template-columns:1fr}}
+.panel{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); backdrop-filter:blur(8px);
+}
+.panel h2{
+  margin:0; padding:13px 16px; font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); border-bottom:1px solid var(--line);
+}
+.panel .body{padding:15px 16px}
+
+/* ---------- 表单 ---------- */
+label{display:block;margin:0 0 5px;font-size:12px;color:var(--muted)}
+.field{margin-bottom:12px}
+input[type=text],input[type=url],select,textarea{
+  width:100%; padding:8px 10px; border-radius:9px; border:1px solid var(--line);
+  background:var(--surface-2); outline:none; transition:.15s;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--accent); background:var(--surface)}
+textarea{resize:vertical;min-height:62px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.check{display:flex;align-items:center;gap:8px;margin:10px 0 4px;font-size:13px;color:var(--ink)}
+.check input{width:16px;height:16px;accent-color:var(--accent)}
+.hint{font-size:12px;color:var(--muted);margin:6px 0 0}
+.hint code{background:var(--surface-2);padding:1px 5px;border-radius:5px;font-size:11px}
+
+/* ---------- 拖拽上传 ---------- */
+.drop{
+  border:1.5px dashed var(--line); border-radius:12px; padding:18px 14px; text-align:center;
+  cursor:pointer; transition:.18s; background:var(--surface-2);
+}
+.drop:hover,.drop.over{border-color:var(--accent); background:var(--accent-soft)}
+.drop .big{font-size:26px}
+.drop .t{font-weight:600;color:var(--strong);margin-top:4px}
+.drop .s{font-size:12px;color:var(--muted)}
+.filelist{margin-top:10px;display:flex;flex-direction:column;gap:5px;max-height:180px;overflow:auto}
+.filelist div{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+
+/* ---------- 工具条 ---------- */
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{
+  border:1px solid var(--line); background:var(--surface); padding:6px 12px; border-radius:999px;
+  cursor:pointer; font-size:13px; color:var(--muted); transition:.15s;
+}
+.tab:hover{color:var(--strong)}
+.tab.on{background:var(--accent-soft); border-color:var(--accent); color:var(--strong)}
+.tab b{font-weight:600;opacity:.65;margin-left:5px;font-size:11px}
+.search{flex:1;min-width:180px;max-width:320px}
+
+/* ---------- 网格 ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:14px}
+.item{
+  background:var(--surface); border:1px solid var(--line); border-radius:12px; overflow:hidden;
+  display:flex; flex-direction:column; transition:.15s;
+}
+.item:hover{border-color:var(--accent); transform:translateY(-2px); box-shadow:var(--shadow)}
+.thumb{aspect-ratio:1/1;background:var(--surface-2);overflow:hidden;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .badge{
+  position:absolute;top:7px;left:7px;font-size:10px;padding:2px 7px;border-radius:999px;
+  background:color-mix(in srgb, var(--bg) 70%, transparent); color:var(--muted); border:1px solid var(--line);
+}
+.meta{padding:8px 10px 10px;display:flex;flex-direction:column;gap:3px;flex:1}
+.meta .t{font-size:13px;color:var(--strong);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.meta .a{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.meta .s{font-size:11px;color:var(--muted);margin-top:auto;display:flex;justify-content:space-between;gap:6px}
+.acts{display:flex;gap:6px;padding:0 10px 10px}
+.acts button{flex:1;font-size:12px;padding:5px 0;border-radius:8px;border:1px solid var(--line);background:transparent;cursor:pointer;color:var(--muted)}
+.acts button:hover{color:var(--strong);border-color:var(--accent)}
+.acts button.del:hover{color:var(--danger);border-color:var(--danger)}
+.empty{padding:50px 0;text-align:center;color:var(--muted)}
+
+/* ---------- 日志 ---------- */
+.logpanel{margin-top:18px}
+.loghead{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid var(--line)}
+.loghead h2{border:0;padding:0}
+.logbox{
+  margin:0;padding:12px 16px;max-height:260px;overflow:auto;font:12px/1.7 ui-monospace,Consolas,monospace;
+  color:var(--muted);white-space:pre-wrap;word-break:break-all;
+}
+.state{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.state .led{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.state.run .led{background:var(--gold);animation:pulse 1s infinite}
+.state.bad .led{background:var(--danger)}
+@keyframes pulse{50%{opacity:.25}}
+
+/* ---------- 弹窗 ---------- */
+.mask{position:fixed;inset:0;background:rgba(4,10,22,.66);display:none;align-items:center;justify-content:center;padding:20px;z-index:50;backdrop-filter:blur(3px)}
+.mask.on{display:flex}
+.modal{width:min(560px,100%);max-height:88vh;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.modal header{display:flex;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.modal header h3{margin:0;font-size:15px;color:var(--strong)}
+.modal .content{padding:16px 18px}
+.modal footer{display:flex;justify-content:flex-end;gap:9px;padding:13px 18px;border-top:1px solid var(--line)}
+
+/* ---------- 提示 ---------- */
+.toast{
+  position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:8px;
+}
+.toast div{
+  background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--accent);
+  padding:10px 14px;border-radius:10px;box-shadow:var(--shadow);max-width:330px;font-size:13px;
+}
+.toast div.bad{border-left-color:var(--danger)}
+.toast div.ok{border-left-color:var(--ok)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><span class="dot"></span>🐋 大肥鱼画廊 · 管理台 <small>加图 / 改标题 / 删图，入库自动压缩</small></div>
+    <div class="spacer"></div>
+    <span class="state" id="state"><span class="led"></span><span id="state-text">就绪</span></span>
+    <button class="btn ghost" id="btn-preview">预览画廊 ↗</button>
+    <button class="btn" id="btn-rebuild">重建站点</button>
+    <button class="btn" id="btn-theme">☀ 浅色</button>
+  </div>
+
+  <div class="cols">
+    <!-- ============ 左：上传 ============ -->
+    <div class="panel">
+      <h2>加入新图</h2>
+      <div class="body">
+        <div class="field">
+          <label for="f-section">放到哪个分区</label>
+          <select id="f-section"></select>
+        </div>
+        <div class="field">
+          <label for="f-title">标题</label>
+          <input type="text" id="f-title" placeholder="留空就用文件名">
+          <p class="hint">支持占位符：<code>{name}</code> 文件名 · <code>{n}</code> 序号 · <code>{ext}</code> 扩展名</p>
+        </div>
+        <div class="field">
+          <label for="f-author">作者 / 署名</label>
+          <input type="text" id="f-author" placeholder="例如：枫羽">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="f-type">类型（社区分区）</label>
+            <select id="f-type">
+              <option value="">自动判断</option>
+              <option value="character">角色立绘</option>
+              <option value="meme">表情包</option>
+              <option value="sheet">设定图</option>
+              <option value="scene">场景壁纸</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-prefix">ID 前缀（可空）</label>
+            <input type="text" id="f-prefix" placeholder="例如：issue-77">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-source">出处（社区分区必填，页面会链过去）</label>
+          <input type="url" id="f-source" placeholder="https://github.com/.../issues/77">
+        </div>
+        <div class="field">
+          <label for="f-license">许可标注</label>
+          <input type="text" id="f-license" placeholder="CC BY-NC-SA 4.0">
+        </div>
+
+        <div class="field">
+          <div class="drop" id="drop">
+            <div class="big">🖼️</div>
+            <div class="t">把图片拖进来</div>
+            <div class="s">或点这里多选 · 支持 PNG/JPG/WebP/GIF</div>
+            <input type="file" id="file" multiple accept="image/*" hidden>
+          </div>
+          <div class="filelist" id="filelist"></div>
+        </div>
+
+        <label class="check"><input type="checkbox" id="f-compress" checked> 入库即压缩（长边 2560 · WebP q82）</label>
+        <label class="check"><input type="checkbox" id="f-handmade" checked> 标记为手工创作</label>
+
+        <div style="display:flex;gap:8px;margin-top:14px">
+          <button class="btn primary" id="btn-add" style="flex:1" disabled>加入画廊</button>
+          <button class="btn ghost" id="btn-clear">清空</button>
+        </div>
+        <p class="hint" id="sum">还没选文件</p>
+      </div>
+    </div>
+
+    <!-- ============ 右：已有图 ============ -->
+    <div>
+      <div class="toolbar">
+        <div class="tabs" id="tabs"></div>
+        <input type="text" class="search" id="search" placeholder="搜标题 / 作者 / ID">
+        <div class="spacer"></div>
+        <span class="state" id="count"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>没有匹配的图</div>
+
+      <!-- ============ 日志 ============ -->
+      <div class="panel logpanel">
+        <div class="loghead">
+          <h2>构建日志</h2>
+          <div class="spacer"></div>
+          <button class="btn ghost" id="btn-log">收起</button>
+        </div>
+        <pre class="logbox" id="log"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 编辑弹窗 ============ -->
+<div class="mask" id="mask">
+  <div class="modal">
+    <header><h3 id="m-title">编辑</h3></header>
+    <div class="content">
+      <div class="field"><label>标题</label><input type="text" id="m-t"></div>
+      <div class="field"><label>作者</label><input type="text" id="m-a"></div>
+      <div class="field"><label>类型（仅社区分区）</label>
+        <select id="m-ty">
+          <option value="">（不变）</option>
+          <option value="character">角色立绘</option>
+          <option value="meme">表情包</option>
+          <option value="sheet">设定图</option>
+          <option value="scene">场景壁纸</option>
+        </select>
+      </div>
+      <div class="field"><label>描述</label><textarea id="m-d"></textarea></div>
+      <div class="field"><label>出处</label><input type="url" id="m-s"></div>
+      <div class="field"><label>许可</label><input type="text" id="m-l"></div>
+      <p class="hint" id="m-info"></p>
+    </div>
+    <footer>
+      <button class="btn ghost" id="m-cancel">取消</button>
+      <button class="btn primary" id="m-save">保存并重建</button>
+    </footer>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const $$ = (s) => Array.from(document.querySelectorAll(s));
+const TYPE_LABEL = {character:"角色立绘", meme:"表情包", sheet:"设定图", scene:"场景壁纸"};
+const SECTION_LABEL = {community:"社区二创", sheets:"角色设定图", moegirl:"萌娘百科收录图", refs:"换装三视图", wallpaper:"场景壁纸"};
+
+let items = [], sections = [], section = "all", keyword = "", picked = [], editing = null;
+
+/* ---------------- 基础 ---------------- */
+function toast(text, kind = "") {
+  const box = $("#toast");
+  const el = document.createElement("div");
+  el.className = kind;
+  el.textContent = text;
+  box.appendChild(el);
+  setTimeout(() => el.remove(), 5200);
+}
+function human(n) {
+  if (!n && n !== 0) return "";
+  if (n >= 1048576) return (n / 1048576).toFixed(1) + " MB";
+  if (n >= 1024) return Math.round(n / 1024) + " KB";
+  return n + " B";
+}
+async function api(path, opts) {
+  const res = await fetch(path, opts);
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || ("请求失败 " + res.status));
+  return data;
+}
+function post(path, payload) {
+  return api(path, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(payload)});
+}
+
+/* ---------------- 主题 ---------------- */
+function paintTheme(t) {
+  document.documentElement.setAttribute("data-theme", t);
+  $("#btn-theme").textContent = t === "dark" ? "☀ 浅色" : "🌙 深色";
+  localStorage.setItem("dsg-theme", t);
+}
+$("#btn-theme").onclick = () => {
+  paintTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+};
+paintTheme(document.documentElement.getAttribute("data-theme") || "dark");
+
+/* ---------------- 列表 ---------------- */
+async function load() {
+  const data = await api("/api/list");
+  items = data.items || [];
+  sections = data.sections || [];
+  const sel = $("#f-section");
+  if (!sel.options.length) {
+    sel.innerHTML = sections.map(s => `<option value="${s.key}">${s.label}</option>`).join("");
+    sel.value = "community";
+  }
+  renderTabs();
+  renderGrid();
+}
+function renderTabs() {
+  const total = items.length;
+  const html = [{key: "all", label: "全部", count: total}]
+    .concat(sections.map(s => ({key: s.key, label: s.label, count: s.count})))
+    .map(s => `<button class="tab${section === s.key ? " on" : ""}" data-key="${s.key}">${s.label}<b>${s.count}</b></button>`)
+    .join("");
+  $("#tabs").innerHTML = html;
+  $$("#tabs .tab").forEach(b => b.onclick = () => { section = b.dataset.key; renderTabs(); renderGrid(); });
+}
+function renderGrid() {
+  const kw = keyword.trim().toLowerCase();
+  const list = items.filter(it => {
+    if (section !== "all" && it.section !== section) return false;
+    if (!kw) return true;
+    return (it.title + " " + (it.author || "") + " " + it.id).toLowerCase().includes(kw);
+  });
+  $("#count").textContent = `${list.length} / ${items.length} 张 · 原图 ${human(list.reduce((a, b) => a + (b.bytes || 0), 0))}`;
+  $("#empty").hidden = list.length > 0;
+  $("#grid").innerHTML = list.map(it => `
+    <div class="item" data-id="${it.id}" data-section="${it.section}">
+      <div class="thumb">
+        ${it.thumb ? `<img loading="lazy" src="/files/${it.thumb}" alt="${esc(it.title)}">` : ""}
+        <span class="badge">${SECTION_LABEL[it.section] || it.section}</span>
+      </div>
+      <div class="meta">
+        <div class="t" title="${esc(it.title)}">${esc(it.title)}</div>
+        <div class="a">${esc(it.author || "作者未知")}</div>
+        <div class="s"><span>${it.width}×${it.height}</span><span>${human(it.bytes || 0)}</span></div>
+      </div>
+      <div class="acts">
+        <button class="edit">编辑</button>
+        <button class="del">删除</button>
+      </div>
+    </div>`).join("");
+  $$("#grid .item").forEach(card => {
+    const id = card.dataset.id, sec = card.dataset.section;
+    card.querySelector(".edit").onclick = () => openEdit(id, sec);
+    card.querySelector(".del").onclick = () => remove(id, sec);
+  });
+}
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+/* ---------------- 上传 ---------------- */
+const drop = $("#drop"), fileInput = $("#file");
+drop.onclick = () => fileInput.click();
+fileInput.onchange = () => { addFiles(fileInput.files); fileInput.value = ""; };
+["dragenter", "dragover"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", e => addFiles(e.dataTransfer.files));
+
+function addFiles(list) {
+  for (const f of list) {
+    if (!f.type.startsWith("image/") && !/\.(png|jpe?g|webp|gif|bmp|avif)$/i.test(f.name)) continue;
+    picked.push(f);
+  }
+  renderPicked();
+}
+function renderPicked() {
+  const total = picked.reduce((a, f) => a + f.size, 0);
+  $("#filelist").innerHTML = picked.slice(0, 60).map(f =>
+    `<div><span>${esc(f.name)}</span><span>${human(f.size)}</span></div>`).join("");
+  if (picked.length > 60) $("#filelist").innerHTML += `<div><span>…还有 ${picked.length - 60} 个</span></div>`;
+  $("#btn-add").disabled = picked.length === 0;
+  $("#sum").textContent = picked.length ? `已选 ${picked.length} 张 · 合计 ${human(total)}（入库后会自动压缩）` : "还没选文件";
+}
+$("#btn-clear").onclick = () => { picked = []; renderPicked(); };
+
+$("#btn-add").onclick = async () => {
+  if (!picked.length) return;
+  const btn = $("#btn-add");
+  btn.disabled = true; btn.textContent = "处理中…";
+  const fd = new FormData();
+  picked.forEach(f => fd.append("files", f, f.name));
+  fd.append("section", $("#f-section").value);
+  fd.append("title", $("#f-title").value);
+  fd.append("author", $("#f-author").value);
+  fd.append("type", $("#f-type").value);
+  fd.append("source", $("#f-source").value);
+  fd.append("license", $("#f-license").value);
+  fd.append("idPrefix", $("#f-prefix").value);
+  fd.append("compress", $("#f-compress").checked ? "1" : "0");
+  fd.append("handmade", $("#f-handmade").checked ? "1" : "0");
+  try {
+    const res = await api("/api/upload", {method: "POST", body: fd});
+    const okN = res.added.length, bad = res.failed.length;
+    toast(`加入 ${okN} 张，原图 ${human(res.before)} → ${human(res.after)}（省 ${human(res.saved)}）`, "ok");
+    if (bad) toast(`${bad} 张失败，详见日志`, "bad");
+    picked = []; renderPicked();
+    await load();
+  } catch (e) {
+    toast(String(e.message || e), "bad");
+  } finally {
+    btn.disabled = false; btn.textContent = "加入画廊";
+  }
+};
+
+/* ---------------- 编辑 ---------------- */
+function openEdit(id, sec) {
+  const it = items.find(x => x.id === id && x.section === sec);
+  if (!it) return;
+  editing = it;
+  $("#m-title").textContent = `编辑：${it.title}`;
+  $("#m-t").value = it.title || "";
+  $("#m-a").value = it.author || "";
+  $("#m-ty").value = it.type || "";
+  $("#m-d").value = it.desc || "";
+  $("#m-s").value = it.source || it.issueUrl || "";
+  $("#m-l").value = it.license || "";
+  $("#m-info").textContent = `ID ${it.id} · ${it.width}×${it.height} · ${human(it.bytes || 0)} · ${SECTION_LABEL[sec]}`;
+  $("#mask").classList.add("on");
+}
+$("#m-cancel").onclick = () => $("#mask").classList.remove("on");
+$("#mask").onclick = e => { if (e.target.id === "mask") $("#mask").classList.remove("on"); };
+$("#m-save").onclick = async () => {
+  if (!editing) return;
+  const sec = editing.section;
+  const fields = {
+    title: $("#m-t").value.trim(),
+    author: $("#m-a").value.trim(),
+    desc: $("#m-d").value,
+  };
+  if (sec === "community") {
+    fields.type = $("#m-ty").value;
+    fields.source = $("#m-s").value.trim();
+    fields.license = $("#m-l").value.trim();
+  } else {
+    fields.alt = fields.title;
+  }
+  try {
+    await post("/api/update", {id: editing.id, section: sec, fields});
+    $("#mask").classList.remove("on");
+    toast("已保存，正在重建", "ok");
+    await load();
+  } catch (e) {
+    toast(String(e.message || e), "bad");
+  }
+};
+
+/* ---------------- 删除 ---------------- */
+async function remove(id, sec) {
+  const it = items.find(x => x.id === id);
+  if (!confirm(`确定删掉「${it ? it.title : id}」？\n原图和缩略图会一起删掉，删完自动重建。`)) return;
+  try {
+    await post("/api/delete", {id, section: sec});
+    toast("已删除，正在重建", "ok");
+    await load();
+  } catch (e) {
+    toast(String(e.message || e), "bad");
+  }
+}
+
+/* ---------------- 重建 / 预览 / 搜索 ---------------- */
+$("#btn-rebuild").onclick = async () => {
+  await post("/api/sync", {});
+  toast("开始重建，稍等一下", "ok");
+};
+$("#btn-preview").onclick = () => window.open("/preview/", "_blank");
+$("#search").oninput = e => { keyword = e.target.value; renderGrid(); };
+
+/* ---------------- 日志轮询 ---------------- */
+let lastLog = "";
+async function poll() {
+  try {
+    const st = await api("/api/status");
+    const log = st.log || [];
+    const text = log.join("\n");
+    if (text !== lastLog) {
+      lastLog = text;
+      const box = $("#log");
+      const atBottom = box.scrollTop + box.clientHeight >= box.scrollHeight - 40;
+      box.textContent = text || "（还没有日志）";
+      if (atBottom) box.scrollTop = box.scrollHeight;
+    }
+    const b = st.build || {};
+    const s = $("#state");
+    s.className = "state" + (b.running ? " run" : (b.ok === false ? " bad" : ""));
+    $("#state-text").textContent = b.running ? "重建中…" : (b.ok === false ? "重建失败" : (b.finished ? "就绪" : "就绪"));
+    if (b.finished && b.ok && window.__needReload) {
+      window.__needReload = false;
+      load();
+    }
+  } catch (e) { /* 服务还没起来，忽略 */ }
+}
+setInterval(poll, 1500);
+$("#btn-log").onclick = () => {
+  const box = $("#log");
+  const hidden = box.style.display === "none";
+  box.style.display = hidden ? "" : "none";
+  $("#btn-log").textContent = hidden ? "收起" : "展开";
+};
+window.__needReload = true;
+load();
+poll();
+</script>
+</body>
+</html>

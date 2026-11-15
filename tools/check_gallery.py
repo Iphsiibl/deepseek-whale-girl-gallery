@@ -15,6 +15,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 import sys
@@ -35,7 +36,12 @@ SOURCE_GROUPS = ("sheets", "moegirl", "refs", "community", "wallpaper")
 
 
 def attrs(tag: str) -> dict[str, str]:
-    return {key.lower(): value for key, value in ATTR.findall(tag)}
+    """取出标签上的属性。
+
+    属性值按浏览器的规则解实体（``&amp;`` → ``&``），这样页面上的
+    ``data-author="稀饭&amp;GPT"`` 和出处文件里的 ``稀饭&GPT`` 才能对上。
+    """
+    return {key.lower(): html.unescape(value) for key, value in ATTR.findall(tag)}
 
 
 def main() -> int:
