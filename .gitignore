@@ -1,13 +1,32 @@
+# ── 与画廊内容无关的本地维护产物，一律不入库 ────────────────────────────
+# 画廊本身只有 docs/、tools/、.github/ 和几个 .md / LICENSE，不受下面任何规则影响。
+
 # 系统与编辑器
 .DS_Store
 Thumbs.db
 desktop.ini
+*.lnk
+.idea/
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
 
-# 临时文件
+# 临时文件 / 中间产物
 *.tmp
 *.bak
+*.orig
+*.rej
 ~$*
 .tmp_*
+*.log
+/.tmp/
+/tmp/
+/scratch/
+/_fetch/
+
+# 本地截图与暂存（不入库）
 .shots/
 .staging/
 .deliverables/
@@ -15,4 +34,29 @@ desktop.ini
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+/.venv/
+/venv/
+/env/
+*.egg-info/
+/build/
+/dist/
+
+# Node
+node_modules/
+
+# 浏览器测试产物
+playwright-report/
+test-results/
+.playwright/
+
+# 本地密钥
+.env
+.env.*
